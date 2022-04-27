@@ -25,3 +25,4 @@ fp-info-cache
 *.xml
 *.csv
 mainboard/3phaseDiverter-backups/
+mainboard/3phaseDiverter-rounded-backups/
