@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "mainboard")(type "KiCad")(uri "D:/Git/IoT/PVRouter-3-phase-KiCad/mainboard.pretty")(options "")(descr ""))
+  (lib (name "UserDef")(type "KiCad")(uri "D:/Git/IoT/PVRouter-3-phase-KiCad/UserDef.pretty")(options "")(descr ""))
+)
