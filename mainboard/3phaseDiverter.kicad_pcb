@@ -7,8 +7,8 @@
   (paper "A4" portrait)
   (title_block
     (title "3 phase PV diverter - Main Board PCB")
-    (date "2022-08-21")
-    (rev "1")
+    (date "2022-11-26")
+    (rev "2")
     (company "Inspired by www.mk2pvrouter.co.uk")
   )
 

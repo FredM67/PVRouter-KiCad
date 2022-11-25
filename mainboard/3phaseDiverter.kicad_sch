@@ -6,8 +6,8 @@
 
   (title_block
     (title "3 phase PV diverter - Main board")
-    (date "2022-04-07")
-    (rev "1")
+    (date "2022-11-26")
+    (rev "2")
     (company "Inspired by www.mk2pvrouter.co.uk")
   )
 
