@@ -2200,7 +2200,7 @@
       (net 41 "A4") (pinfunction "9") (pintype "power_out") (tstamp 378c5471-3562-4528-b866-fb4da297b6ce))
     (pad "10" thru_hole circle (at 20.000001 0 90) (size 1.651 1.651) (drill 1.143) (layers *.Cu *.Mask)
       (net 48 "Net-(R7-Pad1)") (pinfunction "10") (pintype "power_out") (tstamp 630df7fe-ddf1-4421-9b35-d398836febd7))
-    (model "C:/Program Files/KiCad/6.0/share/kicad/3dmodels/Transformer_THT.3dshapes/Transformer_Breve_TEZ-28x33.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Transformer_THT.3dshapes/Transformer_Breve_TEZ-28x33.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -2567,7 +2567,7 @@
       (net 39 "A2") (pinfunction "9") (pintype "power_out") (tstamp e3395ca3-ce75-460e-a927-bce2d4bb9a02))
     (pad "10" thru_hole circle (at 20.000001 0 90) (size 1.651 1.651) (drill 1.143) (layers *.Cu *.Mask)
       (net 47 "Net-(R6-Pad1)") (pinfunction "10") (pintype "power_out") (tstamp 97a94bb9-fea7-4eb0-b697-4b1a24f985aa))
-    (model "C:/Program Files/KiCad/6.0/share/kicad/3dmodels/Transformer_THT.3dshapes/Transformer_Breve_TEZ-28x33.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Transformer_THT.3dshapes/Transformer_Breve_TEZ-28x33.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -4984,7 +4984,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Program Files/KiCad/6.0/share/kicad/3dmodels/Package_DIP.3dshapes/DIP-8_W7.62mm.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm.wrl"
       (offset (xyz 0 0 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5645,7 +5645,7 @@
       (net 37 "A0") (pinfunction "9") (pintype "power_out") (tstamp c6315908-2e02-4eca-b1f6-b93dbbd19dce))
     (pad "10" thru_hole circle (at 20.000001 0 90) (size 1.651 1.651) (drill 1.143) (layers *.Cu *.Mask)
       (net 46 "Net-(R5-Pad1)") (pinfunction "10") (pintype "power_out") (tstamp e47bfba2-1290-4b96-a0cc-ae51f4699884))
-    (model "C:/Program Files/KiCad/6.0/share/kicad/3dmodels/Transformer_THT.3dshapes/Transformer_Breve_TEZ-28x33.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Transformer_THT.3dshapes/Transformer_Breve_TEZ-28x33.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
