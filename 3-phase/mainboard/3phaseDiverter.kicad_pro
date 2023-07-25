@@ -540,6 +540,18 @@
       {
         "netclass": "Power",
         "pattern": "VREF"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(JP2-B)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(JP1-B)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(JP1-A)"
       }
     ]
   },
