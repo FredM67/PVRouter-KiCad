@@ -5549,7 +5549,7 @@
   (symbol (lib_id "Device:C") (at 114.3 191.77 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2baa3c11-b083-4624-84d9-11e08898974d)
-    (property "Reference" "C13" (at 111.76 189.23 0)
+    (property "Reference" "C9" (at 111.76 189.23 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 110.49 194.31 0)
@@ -5566,7 +5566,7 @@
     (instances
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C13") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -5711,7 +5711,7 @@
     (property "Value" "ATmega328-P" (at 154.94 185.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_DIP:DIP-28_W7.62mm_Socket_LongPads" (at 154.94 218.44 0)
+    (property "Footprint" "PCM_Package_DIP_AKL:DIP-28_W7.62mm_Socket_LongPads" (at 154.94 218.44 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" (at 154.94 218.44 0)
@@ -6250,7 +6250,7 @@
   (symbol (lib_id "Device:C") (at 104.14 217.17 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4ab6c6af-c369-475e-b069-7d88c717dd64)
-    (property "Reference" "C7" (at 101.6 214.63 0)
+    (property "Reference" "C8" (at 101.6 214.63 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 100.33 219.71 0)
@@ -6267,7 +6267,7 @@
     (instances
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C7") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -6276,7 +6276,7 @@
   (symbol (lib_id "Device:C") (at 116.84 214.63 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4ea57e82-a8c6-43c9-bcb3-aefa1a448fee)
-    (property "Reference" "C9" (at 116.84 210.82 90)
+    (property "Reference" "C10" (at 116.84 210.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22pF" (at 116.84 218.44 90)
@@ -6293,7 +6293,7 @@
     (instances
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C9") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -6329,7 +6329,7 @@
   (symbol (lib_id "Device:C") (at 72.39 170.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4f7b742a-48ca-402d-bc67-6878ec16995e)
-    (property "Reference" "C12" (at 73.66 167.64 0)
+    (property "Reference" "C21" (at 73.66 167.64 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 73.66 172.72 0)
@@ -6346,7 +6346,7 @@
     (instances
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C12") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -6509,7 +6509,7 @@
   (symbol (lib_id "Device:C") (at 66.04 213.36 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5b8cb790-c8c6-4608-af5a-0aef7cf42155)
-    (property "Reference" "C8" (at 66.04 209.55 90)
+    (property "Reference" "C6" (at 66.04 209.55 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 66.04 217.17 90)
@@ -6526,7 +6526,7 @@
     (instances
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C8") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -7080,7 +7080,7 @@
   (symbol (lib_id "Device:C") (at 93.98 217.17 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8159db41-2b24-4776-b9ef-c4cc11bede5b)
-    (property "Reference" "C6" (at 91.44 214.63 0)
+    (property "Reference" "C7" (at 91.44 214.63 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 90.17 219.71 0)
@@ -7097,7 +7097,7 @@
     (instances
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C6") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -7919,7 +7919,7 @@
     (property "Value" "LM358" (at 149.86 142.24 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" (at 144.78 135.89 0)
+    (property "Footprint" "PCM_Package_DIP_AKL:DIP-8_W7.62mm_Socket_LongPads" (at 144.78 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" (at 144.78 135.89 0)
@@ -8109,7 +8109,7 @@
     (property "Value" "LM358" (at 143.51 137.1599 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" (at 144.78 135.89 0)
+    (property "Footprint" "PCM_Package_DIP_AKL:DIP-8_W7.62mm_Socket_LongPads" (at 144.78 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" (at 144.78 135.89 0)
@@ -8160,7 +8160,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 64.77 170.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d369e18e-a80d-474a-838b-9fcb05f61ff6)
-    (property "Reference" "C11" (at 66.04 167.64 0)
+    (property "Reference" "C20" (at 66.04 167.64 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 66.04 172.72 0)
@@ -8177,7 +8177,7 @@
     (instances
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C11") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -8238,7 +8238,7 @@
   (symbol (lib_id "Device:C") (at 116.84 224.79 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d8e9c7c3-2c60-498a-922d-01bf7f99cb9e)
-    (property "Reference" "C10" (at 116.84 220.98 90)
+    (property "Reference" "C11" (at 116.84 220.98 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22pF" (at 116.84 228.6 90)
@@ -8255,7 +8255,7 @@
     (instances
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "C10") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -8421,7 +8421,7 @@
     (property "Value" "LM358" (at 64.77 271.272 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" (at 59.69 264.922 0)
+    (property "Footprint" "PCM_Package_DIP_AKL:DIP-8_W7.62mm_Socket_LongPads" (at 59.69 264.922 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" (at 59.69 264.922 0)
