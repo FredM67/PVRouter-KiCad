@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -552,6 +552,18 @@
       {
         "netclass": "HV",
         "pattern": "Net-(JP1-A)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(PWR1-L)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(PWR2-L)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(PWR3-L)"
       }
     ]
   },
