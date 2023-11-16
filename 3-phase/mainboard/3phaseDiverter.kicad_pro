@@ -460,7 +460,7 @@
         "name": "HV",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
+        "track_width": 1.0,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -555,15 +555,43 @@
       },
       {
         "netclass": "HV",
-        "pattern": "Net-(PWR1-L)"
+        "pattern": "Net-(PWR1-L1)"
       },
       {
         "netclass": "HV",
-        "pattern": "Net-(PWR2-L)"
+        "pattern": "Net-(PWR1-L2)"
       },
       {
         "netclass": "HV",
-        "pattern": "Net-(PWR3-L)"
+        "pattern": "Net-(PWR1-L3)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(PWR1-N)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(BR1-Pad2)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(BR1-Pad4)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(BR2-Pad2)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(BR2-Pad4)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(BR3-Pad2)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(BR3-Pad4)"
       }
     ]
   },
