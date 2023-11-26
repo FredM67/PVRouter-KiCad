@@ -2678,9 +2678,6 @@
   (junction (at 134.62 179.07) (diameter 0) (color 0 0 0 0)
     (uuid 8250c6de-9c33-4cd7-a8bc-6398e55ef0c8)
   )
-  (junction (at 111.76 22.86) (diameter 0) (color 0 0 0 0)
-    (uuid 8458d8c8-0374-4761-86f7-45c55196a891)
-  )
   (junction (at 29.21 81.28) (diameter 0) (color 0 0 0 0)
     (uuid 863f06f7-54f7-49d5-809a-3eac83bd204d)
   )
@@ -2810,9 +2807,6 @@
   (junction (at 29.21 116.84) (diameter 0) (color 0 0 0 0)
     (uuid dc6cc00e-8db9-4f58-9ea7-6b9106919f67)
   )
-  (junction (at 104.14 22.86) (diameter 0) (color 0 0 0 0)
-    (uuid dd32e999-4a90-44dc-8ac5-3fbcf77b57c7)
-  )
   (junction (at 118.11 153.67) (diameter 0) (color 0 0 0 0)
     (uuid e05c2c2e-059a-4c78-9ae1-a3aabd49eeaf)
   )
@@ -2824,6 +2818,9 @@
   )
   (junction (at 19.05 231.14) (diameter 0) (color 0 0 0 0)
     (uuid e8026f79-deb2-43e2-a7f0-028b8d4b4ef0)
+  )
+  (junction (at 113.03 22.86) (diameter 0) (color 0 0 0 0)
+    (uuid ee8455b6-1529-4539-b956-c16187a16c82)
   )
   (junction (at 97.79 40.64) (diameter 0) (color 0 0 0 0)
     (uuid efd13f0b-f55a-45ad-96df-7fa1f686b4aa)
@@ -2939,7 +2936,7 @@
     (stroke (width 0) (type default))
     (uuid 0b596d33-934d-496d-ae9b-b52a1fd72f6e)
   )
-  (polyline (pts (xy 120.65 50.8) (xy 120.65 13.97))
+  (polyline (pts (xy 138.43 50.8) (xy 138.43 13.97))
     (stroke (width 0) (type default))
     (uuid 0bb47291-47a8-4ea9-b370-46d7232af1b4)
   )
@@ -2963,6 +2960,10 @@
   (wire (pts (xy 137.16 207.01) (xy 137.16 214.63))
     (stroke (width 0) (type default))
     (uuid 0ccab8de-5937-4b53-99ca-bade57a2af81)
+  )
+  (wire (pts (xy 125.73 27.94) (xy 113.03 27.94))
+    (stroke (width 0) (type default))
+    (uuid 0d147df7-3550-45d2-a175-1257acba4378)
   )
   (wire (pts (xy 22.86 242.57) (xy 43.18 242.57))
     (stroke (width 0) (type default))
@@ -3130,7 +3131,7 @@
     (stroke (width 0) (type default))
     (uuid 26482805-4e89-44be-ba02-55eb59b833ff)
   )
-  (polyline (pts (xy 12.7 50.8) (xy 120.65 50.8))
+  (polyline (pts (xy 12.7 50.8) (xy 138.43 50.8))
     (stroke (width 0) (type default))
     (uuid 26a5ea6f-ee3a-42d0-8ea0-84dabf08f937)
   )
@@ -3242,10 +3243,6 @@
     (stroke (width 0) (type default))
     (uuid 353895ab-4987-43fa-b170-1c7e552c7758)
   )
-  (wire (pts (xy 104.14 19.05) (xy 104.14 22.86))
-    (stroke (width 0) (type default))
-    (uuid 358dc916-a711-401f-b63b-7ea4f6933116)
-  )
   (wire (pts (xy 91.44 48.26) (xy 114.3 48.26))
     (stroke (width 0) (type default))
     (uuid 363d913b-8d10-4740-99e7-521550cdc1ea)
@@ -3261,10 +3258,6 @@
   (wire (pts (xy 22.86 201.93) (xy 41.91 201.93))
     (stroke (width 0) (type default))
     (uuid 3764467e-838c-4206-b8c8-54edfedc18cb)
-  )
-  (wire (pts (xy 111.76 19.05) (xy 111.76 22.86))
-    (stroke (width 0) (type default))
-    (uuid 376cabad-719d-45ea-90fe-39cb568b1069)
   )
   (wire (pts (xy 93.98 208.28) (xy 93.98 233.68))
     (stroke (width 0) (type default))
@@ -3342,7 +3335,7 @@
     (stroke (width 0) (type default))
     (uuid 3d97f175-10c4-4191-93da-f3fddf3f49d9)
   )
-  (polyline (pts (xy 120.65 13.97) (xy 12.7 13.97))
+  (polyline (pts (xy 138.43 13.97) (xy 12.7 13.97))
     (stroke (width 0) (type default))
     (uuid 3dbaa544-2ce2-421f-84a2-651aa51cfe93)
   )
@@ -3782,6 +3775,10 @@
     (stroke (width 0) (type default))
     (uuid 6c566270-35af-446d-af64-f335bb54ded2)
   )
+  (wire (pts (xy 123.19 30.48) (xy 123.19 34.29))
+    (stroke (width 0) (type default))
+    (uuid 6c6e49eb-3137-44f0-a206-8c0655518c4a)
+  )
   (wire (pts (xy 166.37 91.44) (xy 166.37 92.71))
     (stroke (width 0) (type default))
     (uuid 6d0abd30-e5fb-453f-8290-f999d0b79302)
@@ -3875,7 +3872,7 @@
     (stroke (width 0) (type default))
     (uuid 798cf01d-47ef-41f0-b0bc-db0d2fb3b8ad)
   )
-  (polyline (pts (xy 119.38 13.97) (xy 120.65 13.97))
+  (polyline (pts (xy 119.38 13.97) (xy 138.43 13.97))
     (stroke (width 0) (type default))
     (uuid 7a75e23b-3096-46c0-96a8-a8c2e9f89fdd)
   )
@@ -3904,6 +3901,10 @@
     (stroke (width 0) (type default))
     (uuid 7d697c7b-3062-4334-a9c9-8dcd5ee79a82)
   )
+  (wire (pts (xy 125.73 25.4) (xy 123.19 25.4))
+    (stroke (width 0) (type default))
+    (uuid 7e3512a9-f3f1-406c-90bc-bc95a378c639)
+  )
   (wire (pts (xy 24.13 138.43) (xy 30.48 138.43))
     (stroke (width 0) (type default))
     (uuid 7e9a3f8f-fc8d-4d29-8843-afcb445c941f)
@@ -3919,6 +3920,14 @@
   (wire (pts (xy 58.42 114.3) (xy 59.69 114.3))
     (stroke (width 0) (type default))
     (uuid 8004af4b-2607-4f6d-b82e-b0f667ac71fe)
+  )
+  (wire (pts (xy 113.03 22.86) (xy 114.3 22.86))
+    (stroke (width 0) (type default))
+    (uuid 80182b07-fead-45d6-971e-cf481c7ccaed)
+  )
+  (wire (pts (xy 123.19 25.4) (xy 123.19 21.59))
+    (stroke (width 0) (type default))
+    (uuid 8048084f-4b87-4112-8a2b-63276fe43d1b)
   )
   (wire (pts (xy 86.36 226.06) (xy 92.71 226.06))
     (stroke (width 0) (type default))
@@ -3948,6 +3957,10 @@
   (wire (pts (xy 29.21 125.73) (xy 33.02 125.73))
     (stroke (width 0) (type default))
     (uuid 85100fb4-59c9-4f1a-900f-d915eea03d12)
+  )
+  (wire (pts (xy 113.03 27.94) (xy 113.03 22.86))
+    (stroke (width 0) (type default))
+    (uuid 85507660-2160-4acc-bdc0-f036ad18f66f)
   )
   (polyline (pts (xy 12.7 52.07) (xy 44.45 52.07))
     (stroke (width 0) (type default))
@@ -4360,7 +4373,7 @@
     (stroke (width 0) (type default))
     (uuid acc68c6a-f825-4bbc-89c2-4bc691b75437)
   )
-  (wire (pts (xy 111.76 22.86) (xy 114.3 22.86))
+  (wire (pts (xy 111.76 22.86) (xy 113.03 22.86))
     (stroke (width 0) (type default))
     (uuid adec7917-dbaf-47dd-9071-08841b02fb29)
   )
@@ -4495,6 +4508,10 @@
   (wire (pts (xy 181.61 132.08) (xy 185.42 132.08))
     (stroke (width 0) (type default))
     (uuid bb0e89f5-faf5-4d41-b4c6-5eb999610a3f)
+  )
+  (wire (pts (xy 123.19 34.29) (xy 125.73 34.29))
+    (stroke (width 0) (type default))
+    (uuid bc5d6f47-467d-4973-9d8a-4bf104ee229f)
   )
   (wire (pts (xy 17.78 250.19) (xy 17.78 233.68))
     (stroke (width 0) (type default))
@@ -4722,6 +4739,10 @@
   (wire (pts (xy 73.914 148.59) (xy 73.914 142.24))
     (stroke (width 0) (type default))
     (uuid da3afd70-5e7b-4803-9571-f7a550197307)
+  )
+  (wire (pts (xy 125.73 30.48) (xy 123.19 30.48))
+    (stroke (width 0) (type default))
+    (uuid da61d93c-c5d0-48b2-a9f0-a647017a4595)
   )
   (wire (pts (xy 167.64 68.58) (xy 167.64 81.28))
     (stroke (width 0) (type default))
@@ -5076,6 +5097,10 @@
     (stroke (width 0) (type default))
     (uuid ff319bcd-7888-4fb5-893a-439e74aca545)
   )
+  (wire (pts (xy 123.19 21.59) (xy 125.73 21.59))
+    (stroke (width 0) (type default))
+    (uuid ff602505-3acc-4c4a-ba10-9fec6fd7cc1d)
+  )
   (wire (pts (xy 30.48 129.54) (xy 30.48 138.43))
     (stroke (width 0) (type default))
     (uuid ffdb772d-e5e4-4fcf-aa02-eb3b66c4aac2)
@@ -5110,8 +5135,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b39cad8a-2ef6-4d34-afce-cebc2d2a9306)
   )
-  (text "This board can operate at 5V or 3.3V (VCC).\n\nIf SSRs are not in use, the board can be reliably operated at 3.3V.\n\nIf the board is to be used with one or more SSRs,\nthe processor needs to be operated at 5V.\n\nIf the RF facility is to be used with the 5V version, an additional\nstep-down regulator (VR2) is required to provide 3.3V to the RFM12B.\n\nThe Burden Resistors R8-R10 must be tuned depending of the installation.\n\nFor 3.3V operation, R2-R4 should be 100 Ohm."
-    (at 121.92 41.91 0)
+  (text "This board can operate at 5V or 3.3V (VCC).\n\nIf SSRs are not in use, the board can be reliably \noperated at 3.3V.\n\nIf the board is to be used with one or more SSRs,\nthe processor needs to be operated at 5V.\n\nIf the RF facility is to be used with the 5V version, \nan additionalstep-down regulator (VR2) is required \nto provide 3.3V to the RFM12B.\n\nThe Burden Resistors R8-R10 must be tuned depending \nof the installation.\n\nFor 3.3V operation, R2-R4 should be 100 Ohm."
+    (at 140.97 46.99 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c70b8e34-55cd-4baf-9043-f4e90f66812d)
   )
@@ -5432,37 +5457,6 @@
     )
   )
 
-  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 107.95 19.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 030fda22-0bd6-488f-b12a-340b1672026f)
-    (property "Reference" "JP15" (at 110.49 17.78 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SolderJumper_2_Open" (at 106.6801 21.59 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" (at 107.95 19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 107.95 19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3706bafc-01e3-469a-8713-25c590b56cc8))
-    (pin "2" (uuid 7f9da507-f3d9-48aa-b658-2bd81e3103ea))
-    (instances
-      (project "1phaseDiverter"
-        (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "JP15") (unit 1)
-        )
-      )
-      (project "3phaseDiverter"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "JP3") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "CD4543BE:CD4543BE") (at 25.4 218.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0363efe7-1fcb-4956-8d2a-c08d0b9959d1)
@@ -5591,7 +5585,7 @@
   (symbol (lib_id "Device:R") (at 88.9 204.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09a3d7d8-b890-4f7a-891f-bdccb4835cb5)
-    (property "Reference" "R22" (at 87.63 203.2 90)
+    (property "Reference" "R13" (at 87.63 203.2 90)
       (effects (font (size 1.27 1.27)) (justify right top))
     )
     (property "Value" "~" (at 92.71 203.2 0)
@@ -5608,7 +5602,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R22") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -5833,6 +5827,36 @@
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "CN9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VCC") (at 125.73 21.59 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 0fa9ee09-238f-476e-93e2-0e6b4836851a)
+    (property "Reference" "#PWR029" (at 121.92 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VCC" (at 128.27 21.59 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 125.73 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 125.73 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 90856574-0a5e-41f6-9127-c3ccf3eaef96))
+    (instances
+      (project "1phaseDiverter"
+        (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
+          (reference "#PWR029") (unit 1)
+        )
+      )
+      (project "3phaseDiverter"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -6674,7 +6698,7 @@
   (symbol (lib_id "Device:R") (at 142.24 227.33 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ffe8b18-1e22-4875-a3b5-e51ee90d5f4e)
-    (property "Reference" "R27" (at 142.24 227.33 90)
+    (property "Reference" "R22" (at 142.24 227.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 144.78 227.33 90)
@@ -6691,7 +6715,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R27") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -6705,7 +6729,7 @@
   (symbol (lib_id "Device:R") (at 132.08 227.33 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4313b0f5-e1f6-420c-a5f7-69cd4ca717e3)
-    (property "Reference" "R19" (at 132.08 227.33 90)
+    (property "Reference" "R21" (at 132.08 227.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 134.62 227.33 90)
@@ -6722,7 +6746,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R19") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -6860,7 +6884,7 @@
   (symbol (lib_id "Device:R") (at 91.44 204.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5190c462-baa9-45b8-9066-28f3c3ad3f8a)
-    (property "Reference" "R23" (at 90.17 203.2 90)
+    (property "Reference" "R18" (at 90.17 203.2 90)
       (effects (font (size 1.27 1.27)) (justify right top))
     )
     (property "Value" "~" (at 95.25 203.2 0)
@@ -6877,7 +6901,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R23") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -7085,7 +7109,7 @@
   (symbol (lib_id "Device:R") (at 99.06 204.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c42a048-f289-454c-a3b8-0329f29f3276)
-    (property "Reference" "R31" (at 97.79 203.2 90)
+    (property "Reference" "R14" (at 97.79 203.2 90)
       (effects (font (size 1.27 1.27)) (justify right top))
     )
     (property "Value" "~" (at 102.87 203.2 0)
@@ -7102,7 +7126,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R31") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -7328,7 +7352,7 @@
   (symbol (lib_id "Device:R") (at 93.98 204.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 62424783-9f1f-4a5c-b024-b53723d61457)
-    (property "Reference" "R25" (at 92.71 203.2 90)
+    (property "Reference" "R11" (at 92.71 203.2 90)
       (effects (font (size 1.27 1.27)) (justify right top))
     )
     (property "Value" "~" (at 97.79 203.2 0)
@@ -7345,7 +7369,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R25") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -7638,7 +7662,7 @@
   (symbol (lib_id "Device:R") (at 140.97 200.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6e087669-ad9c-4194-8ad3-1674d0021a29)
-    (property "Reference" "R20" (at 140.97 200.66 90)
+    (property "Reference" "R25" (at 140.97 200.66 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4,7K" (at 143.51 200.66 90)
@@ -7655,7 +7679,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R20") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -8194,6 +8218,38 @@
     )
   )
 
+  (symbol (lib_id "Connector_Generic:Conn_01x03") (at 130.81 27.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 88102f60-6cc0-4280-b0c0-6839c05b460d)
+    (property "Reference" "J31" (at 134.62 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "RF Status" (at 133.35 27.94 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Library:Molex_SL_171971-0003_1x03_P2.54mm_Vertical" (at 130.81 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 130.81 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6bfd7601-707f-4038-93c7-49dcd299be70))
+    (pin "2" (uuid 7722399b-84b3-4bb3-b5e0-2cfbf1c0c1b9))
+    (pin "3" (uuid 3cfff16c-bab3-4095-bcd3-dfda057ffbc0))
+    (instances
+      (project "1phaseDiverter"
+        (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
+          (reference "J31") (unit 1)
+        )
+      )
+      (project "3phaseDiverter"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "J2") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 142.24 236.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 881af46b-6221-4db1-b82b-3e9c8e09f97d)
@@ -8258,7 +8314,7 @@
   (symbol (lib_id "Device:R") (at 96.52 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8d7e7c80-5864-436a-bec3-32a05a727c54)
-    (property "Reference" "R26" (at 96.52 180.34 90)
+    (property "Reference" "R17" (at 96.52 180.34 90)
       (effects (font (size 1.27 1.27)) (justify right top))
     )
     (property "Value" "~" (at 100.33 180.34 0)
@@ -8275,7 +8331,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R26") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -8320,7 +8376,7 @@
   (symbol (lib_id "Device:R") (at 96.52 204.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f19c6b6-bfe0-4dd6-821e-2f7fefe0db61)
-    (property "Reference" "R30" (at 95.25 203.2 90)
+    (property "Reference" "R15" (at 95.25 203.2 90)
       (effects (font (size 1.27 1.27)) (justify right top))
     )
     (property "Value" "~" (at 100.33 203.2 0)
@@ -8337,7 +8393,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R30") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -8381,7 +8437,7 @@
   (symbol (lib_id "Device:R") (at 151.13 227.33 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9018dfb8-bfbc-4238-af20-c3b43ddde826)
-    (property "Reference" "R29" (at 151.13 227.33 90)
+    (property "Reference" "R23" (at 151.13 227.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 153.67 227.33 90)
@@ -8398,7 +8454,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R29") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -8815,7 +8871,7 @@
   (symbol (lib_id "Device:R") (at 86.36 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a4dc2bea-f2af-4d2e-840e-d3941abd4e4a)
-    (property "Reference" "R21" (at 85.09 180.34 90)
+    (property "Reference" "R16" (at 85.09 180.34 90)
       (effects (font (size 1.27 1.27)) (justify right top))
     )
     (property "Value" "~" (at 90.17 180.34 0)
@@ -8832,7 +8888,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R21") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -9479,7 +9535,7 @@
   (symbol (lib_id "Device:R") (at 132.08 200.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d8e5d715-d6f0-44d9-98ac-a16db5105c82)
-    (property "Reference" "R6" (at 132.08 200.66 90)
+    (property "Reference" "R24" (at 132.08 200.66 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4,7K" (at 129.54 200.66 90)
@@ -9496,7 +9552,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R6") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -9631,7 +9687,7 @@
   (symbol (lib_id "Device:R") (at 151.13 200.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e5c3fef6-19f6-45aa-804c-46270f02218c)
-    (property "Reference" "R28" (at 151.13 200.66 90)
+    (property "Reference" "R26" (at 151.13 200.66 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4,7K" (at 153.67 200.66 90)
@@ -9648,7 +9704,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R28") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -9843,7 +9899,7 @@
   (symbol (lib_id "Device:R") (at 93.98 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ee5b8d96-d5f3-4c44-91ae-576f06556a67)
-    (property "Reference" "R24" (at 92.71 180.34 90)
+    (property "Reference" "R12" (at 92.71 180.34 90)
       (effects (font (size 1.27 1.27)) (justify right top))
     )
     (property "Value" "~" (at 97.79 180.34 0)
@@ -9860,7 +9916,7 @@
     (instances
       (project "1phaseDiverter"
         (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
-          (reference "R24") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
       (project "3phaseDiverter"
@@ -10187,6 +10243,36 @@
       (project "3phaseDiverter"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "#PWR0104") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 125.73 34.29 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid fa42218f-6847-4122-852a-854398ec0316)
+    (property "Reference" "#PWR030" (at 132.08 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 127 38.1 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 125.73 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 125.73 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 78ab888e-1c8a-48ea-8027-c1c65bc2b3d0))
+    (instances
+      (project "1phaseDiverter"
+        (path "/e0cdf911-34f3-408c-876d-cd257b3df45c"
+          (reference "#PWR030") (unit 1)
+        )
+      )
+      (project "3phaseDiverter"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR0131") (unit 1)
         )
       )
     )
