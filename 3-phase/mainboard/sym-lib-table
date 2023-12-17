@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name "UserDef")(type "KiCad")(uri "${KIPRJMOD}/UserDef.kicad_sym")(options "")(descr ""))
+  (version 7)
+  (lib (name "UserDef")(type "KiCad")(uri "D:/Git/IoT/PVRouter-KiCad/KiCad/symbols/UserDef.kicad_sym")(options "")(descr ""))
 )

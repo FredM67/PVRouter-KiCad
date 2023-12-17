@@ -1,4 +1,4 @@
 (fp_lib_table
   (version 7)
-  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/../KiCad/Library.pretty")(options "")(descr ""))
+  (lib (name "UserDef")(type "KiCad")(uri "${KIPRJMOD}/../KiCad/UserDef.pretty")(options "")(descr ""))
 )
