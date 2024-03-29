@@ -5038,60 +5038,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -2.54 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -2.54 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -2.54 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
 			)
 		)
 		(symbol "UserDef:FTDI"
@@ -13656,7 +13602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 62.992 140.97 90)
 			(effects
 				(font
@@ -14864,7 +14810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "RF_Module:RFM12B"
+		(property "Footprint" "UserDef:RFM12B"
 			(at 165.1 53.34 0)
 			(effects
 				(font
@@ -15173,7 +15119,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 80.01 108.458 90)
 			(effects
 				(font
@@ -16000,7 +15946,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 80.01 137.668 90)
 			(effects
 				(font
@@ -16262,7 +16208,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 138.43 261.62 90)
 			(effects
 				(font
@@ -16270,7 +16216,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 138.43 257.048 90)
 			(effects
 				(font
@@ -16743,7 +16689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 62.992 111.76 90)
 			(effects
 				(font
@@ -18267,7 +18213,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 80.01 79.248 90)
 			(effects
 				(font
@@ -20559,7 +20505,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:CONV_LD10-23B05R2"
+		(property "Footprint" "UserDef:CONV_LDxx-23B05R2"
 			(at 73.66 257.81 0)
 			(effects
 				(font
@@ -21215,7 +21161,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 62.992 82.55 90)
 			(effects
 				(font
@@ -22105,15 +22051,6 @@
 		(pin "2"
 			(uuid "2ac6d066-3a54-4bd6-9c19-6ca610dea793")
 		)
-		(pin "3"
-			(uuid "207ba140-a15d-4ae0-a7df-624d6d92ebe2")
-		)
-		(pin "4"
-			(uuid "7eaf3366-3966-4249-a36f-4c28417ea717")
-		)
-		(pin "5"
-			(uuid "95a337bb-9569-4150-bbf4-33dfdb95368f")
-		)
 		(instances
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
@@ -22495,7 +22432,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_THT:Choke_Schaffner_RN102-04-14.0x14.0mm"
+		(property "Footprint" "UserDef:Choke_Schaffner_RNx14"
 			(at 45.72 257.81 0)
 			(effects
 				(font
