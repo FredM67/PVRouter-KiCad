@@ -442,7 +442,7 @@
 	)
 	(fp_line
 		(start -5.45 -2.69)
-		(end 3.8 -5.67)
+		(end -2 -3.8)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -461,8 +461,28 @@
 		(uuid "02d3e15a-759d-4069-ac3e-f890c0dc62e0")
 	)
 	(fp_line
-		(start -2 -7)
+		(start -2.000426 13.301322)
+		(end -5.45 12.19)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "01105a7a-2778-4318-b945-66a9fe0c818a")
+	)
+	(fp_line
+		(start -2.000426 13.301322)
 		(end -2 16.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "62f5fad7-d927-46a8-a1b6-4c9770862e1e")
+	)
+	(fp_line
+		(start -2 -7)
+		(end -2 -3.8)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -481,17 +501,7 @@
 		(uuid "04e189ab-7d03-4463-aade-14e88aba6d7c")
 	)
 	(fp_line
-		(start 3.8 15.17)
-		(end -5.45 12.19)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "01105a7a-2778-4318-b945-66a9fe0c818a")
-	)
-	(fp_line
-		(start 8.3 -5.67)
+		(start 13.982953 -3.839167)
 		(end 17.55 -2.69)
 		(stroke
 			(width 0.05)
@@ -501,7 +511,7 @@
 		(uuid "ae43da44-4725-4197-abfc-cc6dbab30820")
 	)
 	(fp_line
-		(start 14 -7)
+		(start 13.99 -7)
 		(end -2 -7)
 		(stroke
 			(width 0.05)
@@ -511,8 +521,18 @@
 		(uuid "85cd4859-4c2a-4063-a7ae-a3f2a033013b")
 	)
 	(fp_line
+		(start 13.99 -7)
+		(end 13.982953 -3.839167)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "0198d6dc-b78b-4e4c-9993-e44771aa47bb")
+	)
+	(fp_line
 		(start 14 16.5)
-		(end 14 -7)
+		(end 14 13.34)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -532,35 +552,13 @@
 	)
 	(fp_line
 		(start 17.55 12.19)
-		(end 8.3 15.17)
+		(end 14 13.34)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
 		(uuid "380e4e01-592e-4b5a-8dbb-d2673c044a86")
-	)
-	(fp_arc
-		(start 3.8 -5.67)
-		(mid 6.061443 -6.26982)
-		(end 8.31982 -5.658557)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "adea4410-a9d2-4b2a-b772-58c32c34bc22")
-	)
-	(fp_arc
-		(start 8.3 15.17)
-		(mid 6.038557 15.76982)
-		(end 3.78018 15.158557)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "e6247feb-88ac-4a05-bcc6-3ad926144a3d")
 	)
 	(fp_line
 		(start -5.2 -2.5)
