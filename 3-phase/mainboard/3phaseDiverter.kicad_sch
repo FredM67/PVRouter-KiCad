@@ -4161,7 +4161,7 @@
 				(pin bidirectional line
 					(at 20.32 -3.81 180)
 					(length 2.54)
-					(name "ADC5/SDL/PC5"
+					(name "ADC5/SCL/PC5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5047,6 +5047,204 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "UserDef:OLED"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OLED"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "OLED_1_1"
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 3.81 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -6570,6 +6768,12 @@
 		(uuid "a60a8eda-ed4c-486d-8bbd-95a4a5006a34")
 	)
 	(junction
+		(at 24.13 17.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9b6ed09-5661-48ae-87ca-b7315e6cbd44")
+	)
+	(junction
 		(at 24.13 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6616,12 +6820,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0c0f351-77e3-4286-9795-fd177c8cc2b7")
-	)
-	(junction
-		(at 24.13 17.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c142aeb1-7a32-4b9a-83f3-a637d45300b0")
 	)
 	(junction
 		(at 189.23 266.7)
@@ -6888,6 +7086,16 @@
 			(type default)
 		)
 		(uuid "0568c487-acb1-4647-bd74-6befd16dc255")
+	)
+	(wire
+		(pts
+			(xy 25.4 279.4) (xy 25.4 278.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05fc0b46-e1cb-4e26-93af-2dabd2682c7b")
 	)
 	(wire
 		(pts
@@ -7839,6 +8047,26 @@
 		)
 		(uuid "3dbd29aa-3d74-4905-b748-c3662ca94a5e")
 	)
+	(wire
+		(pts
+			(xy 68.58 168.91) (xy 81.28 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e5d5751-c4c6-4cf8-b02a-a4429f18e720")
+	)
+	(wire
+		(pts
+			(xy 68.58 163.83) (xy 69.85 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e6b24bc-1b39-48df-93c9-7bfb57778529")
+	)
 	(polyline
 		(pts
 			(xy 128.27 132.08) (xy 128.27 105.41)
@@ -8231,6 +8459,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 163.83) (xy 78.74 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5343cf36-820e-4983-838c-15501ee6c48c")
+	)
+	(wire
+		(pts
 			(xy 113.03 92.71) (xy 113.03 101.6)
 		)
 		(stroke
@@ -8558,6 +8796,16 @@
 			(type default)
 		)
 		(uuid "60126cef-4d69-4eb8-be6d-818efeae284d")
+	)
+	(wire
+		(pts
+			(xy 25.4 278.13) (xy 33.02 278.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "609dd8ff-06c1-45b9-abdf-9e7f8d6ffb23")
 	)
 	(wire
 		(pts
@@ -9701,6 +9949,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 161.29) (xy 78.74 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "979cd246-17ab-47ab-adcc-6dfb1d5c2d38")
+	)
+	(wire
+		(pts
 			(xy 146.05 236.22) (xy 149.86 236.22)
 		)
 		(stroke
@@ -9918,6 +10176,16 @@
 			(type default)
 		)
 		(uuid "9e2b2978-ad5b-465d-b683-9188f4e12e20")
+	)
+	(wire
+		(pts
+			(xy 68.58 161.29) (xy 69.85 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e698c21-f249-43f6-88e7-d19a676e5d44")
 	)
 	(wire
 		(pts
@@ -10308,6 +10576,16 @@
 			(type default)
 		)
 		(uuid "b0a7dbb0-583f-43a5-b0a9-6b378e8a1c61")
+	)
+	(wire
+		(pts
+			(xy 24.13 17.78) (xy 78.74 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1a04fcc-049a-428e-9320-57c066c5f05d")
 	)
 	(wire
 		(pts
@@ -11159,6 +11437,16 @@
 		)
 		(uuid "e808f6f8-0e7b-44a0-a6b9-994a77c756cf")
 	)
+	(wire
+		(pts
+			(xy 33.02 278.13) (xy 33.02 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8697a66-c4fb-45f5-9477-a5b3a7b73a23")
+	)
 	(polyline
 		(pts
 			(xy 203.2 240.03) (xy 161.29 240.03)
@@ -11281,6 +11569,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 166.37) (xy 81.28 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f04170b1-31a6-477f-b83e-8610e034208e")
+	)
+	(wire
+		(pts
 			(xy 53.34 36.83) (xy 53.34 48.26)
 		)
 		(stroke
@@ -11358,16 +11656,6 @@
 			(type default)
 		)
 		(uuid "f4636376-776c-4e15-bff1-1b6d6822533e")
-	)
-	(wire
-		(pts
-			(xy 24.13 17.78) (xy 78.74 17.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f49a9b2a-3a7b-4c4f-9a13-9227d98a05f6")
 	)
 	(wire
 		(pts
@@ -12136,6 +12424,28 @@
 			)
 		)
 	)
+	(global_label "A4"
+		(shape output)
+		(at 78.74 161.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "13615bd5-c312-4eed-acd2-dc9a9d442cb0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.4512 161.2106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RX"
 		(shape input)
 		(at 149.86 116.84 0)
@@ -12664,6 +12974,28 @@
 			)
 		)
 	)
+	(global_label "A5"
+		(shape output)
+		(at 78.74 163.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d42de796-0bb4-4458-9cf4-f02924e6e204")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.4512 163.7506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "NEUTRAL"
 		(shape input)
 		(at 27.94 261.62 180)
@@ -12915,7 +13247,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 77.47 0)
 			(effects
 				(font
@@ -13052,7 +13384,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 115.57 0)
 			(effects
 				(font
@@ -13390,7 +13722,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 44.45 0)
 			(effects
 				(font
@@ -13458,6 +13790,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
@@ -13571,6 +13904,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDA")
+		(at 33.02 279.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13d28f78-0486-4d31-af70-c0491262cfe7")
+		(property "Reference" "#PWR038"
+			(at 33.02 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "AGND"
+			(at 33.02 283.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 33.02 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d5bbd12-5d55-47e7-9f0f-a84147a4517c")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 101.6 59.69 180)
 		(unit 1)
@@ -13598,7 +13996,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 59.69 0)
 			(effects
 				(font
@@ -14026,6 +14424,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 25.4 279.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "214c3f9b-1a3f-4dba-a668-b6a6eccc8fbe")
+		(property "Reference" "#PWR037"
+			(at 25.4 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 283.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32b47e68-7fc8-471b-a046-47a12beae000")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 139.7 27.94 0)
 		(unit 1)
@@ -14119,7 +14582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 62.23 0)
 			(effects
 				(font
@@ -14257,7 +14720,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 113.03 0)
 			(effects
 				(font
@@ -14397,7 +14860,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 50.8 0)
 			(effects
 				(font
@@ -14437,6 +14900,74 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 73.66 163.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27bbd31a-52ff-4605-aac3-f62d7ec600c5")
+		(property "Reference" "JP2"
+			(at 73.66 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 73.66 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 73.66 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 73.66 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ff17385-097d-4803-a0e9-333328b6999a")
+		)
+		(pin "2"
+			(uuid "7790a6ab-bfd1-4f19-be90-f8feec247edb")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -14643,7 +15174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 95.25 0)
 			(effects
 				(font
@@ -14918,7 +15449,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-28_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-28_W7.62mm_LongPads"
 			(at 125.73 208.28 0)
 			(effects
 				(font
@@ -15269,7 +15800,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 104.14 0)
 			(effects
 				(font
@@ -15474,7 +16005,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 24.13 0)
 			(effects
 				(font
@@ -16357,7 +16888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 53.34 0)
 			(effects
 				(font
@@ -16909,7 +17440,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 88.9 0)
 			(effects
 				(font
@@ -16978,7 +17509,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 106.68 0)
 			(effects
 				(font
@@ -17133,7 +17664,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 41.91 0)
 			(effects
 				(font
@@ -17271,7 +17802,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 132.08 88.9 0)
 			(effects
 				(font
@@ -17544,7 +18075,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 97.79 0)
 			(effects
 				(font
@@ -17681,7 +18212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 68.58 0)
 			(effects
 				(font
@@ -18551,6 +19082,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 73.66 161.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73a44130-4344-4a81-b4e4-ce5e493f83aa")
+		(property "Reference" "JP1"
+			(at 73.66 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 73.66 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cd96703-6296-4445-bb61-99058051395c")
+		)
+		(pin "2"
+			(uuid "91f1f24e-cc50-4688-92df-92ec9f871db2")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 15.24 198.12 0)
 		(mirror y)
@@ -18785,7 +19384,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 71.12 0)
 			(effects
 				(font
@@ -19273,7 +19872,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 80.01 0)
 			(effects
 				(font
@@ -19343,7 +19942,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 86.36 0)
 			(effects
 				(font
@@ -20726,7 +21325,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0006_1x06_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0006_1x06_P2.54mm_Vertical"
 			(at 140.97 116.84 0)
 			(effects
 				(font
@@ -20806,7 +21405,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 33.02 0)
 			(effects
 				(font
@@ -21658,7 +22257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 35.56 0)
 			(effects
 				(font
@@ -21939,7 +22538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:AP2112R5-3.3TRG1_DIO"
+		(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-89-5_Handsoldering"
 			(at 139.7 252.73 0)
 			(effects
 				(font
@@ -22020,7 +22619,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
 			(at 101.6 121.92 0)
 			(effects
 				(font
@@ -22401,6 +23000,79 @@
 		)
 	)
 	(symbol
+		(lib_id "UserDef:OLED")
+		(at 63.5 166.37 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de78512c-9e4a-4496-b021-5df342e6386d")
+		(property "Reference" "J30"
+			(at 62.23 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OLED"
+			(at 62.23 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0004_1x04_P2.54mm_Vertical"
+			(at 63.5 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 63.5 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8a36418f-2742-4c2d-a0c8-e6bcac03702a")
+		)
+		(pin "2"
+			(uuid "f7c10144-e60d-4cef-94d7-2e118f80bac4")
+		)
+		(pin "1"
+			(uuid "6921c8ed-8aef-4622-bb02-12aa36a594f1")
+		)
+		(pin "4"
+			(uuid "e303b4ab-f9d8-4cd5-a470-15ff89fd6e27")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 177.8 236.22 0)
 		(unit 1)
@@ -22630,6 +23302,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 81.28 166.37 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "edf9b5ff-22a9-452e-8cf7-c2a01213987e")
+		(property "Reference" "#PWR036"
+			(at 77.47 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 86.36 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 81.28 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73cbe672-21d4-40a3-a464-25d6eea15cd4")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 120.65 124.46 0)
 		(mirror x)
@@ -22657,7 +23394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 124.46 0)
 			(effects
 				(font
@@ -23330,7 +24067,7 @@
 				)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 120.65 26.67 0)
 			(effects
 				(font
@@ -23434,6 +24171,73 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbb0b064-eb0b-4005-a02b-5a3d38b8672e")
+		(property "Reference" "#PWR035"
+			(at 87.63 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 168.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0d86f1b-6e8d-4a79-93bc-fb9a62a4e0b3")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)

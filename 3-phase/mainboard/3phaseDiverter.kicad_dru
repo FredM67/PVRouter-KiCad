@@ -6,7 +6,3 @@
 (rule "class 1:1"
   (condition "A.NetClass == 'power' && B.NetClass == 'power'")
   (constraint clearance (min 0.254mm)))
-
-(rule "class 2:2"
-  (condition "A.NetClass == 'gnd' && B.NetClass == 'gnd'")
-  (constraint clearance (min 0.254mm)))
