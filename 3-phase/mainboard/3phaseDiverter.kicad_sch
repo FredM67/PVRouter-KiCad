@@ -13265,7 +13265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 77.47 0)
 			(effects
 				(font
@@ -13402,7 +13402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 115.57 0)
 			(effects
 				(font
@@ -13472,7 +13472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "75 1/4W 1% 100 PPM/C"
 			(at 64.77 140.97 0)
 			(effects
 				(font
@@ -13539,7 +13539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1/4W 0.1%"
 			(at 134.62 44.45 0)
 			(effects
 				(font
@@ -13740,7 +13740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 44.45 0)
 			(effects
 				(font
@@ -13879,7 +13879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1K 1/4W 1%"
 			(at 35.56 223.52 0)
 			(effects
 				(font
@@ -14014,7 +14014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 59.69 0)
 			(effects
 				(font
@@ -14153,7 +14153,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor"
+		(property "Description" "MOV-14D431KTR"
 			(at 40.64 33.02 0)
 			(effects
 				(font
@@ -14333,7 +14333,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 15.24 227.33 0)
 			(effects
 				(font
@@ -14600,7 +14600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 62.23 0)
 			(effects
 				(font
@@ -14738,7 +14738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 113.03 0)
 			(effects
 				(font
@@ -14878,7 +14878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 50.8 0)
 			(effects
 				(font
@@ -15122,7 +15122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100 nF x 50V"
 			(at 85.09 181.61 0)
 			(effects
 				(font
@@ -15192,7 +15192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 95.25 0)
 			(effects
 				(font
@@ -15262,7 +15262,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1K 1/4W 1%"
 			(at 72.39 116.84 0)
 			(effects
 				(font
@@ -15332,7 +15332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "150 1/2W 1%"
 			(at 24.13 199.39 0)
 			(effects
 				(font
@@ -15818,7 +15818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 104.14 0)
 			(effects
 				(font
@@ -15888,7 +15888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 41.91 106.68 0)
 			(effects
 				(font
@@ -16023,7 +16023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 24.13 0)
 			(effects
 				(font
@@ -16093,7 +16093,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1K 1/4W 1%"
 			(at 72.39 146.05 0)
 			(effects
 				(font
@@ -16362,7 +16362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1/4W 0.1%"
 			(at 134.62 257.81 0)
 			(effects
 				(font
@@ -16502,7 +16502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "150 1/2W 1%"
 			(at 24.13 170.18 0)
 			(effects
 				(font
@@ -16634,7 +16634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 41.91 77.47 0)
 			(effects
 				(font
@@ -16837,7 +16837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "75 1/4W 1% 100 PPM/C"
 			(at 64.77 111.76 0)
 			(effects
 				(font
@@ -16906,7 +16906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 53.34 0)
 			(effects
 				(font
@@ -16974,7 +16974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100 nF x 50V"
 			(at 74.93 207.01 0)
 			(effects
 				(font
@@ -17044,7 +17044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1/4W 0.1%"
 			(at 124.46 157.48 0)
 			(effects
 				(font
@@ -17190,7 +17190,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "22 pF x 100V"
 			(at 87.63 204.47 0)
 			(effects
 				(font
@@ -17257,7 +17257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 33.02 146.05 0)
 			(effects
 				(font
@@ -17324,7 +17324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1/4W 0.1%"
 			(at 139.7 44.45 0)
 			(effects
 				(font
@@ -17458,7 +17458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 88.9 0)
 			(effects
 				(font
@@ -17527,7 +17527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 106.68 0)
 			(effects
 				(font
@@ -17682,7 +17682,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 41.91 0)
 			(effects
 				(font
@@ -17752,7 +17752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 33.02 77.47 0)
 			(effects
 				(font
@@ -17820,7 +17820,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 132.08 88.9 0)
 			(effects
 				(font
@@ -17887,7 +17887,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100 nF x 50V"
 			(at 147.32 96.52 0)
 			(effects
 				(font
@@ -17956,7 +17956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 15.24 168.91 0)
 			(effects
 				(font
@@ -18093,7 +18093,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 97.79 0)
 			(effects
 				(font
@@ -18160,7 +18160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1K 1/4W 1%"
 			(at 72.39 87.63 0)
 			(effects
 				(font
@@ -18230,7 +18230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 68.58 0)
 			(effects
 				(font
@@ -18636,7 +18636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 33.02 135.89 0)
 			(effects
 				(font
@@ -18703,7 +18703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 33.02 116.84 0)
 			(effects
 				(font
@@ -18835,7 +18835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 41.91 87.63 0)
 			(effects
 				(font
@@ -18905,7 +18905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "THT Electrolytic Capacitor, 6.3mm Diameter, 2.50mm Pitch, European Symbol, Alternate KiCad Library"
+		(property "Description" "120 uF x 6.3V Electrolytic"
 			(at 102.87 257.81 0)
 			(effects
 				(font
@@ -19057,7 +19057,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1/4W 0.1%"
 			(at 144.78 44.45 0)
 			(effects
 				(font
@@ -19195,7 +19195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 15.24 198.12 0)
 			(effects
 				(font
@@ -19402,7 +19402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 71.12 0)
 			(effects
 				(font
@@ -19470,7 +19470,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100 nF x 50V"
 			(at 64.77 207.01 0)
 			(effects
 				(font
@@ -19890,7 +19890,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 80.01 0)
 			(effects
 				(font
@@ -19960,7 +19960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 86.36 0)
 			(effects
 				(font
@@ -20101,7 +20101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor"
+		(property "Description" "MOV-14D431KTR"
 			(at 53.34 33.02 0)
 			(effects
 				(font
@@ -20213,7 +20213,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1K 1/4W 1%"
 			(at 35.56 194.31 0)
 			(effects
 				(font
@@ -20283,7 +20283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor"
+		(property "Description" "MOV-14D431KTR"
 			(at 66.04 33.02 0)
 			(effects
 				(font
@@ -20665,7 +20665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 41.91 146.05 0)
 			(effects
 				(font
@@ -20732,7 +20732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 41.91 135.89 0)
 			(effects
 				(font
@@ -21070,7 +21070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 41.91 116.84 0)
 			(effects
 				(font
@@ -21140,7 +21140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "75 1/4W 1% 100 PPM/C"
 			(at 64.77 82.55 0)
 			(effects
 				(font
@@ -21274,7 +21274,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 33.02 106.68 0)
 			(effects
 				(font
@@ -21343,7 +21343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0006"
 			(at 142.24 116.84 0)
 			(effects
 				(font
@@ -21423,7 +21423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 33.02 0)
 			(effects
 				(font
@@ -21560,7 +21560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100 nF x 50V"
 			(at 195.58 257.81 0)
 			(effects
 				(font
@@ -21789,7 +21789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1K 1/4W 1%"
 			(at 35.56 165.1 0)
 			(effects
 				(font
@@ -21859,7 +21859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "150 1/2W 1%"
 			(at 24.13 228.6 0)
 			(effects
 				(font
@@ -22132,7 +22132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1/4W 0.1%"
 			(at 124.46 147.32 0)
 			(effects
 				(font
@@ -22275,7 +22275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 35.56 0)
 			(effects
 				(font
@@ -22344,7 +22344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Common mode Choke_Schaffner_RN214-0.3-02-47M"
+		(property "Description" "RN114-0.3-02-47M / RN214-0.3-02-47M"
 			(at 43.18 257.81 0)
 			(effects
 				(font
@@ -22558,7 +22558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "AP2112R5-3.3TRG1"
 			(at 139.7 252.73 0)
 			(effects
 				(font
@@ -22637,7 +22637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0003"
 			(at 101.6 121.92 0)
 			(effects
 				(font
@@ -22707,7 +22707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "22 pF x 100V"
 			(at 87.63 214.63 0)
 			(effects
 				(font
@@ -23042,7 +23042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0004"
 			(at 63.5 166.37 0)
 			(effects
 				(font
@@ -23412,7 +23412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 124.46 0)
 			(effects
 				(font
@@ -23746,7 +23746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W"
+		(property "Description" "15K 1/4W 5%"
 			(at 33.02 87.63 0)
 			(effects
 				(font
@@ -24085,7 +24085,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex SL 171971-0002"
 			(at 120.65 26.67 0)
 			(effects
 				(font
@@ -24288,7 +24288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LD05-23B05R2 / LD10-23B05R2"
 			(at 71.12 257.81 0)
 			(effects
 				(font
