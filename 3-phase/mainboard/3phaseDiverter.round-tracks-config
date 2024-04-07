@@ -1,5 +1,8 @@
 Default	True	2.0	3
-3.3V	True	2.0	3
+ANT	True	2.0	3
+CT	True	2.0	3
+Gnd	True	2.0	3
 HV	True	2.0	3
+Low Power	True	2.0	3
 Power	True	2.0	3
 True	True	False

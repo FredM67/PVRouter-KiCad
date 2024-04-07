@@ -264,6 +264,178 @@
 				)
 			)
 		)
+		(symbol "Conn_01x03_1"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J14"
+				(at 3.81 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "DS18B20"
+				(at 2.54 -0.0001 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Molex SL 171971-0003"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "DATA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Conn_01x05_PWR_1"
 			(pin_names
 				(offset 1.016)
@@ -271,8 +443,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 7.62 0)
+			(property "Reference" "PWR1"
+				(at 0.635 -11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -280,11 +452,12 @@
 				)
 			)
 			(property "Value" "Conn_01x05_PWR"
-				(at 0 -7.62 0)
+				(at 0.635 -8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_5-GF-5,08_1x05_P5.08mm_Vertical_ThreadedFlange"
@@ -306,6 +479,51 @@
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SPICE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "model=\"V 3 4 SINE(0 400 50 0 0 0 0)\nV 2 4 SINE(0 400 50 0 0 120 0)\nV 1 4 SINE(0 400 50 0 0 -120 0)\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Monophasé" "3 voies"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Option" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Triphasé" "X"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6480,6 +6698,12 @@
 		(uuid "16ec3748-b7b3-4ad4-af14-f722ed7c5683")
 	)
 	(junction
+		(at 173.99 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1aa9a47d-3fdc-4d06-ac85-6efde47c8d1d")
+	)
+	(junction
 		(at 144.78 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6490,6 +6714,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d42f17b-b68c-4795-b774-2ba40520b65f")
+	)
+	(junction
+		(at 184.15 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e2604e7-63a3-429a-a764-317bec5f8df6")
 	)
 	(junction
 		(at 99.06 232.41)
@@ -6979,6 +7209,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 208.28) (xy 175.26 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d57db4-94e0-4ec8-a3c1-7f41313098c0")
+	)
+	(wire
+		(pts
 			(xy 99.06 232.41) (xy 105.41 232.41)
 		)
 		(stroke
@@ -7089,7 +7329,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 279.4) (xy 25.4 278.13)
+			(xy 16.51 274.32) (xy 16.51 273.05)
 		)
 		(stroke
 			(width 0)
@@ -7139,7 +7379,7 @@
 	)
 	(polyline
 		(pts
-			(xy 161.29 214.63) (xy 161.29 240.03)
+			(xy 158.75 200.66) (xy 158.75 240.03)
 		)
 		(stroke
 			(width 0)
@@ -7799,7 +8039,7 @@
 	)
 	(polyline
 		(pts
-			(xy 161.29 214.63) (xy 203.2 214.63)
+			(xy 158.75 200.66) (xy 203.2 200.66)
 		)
 		(stroke
 			(width 0)
@@ -8136,6 +8376,16 @@
 			(type default)
 		)
 		(uuid "403899ef-aabe-4a0d-9611-069bb490575c")
+	)
+	(wire
+		(pts
+			(xy 182.88 210.82) (xy 187.96 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40bcf204-93cc-4742-b857-81a94505851a")
 	)
 	(wire
 		(pts
@@ -8537,6 +8787,16 @@
 		)
 		(uuid "55965a6b-b593-40d7-8b00-ea3cdf830856")
 	)
+	(wire
+		(pts
+			(xy 172.72 210.82) (xy 172.72 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55bed112-90dc-408b-be78-8bca6cb99bc8")
+	)
 	(polyline
 		(pts
 			(xy 186.69 12.7) (xy 186.69 15.24)
@@ -8596,6 +8856,16 @@
 			(type default)
 		)
 		(uuid "57f748cb-f752-4105-992c-e1cac8ee9932")
+	)
+	(wire
+		(pts
+			(xy 171.45 208.28) (xy 173.99 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58300615-3dfd-4520-9640-6052792e8047")
 	)
 	(polyline
 		(pts
@@ -8799,7 +9069,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 278.13) (xy 33.02 278.13)
+			(xy 16.51 273.05) (xy 24.13 273.05)
 		)
 		(stroke
 			(width 0)
@@ -9359,6 +9629,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 205.74) (xy 185.42 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a146f4c-862c-4731-89db-4967297dfcb9")
+	)
+	(wire
+		(pts
 			(xy 111.76 80.01) (xy 111.76 88.9)
 		)
 		(stroke
@@ -9787,6 +10067,16 @@
 		)
 		(uuid "8ec02a78-e143-4238-abba-7afe3f2eec36")
 	)
+	(wire
+		(pts
+			(xy 171.45 210.82) (xy 172.72 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f07e605-84a7-44e4-b1fb-04a24fdbea24")
+	)
 	(polyline
 		(pts
 			(xy 127 242.57) (xy 203.2 242.57)
@@ -9989,6 +10279,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 208.28) (xy 184.15 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e2edf6-3d8b-42bf-a9e6-660324666fb7")
+	)
+	(wire
+		(pts
 			(xy 139.7 49.53) (xy 144.78 49.53)
 		)
 		(stroke
@@ -10016,6 +10316,16 @@
 			(type default)
 		)
 		(uuid "99efcbfb-5da4-41c2-947e-bd9810b95958")
+	)
+	(wire
+		(pts
+			(xy 173.99 210.82) (xy 175.26 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a4c04fd-ba60-431b-a921-d638808e7460")
 	)
 	(wire
 		(pts
@@ -10606,6 +10916,16 @@
 			(type default)
 		)
 		(uuid "b374d3f2-6ac5-48d2-b4b6-d7815981d77f")
+	)
+	(wire
+		(pts
+			(xy 184.15 208.28) (xy 184.15 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b740e043-9809-4094-bf23-b4cca92bf11c")
 	)
 	(polyline
 		(pts
@@ -11287,6 +11607,16 @@
 		)
 		(uuid "dc1a3b5b-2054-4d68-b2f3-62d1cefa75f7")
 	)
+	(wire
+		(pts
+			(xy 173.99 208.28) (xy 173.99 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcbdfb40-4d95-4e6a-9270-75dee058c883")
+	)
 	(polyline
 		(pts
 			(xy 12.7 212.09) (xy 12.7 184.15)
@@ -11439,7 +11769,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 278.13) (xy 33.02 279.4)
+			(xy 24.13 273.05) (xy 24.13 274.32)
 		)
 		(stroke
 			(width 0)
@@ -11449,7 +11779,7 @@
 	)
 	(polyline
 		(pts
-			(xy 203.2 240.03) (xy 161.29 240.03)
+			(xy 203.2 240.03) (xy 158.75 240.03)
 		)
 		(stroke
 			(width 0)
@@ -11669,7 +11999,7 @@
 	)
 	(polyline
 		(pts
-			(xy 203.2 214.63) (xy 203.2 240.03)
+			(xy 203.2 200.66) (xy 203.2 240.03)
 		)
 		(stroke
 			(width 0)
@@ -11746,6 +12076,16 @@
 			(type default)
 		)
 		(uuid "f85a3fd2-0742-4a40-aba5-5cd96b814f83")
+	)
+	(wire
+		(pts
+			(xy 171.45 205.74) (xy 184.15 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8dd3da8-d1d8-448e-ad13-c857395c7e70")
 	)
 	(wire
 		(pts
@@ -12258,6 +12598,17 @@
 			(justify left bottom)
 		)
 		(uuid "b0081087-e03e-4feb-9aa7-624201e7ab09")
+	)
+	(label "D3"
+		(at 187.96 210.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7b54acb-a313-432a-84be-45c2ca15d11b")
 	)
 	(label "D13"
 		(at 107.95 121.92 0)
@@ -13204,6 +13555,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 29.21 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 29.21 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 29.21 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "259e0264-334e-4f9c-935f-6fe7d1619187")
 		)
@@ -13266,6 +13644,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0003"
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 101.6 77.47 0)
 			(effects
 				(font
@@ -13411,6 +13816,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 120.65 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 120.65 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7d5138c0-9336-4bca-b60d-dd676a2b7b94")
 		)
@@ -13481,6 +13913,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 64.77 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 64.77 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 64.77 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1874721c-b894-4b95-bc30-76fe3cf1a271")
 		)
@@ -13540,6 +13999,33 @@
 			)
 		)
 		(property "Description" "10K 1/4W 0.1%"
+			(at 134.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 134.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 134.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 134.62 44.45 0)
 			(effects
 				(font
@@ -13671,7 +14157,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "47K"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 152.4 91.44 0)
 			(effects
 				(font
@@ -13749,6 +14262,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 120.65 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 120.65 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7a387db9-e491-446c-a390-29f3e6729c07")
 		)
@@ -13769,7 +14309,7 @@
 		(at 149.86 52.07 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13812,6 +14352,33 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 149.86 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 149.86 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 149.86 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 149.86 52.07 0)
 			(effects
 				(font
@@ -13888,6 +14455,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 35.56 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 35.56 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 35.56 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed691ef8-6049-4b15-bc6e-7e36cc52a99e")
 		)
@@ -13905,7 +14499,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 33.02 279.4 0)
+		(at 24.13 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13913,7 +14507,7 @@
 		(dnp no)
 		(uuid "13d28f78-0486-4d31-af70-c0491262cfe7")
 		(property "Reference" "#PWR038"
-			(at 33.02 285.75 0)
+			(at 24.13 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13922,7 +14516,7 @@
 			)
 		)
 		(property "Value" "AGND"
-			(at 33.02 283.21 0)
+			(at 24.13 278.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13930,7 +14524,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 279.4 0)
+			(at 24.13 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13939,7 +14533,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 279.4 0)
+			(at 24.13 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13948,7 +14542,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 33.02 279.4 0)
+			(at 24.13 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14015,6 +14609,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0003"
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 101.6 59.69 0)
 			(effects
 				(font
@@ -14207,6 +14828,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 40.64 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 40.64 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 40.64 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3e6f72d5-6f85-4250-bd53-f58fa08933e8")
 		)
@@ -14315,7 +14963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 15.24 227.33 0)
 			(effects
 				(font
@@ -14334,6 +14982,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0002"
+			(at 15.24 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 15.24 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 15.24 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 15.24 227.33 0)
 			(effects
 				(font
@@ -14425,7 +15100,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 279.4 0)
+		(at 16.51 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14433,7 +15108,7 @@
 		(dnp no)
 		(uuid "214c3f9b-1a3f-4dba-a668-b6a6eccc8fbe")
 		(property "Reference" "#PWR037"
-			(at 25.4 285.75 0)
+			(at 16.51 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14442,7 +15117,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 283.21 0)
+			(at 16.51 278.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14450,7 +15125,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 279.4 0)
+			(at 16.51 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14459,7 +15134,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 279.4 0)
+			(at 16.51 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14468,7 +15143,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 279.4 0)
+			(at 16.51 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14531,7 +15206,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "4.7K"
+			(at 139.7 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 139.7 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 139.7 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 139.7 27.94 0)
 			(effects
 				(font
@@ -14609,6 +15311,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 120.65 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 120.65 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54cfe323-e0b1-4449-9415-024a76699aa7")
 		)
@@ -14669,6 +15398,33 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 31.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 31.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 31.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 31.75 38.1 0)
 			(effects
 				(font
@@ -14739,6 +15495,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0003"
+			(at 101.6 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 101.6 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 101.6 113.03 0)
 			(effects
 				(font
@@ -14833,6 +15616,106 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x03_1")
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 166.37 208.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27913a79-7cc9-45a6-b40d-be371136bba9")
+		(property "Reference" "J14"
+			(at 162.56 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "DS18B20"
+			(at 160.528 203.962 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0003_1x03_P2.54mm_Vertical"
+			(at 166.37 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Molex SL 171971-0003"
+			(at 166.37 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 166.37 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 166.37 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 166.37 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "808d6a51-0a5d-4c99-9de1-55793603f524")
+		)
+		(pin "2"
+			(uuid "5cf3fd8f-5c28-4ac5-bce8-8bff0a5b27dd")
+		)
+		(pin "3"
+			(uuid "84cffb5f-e0a9-4ae3-99ed-46e9399395d0")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 101.6 50.8 180)
 		(unit 1)
@@ -14887,6 +15770,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "babe904f-99fc-4938-9ff3-976542c62009")
 		)
@@ -14910,7 +15820,7 @@
 		(at 73.66 163.83 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "27bbd31a-52ff-4605-aac3-f62d7ec600c5")
@@ -14950,6 +15860,33 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 73.66 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 73.66 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 73.66 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 73.66 163.83 0)
 			(effects
 				(font
@@ -15018,7 +15955,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RFM12B"
+			(at 165.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 165.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 165.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 165.1 43.18 0)
 			(effects
 				(font
@@ -15131,6 +16095,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 85.09 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 85.09 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 85.09 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c991c5e5-d758-4095-bed2-a2dd29327fb5")
 		)
@@ -15193,6 +16184,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0003"
+			(at 101.6 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 101.6 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 101.6 95.25 0)
 			(effects
 				(font
@@ -15271,6 +16289,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 72.39 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 72.39 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 72.39 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0cdf8bf8-c31d-4273-8fda-1ff494750c31")
 		)
@@ -15341,6 +16386,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 24.13 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 24.13 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 24.13 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "32702d7e-c5a8-4cb5-a651-dfc59d069b0a")
 		)
@@ -15399,7 +16471,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "4.7K"
+			(at 134.62 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 134.62 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 134.62 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 134.62 27.94 0)
 			(effects
 				(font
@@ -15469,6 +16568,33 @@
 			)
 		)
 		(property "Description" "20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28"
+			(at 125.73 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 125.73 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 125.73 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 125.73 208.28 0)
 			(effects
 				(font
@@ -15692,6 +16818,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 181.61 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 181.61 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 181.61 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f8a35f28-f247-43df-8431-a54accadfdab")
 		)
@@ -15827,6 +16980,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1227ea42-8ec3-4a11-add5-94c18a1d704f")
 		)
@@ -15897,6 +17077,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 41.91 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 41.91 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 41.91 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "09e5febe-b907-436e-b614-a1588b98e343")
 		)
@@ -15955,7 +17162,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1M"
+			(at 147.32 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 147.32 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 147.32 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 147.32 86.36 0)
 			(effects
 				(font
@@ -16032,6 +17266,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 101.6 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 101.6 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5021336a-9ffa-45c4-af65-4504ddff956c")
 		)
@@ -16094,6 +17355,33 @@
 			)
 		)
 		(property "Description" "1K 1/4W 1%"
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 72.39 146.05 0)
 			(effects
 				(font
@@ -16237,6 +17525,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 190.5 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 190.5 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 190.5 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8e371a8f-e36f-4ae2-9097-dfc3f76f01fe")
 		)
@@ -16371,6 +17686,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 134.62 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 134.62 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 134.62 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66f4508d-78b0-4a81-bd25-ec8418d6f215")
 		)
@@ -16441,6 +17783,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 40.64 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 40.64 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 40.64 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0400558c-19c6-4e34-8b2d-80d408cb5cb2")
 		)
@@ -16503,6 +17872,33 @@
 			)
 		)
 		(property "Description" "150 1/2W 1%"
+			(at 24.13 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 24.13 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 24.13 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 24.13 170.18 0)
 			(effects
 				(font
@@ -16643,6 +18039,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 41.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 41.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 41.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "74503e59-a3c6-4d92-9ed9-fdb4846d8e7c")
 		)
@@ -16703,6 +18126,33 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 72.39 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 72.39 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 72.39 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 72.39 185.42 0)
 			(effects
 				(font
@@ -16846,6 +18296,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 64.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 64.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 64.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a02399f-665b-4592-be4d-6af1de932e99")
 		)
@@ -16907,6 +18384,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0002"
+			(at 120.65 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 120.65 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 120.65 53.34 0)
 			(effects
 				(font
@@ -16983,6 +18487,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 74.93 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 74.93 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 74.93 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "afb5fd3e-441a-4d38-bfdc-51a6cb039973")
 		)
@@ -17045,6 +18576,33 @@
 			)
 		)
 		(property "Description" "10K 1/4W 0.1%"
+			(at 124.46 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 124.46 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 124.46 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 124.46 157.48 0)
 			(effects
 				(font
@@ -17132,6 +18690,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 114.3 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 114.3 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 114.3 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "788db528-b188-4727-aff3-e10668b62062")
 		)
@@ -17191,6 +18776,33 @@
 			)
 		)
 		(property "Description" "22 pF x 100V"
+			(at 87.63 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 87.63 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 87.63 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 87.63 204.47 0)
 			(effects
 				(font
@@ -17266,6 +18878,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 33.02 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 33.02 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 33.02 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0b10bc57-a88e-40ac-a4e5-57ce3541eda1")
 		)
@@ -17325,6 +18964,33 @@
 			)
 		)
 		(property "Description" "10K 1/4W 0.1%"
+			(at 139.7 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 139.7 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 139.7 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 139.7 44.45 0)
 			(effects
 				(font
@@ -17467,6 +19133,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 120.65 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 120.65 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "657baff2-7618-46cb-a6a1-ddb9ad030fb9")
 		)
@@ -17536,6 +19229,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 120.65 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 120.65 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8aba1f6e-3739-4f15-abf6-0aafe00fd197")
 		)
@@ -17596,6 +19316,33 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 140.97 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 140.97 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 140.97 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 140.97 153.67 0)
 			(effects
 				(font
@@ -17691,6 +19438,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 101.6 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 101.6 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8d537e63-2770-494c-a65d-f80fba780801")
 		)
@@ -17753,6 +19527,33 @@
 			)
 		)
 		(property "Description" "15K 1/4W 5%"
+			(at 33.02 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 33.02 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 33.02 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 33.02 77.47 0)
 			(effects
 				(font
@@ -17829,6 +19630,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 132.08 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 132.08 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 132.08 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9479596b-c96f-44f5-85a8-5726990ac15c")
 		)
@@ -17896,6 +19724,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff1530b2-fa59-48ea-8054-fd0a485f4a03")
 		)
@@ -17938,7 +19793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 15.24 168.91 0)
 			(effects
 				(font
@@ -17957,6 +19812,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0002"
+			(at 15.24 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 15.24 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 15.24 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 15.24 168.91 0)
 			(effects
 				(font
@@ -18102,6 +19984,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0485dfce-4188-4e81-b391-e08ac0d5902c")
 		)
@@ -18112,6 +20021,71 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 172.72 212.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f1cef21-9831-4cfd-b43d-2bca51127e9d")
+		(property "Reference" "#PWR040"
+			(at 172.72 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 168.91 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf28cf6e-1d15-4c8b-bb52-d5aa8a4ad7bd")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -18161,6 +20135,33 @@
 			)
 		)
 		(property "Description" "1K 1/4W 1%"
+			(at 72.39 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 72.39 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 72.39 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 72.39 87.63 0)
 			(effects
 				(font
@@ -18239,6 +20240,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 101.6 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 101.6 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "91d3d7d8-cc29-4cc3-9735-db5186c7a64b")
 		)
@@ -18302,6 +20330,33 @@
 			)
 		)
 		(property "Description" "Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA"
+			(at 54.61 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 54.61 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 54.61 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 54.61 140.97 0)
 			(effects
 				(font
@@ -18645,6 +20700,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 33.02 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 33.02 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 33.02 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2fcfbd14-4da7-455f-8769-52d192e054dd")
 		)
@@ -18704,6 +20786,33 @@
 			)
 		)
 		(property "Description" "15K 1/4W 5%"
+			(at 33.02 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 33.02 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 33.02 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 33.02 116.84 0)
 			(effects
 				(font
@@ -18844,6 +20953,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 41.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 41.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 41.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "45b7d15e-de49-4439-8dff-5ae10b41753c")
 		)
@@ -18887,7 +21023,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "PCM_Capacitor_THT_AKL:CP_Radial_D6.3mm_P2.50mm"
 			(at 102.87 267.97 0)
 			(effects
 				(font
@@ -18924,6 +21060,33 @@
 			)
 		)
 		(property "Réf fab" "870575373001"
+			(at 102.87 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 102.87 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 102.87 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 102.87 257.81 0)
 			(effects
 				(font
@@ -19066,6 +21229,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 144.78 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 144.78 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 144.78 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6715edbe-7535-4807-91c6-2fde0eed1182")
 		)
@@ -19086,7 +21276,7 @@
 		(at 73.66 161.29 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "73a44130-4344-4a81-b4e4-ce5e493f83aa")
@@ -19126,6 +21316,33 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 73.66 161.29 0)
 			(effects
 				(font
@@ -19177,7 +21394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UserDef:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
 			(at 15.24 198.12 0)
 			(effects
 				(font
@@ -19196,6 +21413,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0002"
+			(at 15.24 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 15.24 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 15.24 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 15.24 198.12 0)
 			(effects
 				(font
@@ -19342,6 +21586,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 85.09 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 85.09 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 85.09 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f93492ff-862e-42e3-b057-af9da92b5b53")
 		)
@@ -19403,6 +21674,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0002"
+			(at 120.65 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 120.65 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 120.65 71.12 0)
 			(effects
 				(font
@@ -19479,6 +21777,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 64.77 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 64.77 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 64.77 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "41609e11-3310-4137-ad6d-2e3bff5580d5")
 		)
@@ -19539,6 +21864,33 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 31.75 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 31.75 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 31.75 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 31.75 48.26 0)
 			(effects
 				(font
@@ -19745,6 +22097,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 113.03 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 113.03 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 113.03 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "62e8c368-4aa3-4486-89b9-c54568641688")
 		)
@@ -19899,6 +22278,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 120.65 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 120.65 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "57696842-f4de-4f30-8853-260539fd15ec")
 		)
@@ -19969,6 +22375,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 101.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 101.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "55a513dc-7a44-4c33-a272-50241e5074fb")
 		)
@@ -19982,6 +22415,71 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 185.42 205.74 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "902fdaba-d555-48e5-a493-659033d6e46e")
+		(property "Reference" "#PWR039"
+			(at 181.61 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 190.5 205.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 185.42 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b9b3187-4a29-45c5-b953-a0263e5d22f0")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -20032,6 +22530,33 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 31.75 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 31.75 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 31.75 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 31.75 58.42 0)
 			(effects
 				(font
@@ -20155,6 +22680,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cf640078-f827-4f24-9bb3-a36e7866847f")
 		)
@@ -20214,6 +22766,33 @@
 			)
 		)
 		(property "Description" "1K 1/4W 1%"
+			(at 35.56 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 35.56 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 35.56 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 35.56 194.31 0)
 			(effects
 				(font
@@ -20337,6 +22916,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 66.04 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 66.04 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 66.04 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c3620872-ea5b-4a81-a1aa-820895e8d404")
 		)
@@ -20418,6 +23024,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 179.07 208.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9cfeac9f-c95d-4fdc-aafb-6e53a67d6b7f")
+		(property "Reference" "R6"
+			(at 179.07 201.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7K"
+			(at 179.07 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+			(at 179.07 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7K"
+			(at 179.07 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 179.07 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 179.07 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 179.07 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7396f653-b43e-49b8-8e8d-07245c3fbf52")
+		)
+		(pin "2"
+			(uuid "8dbe0eed-70f2-44d5-9a71-a5cd3e047274")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_Diode_TVS_AKL:BZW04-5V8")
 		(at 85.09 82.55 90)
 		(unit 1)
@@ -20464,6 +23165,33 @@
 			)
 		)
 		(property "Description" "DO-15 Unidirectional TVS diode, 5.8V, 400W, Alternate KiCAD Library"
+			(at 85.09 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 85.09 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 85.09 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 85.09 82.55 0)
 			(effects
 				(font
@@ -20607,6 +23335,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 189.23 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 189.23 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 189.23 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f7140435-572a-44f1-88a2-66027ddcd515")
 		)
@@ -20666,6 +23421,33 @@
 			)
 		)
 		(property "Description" "15K 1/4W 5%"
+			(at 41.91 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 41.91 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 41.91 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 41.91 146.05 0)
 			(effects
 				(font
@@ -20741,6 +23523,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 41.91 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 41.91 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 41.91 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b12ddd44-e2a9-4f04-be8d-61619068639d")
 		)
@@ -20802,6 +23611,33 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
+			(at 93.98 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 93.98 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 93.98 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 93.98 209.55 0)
 			(effects
 				(font
@@ -20945,6 +23781,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 85.09 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 85.09 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 85.09 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "026bdaa4-531c-4520-a651-668fa4b0b78f")
 		)
@@ -21079,6 +23942,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 41.91 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 41.91 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 41.91 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2baad999-44bc-47c2-a230-488af625b82d")
 		)
@@ -21149,6 +24039,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 64.77 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 64.77 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 64.77 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5faf7b05-8110-4109-b7f2-5ad6ab1ca0fd")
 		)
@@ -21169,7 +24086,7 @@
 		(at 138.43 163.83 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b1cbc48d-d4e2-41f2-816f-3da2cce8ef76")
@@ -21211,6 +24128,33 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
+			(at 138.43 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 138.43 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 138.43 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 138.43 163.83 0)
 			(effects
 				(font
@@ -21283,6 +24227,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 33.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 33.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 33.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0577a6c1-65db-4d01-83b0-24aeea05a59a")
 		)
@@ -21344,6 +24315,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0006"
+			(at 142.24 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 142.24 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 142.24 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 142.24 116.84 0)
 			(effects
 				(font
@@ -21424,6 +24422,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0003"
+			(at 101.6 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 101.6 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 101.6 33.02 0)
 			(effects
 				(font
@@ -21569,6 +24594,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 195.58 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 195.58 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 195.58 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a1affaeb-4a2e-4a82-b375-94676b9acb99")
 		)
@@ -21650,6 +24702,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 179.07 210.82 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7772c26-8e9e-4c9d-b5d4-1d9abda15a0c")
+		(property "Reference" "JP4"
+			(at 179.07 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TEMP"
+			(at 179.07 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 179.07 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 179.07 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 179.07 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 179.07 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 179.07 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c4c9705-60f6-47e2-aedb-01301bb08e32")
+		)
+		(pin "2"
+			(uuid "ee4929fe-52fa-4721-9995-2d677823f688")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "JP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "Conn_01x05_PWR_1")
 		(lib_id "UserDef:Conn_01x05_PWR")
 		(at 17.78 45.72 180)
@@ -21714,6 +24861,33 @@
 			)
 		)
 		(property "Sim.Params" "model=\"V 3 4 SINE(0 400 50 0 0 0 0)\nV 2 4 SINE(0 400 50 0 0 120 0)\nV 1 4 SINE(0 400 50 0 0 -120 0)\""
+			(at 17.78 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "3 voies"
+			(at 17.78 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 17.78 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 17.78 45.72 0)
 			(effects
 				(font
@@ -21798,6 +24972,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 35.56 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 35.56 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 35.56 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c7569a6b-8fb3-49e5-bbe1-cd40babbced8")
 		)
@@ -21868,6 +25069,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 24.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 24.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 24.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5a5a64ab-801d-4962-8169-3e6cb3a65ec2")
 		)
@@ -21888,7 +25116,7 @@
 		(at 144.78 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ca530949-b166-4ef5-a132-499a60cb6730")
@@ -21930,6 +25158,33 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
+			(at 144.78 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 144.78 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 144.78 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 144.78 138.43 0)
 			(effects
 				(font
@@ -21997,7 +25252,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SMA"
+			(at 181.61 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 181.61 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 181.61 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 181.61 29.21 0)
 			(effects
 				(font
@@ -22141,6 +25423,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 124.46 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 124.46 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 124.46 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "be1f8450-77ed-496d-8191-eb91c947e77c")
 		)
@@ -22201,6 +25510,33 @@
 			)
 		)
 		(property "Description" "Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA"
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 54.61 111.76 0)
 			(effects
 				(font
@@ -22284,6 +25620,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 120.65 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 120.65 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b2143cf-8e80-475f-acc5-91464bd03175")
 		)
@@ -22345,6 +25708,33 @@
 			)
 		)
 		(property "Description" "RN114-0.3-02-47M / RN214-0.3-02-47M"
+			(at 43.18 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 43.18 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 43.18 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 43.18 257.81 0)
 			(effects
 				(font
@@ -22422,6 +25812,33 @@
 			)
 		)
 		(property "Description" "Programmable Resolution 1-Wire Digital Thermometer TO-92"
+			(at 177.8 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 177.8 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 177.8 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 177.8 227.33 0)
 			(effects
 				(font
@@ -22567,6 +25984,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 139.7 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 139.7 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
+			(at 139.7 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "46ba7899-9d86-4825-aef6-a50c5f69fcd1")
 		)
@@ -22646,6 +26090,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 101.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 101.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 101.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0e98ffd8-e378-48be-8419-84ac419b1278")
 		)
@@ -22708,6 +26179,33 @@
 			)
 		)
 		(property "Description" "22 pF x 100V"
+			(at 87.63 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 87.63 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 87.63 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 87.63 214.63 0)
 			(effects
 				(font
@@ -22916,6 +26414,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 40.64 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 40.64 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 40.64 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0288772a-0d3d-4327-b1ba-3c53ee49f5d9")
 		)
@@ -23043,6 +26568,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0004"
+			(at 63.5 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 63.5 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 63.5 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 63.5 166.37 0)
 			(effects
 				(font
@@ -23190,6 +26742,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 54.61 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 54.61 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 54.61 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ce245170-e387-4202-b141-9972d9455028")
 		)
@@ -23260,6 +26839,33 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 140.97 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 140.97 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 140.97 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 140.97 153.67 0)
 			(effects
 				(font
@@ -23413,6 +27019,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0002"
+			(at 120.65 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 120.65 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 120.65 124.46 0)
 			(effects
 				(font
@@ -23623,6 +27256,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" ""
+			(at 40.64 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 40.64 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 40.64 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d21e9389-87e7-4ce9-9b78-aba156ad9e16")
 		)
@@ -23747,6 +27407,33 @@
 			)
 		)
 		(property "Description" "15K 1/4W 5%"
+			(at 33.02 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 33.02 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 33.02 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 33.02 87.63 0)
 			(effects
 				(font
@@ -23892,6 +27579,33 @@
 				(hide yes)
 			)
 		)
+		(property "Monophasé" "X"
+			(at 95.25 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 95.25 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 95.25 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b2fdcee2-33ea-4cfc-b122-3e21c898dc66")
 		)
@@ -23950,7 +27664,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "4.7K"
+			(at 144.78 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" ""
+			(at 144.78 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "X"
+			(at 144.78 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" ""
 			(at 144.78 27.94 0)
 			(effects
 				(font
@@ -24086,6 +27827,33 @@
 			)
 		)
 		(property "Description" "Molex SL 171971-0002"
+			(at 120.65 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 120.65 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 120.65 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 120.65 26.67 0)
 			(effects
 				(font
@@ -24334,6 +28102,33 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 71.12 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 71.12 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 71.12 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
