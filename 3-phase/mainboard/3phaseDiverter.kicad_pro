@@ -734,7 +734,7 @@
       },
       {
         "netclass": "ANT",
-        "pattern": "Net-(CN9-Pad1)"
+        "pattern": "Net-(CN1-Pad1)"
       },
       {
         "netclass": "Gnd",
@@ -754,14 +754,14 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "3phaseDiverter-rounded.step",
+      "step": "3phaseDiverter.step",
       "svg": "",
       "vrml": "3phaseDiverter-rounded.wrl"
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 39,
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
