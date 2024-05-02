@@ -5724,7 +5724,7 @@
 				)
 			)
 		)
-		(symbol "UserDef:RFM12B"
+		(symbol "UserDef:RFM12B/RFM69CW"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5737,7 +5737,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "RFM12B"
+			(property "Value" "RFM12B/RFM69CW"
 				(at 0 6.35 0)
 				(effects
 					(font
@@ -5781,7 +5781,7 @@
 					)
 				)
 			)
-			(symbol "RFM12B_1_0"
+			(symbol "RFM12B/RFM69CW_1_0"
 				(polyline
 					(pts
 						(xy -12.7 -15.24) (xy -12.7 20.32)
@@ -5830,8 +5830,8 @@
 						(type none)
 					)
 				)
-				(text "RFM12B"
-					(at 0 10.16 0)
+				(text "RFM12B/RFM69CW"
+					(at 0 12.446 0)
 					(effects
 						(font
 							(size 1.778 1.5113)
@@ -16374,7 +16374,7 @@
 		)
 	)
 	(symbol
-		(lib_id "UserDef:RFM12B")
+		(lib_id "UserDef:RFM12B/RFM69CW")
 		(at 173.99 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16391,7 +16391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "RFM12B"
+		(property "Value" "RFM12B/RFM69CW"
 			(at 173.99 36.83 0)
 			(effects
 				(font
@@ -16400,7 +16400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UserDef:RFM12B"
+		(property "Footprint" "UserDef:RFM12B_RFM69CW"
 			(at 173.99 50.8 0)
 			(effects
 				(font
