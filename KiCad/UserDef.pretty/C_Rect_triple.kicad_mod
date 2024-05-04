@@ -1,0 +1,339 @@
+(footprint "C_Rect_triple"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "https://www.tme.eu/en/Document/3b48dbe2b9714a62652c97b08fcd464b/PTF78.pdf")
+	(tags "Fuseholder horizontal open 5x20 Stelvio-Kontek PTF/78")
+	(property "Reference" "REF**"
+		(at 9.65 -6 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0894d839-9b59-42f4-8711-51cec1208553")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "C_Rect_triple"
+		(at 11.4 6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "65aecfdf-33e8-42c3-b82a-20ed8ed2fecc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -1.6 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8dd5d121-d9f5-4dd6-aa02-0f793c7a63ae")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -1.6 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fd284a00-f300-4380-aeb8-10670f3555fd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -1.6 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d9968c2-6ffc-42dc-9e5f-1f4ec37a9934")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.02 -5.82)
+		(end -2.02 5.92)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "35cf8c19-a3bd-494d-8d5c-e5450aada4fd")
+	)
+	(fp_line
+		(start -2.02 -5.82)
+		(end 24.72 -5.82)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0352d555-e81f-4c72-8161-dc539296b0c3")
+	)
+	(fp_line
+		(start -2.02 5.92)
+		(end 24.72 5.92)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b9f74ce5-0e40-4942-b43c-d227657c6df3")
+	)
+	(fp_line
+		(start 6.23 -2.57)
+		(end 6.23 2.67)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9f7e0fae-de6e-46bd-acc4-048ef1d57150")
+	)
+	(fp_line
+		(start 6.23 -2.57)
+		(end 16.47 -2.57)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "35f597fc-3f33-4d3f-82d0-00c73416aa18")
+	)
+	(fp_line
+		(start 6.23 2.67)
+		(end 16.47 2.67)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "966a40c1-e1df-4253-b4fd-10e303657694")
+	)
+	(fp_line
+		(start 16.47 -2.57)
+		(end 16.47 2.67)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "65673c43-3625-47d4-b2a0-71324acb7438")
+	)
+	(fp_line
+		(start 24.72 -5.82)
+		(end 24.72 5.92)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cf3d66f9-262a-4492-bc69-152fbc8bb384")
+	)
+	(fp_line
+		(start -2.15 -5.95)
+		(end -2.15 6.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e6949c48-4efa-4241-882e-79513e2bee12")
+	)
+	(fp_line
+		(start -2.15 6.05)
+		(end 24.85 6.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fc01a1f6-1f0c-4e2b-8820-1b26ed2a1d89")
+	)
+	(fp_line
+		(start 24.85 -5.95)
+		(end -2.15 -5.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "24cd5980-6de2-4ccb-9ddd-b27557bd58c4")
+	)
+	(fp_line
+		(start 24.85 6.05)
+		(end 24.85 -5.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4411fb0c-b193-4cbc-baac-36282d5651cd")
+	)
+	(fp_line
+		(start -1.9 -5.7)
+		(end -1.9 5.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cbe605b7-97e4-4300-9768-fb2cad32afed")
+	)
+	(fp_line
+		(start -1.9 5.8)
+		(end 24.6 5.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "45a89b87-dbbf-4191-9d6f-5e0fb6ba1d95")
+	)
+	(fp_line
+		(start 6.35 -2.45)
+		(end 6.35 2.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "24fd43b9-bb71-46ec-ba4e-4eb98299be5f")
+	)
+	(fp_line
+		(start 6.35 2.55)
+		(end 16.35 2.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a26a6030-a34a-4753-a218-4860209a5516")
+	)
+	(fp_line
+		(start 16.35 -2.45)
+		(end 6.35 -2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3f5e11f9-6e9c-49b1-a287-fa509050b434")
+	)
+	(fp_line
+		(start 16.35 2.55)
+		(end 16.35 -2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5ebe42bf-ca9e-42fd-8201-43a845ca48e3")
+	)
+	(fp_line
+		(start 24.6 -5.7)
+		(end -1.9 -5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1227c5bf-b1f1-4452-bc2f-4cbbeadc9498")
+	)
+	(fp_line
+		(start 24.6 5.8)
+		(end 24.6 -5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a79f3090-3e5a-4e4a-bd08-2f31e2104941")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 11.35 0.05 0)
+		(layer "F.Fab")
+		(uuid "f0d93b14-66a9-4d98-a91f-c903430c209f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0.1 0.05)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3b29ffde-bdc1-47bf-b1bf-9b36a403be1d")
+	)
+	(pad "1" thru_hole circle
+		(at 7.6 0.05)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6597df10-6137-462e-8947-851ed91c961f")
+	)
+	(pad "1" thru_hole circle
+		(at 8.85 0.05)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "643a2a36-d1ed-45a1-bbde-67ee4ce1becd")
+	)
+	(pad "2" thru_hole circle
+		(at 13.85 0.05)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "477de7cd-0c5d-4bc7-b248-0f6df499ae84")
+	)
+	(pad "2" thru_hole circle
+		(at 15.1 0.05)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "01ea0099-4d7f-4ad9-9884-3868269cf890")
+	)
+	(pad "2" thru_hole circle
+		(at 22.6 0.05)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2c636c92-8410-4d72-9fe4-39c330201074")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L26.5mm_W11.5mm_P22.50mm_MKS4.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
