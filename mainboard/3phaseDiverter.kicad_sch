@@ -25354,7 +25354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "AVCC"
 			(at 134.62 142.24 90)
 			(effects
 				(font
@@ -28825,7 +28825,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 127 167.64 0)
 			(effects
 				(font
