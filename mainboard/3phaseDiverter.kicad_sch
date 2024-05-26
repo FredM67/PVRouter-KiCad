@@ -29750,6 +29750,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "edf9b5ff-22a9-452e-8cf7-c2a01213987e")
 		(property "Reference" "#PWR036"
 			(at 207.01 166.37 0)
@@ -29760,12 +29761,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 215.9 166.37 90)
+		(property "Value" "AVCC"
+			(at 214.63 166.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -30933,7 +30935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 214.63 168.9099 90)
 			(effects
 				(font
