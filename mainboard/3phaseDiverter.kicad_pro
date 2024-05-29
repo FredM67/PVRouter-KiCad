@@ -743,6 +743,26 @@
       {
         "netclass": "Power",
         "pattern": "VCC"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(GDT1-Pad1)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(GDT2-Pad1)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(GDT3-Pad1)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(GDT0-Pad1)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(PWR1-N)"
       }
     ]
   },

@@ -378,7 +378,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "5d2f4341-9b38-4c17-b934-bf0efd1a4c1a")
 	)
-	(model "D:/Git/IoT/PVRouter-KiCad/KiCad/3dmodels/LD10-23B05R2.step"
+	(model "../3dmodels/LD10-23B05R2.step"
 		(offset
 			(xyz 0 0 0)
 		)

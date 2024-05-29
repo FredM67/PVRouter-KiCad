@@ -620,7 +620,7 @@
 				(pin power_out line
 					(at -5.08 5.08 0)
 					(length 3.81)
-					(name "L3"
+					(name "PE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -638,7 +638,7 @@
 				(pin power_out line
 					(at -5.08 2.54 0)
 					(length 3.81)
-					(name "L2"
+					(name "N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -674,7 +674,7 @@
 				(pin power_out line
 					(at -5.08 -2.54 0)
 					(length 3.81)
-					(name "N"
+					(name "L2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -692,7 +692,7 @@
 				(pin passive line
 					(at -5.08 -5.08 0)
 					(length 3.81)
-					(name "PE"
+					(name "L3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1963,6 +1963,127 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
 					(name "2"
 						(effects
 							(font
@@ -4211,7 +4332,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_DIP:DIP-28_W7.62mm"
+			(property "Footprint" "Package_DIP:DIP-28_W7.62mm_LongPads"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4231,6 +4352,33 @@
 				)
 			)
 			(property "Description" "20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Monophasé" "X"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Option" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Triphasé" "X"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4523,7 +4671,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -20.32 -24.13 0)
 					(length 2.54)
 					(name "AGND"
@@ -8039,16 +8187,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 134.62) (xy 215.9 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05fc0b46-e1cb-4e26-93af-2dabd2682c7b")
-	)
-	(wire
-		(pts
 			(xy 134.62 124.46) (xy 134.62 127)
 		)
 		(stroke
@@ -9799,6 +9937,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 128.27) (xy 181.61 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bacfa69-2073-44c0-90b1-3fceebb48b12")
+	)
+	(wire
+		(pts
 			(xy 152.4 254) (xy 156.21 254)
 		)
 		(stroke
@@ -9936,16 +10084,6 @@
 			(type default)
 		)
 		(uuid "60126cef-4d69-4eb8-be6d-818efeae284d")
-	)
-	(wire
-		(pts
-			(xy 215.9 133.35) (xy 223.52 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "609dd8ff-06c1-45b9-abdf-9e7f8d6ffb23")
 	)
 	(wire
 		(pts
@@ -10236,6 +10374,16 @@
 			(type default)
 		)
 		(uuid "6b11b037-3e35-4719-a73b-7b4d6e507f65")
+	)
+	(wire
+		(pts
+			(xy 187.96 128.27) (xy 187.96 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b40367a-a691-4102-90b2-001a46ee6bb6")
 	)
 	(wire
 		(pts
@@ -12199,6 +12347,26 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 129.54) (xy 180.34 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2a648ce-d626-4b8d-b9d8-f788f3a9090d")
+	)
+	(wire
+		(pts
+			(xy 186.69 128.27) (xy 187.96 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c503f3fa-4fd5-481a-b6c8-2a91f20fc905")
+	)
+	(wire
+		(pts
 			(xy 109.22 246.38) (xy 100.33 246.38)
 		)
 		(stroke
@@ -12836,16 +13004,6 @@
 			(type default)
 		)
 		(uuid "e7ffeaa8-dfe4-4f33-becd-9ee3dc13c59f")
-	)
-	(wire
-		(pts
-			(xy 223.52 133.35) (xy 223.52 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8697a66-c4fb-45f5-9477-a5b3a7b73a23")
 	)
 	(polyline
 		(pts
@@ -13635,6 +13793,16 @@
 		)
 		(uuid "7562ce91-6932-4d81-a506-f13019c53de6")
 	)
+	(label "unconnected-(RF1-DI05{slash}CLK-PadCLK)_0"
+		(at 191.77 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "75ad895e-e2d9-4c31-b501-5bc4f5589f56")
+	)
 	(label "DS18B20"
 		(at 168.91 143.51 0)
 		(fields_autoplaced yes)
@@ -13689,6 +13857,16 @@
 			(justify left bottom)
 		)
 		(uuid "953b2422-2c95-4fbd-91e3-bf0f699014dc")
+	)
+	(label "unconnected-(RF1-DI03{slash}NINT-PadNINT)_0"
+		(at 191.77 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "96d6d275-ca20-4879-ab7c-b5e82aa36ab8")
 	)
 	(label "DTR"
 		(at 187.96 182.88 0)
@@ -13745,6 +13923,16 @@
 		)
 		(uuid "b0081087-e03e-4feb-9aa7-624201e7ab09")
 	)
+	(label "unconnected-(RF1-DI01{slash}FFIT-PadFFIT)_0"
+		(at 191.77 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4d02b34-4553-4860-aed3-e1fe548cb804")
+	)
 	(label "D3"
 		(at 198.12 250.19 0)
 		(fields_autoplaced yes)
@@ -13766,6 +13954,16 @@
 			(justify left bottom)
 		)
 		(uuid "b93ac64c-ef76-40f3-ade4-b2fd9de0dc48")
+	)
+	(label "unconnected-(RF1-PadRST)_0"
+		(at 181.61 60.96 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c4881649-a5f5-4ea4-9b38-2520783d30a2")
 	)
 	(label "D13"
 		(at 130.81 121.92 0)
@@ -15900,16 +16098,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 223.52 134.62 0)
+		(lib_id "power:GND")
+		(at 180.34 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "13d28f78-0486-4d31-af70-c0491262cfe7")
-		(property "Reference" "#PWR038"
-			(at 223.52 140.97 0)
+		(uuid "13dc6c09-39ba-4af0-b1a7-fe8d59b85699")
+		(property "Reference" "#PWR049"
+			(at 180.34 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15917,8 +16115,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
-			(at 223.52 138.43 0)
+		(property "Value" "GND"
+			(at 180.34 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15926,7 +16124,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 134.62 0)
+			(at 180.34 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15935,7 +16133,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 134.62 0)
+			(at 180.34 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15943,8 +16141,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 223.52 134.62 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 180.34 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15953,12 +16151,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0d5bbd12-5d55-47e7-9f0f-a84147a4517c")
+			(uuid "d4b7660a-4d92-415f-ae5b-48b129b4443d")
 		)
 		(instances
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR038")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -16420,71 +16618,6 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 215.9 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "214c3f9b-1a3f-4dba-a668-b6a6eccc8fbe")
-		(property "Reference" "#PWR037"
-			(at 215.9 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 215.9 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "32b47e68-7fc8-471b-a046-47a12beae000")
-		)
-		(instances
-			(project "3phaseDiverter"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -17432,6 +17565,74 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "RF1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 184.15 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ba99383-5649-4848-bd88-1bfc773d0a6a")
+		(property "Reference" "NT40"
+			(at 184.15 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 184.15 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 184.15 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cd6d1eb-e895-4acf-8752-d5737efd7f8c")
+		)
+		(pin "2"
+			(uuid "79cd6c3c-eb2d-4612-911f-8f269eaf0bc9")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "NT40")
 					(unit 1)
 				)
 			)
@@ -18445,7 +18646,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 41.91 150.368 90)
 			(effects
 				(font
@@ -19542,7 +19743,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 41.91 121.158 90)
 			(effects
 				(font
@@ -19700,6 +19901,71 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4701bdfd-7dad-4465-bd45-133c88574078")
+		(property "Reference" "#PWR050"
+			(at 187.96 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "AGND"
+			(at 187.96 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 187.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "337ab09a-b889-4528-b101-4db2125af3bc")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -20617,7 +20883,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 33.02 189.738 90)
 			(effects
 				(font
@@ -21532,7 +21798,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 33.02 121.158 90)
 			(effects
 				(font
@@ -22768,7 +23034,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 33.02 179.578 90)
 			(effects
 				(font
@@ -22862,7 +23128,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 33.02 160.528 90)
 			(effects
 				(font
@@ -23021,7 +23287,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 41.91 131.318 90)
 			(effects
 				(font
@@ -25845,7 +26111,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 41.91 189.738 90)
 			(effects
 				(font
@@ -25939,7 +26205,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 41.91 179.578 90)
 			(effects
 				(font
@@ -26358,7 +26624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 41.91 160.528 90)
 			(effects
 				(font
@@ -26616,7 +26882,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 33.02 150.368 90)
 			(effects
 				(font
@@ -27216,16 +27482,16 @@
 	(symbol
 		(lib_name "Conn_01x05_PWR_1")
 		(lib_id "UserDef:Conn_01x05_PWR")
-		(at 17.78 46.99 180)
+		(at 17.78 46.99 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c7a8c2d3-1196-4fe1-9cb7-343911fa24a5")
 		(property "Reference" "PWR1"
-			(at 17.145 35.56 0)
+			(at 17.145 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27233,7 +27499,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_PWR"
-			(at 17.145 38.1 0)
+			(at 17.145 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30454,7 +30720,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 33.02 131.318 90)
 			(effects
 				(font
