@@ -617,10 +617,10 @@
 						(type background)
 					)
 				)
-				(pin power_out line
-					(at -5.08 5.08 0)
+				(pin passive line
+					(at -5.08 -5.08 0)
 					(length 3.81)
-					(name "PE"
+					(name "L3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -636,9 +636,9 @@
 					)
 				)
 				(pin power_out line
-					(at -5.08 2.54 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
-					(name "N"
+					(name "L2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -672,9 +672,9 @@
 					)
 				)
 				(pin power_out line
-					(at -5.08 -2.54 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
-					(name "L2"
+					(name "N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -689,10 +689,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -5.08 -5.08 0)
+				(pin power_out line
+					(at -5.08 5.08 0)
 					(length 3.81)
-					(name "L3"
+					(name "PE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7456,6 +7456,12 @@
 		(uuid "00bd9f40-bdae-42ee-811e-15b400d80fa2")
 	)
 	(junction
+		(at 72.39 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02317dfd-8f62-4b71-b38e-ed936df8ead7")
+	)
+	(junction
 		(at 228.6 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7522,12 +7528,6 @@
 		(uuid "133aba9a-516b-4517-8ac5-a42a4b511ee0")
 	)
 	(junction
-		(at 87.63 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "143f40de-b08f-4a94-b6d0-99f3a6e67f35")
-	)
-	(junction
 		(at 62.23 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7576,22 +7576,10 @@
 		(uuid "221b0439-6686-4b43-930b-0736df9359e9")
 	)
 	(junction
-		(at 53.34 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2832a669-99c4-4249-95c7-907dc2975bc0")
-	)
-	(junction
 		(at 24.13 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "300f5a23-f690-429c-adc1-916fb42ba9b2")
-	)
-	(junction
-		(at 72.39 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "304ccd2a-57c3-49b0-88e3-477c3f5c9887")
 	)
 	(junction
 		(at 110.49 276.86)
@@ -7714,16 +7702,22 @@
 		(uuid "665760fc-c76e-42b7-89cd-9db07b382f42")
 	)
 	(junction
-		(at 83.82 36.83)
+		(at 68.58 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6b4044b2-68ec-40a8-b636-4e1dd2ae1744")
+		(uuid "69223ab3-f55b-47e9-8fd4-01352ca8d6fc")
 	)
 	(junction
 		(at 24.13 207.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6cf819f0-1ae9-423a-a80c-997b61795219")
+	)
+	(junction
+		(at 57.15 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71ec1908-b92b-464c-ad87-498dc29377c7")
 	)
 	(junction
 		(at 134.62 97.79)
@@ -7816,12 +7810,6 @@
 		(uuid "a60a8eda-ed4c-486d-8bbd-95a4a5006a34")
 	)
 	(junction
-		(at 68.58 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a77f6072-cc48-4e0b-85cd-d464e20a0b37")
-	)
-	(junction
 		(at 45.72 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7876,6 +7864,12 @@
 		(uuid "befdd1d4-2fb4-4233-96bf-86b8e0873c65")
 	)
 	(junction
+		(at 87.63 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfddcf1a-422a-4eda-b54b-f960c8a8d209")
+	)
+	(junction
 		(at 72.39 17.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7924,6 +7918,12 @@
 		(uuid "d081bdd8-d0c0-4db0-be0d-161fa206e22c")
 	)
 	(junction
+		(at 83.82 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d17a8b73-3bd8-4cb9-a2e4-ac39a2e21385")
+	)
+	(junction
 		(at 62.23 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7960,6 +7960,12 @@
 		(uuid "eb0655e7-f9f9-4cee-9643-feb0c1d81034")
 	)
 	(junction
+		(at 53.34 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec92f1e6-f44e-4413-ab9f-28a4f136bb66")
+	)
+	(junction
 		(at 71.12 276.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7976,12 +7982,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f233b5a9-665f-4dd6-9851-e947cd87d6f2")
-	)
-	(junction
-		(at 57.15 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f35ac4ed-7de4-40db-817d-3a44b4958ada")
 	)
 	(junction
 		(at 135.89 48.26)
@@ -8154,16 +8154,6 @@
 			(type default)
 		)
 		(uuid "0498f940-c5b6-43ee-905f-c287ff3e4001")
-	)
-	(wire
-		(pts
-			(xy 87.63 67.31) (xy 101.6 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "049cef90-4396-474d-8fce-c89ea1ba4c4f")
 	)
 	(wire
 		(pts
@@ -8427,16 +8417,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 57.15) (xy 72.39 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1545867f-76ee-46d5-ac39-a6001a377519")
-	)
-	(wire
-		(pts
 			(xy 179.07 77.47) (xy 179.07 80.01)
 		)
 		(stroke
@@ -8664,16 +8644,6 @@
 			(type default)
 		)
 		(uuid "231415e6-fcb0-420b-ac3e-b34360b20863")
-	)
-	(wire
-		(pts
-			(xy 57.15 35.56) (xy 57.15 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2356767e-b1ee-431b-8fe8-9943292d7220")
 	)
 	(wire
 		(pts
@@ -9117,6 +9087,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 35.56) (xy 72.39 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bae6fef-040e-479e-a837-61ea2ed25db5")
+	)
+	(wire
+		(pts
 			(xy 176.53 62.23) (xy 173.99 62.23)
 		)
 		(stroke
@@ -9124,16 +9104,6 @@
 			(type default)
 		)
 		(uuid "3bce980e-8dc6-495d-ab4f-2c3904e77b72")
-	)
-	(wire
-		(pts
-			(xy 83.82 36.83) (xy 101.6 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3beb2c79-64c5-4574-9458-a01f4fb7185e")
 	)
 	(wire
 		(pts
@@ -9194,16 +9164,6 @@
 			(type default)
 		)
 		(uuid "3e6b24bc-1b39-48df-93c9-7bfb57778529")
-	)
-	(wire
-		(pts
-			(xy 83.82 67.31) (xy 87.63 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ec7c24f-e57f-4240-9bba-a96783b52cd6")
 	)
 	(polyline
 		(pts
@@ -9857,6 +9817,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 35.56) (xy 87.63 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f059b8-e086-40db-9051-2fb287f57831")
+	)
+	(wire
+		(pts
 			(xy 62.23 187.96) (xy 72.39 187.96)
 		)
 		(stroke
@@ -9904,6 +9874,16 @@
 			(type default)
 		)
 		(uuid "59d8cfcf-147c-48af-a9ec-7be8738bf089")
+	)
+	(wire
+		(pts
+			(xy 83.82 67.31) (xy 87.63 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59d98719-cbe8-44cd-a5b1-998ed1905310")
 	)
 	(polyline
 		(pts
@@ -10427,13 +10407,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 46.99) (xy 101.6 46.99)
+			(xy 53.34 46.99) (xy 57.15 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d7b1dc6-7a91-481e-9eb5-6df1b3c2185d")
+		(uuid "6d83c955-d044-4d3f-9ea6-2fc760581300")
 	)
 	(wire
 		(pts
@@ -10444,6 +10424,16 @@
 			(type default)
 		)
 		(uuid "6dac88a2-79f8-4205-8e08-53deb40ed043")
+	)
+	(wire
+		(pts
+			(xy 87.63 67.31) (xy 101.6 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6df49142-0b34-437b-aa2b-9f87e4c64d59")
 	)
 	(wire
 		(pts
@@ -10464,6 +10454,16 @@
 			(type default)
 		)
 		(uuid "6e6ae153-c46a-4820-8f7a-84bb3aacae42")
+	)
+	(wire
+		(pts
+			(xy 68.58 57.15) (xy 72.39 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f885119-924b-4298-a510-8e563704bc80")
 	)
 	(wire
 		(pts
@@ -10584,6 +10584,16 @@
 			(type default)
 		)
 		(uuid "73505136-a6c2-4e46-bd3b-986b542f5f1d")
+	)
+	(wire
+		(pts
+			(xy 57.15 35.56) (xy 57.15 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73a22b0a-dd05-4ae7-aeaf-2af49736551b")
 	)
 	(wire
 		(pts
@@ -11027,16 +11037,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 57.15) (xy 101.6 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "880ca6d9-d282-4bd7-8bab-2b9de88ab0c1")
-	)
-	(wire
-		(pts
 			(xy 80.01 240.03) (xy 81.28 240.03)
 		)
 		(stroke
@@ -11184,6 +11184,16 @@
 			(type default)
 		)
 		(uuid "8f07e605-84a7-44e4-b1fb-04a24fdbea24")
+	)
+	(wire
+		(pts
+			(xy 57.15 46.99) (xy 101.6 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f304021-e0e8-43ab-8114-bf13276416ec")
 	)
 	(polyline
 		(pts
@@ -11577,16 +11587,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 35.56) (xy 87.63 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e704070-c22a-4fa4-8896-8fbd570d5f49")
-	)
-	(wire
-		(pts
 			(xy 152.4 248.92) (xy 156.21 248.92)
 		)
 		(stroke
@@ -11714,6 +11714,16 @@
 			(type default)
 		)
 		(uuid "a51aaf1d-497d-4c9c-81dc-1e334c6800ae")
+	)
+	(wire
+		(pts
+			(xy 72.39 57.15) (xy 101.6 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5dde438-e686-4326-b14e-339d90738bc7")
 	)
 	(wire
 		(pts
@@ -12657,16 +12667,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 35.56) (xy 72.39 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4597ec5-9011-499d-95d6-7ab9f3f6bd03")
-	)
-	(wire
-		(pts
 			(xy 386.08 127) (xy 386.08 128.27)
 		)
 		(stroke
@@ -12814,16 +12814,6 @@
 			(type default)
 		)
 		(uuid "dcf15de0-f881-4cd8-922f-e47c080247ff")
-	)
-	(wire
-		(pts
-			(xy 53.34 46.99) (xy 57.15 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd5a2fa5-7722-4cb5-98e4-16e80dbe4ef1")
 	)
 	(wire
 		(pts
@@ -13375,6 +13365,16 @@
 		)
 		(uuid "fa4c3086-8d91-477e-a5f7-f11513a926e0")
 	)
+	(wire
+		(pts
+			(xy 83.82 36.83) (xy 101.6 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faa4029f-172a-463c-9156-251f09026876")
+	)
 	(polyline
 		(pts
 			(xy 402.59 133.35) (xy 326.39 133.35)
@@ -13795,6 +13795,7 @@
 	)
 	(label "unconnected-(RF1-DI05{slash}CLK-PadCLK)_0"
 		(at 191.77 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13860,6 +13861,7 @@
 	)
 	(label "unconnected-(RF1-DI03{slash}NINT-PadNINT)_0"
 		(at 191.77 43.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13925,6 +13927,7 @@
 	)
 	(label "unconnected-(RF1-DI01{slash}FFIT-PadFFIT)_0"
 		(at 191.77 38.1 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13957,6 +13960,7 @@
 	)
 	(label "unconnected-(RF1-PadRST)_0"
 		(at 181.61 60.96 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15408,7 +15412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "75 1/4W 1% 100 PPM/C"
+		(property "Description" "75 1/4W 0.1% 100 PPM/C"
 			(at 62.23 182.88 0)
 			(effects
 				(font
@@ -15577,7 +15581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" "X"
+		(property "Monophasé" ""
 			(at 67.31 148.59 0)
 			(effects
 				(font
@@ -16772,7 +16776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" "X"
+		(property "Monophasé" ""
 			(at 67.31 177.8 0)
 			(effects
 				(font
@@ -16867,7 +16871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" ""
+		(property "Monophasé" "X"
 			(at 31.75 46.99 0)
 			(effects
 				(font
@@ -17580,7 +17584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ba99383-5649-4848-bd88-1bfc773d0a6a")
-		(property "Reference" "NT40"
+		(property "Reference" "NT0"
 			(at 184.15 123.19 0)
 			(effects
 				(font
@@ -17596,7 +17600,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_THT_Pad1.0mm"
 			(at 184.15 128.27 0)
 			(effects
 				(font
@@ -17632,7 +17636,7 @@
 		(instances
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "NT40")
+					(reference "NT0")
 					(unit 1)
 				)
 			)
@@ -17879,7 +17883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150 1/2W 1%"
+		(property "Description" "150 1/2W 0.1%"
 			(at 24.13 241.3 0)
 			(effects
 				(font
@@ -18226,7 +18230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" ""
+		(property "Monophasé" "X"
 			(at 381 121.92 0)
 			(effects
 				(font
@@ -18235,7 +18239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Option" "X"
+		(property "Option" ""
 			(at 381 121.92 0)
 			(effects
 				(font
@@ -18664,7 +18668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 41.91 148.59 0)
 			(effects
 				(font
@@ -18855,7 +18859,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
+		(property "Description" "2093-300-SM-RPLF"
+			(at 41.91 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 41.91 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 41.91 22.86 0)
 			(effects
 				(font
@@ -19602,7 +19624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150 1/2W 1%"
+		(property "Description" "150 1/2W 0.1%"
 			(at 24.13 212.09 0)
 			(effects
 				(font
@@ -19761,7 +19783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 41.91 119.38 0)
 			(effects
 				(font
@@ -20177,7 +20199,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "75 1/4W 1% 100 PPM/C"
+		(property "Description" "75 1/4W 0.1% 100 PPM/C"
 			(at 62.23 153.67 0)
 			(effects
 				(font
@@ -20370,7 +20392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor + GDT"
+		(property "Description" "ISOM3-300-B-L5"
 			(at 53.34 41.91 0)
 			(effects
 				(font
@@ -20901,7 +20923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 33.02 187.96 0)
 			(effects
 				(font
@@ -21044,6 +21066,24 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 57.15 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 57.15 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 57.15 31.75 0)
 			(effects
 				(font
@@ -21370,7 +21410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor + GDT"
+		(property "Description" "ISOM3-300-B-L5"
 			(at 83.82 62.23 0)
 			(effects
 				(font
@@ -21519,7 +21559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" "X"
+		(property "Monophasé" ""
 			(at 31.75 265.43 0)
 			(effects
 				(font
@@ -21816,7 +21856,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 33.02 119.38 0)
 			(effects
 				(font
@@ -22635,7 +22675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" "X"
+		(property "Monophasé" ""
 			(at 31.75 236.22 0)
 			(effects
 				(font
@@ -22920,7 +22960,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
+		(property "Description" "2093-300-SM-RPLF"
+			(at 57.15 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 57.15 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 57.15 22.86 0)
 			(effects
 				(font
@@ -23052,7 +23110,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 33.02 177.8 0)
 			(effects
 				(font
@@ -23146,7 +23204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 33.02 158.75 0)
 			(effects
 				(font
@@ -23305,7 +23363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 41.91 129.54 0)
 			(effects
 				(font
@@ -23638,6 +23696,15 @@
 				(hide yes)
 			)
 		)
+		(property "Triphasé" "X"
+			(at 87.63 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0efae34f-7249-4087-8fa4-73aed4549cbc")
 		)
@@ -23903,7 +23970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" "X"
+		(property "Monophasé" ""
 			(at 15.24 240.03 0)
 			(effects
 				(font
@@ -24068,7 +24135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" "X"
+		(property "Monophasé" ""
 			(at 81.28 153.67 0)
 			(effects
 				(font
@@ -24637,6 +24704,24 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 41.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 41.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 41.91 31.75 0)
 			(effects
 				(font
@@ -25219,7 +25304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" "X"
+		(property "Monophasé" ""
 			(at 31.75 67.31 0)
 			(effects
 				(font
@@ -25483,7 +25568,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
+		(property "Description" "2093-300-SM-RPLF"
+			(at 72.39 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 72.39 22.86 0)
 			(effects
 				(font
@@ -26044,7 +26138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" ""
+		(property "Monophasé" "X"
 			(at 388.62 118.11 0)
 			(effects
 				(font
@@ -26053,7 +26147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Option" "X"
+		(property "Option" ""
 			(at 388.62 118.11 0)
 			(effects
 				(font
@@ -26129,7 +26223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 41.91 187.96 0)
 			(effects
 				(font
@@ -26223,7 +26317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 41.91 177.8 0)
 			(effects
 				(font
@@ -26642,7 +26736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 41.91 158.75 0)
 			(effects
 				(font
@@ -26739,7 +26833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "75 1/4W 1% 100 PPM/C"
+		(property "Description" "75 1/4W 0.1% 100 PPM/C"
 			(at 62.23 124.46 0)
 			(effects
 				(font
@@ -26900,7 +26994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 33.02 148.59 0)
 			(effects
 				(font
@@ -27276,7 +27370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" ""
+		(property "Monophasé" "X"
 			(at 394.97 118.11 0)
 			(effects
 				(font
@@ -27285,7 +27379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Option" "X"
+		(property "Option" ""
 			(at 394.97 118.11 0)
 			(effects
 				(font
@@ -27743,7 +27837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150 1/2W 1%"
+		(property "Description" "150 1/2W 0.1%"
 			(at 24.13 270.51 0)
 			(effects
 				(font
@@ -28837,7 +28931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" ""
+		(property "Monophasé" "X"
 			(at 31.75 36.83 0)
 			(effects
 				(font
@@ -29184,7 +29278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor + GDT"
+		(property "Description" "ISOM3-300-B-L5"
 			(at 68.58 52.07 0)
 			(effects
 				(font
@@ -29400,7 +29494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Monophasé" "X"
+		(property "Monophasé" ""
 			(at 45.72 241.3 0)
 			(effects
 				(font
@@ -29702,6 +29796,15 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 72.39 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 72.39 31.75 0)
 			(effects
 				(font
@@ -30218,7 +30321,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
+		(property "Description" "2093-300-SM-RPLF"
+			(at 87.63 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
 			(at 87.63 22.86 0)
 			(effects
 				(font
@@ -30738,7 +30850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 5%"
+		(property "Description" "15K 1/4W 0.1% SMD_1206"
 			(at 33.02 129.54 0)
 			(effects
 				(font

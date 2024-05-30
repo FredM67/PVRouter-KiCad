@@ -572,6 +572,23 @@
         "via_diameter": 0.8,
         "via_drill": 0.6,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 1.45,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Surge",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.0,
+        "via_diameter": 0.8,
+        "via_drill": 0.6,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -581,27 +598,27 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(FS1-Pad1)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(FS1-Pad2)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(FS2-Pad1)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(FS2-Pad2)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(FS3-Pad1)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(FS3-Pad2)"
       },
       {
@@ -637,15 +654,15 @@
         "pattern": "NEUTRAL"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(PWR1-L1)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(PWR1-L2)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(PWR1-L3)"
       },
       {
@@ -725,11 +742,11 @@
         "pattern": "AVCC"
       },
       {
-        "netclass": "Power",
+        "netclass": "Low Power",
         "pattern": "Net-(IC2B--)"
       },
       {
-        "netclass": "Power",
+        "netclass": "Low Power",
         "pattern": "Net-(IC2A-+)"
       },
       {
@@ -745,23 +762,23 @@
         "pattern": "VCC"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(GDT1-Pad1)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(GDT2-Pad1)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(GDT3-Pad1)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(GDT0-Pad1)"
       },
       {
-        "netclass": "HV",
+        "netclass": "Surge",
         "pattern": "Net-(PWR1-N)"
       }
     ]
@@ -936,7 +953,7 @@
         }
       ],
       "filter_string": "",
-      "group_symbols": false,
+      "group_symbols": true,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
