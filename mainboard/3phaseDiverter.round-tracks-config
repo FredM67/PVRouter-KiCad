@@ -5,4 +5,5 @@ Gnd	True	2.0	3
 HV	True	2.0	3
 Low Power	True	2.0	3
 Power	True	2.0	3
+Surge	True	2.0	3
 True	True	False
