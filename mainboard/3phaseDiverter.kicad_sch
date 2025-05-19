@@ -1405,6 +1405,280 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Converter_ACDC:HS-40005"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "PS"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "HS-40005"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Converter_ACDC:Converter_ACDC_Hahn_HS-400xx_THT"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.tme.eu/de/Document/996b08915f81126361ce1f9c12d2f8b9/HS40005.pdf"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "5V, 3W, AC-DC module power supply, Hahn"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "5V 3W AC-DC module power supply"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Converter*ACDC*Hahn*HS*400xx*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "HS-40005_0_1"
+				(rectangle
+					(start -7.62 3.81)
+					(end 7.62 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.334 -0.635) (xy -2.794 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -4.064 0.635)
+					(mid -4.699 0.2495)
+					(end -5.334 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -4.064 0.635)
+					(mid -3.429 1.0072)
+					(end -2.794 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.635) (xy 3.302 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.635) (xy 5.334 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0.635) (xy 4.318 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.826 0.635) (xy 5.334 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "HS-40005_1_1"
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "AC/L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "AC/N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "+Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "-Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -6568,186 +6842,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "UserDef:LD10-23B05R2"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "PS"
-				(at -15.24 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "LD10-23B05R2"
-				(at -15.24 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "LD10-23B05R2:CONV_LD10-23B05R2"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "2021.02.05-A/2"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "21.5 mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "Mornsun"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "LD10-23B05R2_0_0"
-				(rectangle
-					(start -15.24 -7.62)
-					(end 15.24 7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -20.32 5.08 0)
-					(length 5.08)
-					(name "AC(L)"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 -5.08 0)
-					(length 5.08)
-					(name "AC(N)"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 20.32 5.08 180)
-					(length 5.08)
-					(name "+VO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 20.32 -5.08 180)
-					(length 5.08)
-					(name "-VO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "UserDef:OLED"
 			(pin_names
 				(offset 1.016)
@@ -8252,7 +8346,7 @@
 	)
 	(rectangle
 		(start 12.7 171.45)
-		(end 128.27 275.59)
+		(end 120.65 275.59)
 		(stroke
 			(width 0)
 			(type default)
@@ -8308,6 +8402,16 @@
 			(justify bottom)
 		)
 		(uuid "024b435d-49dc-4f35-8968-1b8a787f1b44")
+	)
+	(text "EARTH\nto GND\nLink"
+		(exclude_from_sim no)
+		(at 154.94 25.908 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2742dea6-13cd-4ac0-b7d5-a9820e650c87")
 	)
 	(text "Processing unit"
 		(exclude_from_sim no)
@@ -8718,7 +8822,7 @@
 		(uuid "11589ee4-e4aa-4f56-9640-cac506ed29df")
 	)
 	(junction
-		(at 96.52 187.96)
+		(at 88.9 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "125bbb8e-2849-430b-a6a9-1ece8c630000")
@@ -8796,7 +8900,7 @@
 		(uuid "329e1fd4-35e7-4e39-a103-a68fd8a6b257")
 	)
 	(junction
-		(at 104.14 187.96)
+		(at 96.52 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36d6080d-1b26-4dca-ab11-ed10bc68407d")
@@ -8826,16 +8930,10 @@
 		(uuid "3de74c01-1b27-4961-b8ee-11c9dbc57d2a")
 	)
 	(junction
-		(at 115.57 187.96)
+		(at 107.95 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3dfdfaea-1889-4a0e-9cd4-181b583f07a2")
-	)
-	(junction
-		(at 125.73 19.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4147997e-880b-4d9e-856f-aaa90a64649a")
 	)
 	(junction
 		(at 241.3 38.1)
@@ -8862,7 +8960,7 @@
 		(uuid "453d4c84-980b-4cd1-8a00-d916dec72106")
 	)
 	(junction
-		(at 115.57 198.12)
+		(at 107.95 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "481e2bfa-c8e3-4755-b3af-75f244fb7128")
@@ -8916,7 +9014,7 @@
 		(uuid "6462d9b4-8ad8-4d10-afd0-3098e32ad85b")
 	)
 	(junction
-		(at 104.14 198.12)
+		(at 96.52 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "665760fc-c76e-42b7-89cd-9db07b382f42")
@@ -9144,6 +9242,12 @@
 		(uuid "dfc9f1af-63ba-4cca-addb-02a6e662e2e0")
 	)
 	(junction
+		(at 125.73 19.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0ef9159-fb39-4108-94d0-2e67499645a1")
+	)
+	(junction
 		(at 392.43 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9192,7 +9296,7 @@
 		(uuid "f87e32b0-7246-4af5-b465-f4b8a81e0e1f")
 	)
 	(junction
-		(at 96.52 198.12)
+		(at 88.9 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc0eb44a-d11e-4410-a894-f4ff405e483a")
@@ -9208,10 +9312,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe79836c-1a16-4e28-b8e0-158893f6a400")
-	)
-	(no_connect
-		(at 193.04 218.44)
-		(uuid "104918c2-9100-4d9d-bec5-f32490047376")
 	)
 	(no_connect
 		(at 261.62 237.49)
@@ -9253,7 +9353,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 185.42) (xy 115.57 187.96)
+			(xy 107.95 185.42) (xy 107.95 187.96)
 		)
 		(stroke
 			(width 0)
@@ -9473,6 +9573,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 195.58) (xy 78.74 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c536ca1-bc87-4ef2-bc60-fdd071bb97b5")
+	)
+	(wire
+		(pts
 			(xy 26.67 247.65) (xy 26.67 256.54)
 		)
 		(stroke
@@ -9533,7 +9643,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 187.96) (xy 104.14 187.96)
+			(xy 88.9 187.96) (xy 96.52 187.96)
 		)
 		(stroke
 			(width 0)
@@ -9543,7 +9653,7 @@
 	)
 	(polyline
 		(pts
-			(xy 127 205.74) (xy 13.97 205.74)
+			(xy 119.38 205.74) (xy 13.97 205.74)
 		)
 		(stroke
 			(width 0)
@@ -9643,16 +9753,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 19.05) (xy 152.4 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "163e13d0-b7d1-42b4-ba16-425133eafa0b")
-	)
-	(wire
-		(pts
 			(xy 110.49 152.4) (xy 114.3 152.4)
 		)
 		(stroke
@@ -9740,16 +9840,6 @@
 			(type default)
 		)
 		(uuid "1b9d15d1-cd90-477d-8c28-9cd0ba6464fb")
-	)
-	(wire
-		(pts
-			(xy 52.07 190.5) (xy 52.07 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c46fc63-7a2f-4366-afea-0b0a730f492e")
 	)
 	(wire
 		(pts
@@ -10413,7 +10503,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 190.5) (xy 52.07 190.5)
+			(xy 49.53 190.5) (xy 54.61 190.5)
 		)
 		(stroke
 			(width 0)
@@ -10453,7 +10543,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 220.98) (xy 193.04 220.98)
+			(xy 185.42 220.98) (xy 193.04 220.98)
 		)
 		(stroke
 			(width 0)
@@ -10600,6 +10690,16 @@
 			(type default)
 		)
 		(uuid "48f61555-1f4c-45a0-878e-93b1d9709f9b")
+	)
+	(wire
+		(pts
+			(xy 125.73 19.05) (xy 151.13 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "499da4a5-8b1c-44ac-8f0d-510a2e348b94")
 	)
 	(wire
 		(pts
@@ -10763,7 +10863,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 196.85) (xy 96.52 198.12)
+			(xy 88.9 196.85) (xy 88.9 198.12)
 		)
 		(stroke
 			(width 0)
@@ -10823,7 +10923,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 189.23) (xy 115.57 187.96)
+			(xy 107.95 189.23) (xy 107.95 187.96)
 		)
 		(stroke
 			(width 0)
@@ -10850,16 +10950,6 @@
 			(type default)
 		)
 		(uuid "57ea2a59-b3f4-4c41-a108-546adc9c2403")
-	)
-	(wire
-		(pts
-			(xy 92.71 198.12) (xy 96.52 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57f748cb-f752-4105-992c-e1cac8ee9932")
 	)
 	(wire
 		(pts
@@ -11133,7 +11223,7 @@
 	)
 	(polyline
 		(pts
-			(xy 127 177.8) (xy 127 205.74)
+			(xy 119.38 177.8) (xy 119.38 205.74)
 		)
 		(stroke
 			(width 0)
@@ -11193,6 +11283,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 195.58) (xy 78.74 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61f0f0dd-fbfc-4581-a593-655a30b16013")
+	)
+	(wire
+		(pts
 			(xy 353.06 31.75) (xy 356.87 31.75)
 		)
 		(stroke
@@ -11210,6 +11310,16 @@
 			(type default)
 		)
 		(uuid "63280fb0-171a-42cf-8671-b402b43b5e26")
+	)
+	(wire
+		(pts
+			(xy 78.74 190.5) (xy 78.74 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "640d5a04-be08-4ab5-ac41-c8805afeef24")
 	)
 	(wire
 		(pts
@@ -11413,7 +11523,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 196.85) (xy 115.57 198.12)
+			(xy 107.95 196.85) (xy 107.95 198.12)
 		)
 		(stroke
 			(width 0)
@@ -11433,7 +11543,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 187.96) (xy 115.57 187.96)
+			(xy 96.52 187.96) (xy 107.95 187.96)
 		)
 		(stroke
 			(width 0)
@@ -11533,6 +11643,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 19.05) (xy 160.02 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7095cea9-9b86-4f81-98b3-c5abef0b6efe")
+	)
+	(wire
+		(pts
 			(xy 39.37 132.08) (xy 38.1 132.08)
 		)
 		(stroke
@@ -11543,7 +11663,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 195.58) (xy 52.07 195.58)
+			(xy 49.53 195.58) (xy 54.61 195.58)
 		)
 		(stroke
 			(width 0)
@@ -11643,7 +11763,7 @@
 	)
 	(polyline
 		(pts
-			(xy 13.97 177.8) (xy 127 177.8)
+			(xy 13.97 177.8) (xy 119.38 177.8)
 		)
 		(stroke
 			(width 0)
@@ -11660,16 +11780,6 @@
 			(type default)
 		)
 		(uuid "75dc4033-db80-45f0-8348-00656f687188")
-	)
-	(wire
-		(pts
-			(xy 52.07 195.58) (xy 52.07 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7608cbf0-2518-4bab-b9bc-9e9981bb90de")
 	)
 	(wire
 		(pts
@@ -11733,7 +11843,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 189.23) (xy 104.14 187.96)
+			(xy 96.52 189.23) (xy 96.52 187.96)
 		)
 		(stroke
 			(width 0)
@@ -11933,6 +12043,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 187.96) (xy 88.9 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "820f0e6b-b66c-49e1-8cf4-f71e8bb642e9")
+	)
+	(wire
+		(pts
 			(xy 238.76 134.62) (xy 246.38 134.62)
 		)
 		(stroke
@@ -11963,7 +12083,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 187.96) (xy 118.11 187.96)
+			(xy 107.95 187.96) (xy 110.49 187.96)
 		)
 		(stroke
 			(width 0)
@@ -12263,7 +12383,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 187.96) (xy 96.52 189.23)
+			(xy 88.9 187.96) (xy 88.9 189.23)
 		)
 		(stroke
 			(width 0)
@@ -12383,16 +12503,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 187.96) (xy 96.52 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99996195-0b63-43e7-b0fe-e7c020b14517")
-	)
-	(wire
-		(pts
 			(xy 59.69 153.67) (xy 60.96 153.67)
 		)
 		(stroke
@@ -12443,7 +12553,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 196.85) (xy 104.14 198.12)
+			(xy 96.52 196.85) (xy 96.52 198.12)
 		)
 		(stroke
 			(width 0)
@@ -12463,7 +12573,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 223.52) (xy 193.04 223.52)
+			(xy 185.42 223.52) (xy 193.04 223.52)
 		)
 		(stroke
 			(width 0)
@@ -12593,7 +12703,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 198.12) (xy 115.57 199.39)
+			(xy 107.95 198.12) (xy 107.95 199.39)
 		)
 		(stroke
 			(width 0)
@@ -12673,7 +12783,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 198.12) (xy 115.57 198.12)
+			(xy 96.52 198.12) (xy 107.95 198.12)
 		)
 		(stroke
 			(width 0)
@@ -12760,6 +12870,16 @@
 			(type default)
 		)
 		(uuid "a82c92e5-163b-468d-8abf-3dffab769b97")
+	)
+	(wire
+		(pts
+			(xy 193.04 218.44) (xy 185.42 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a84eb21f-5578-424c-a24f-38bb86fddd83")
 	)
 	(polyline
 		(pts
@@ -13170,6 +13290,16 @@
 			(type default)
 		)
 		(uuid "bd241cc4-ad9c-4194-9b48-46308fd6e3b1")
+	)
+	(wire
+		(pts
+			(xy 78.74 198.12) (xy 88.9 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd94520f-c54d-4c17-b583-b846700c48c0")
 	)
 	(wire
 		(pts
@@ -13693,7 +13823,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 228.6) (xy 193.04 228.6)
+			(xy 185.42 228.6) (xy 193.04 228.6)
 		)
 		(stroke
 			(width 0)
@@ -13793,7 +13923,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 226.06) (xy 193.04 226.06)
+			(xy 185.42 226.06) (xy 193.04 226.06)
 		)
 		(stroke
 			(width 0)
@@ -14063,7 +14193,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 215.9) (xy 193.04 215.9)
+			(xy 185.42 215.9) (xy 193.04 215.9)
 		)
 		(stroke
 			(width 0)
@@ -14253,7 +14383,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 198.12) (xy 104.14 198.12)
+			(xy 88.9 198.12) (xy 96.52 198.12)
 		)
 		(stroke
 			(width 0)
@@ -14290,6 +14420,16 @@
 			(type default)
 		)
 		(uuid "fa4c3086-8d91-477e-a5f7-f11513a926e0")
+	)
+	(wire
+		(pts
+			(xy 74.93 190.5) (xy 78.74 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa6d003e-68f7-4aaf-8637-f5d9535bea6c")
 	)
 	(wire
 		(pts
@@ -14372,7 +14512,7 @@
 		(uuid "0439d2e3-4f3c-4ed7-bb38-63299572bdb0")
 	)
 	(label "D13"
-		(at 187.96 223.52 0)
+		(at 185.42 223.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14462,7 +14602,7 @@
 		(uuid "46e82c22-d505-48dc-baf8-39575599c985")
 	)
 	(label "D12"
-		(at 187.96 226.06 0)
+		(at 185.42 226.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14532,7 +14672,7 @@
 		(uuid "7562ce91-6932-4d81-a506-f13019c53de6")
 	)
 	(label "DS18B20"
-		(at 187.96 215.9 0)
+		(at 185.42 215.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14542,7 +14682,7 @@
 		(uuid "8139a042-e8d1-4454-942c-98320545671f")
 	)
 	(label "D11"
-		(at 187.96 228.6 0)
+		(at 185.42 228.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14652,7 +14792,7 @@
 		(uuid "b7b54acb-a313-432a-84be-45c2ca15d11b")
 	)
 	(label "D10"
-		(at 187.96 220.98 0)
+		(at 185.42 220.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15259,7 +15399,7 @@
 	)
 	(global_label "GND"
 		(shape output)
-		(at 152.4 19.05 0)
+		(at 160.02 19.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15269,7 +15409,7 @@
 		)
 		(uuid "b56a949f-61eb-4ce8-843e-5d4946e77296")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.2557 19.05 0)
+			(at 166.8757 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15649,7 +15789,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1uF 310VAC"
 			(at 33.02 194.31 0)
 			(effects
 				(font
@@ -15676,7 +15816,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "B32923C3105M / B32923C3105K"
 			(at 30.48 193.04 0)
 			(effects
 				(font
@@ -15710,6 +15850,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 30.48 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -15809,6 +15957,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 320.04 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "30cc7fb8-94f0-4443-a537-0488acc1ef44")
 		)
@@ -15895,7 +16051,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 199.39 0)
+		(at 107.95 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15903,7 +16059,7 @@
 		(dnp no)
 		(uuid "09057d28-18bd-4801-8cb7-1b09345d0f65")
 		(property "Reference" "#PWR020"
-			(at 115.57 205.74 0)
+			(at 107.95 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15912,7 +16068,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 203.2 0)
+			(at 107.95 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15920,7 +16076,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 199.39 0)
+			(at 107.95 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15929,7 +16085,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 199.39 0)
+			(at 107.95 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15938,7 +16094,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 199.39 0)
+			(at 107.95 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16040,6 +16196,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 388.62 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "44aef706-1a0f-4643-a381-56348adfb226")
 		)
@@ -16133,6 +16297,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7d5138c0-9336-4bca-b60d-dd676a2b7b94")
 		)
@@ -16194,7 +16366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "75 1/4W 0.1% 100 PPM/C"
+		(property "Description" "75 1/6W 0.1% 25 PPM/C"
 			(at 63.5 156.21 0)
 			(effects
 				(font
@@ -16228,6 +16400,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 63.5 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -16354,7 +16534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FG24X7R1A106KRT06"
+		(property "Description" "FK24X7R0J106K"
 			(at 68.58 121.92 0)
 			(effects
 				(font
@@ -16388,6 +16568,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 68.58 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -16484,6 +16672,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 392.43 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7cbd35ad-f213-48f9-a425-2142b9950300")
 		)
@@ -16543,7 +16739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FG24X7R1A106KRT06"
+		(property "Description" "FK24X7R0J106K"
 			(at 68.58 92.71 0)
 			(effects
 				(font
@@ -16577,6 +16773,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -16673,6 +16877,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 339.09 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -16773,6 +16985,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 240.03 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b504f8d8-efd3-4901-8b77-0bcf102b221d")
 		)
@@ -16866,6 +17086,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 127 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -17030,6 +17258,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 320.04 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b769013d-6e34-42bd-9e81-a3cd17ea4608")
 		)
@@ -17165,6 +17401,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 238.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -17399,6 +17643,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 101.6 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bae00ade-80d6-4af4-b7f0-10cc96ee83bb")
 		)
@@ -17560,6 +17812,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "54cfe323-e0b1-4449-9415-024a76699aa7")
 		)
@@ -17619,7 +17879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FG24X7R1A106KRT06"
+		(property "Description" "FK24X7R0J106K"
 			(at 68.58 151.13 0)
 			(effects
 				(font
@@ -17653,6 +17913,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 68.58 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -17714,7 +17982,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "MST 1A 250V"
 			(at 31.75 48.26 0)
 			(effects
 				(font
@@ -17748,6 +18016,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 31.75 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -17912,6 +18188,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 320.04 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -18081,6 +18365,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 177.8 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "808d6a51-0a5d-4c99-9de1-55793603f524")
 		)
@@ -18181,6 +18473,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 320.04 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "babe904f-99fc-4938-9ff3-976542c62009")
 		)
@@ -18278,6 +18578,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 256.54 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "ANT"
@@ -18384,6 +18692,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 359.41 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3cd6d1eb-e895-4acf-8752-d5737efd7f8c")
 		)
@@ -18477,6 +18793,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 292.1 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -18574,6 +18898,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 320.04 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -18676,6 +19008,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 110.49 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "32702d7e-c5a8-4cb5-a651-dfc59d069b0a")
 		)
@@ -18770,6 +19110,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 332.74 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19014,6 +19362,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 68.58 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8a35f28-f247-43df-8431-a54accadfdab")
 		)
@@ -19109,6 +19465,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 270.51 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19267,6 +19631,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" "X"
+			(at 77.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "012dc607-558f-4017-8de3-56e597d98e43")
 		)
@@ -19364,6 +19736,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 320.04 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1227ea42-8ec3-4a11-add5-94c18a1d704f")
 		)
@@ -19425,7 +19805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 43.18 121.92 0)
 			(effects
 				(font
@@ -19459,6 +19839,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 43.18 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19555,6 +19943,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 387.35 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2ba70786-99a9-4983-b99d-8737b751d6f2")
 		)
@@ -19641,6 +20037,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 41.91 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -19736,6 +20140,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 320.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19968,6 +20380,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8e371a8f-e36f-4ae2-9097-dfc3f76f01fe")
 		)
@@ -20093,7 +20513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10K"
 			(at 21.59 226.06 0)
 			(effects
 				(font
@@ -20127,6 +20547,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 21.59 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20221,6 +20649,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 77.47 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20320,6 +20756,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0400558c-19c6-4e34-8b2d-80d408cb5cb2")
 		)
@@ -20415,6 +20859,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 110.49 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20540,7 +20992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 43.18 92.71 0)
 			(effects
 				(font
@@ -20574,6 +21026,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 43.18 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20668,6 +21128,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 77.47 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20830,6 +21298,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 279.4 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "73ab6de6-b9c0-46c8-bf07-13699e5330c6")
 		)
@@ -20956,7 +21432,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "75 1/4W 0.1% 100 PPM/C"
+		(property "Description" "75 1/6W 0.1% 25 PPM/C"
 			(at 63.5 127 0)
 			(effects
 				(font
@@ -20990,6 +21466,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 63.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21086,6 +21570,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 339.09 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21230,6 +21722,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 66.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a89ee199-6240-476c-bc67-a290a79b0135")
 		)
@@ -21325,6 +21825,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 281.94 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "afb5fd3e-441a-4d38-bfdc-51a6cb039973")
 		)
@@ -21386,7 +21894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10K"
 			(at 46.99 262.89 0)
 			(effects
 				(font
@@ -21420,6 +21928,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 46.99 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21439,7 +21955,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1.5KExxA")
-		(at 115.57 193.04 270)
+		(at 107.95 193.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21448,7 +21964,7 @@
 		(fields_autoplaced yes)
 		(uuid "4dca09f3-9a5f-4dc2-a6de-3417a7909bba")
 		(property "Reference" "D1"
-			(at 118.11 191.7699 90)
+			(at 110.49 191.7699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21457,7 +21973,7 @@
 			)
 		)
 		(property "Value" "LCE7.0A"
-			(at 118.11 194.3099 90)
+			(at 110.49 194.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21466,7 +21982,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
-			(at 110.49 193.04 0)
+			(at 102.87 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21475,7 +21991,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
-			(at 115.57 191.77 0)
+			(at 107.95 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21484,7 +22000,7 @@
 			)
 		)
 		(property "Description" "1500W unidirectional TVS diode, DO-201AE"
-			(at 115.57 193.04 0)
+			(at 107.95 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21493,7 +22009,7 @@
 			)
 		)
 		(property "Ref. fab" "LCE7.0A"
-			(at 115.57 193.04 90)
+			(at 107.95 193.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21502,7 +22018,7 @@
 			)
 		)
 		(property "Monophasé" "X"
-			(at 115.57 193.04 0)
+			(at 107.95 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21511,7 +22027,7 @@
 			)
 		)
 		(property "Option" ""
-			(at 115.57 193.04 0)
+			(at 107.95 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21520,12 +22036,20 @@
 			)
 		)
 		(property "Triphasé" "X"
-			(at 115.57 193.04 0)
+			(at 107.95 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 107.95 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21622,6 +22146,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 294.64 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "87d03cac-2787-464f-9a98-d3848003a6da")
 		)
@@ -21680,7 +22212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 34.29 161.29 0)
 			(effects
 				(font
@@ -21714,6 +22246,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 34.29 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21777,7 +22317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor"
+		(property "Description" "MOV14D471KKTR"
 			(at 69.85 33.02 0)
 			(effects
 				(font
@@ -21847,6 +22387,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 69.85 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22010,6 +22558,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "657baff2-7618-46cb-a6a1-ddb9ad030fb9")
 		)
@@ -22104,6 +22660,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 339.09 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22248,6 +22812,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "50c2af19-74b6-4124-9c4b-71d1e931f1f4")
 		)
@@ -22306,7 +22878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FG24X7R1A106KRT06"
+		(property "Description" "FK24X7R0J106K"
 			(at 118.11 152.4 0)
 			(effects
 				(font
@@ -22340,6 +22912,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 118.11 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22435,6 +23015,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 63.5 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22551,6 +23139,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 320.04 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8d537e63-2770-494c-a65d-f80fba780801")
 		)
@@ -22612,7 +23208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 34.29 92.71 0)
 			(effects
 				(font
@@ -22646,6 +23242,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 34.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22743,6 +23347,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 372.11 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9479596b-c96f-44f5-85a8-5726990ac15c")
 		)
@@ -22835,6 +23447,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 387.35 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22931,6 +23551,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 101.6 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -23097,6 +23725,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0485dfce-4188-4e81-b391-e08ac0d5902c")
 		)
@@ -23259,6 +23895,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 320.04 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "91d3d7d8-cc29-4cc3-9735-db5186c7a64b")
 		)
@@ -23357,6 +24001,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 54.61 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e92fb66f-fbc9-43e4-84b6-09150436fca2")
 		)
@@ -23421,7 +24073,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FG24X7R1A106KRT06"
+		(property "Description" "FK24X7R0J106K"
 			(at 118.11 123.19 0)
 			(effects
 				(font
@@ -23455,6 +24107,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 118.11 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -23742,6 +24402,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 69.85 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2aa073c3-7132-489c-944e-14b2515d13e0")
 		)
@@ -23800,7 +24468,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 34.29 151.13 0)
 			(effects
 				(font
@@ -23834,6 +24502,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 34.29 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -23894,7 +24570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 34.29 132.08 0)
 			(effects
 				(font
@@ -23928,6 +24604,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 34.29 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -24053,7 +24737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 43.18 102.87 0)
 			(effects
 				(font
@@ -24087,6 +24771,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 43.18 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -24106,7 +24798,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Capacitor_AKL:CP_Radial_D6.3mm_P2.50mm")
-		(at 104.14 193.04 0)
+		(at 96.52 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24115,7 +24807,7 @@
 		(fields_autoplaced yes)
 		(uuid "6bc12c48-479a-4898-bbe1-040ec85a0231")
 		(property "Reference" "C3"
-			(at 107.95 190.8809 0)
+			(at 100.33 190.8809 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24124,7 +24816,7 @@
 			)
 		)
 		(property "Value" "120uF"
-			(at 107.95 193.4209 0)
+			(at 100.33 193.4209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24133,7 +24825,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Capacitor_THT_AKL:CP_Radial_D6.3mm_P2.50mm"
-			(at 104.14 203.2 0)
+			(at 96.52 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24142,7 +24834,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 193.04 0)
+			(at 96.52 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24151,7 +24843,7 @@
 			)
 		)
 		(property "Description" "THT Electrolytic Capacitor, 6.3mm Diameter, 2.50mm Pitch, European Symbol, Alternate KiCad Library"
-			(at 104.14 193.04 0)
+			(at 96.52 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24160,7 +24852,7 @@
 			)
 		)
 		(property "Ref" "Condensateur électrolytique alu. hybride, 120 µF, ± 20%, 16 V, Sorties radiales, 0.04 ohm"
-			(at 104.14 193.04 0)
+			(at 96.52 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24169,7 +24861,7 @@
 			)
 		)
 		(property "Réf fab" "870575373001"
-			(at 104.14 193.04 0)
+			(at 96.52 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24178,7 +24870,7 @@
 			)
 		)
 		(property "Monophasé" "X"
-			(at 104.14 193.04 0)
+			(at 96.52 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24187,7 +24879,7 @@
 			)
 		)
 		(property "Option" ""
-			(at 104.14 193.04 0)
+			(at 96.52 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24196,12 +24888,20 @@
 			)
 		)
 		(property "Triphasé" "X"
-			(at 104.14 193.04 0)
+			(at 96.52 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 96.52 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -24332,7 +25032,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor"
+		(property "Description" "MOV14D471KKTR"
 			(at 125.73 33.02 0)
 			(effects
 				(font
@@ -24393,6 +25093,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 125.73 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -24492,6 +25200,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 177.8 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dd31635c-5627-43e3-b41d-2ec4af0f6d09")
 		)
@@ -24561,6 +25277,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 233.68 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -24661,6 +25385,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 101.6 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -24828,6 +25560,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 82.55 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f93492ff-862e-42e3-b057-af9da92b5b53")
 		)
@@ -24991,6 +25731,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "17ea55dc-8d48-4c50-8bae-7c57ff36ddd2")
 		)
@@ -25086,6 +25834,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 271.78 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "41609e11-3310-4137-ad6d-2e3bff5580d5")
 		)
@@ -25154,6 +25910,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 198.12 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "6"
@@ -25227,7 +25991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "MST 1A 250V"
 			(at 31.75 58.42 0)
 			(effects
 				(font
@@ -25261,6 +26025,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 31.75 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -25389,7 +26161,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor"
+		(property "Description" "MOV14D471KKTR"
 			(at 41.91 33.02 0)
 			(effects
 				(font
@@ -25459,6 +26231,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 41.91 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -25619,6 +26399,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 35.56 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -25802,6 +26590,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "57696842-f4de-4f30-8853-260539fd15ec")
 		)
@@ -25897,6 +26693,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 320.04 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -26026,7 +26830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "MST 1A 250V"
 			(at 31.75 68.58 0)
 			(effects
 				(font
@@ -26060,6 +26864,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 31.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -26137,6 +26949,73 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 218.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "968c9e17-c889-4c87-b1f5-e387307807ce")
+		(property "Reference" "#PWR046"
+			(at 179.07 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.61 218.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5019eaed-3540-4499-9b2e-a1b0d467cfff")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -26221,6 +27100,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" "X"
+			(at 127 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fd0a58da-d973-4241-80b6-e7ef59b43074")
 		)
@@ -26289,6 +27176,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 156.21 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "6"
@@ -26382,6 +27277,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 97.79 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "476574d5-4a0b-4610-a7a4-830d09f790c0")
 		)
@@ -26440,7 +27343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FG24X7R1A106KRT06"
+		(property "Description" "FK24X7R0J106K"
 			(at 118.11 93.98 0)
 			(effects
 				(font
@@ -26474,6 +27377,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 118.11 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -26636,6 +27547,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 193.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7396f653-b43e-49b8-8e8d-07245c3fbf52")
 		)
@@ -26731,6 +27650,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 82.55 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -27027,6 +27954,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 76.2 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f7140435-572a-44f1-88a2-66027ddcd515")
 		)
@@ -27085,7 +28020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 43.18 161.29 0)
 			(effects
 				(font
@@ -27119,6 +28054,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 43.18 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -27179,7 +28122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 43.18 151.13 0)
 			(effects
 				(font
@@ -27213,6 +28156,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 43.18 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -27309,6 +28260,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 300.99 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -27473,6 +28432,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 82.55 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "026bdaa4-531c-4520-a651-668fa4b0b78f")
 		)
@@ -27598,7 +28565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 43.18 132.08 0)
 			(effects
 				(font
@@ -27632,6 +28599,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 43.18 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -27695,7 +28670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "75 1/4W 0.1% 100 PPM/C"
+		(property "Description" "75 1/6W 0.1% 25 PPM/C"
 			(at 63.5 97.79 0)
 			(effects
 				(font
@@ -27729,6 +28704,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 63.5 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -27789,7 +28772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 34.29 121.92 0)
 			(effects
 				(font
@@ -27825,6 +28808,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" "X"
+			(at 34.29 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0577a6c1-65db-4d01-83b0-24aeea05a59a")
 		)
@@ -27835,6 +28826,108 @@
 			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 154.94 19.05 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb45f1e5-fafe-46fb-afa6-c6779be06b3f")
+		(property "Reference" "R0"
+			(at 154.94 16.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 154.94 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 154.94 20.828 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1K 1/4W 1%"
+			(at 154.94 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Monophasé" "X"
+			(at 154.94 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" ""
+			(at 154.94 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Triphasé" "X"
+			(at 154.94 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 154.94 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "646e95c0-e7ae-4bff-93d3-7b7987f2311a")
+		)
+		(pin "2"
+			(uuid "622e4c0f-e01b-4f0d-b57a-284d5164b06a")
+		)
+		(instances
+			(project "3phaseDiverter"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R0")
 					(unit 1)
 				)
 			)
@@ -27919,6 +29012,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 382.27 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -28026,6 +29127,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 320.04 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -28192,6 +29301,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 82.55 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a1affaeb-4a2e-4a82-b375-94676b9acb99")
 		)
@@ -28286,6 +29403,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 196.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -28403,6 +29528,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 17.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3c7c5cb2-d67b-46cb-8ffd-4ed12facecb8")
 		)
@@ -28506,6 +29639,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" "X"
+			(at 127 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c7569a6b-8fb3-49e5-bbe1-cd40babbced8")
 		)
@@ -28601,6 +29742,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 110.49 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -28700,6 +29849,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 77.47 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "18dfa004-6197-44d8-bc05-142f5ac64f0a")
 		)
@@ -28793,6 +29950,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 273.05 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -28922,7 +30087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10K"
 			(at 46.99 252.73 0)
 			(effects
 				(font
@@ -28956,6 +30121,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 46.99 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -29119,6 +30292,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 54.61 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "10cab436-3d62-4998-9461-b1cc4948ff1c")
 		)
@@ -29221,6 +30402,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6b2143cf-8e80-475f-acc5-91464bd03175")
 		)
@@ -29315,6 +30504,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 44.45 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -29419,6 +30616,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 232.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -29585,6 +30790,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" "X"
+			(at 26.67 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "46ba7899-9d86-4825-aef6-a50c5f69fcd1")
 		)
@@ -29653,7 +30866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "MST 1A 250V"
 			(at 31.75 38.1 0)
 			(effects
 				(font
@@ -29687,6 +30900,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 31.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -29786,6 +31007,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 320.04 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0e98ffd8-e378-48be-8419-84ac419b1278")
 		)
@@ -29881,6 +31110,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 294.64 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -30090,6 +31327,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8f2fdd92-b3ff-46d2-a4cd-d3ea6c453c7c")
 		)
@@ -30107,7 +31352,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 115.57 185.42 0)
+		(at 107.95 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30115,7 +31360,7 @@
 		(dnp no)
 		(uuid "d9a6231f-8532-4c6e-b7ca-cb63d62dc213")
 		(property "Reference" "#PWR019"
-			(at 115.57 189.23 0)
+			(at 107.95 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30124,7 +31369,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 115.57 181.61 0)
+			(at 107.95 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30132,7 +31377,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 185.42 0)
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30141,7 +31386,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 185.42 0)
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30150,7 +31395,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 115.57 185.42 0)
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30250,6 +31495,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -30414,6 +31667,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 222.25 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "8a36418f-2742-4c2d-a0c8-e6bcac03702a")
 		)
@@ -30481,7 +31742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Voltage dependent resistor"
+		(property "Description" "MOV14D471KKTR"
 			(at 97.79 33.02 0)
 			(effects
 				(font
@@ -30542,6 +31803,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 97.79 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -30704,6 +31973,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 54.61 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ce245170-e387-4202-b141-9972d9455028")
 		)
@@ -30807,6 +32084,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 63.5 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -30991,6 +32276,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c4baf935-a9d2-4868-8739-aacfaf903ba0")
 		)
@@ -31068,6 +32361,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 125.73 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -31298,6 +32599,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 132.08 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d21e9389-87e7-4ce9-9b78-aba156ad9e16")
 		)
@@ -31315,7 +32624,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Probe")
-		(at 118.11 187.96 0)
+		(at 110.49 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -31323,7 +32632,7 @@
 		(dnp no)
 		(uuid "f262de81-9f14-42df-b45f-67fb1dd18e8a")
 		(property "Reference" "TP4"
-			(at 119.38 184.15 0)
+			(at 111.76 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31333,7 +32642,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 124.714 184.404 0)
+			(at 117.094 184.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31342,7 +32651,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_4.0x4.0mm_Drill2.0mm"
-			(at 123.19 187.96 0)
+			(at 115.57 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31351,7 +32660,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 187.96 0)
+			(at 115.57 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31360,7 +32669,7 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
-			(at 118.11 187.96 0)
+			(at 110.49 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31369,7 +32678,7 @@
 			)
 		)
 		(property "Monophasé" ""
-			(at 118.11 187.96 0)
+			(at 110.49 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31378,7 +32687,7 @@
 			)
 		)
 		(property "Option" ""
-			(at 118.11 187.96 0)
+			(at 110.49 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31387,12 +32696,20 @@
 			)
 		)
 		(property "Triphasé" ""
-			(at 118.11 187.96 0)
+			(at 110.49 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 110.49 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -31580,7 +32897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/4W 0.1% SMD_1206"
+		(property "Description" "15K 1/3W 0.1% 25PPM/C 1206"
 			(at 34.29 102.87 0)
 			(effects
 				(font
@@ -31614,6 +32931,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" "X"
+			(at 34.29 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -31698,7 +33023,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 96.52 193.04 0)
+		(at 88.9 193.04 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31708,7 +33033,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa8774d1-abea-4ad8-8052-17fb3e2c6af7")
 		(property "Reference" "C2"
-			(at 92.71 191.7699 0)
+			(at 85.09 191.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31717,7 +33042,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 92.71 194.3099 0)
+			(at 85.09 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31726,7 +33051,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Capacitor_THT_AKL:C_Disc_D5.1mm_W3.2mm_P5.00mm"
-			(at 97.4852 189.23 0)
+			(at 89.8652 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31735,7 +33060,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 193.04 0)
+			(at 88.9 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31743,8 +33068,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1uF x 16V"
-			(at 96.52 193.04 0)
+		(property "Description" "Multilayer Ceramic Capacitor 1uF 10% 16V"
+			(at 88.9 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31753,7 +33078,7 @@
 			)
 		)
 		(property "Monophasé" "X"
-			(at 96.52 193.04 0)
+			(at 88.9 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31762,7 +33087,7 @@
 			)
 		)
 		(property "Option" ""
-			(at 96.52 193.04 0)
+			(at 88.9 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31771,12 +33096,20 @@
 			)
 		)
 		(property "Triphasé" "X"
-			(at 96.52 193.04 0)
+			(at 88.9 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Usine" ""
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -31941,6 +33274,14 @@
 				(hide yes)
 			)
 		)
+		(property "Usine" ""
+			(at 339.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e8465ddc-5412-4d21-89ab-b70b77d044bf")
 		)
@@ -32091,8 +33432,8 @@
 		)
 	)
 	(symbol
-		(lib_id "UserDef:LD10-23B05R2")
-		(at 72.39 193.04 0)
+		(lib_id "Converter_ACDC:HS-40005")
+		(at 64.77 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32101,33 +33442,23 @@
 		(fields_autoplaced yes)
 		(uuid "fc4fda95-a824-444d-a346-1799107525d4")
 		(property "Reference" "PS1"
-			(at 72.39 180.34 0)
+			(at 64.77 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LD10-23B05R2"
-			(at 72.39 182.88 0)
+		(property "Value" "RAC05E-05SKT"
+			(at 64.77 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "UserDef:CONV_LDxx-23B05R2"
-			(at 72.39 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 193.04 0)
+		(property "Footprint" "Converter_ACDC:Converter_ACDC_Hahn_HS-400xx_THT"
+			(at 64.77 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32135,8 +33466,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LD05-23B05R2 / LD10-23B05R2"
-			(at 72.39 193.04 0)
+		(property "Datasheet" "http://www.tme.eu/de/Document/996b08915f81126361ce1f9c12d2f8b9/HS40005.pdf"
+			(at 64.77 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5V, 3W, AC-DC module power supply, Hahn"
+			(at 64.77 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32145,7 +33485,7 @@
 			)
 		)
 		(property "PARTREV" "2021.02.05-A/2"
-			(at 72.39 193.04 0)
+			(at 64.77 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32155,7 +33495,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 72.39 193.04 0)
+			(at 64.77 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32165,7 +33505,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "21.5 mm"
-			(at 72.39 193.04 0)
+			(at 64.77 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32175,7 +33515,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Mornsun"
-			(at 72.39 193.04 0)
+			(at 64.77 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32185,7 +33525,7 @@
 			)
 		)
 		(property "Monophasé" "X"
-			(at 72.39 193.04 0)
+			(at 64.77 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32194,7 +33534,7 @@
 			)
 		)
 		(property "Option" ""
-			(at 72.39 193.04 0)
+			(at 64.77 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32203,7 +33543,7 @@
 			)
 		)
 		(property "Triphasé" "X"
-			(at 72.39 193.04 0)
+			(at 64.77 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32211,17 +33551,25 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
+		(property "Usine" ""
+			(at 64.77 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
 			(uuid "707a59af-9fe7-4e86-8951-fa1b3e1bf437")
 		)
 		(pin "1"
 			(uuid "f16f240b-d6fd-48d5-98c7-78825e9d155e")
 		)
-		(pin "4"
+		(pin "9"
 			(uuid "8b455392-edce-45e1-ae09-0c3b3f03c362")
 		)
-		(pin "6"
-			(uuid "6cddf62c-e391-4891-8559-437fe17fd0f2")
+		(pin "5"
+			(uuid "8a52c0eb-37eb-45a7-b307-b6a85823c567")
 		)
 		(instances
 			(project "3phaseDiverter"
