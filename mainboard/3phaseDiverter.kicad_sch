@@ -33457,7 +33457,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_ACDC:Converter_ACDC_Hahn_HS-400xx_THT"
+		(property "Footprint" "UserDef:RAC05E-KT_RCP"
 			(at 64.77 200.66 0)
 			(effects
 				(font
