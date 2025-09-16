@@ -957,7 +957,7 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Description",
           "name": "Description",
           "show": true
@@ -981,14 +981,14 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Usine",
           "name": "Usine",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
-      "group_symbols": false,
+      "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
