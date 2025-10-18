@@ -3311,20 +3311,30 @@
 		(uuid "e7853b6b-b090-4fa2-9d76-f9f068c802fa")
 	)
 	(no_connect
-		(at 54.61 58.42)
-		(uuid "77418c37-a8af-40a8-bbc7-1dae5145fe55")
-	)
-	(no_connect
-		(at 82.55 71.12)
-		(uuid "982f45d5-7ad8-4f3d-8a2e-c3438f3027fe")
-	)
-	(no_connect
 		(at 82.55 78.74)
-		(uuid "a1859b39-20b6-4b27-89ff-8aca65540d93")
+		(uuid "2c490755-1da9-45d1-9745-05267303e846")
 	)
 	(no_connect
 		(at 54.61 48.26)
-		(uuid "ed5e73c2-7af1-46ae-bc07-9d885cc8ea71")
+		(uuid "454ec1c8-9410-4fd5-9818-a75d2ffbf752")
+	)
+	(no_connect
+		(at 82.55 71.12)
+		(uuid "6667b82b-d191-46b5-ad6f-19e1fcc78bed")
+	)
+	(no_connect
+		(at 54.61 58.42)
+		(uuid "bf78e436-c6ce-48db-a8c8-addc215f7c7c")
+	)
+	(wire
+		(pts
+			(xy 78.74 73.66) (xy 82.55 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04265aa4-dca2-4c24-a2b3-884733de5e82")
 	)
 	(wire
 		(pts
@@ -3378,16 +3388,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 76.2) (xy 82.55 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1886e6e8-bc7e-44ad-8f7e-cc2073784e70")
-	)
-	(wire
-		(pts
 			(xy 121.92 149.86) (xy 121.92 152.4)
 		)
 		(stroke
@@ -3408,26 +3408,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 83.82) (xy 82.55 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "201dcf54-415a-42c3-a93a-af16be8e3624")
-	)
-	(wire
-		(pts
-			(xy 50.8 53.34) (xy 54.61 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21afb695-4b59-4f23-a8b0-c05b8d84750c")
-	)
-	(wire
-		(pts
 			(xy 201.93 58.42) (xy 205.74 58.42)
 		)
 		(stroke
@@ -3438,13 +3418,23 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 60.96) (xy 54.61 60.96)
+			(xy 50.8 53.34) (xy 54.61 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2fbe8f9b-0cb7-4e33-9d4e-fb8705a31d59")
+		(uuid "2f69df39-1893-458b-8bd5-df62a800dfd3")
+	)
+	(wire
+		(pts
+			(xy 80.01 83.82) (xy 82.55 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3099eb9d-2096-479c-a59d-c01108d6a1f2")
 	)
 	(wire
 		(pts
@@ -3468,16 +3458,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 50.8) (xy 54.61 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ea6debe-d054-471c-ba6d-62a61792d4f5")
-	)
-	(wire
-		(pts
 			(xy 201.93 78.74) (xy 205.74 78.74)
 		)
 		(stroke
@@ -3485,16 +3465,6 @@
 			(type default)
 		)
 		(uuid "456581f7-019d-4cd2-b65a-e3f23cee01a6")
-	)
-	(wire
-		(pts
-			(xy 78.74 73.66) (xy 82.55 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47980591-11ce-4baa-830f-9bbee4f66a49")
 	)
 	(wire
 		(pts
@@ -3565,6 +3535,16 @@
 			(type default)
 		)
 		(uuid "5b10847c-1298-4109-ac08-62bd3c13c464")
+	)
+	(wire
+		(pts
+			(xy 82.55 81.28) (xy 80.01 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d29ad48-0d8b-4447-ad54-7de060e85b6f")
 	)
 	(wire
 		(pts
@@ -3728,6 +3708,26 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 60.96) (xy 54.61 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9354b5e6-3755-47cf-821c-71b6f52ca4ab")
+	)
+	(wire
+		(pts
+			(xy 50.8 50.8) (xy 54.61 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94bc9fdd-6a05-422e-ab6b-bd32ab475806")
+	)
+	(wire
+		(pts
 			(xy 30.48 152.4) (xy 43.18 152.4)
 		)
 		(stroke
@@ -3838,6 +3838,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 76.2) (xy 82.55 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc3407e0-3584-40a2-be07-0707614eebc2")
+	)
+	(wire
+		(pts
 			(xy 201.93 50.8) (xy 205.74 50.8)
 		)
 		(stroke
@@ -3938,16 +3948,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 81.28) (xy 82.55 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e24ae0c9-2af9-4cbb-8ee9-6be7b457f7fc")
-	)
-	(wire
-		(pts
 			(xy 201.93 68.58) (xy 204.47 68.58)
 		)
 		(stroke
@@ -3998,6 +3998,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 55.88) (xy 54.61 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f839ef61-d73b-41be-b559-928ece3bef5a")
+	)
+	(wire
+		(pts
 			(xy 93.98 58.42) (xy 96.52 58.42)
 		)
 		(stroke
@@ -4005,16 +4015,6 @@
 			(type default)
 		)
 		(uuid "f97cbf13-e7e8-413b-8d3f-13ca23b9d998")
-	)
-	(wire
-		(pts
-			(xy 52.07 55.88) (xy 54.61 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fba614a7-3843-432c-9575-eda759796057")
 	)
 	(label "RFM_SCK{slash}D13"
 		(at 215.9 71.12 0)
@@ -5767,16 +5767,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 87.63 76.2 0)
+		(at 87.63 78.74 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7f74f4fa-5819-47b9-aa27-2de6e06281ae")
 		(property "Reference" "JP1"
-			(at 90.17 76.1999 0)
+			(at 90.17 78.7401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5785,7 +5785,7 @@
 			)
 		)
 		(property "Value" "UART_ESP32"
-			(at 90.17 78.7399 0)
+			(at 90.17 76.2001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5793,8 +5793,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 87.63 76.2 0)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
+			(at 87.63 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5803,7 +5803,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 76.2 0)
+			(at 87.63 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5812,7 +5812,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 87.63 76.2 0)
+			(at 87.63 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5821,7 +5821,7 @@
 			)
 		)
 		(property "Usine" ""
-			(at 87.63 76.2 0)
+			(at 87.63 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6147,16 +6147,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 59.69 53.34 0)
+		(at 59.69 55.88 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "98377661-da72-4a88-a428-9cf425c0f52d")
 		(property "Reference" "JP3"
-			(at 62.23 53.3399 0)
+			(at 62.23 55.8801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6165,7 +6165,7 @@
 			)
 		)
 		(property "Value" "UART_EXT"
-			(at 62.23 55.8799 0)
+			(at 62.23 53.3401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6174,7 +6174,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
-			(at 59.69 53.34 0)
+			(at 59.69 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6183,7 +6183,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 59.69 53.34 0)
+			(at 59.69 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6192,7 +6192,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 59.69 53.34 0)
+			(at 59.69 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6201,7 +6201,7 @@
 			)
 		)
 		(property "Usine" ""
-			(at 59.69 53.34 0)
+			(at 59.69 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
