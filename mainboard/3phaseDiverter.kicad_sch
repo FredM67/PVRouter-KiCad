@@ -15970,16 +15970,6 @@
 		)
 		(uuid "b93ac64c-ef76-40f3-ade4-b2fd9de0dc48")
 	)
-	(label "unconnected-(RF1-PadRST)_1"
-		(at 261.62 237.49 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c4c43a6d-c374-490d-9ab7-85f24778b813")
-	)
 	(label "D13"
 		(at 326.39 205.74 0)
 		(effects
@@ -16059,16 +16049,6 @@
 			(justify left bottom)
 		)
 		(uuid "ecd50774-77eb-4226-ac23-e1323744830e")
-	)
-	(label "unconnected-(RF1-DI01{slash}FFIT-PadFFIT)_1"
-		(at 271.78 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f023560d-5772-41f6-8616-059590eed77e")
 	)
 	(label "D2"
 		(at 356.87 74.93 180)
@@ -17007,7 +16987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 232.41 226.568 90)
 			(effects
 				(font
@@ -31166,7 +31146,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 232.41 218.948 90)
 			(effects
 				(font
@@ -32154,7 +32134,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 232.41 211.328 90)
 			(effects
 				(font
