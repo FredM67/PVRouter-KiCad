@@ -153,20 +153,21 @@
 # IPC-2221 based clearances for 230V RMS mains (325V peak) on uncoated FR4.
 #
 # Net classes:
-#   HV    -- Mains (post-protection): L1/L2/L3_VOLTAGE, NEUTRAL, PS1 AC pins
-#   Surge -- Raw mains + transients: PWR1 connector, GDT pads, fuse pads, Earth
+#   HV         -- Mains (post-protection): L1/L2/L3_VOLTAGE, NEUTRAL, PS1 AC pins
+#   Surge      -- Raw mains + transients: PWR1 connector, GDT pads, fuse pads, Earth
+#   HV Divider -- Voltage divider midpoints between HV resistors and sensing resistors
 #
 # All other net classes (Default, Power, Low Power, CT, ANT, Gnd) are low-voltage.
 
 # HV nets to low-voltage nets: 2.5 mm clearance (IPC-2221 basic insulation, 301-500V peak)
 (rule "HV to LV clearance"
-	(condition "A.NetClass == 'HV' && B.NetClass != 'HV' && B.NetClass != 'Surge'")
+	(condition "A.NetClass == 'HV' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider'")
 	(constraint clearance (min 2.5mm))
 )
 
 # Surge nets to low-voltage nets: 2.5 mm clearance (same mains voltage + transient margin)
 (rule "Surge to LV clearance"
-	(condition "A.NetClass == 'Surge' && B.NetClass != 'HV' && B.NetClass != 'Surge'")
+	(condition "A.NetClass == 'Surge' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider'")
 	(constraint clearance (min 2.5mm))
 )
 
@@ -174,4 +175,22 @@
 (rule "HV to Surge clearance"
 	(condition "A.NetClass == 'HV' && B.NetClass == 'Surge'")
 	(constraint clearance (min 1.5mm))
+)
+
+# HV to HV Divider: 1.0 mm clearance (divider midpoints bridge HV/LV through rated components)
+(rule "HV to HV Divider clearance"
+	(condition "A.NetClass == 'HV' && B.NetClass == 'HV Divider'")
+	(constraint clearance (min 1.0mm))
+)
+
+# Surge to HV Divider: 2.5 mm clearance (same as Surge to LV)
+(rule "Surge to HV Divider clearance"
+	(condition "A.NetClass == 'Surge' && B.NetClass == 'HV Divider'")
+	(constraint clearance (min 2.5mm))
+)
+
+# HV Divider to LV nets: 2.5 mm clearance (divider midpoints still carry significant voltage)
+(rule "HV Divider to LV clearance"
+	(condition "A.NetClass == 'HV Divider' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider'")
+	(constraint clearance (min 2.5mm))
 )
