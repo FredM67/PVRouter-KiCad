@@ -270,7 +270,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3297,7 +3297,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3815,7 +3815,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5745,7 +5745,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14311,7 +14311,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -20850,7 +20850,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21917,7 +21917,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -23976,7 +23976,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24269,7 +24269,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -29374,7 +29374,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -31262,7 +31262,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -33823,7 +33823,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -34634,7 +34634,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -41023,7 +41023,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -51972,7 +51972,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -59439,7 +59439,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -61821,7 +61821,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -62825,7 +62825,7 @@
 				)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)

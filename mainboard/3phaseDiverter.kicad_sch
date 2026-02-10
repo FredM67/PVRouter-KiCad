@@ -17386,7 +17386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 52.07 134.62 0)
 			(effects
 				(font
@@ -18694,7 +18694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 52.07 95.25 0)
 			(effects
 				(font
@@ -21815,7 +21815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 43.18 124.46 0)
 			(effects
 				(font
@@ -22967,7 +22967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 43.18 95.25 0)
 			(effects
 				(font
@@ -24187,7 +24187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 52.07 124.46 0)
 			(effects
 				(font
@@ -24289,7 +24289,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 34.29 163.83 0)
 			(effects
 				(font
@@ -25387,7 +25387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 34.29 95.25 0)
 			(effects
 				(font
@@ -25489,7 +25489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 52.07 163.83 0)
 			(effects
 				(font
@@ -26948,7 +26948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 34.29 153.67 0)
 			(effects
 				(font
@@ -27050,7 +27050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 34.29 134.62 0)
 			(effects
 				(font
@@ -27217,7 +27217,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 43.18 105.41 0)
 			(effects
 				(font
@@ -30823,7 +30823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 52.07 105.41 0)
 			(effects
 				(font
@@ -31437,7 +31437,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 43.18 163.83 0)
 			(effects
 				(font
@@ -31606,7 +31606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 43.18 153.67 0)
 			(effects
 				(font
@@ -32256,7 +32256,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 43.18 134.62 0)
 			(effects
 				(font
@@ -32660,7 +32660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 34.29 124.46 0)
 			(effects
 				(font
@@ -33832,7 +33832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 52.07 153.67 0)
 			(effects
 				(font
@@ -37000,7 +37000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "15K 1/2W 0.1% 25PPM/C 1206"
+		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
 			(at 34.29 105.41 0)
 			(effects
 				(font
