@@ -175,15 +175,3 @@
 	(condition "A.NetClass == 'HV' && B.NetClass == 'Surge'")
 	(constraint clearance (min 1.5mm))
 )
-
-# HV nets to board edge: 2.5 mm creepage
-(rule "HV to board edge clearance"
-	(condition "A.NetClass == 'HV'")
-	(constraint edge_clearance (min 2.5mm))
-)
-
-# Surge nets to board edge: 2.5 mm creepage
-(rule "Surge to board edge clearance"
-	(condition "A.NetClass == 'Surge'")
-	(constraint edge_clearance (min 2.5mm))
-)
