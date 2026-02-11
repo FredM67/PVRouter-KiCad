@@ -46,7 +46,22 @@ Notable custom symbols: ZMPT101B (AC voltage sensor), GDT28H-300-B (gas discharg
 - KiCad files (.kicad_sch, .kicad_pcb, .kicad_sym, .kicad_mod) are S-expression text format and can be read/edited as text, but care must be taken to preserve the S-expression structure.
 - The `mainboard/database/project.db` is a binary SQLite database -- do not edit as text.
 - When modifying schematic or PCB files, maintain consistency between them (net names, component references).
-- The PCB uses multiple net classes: Default, ANT, CT, Gnd, HV, Low Power, Power, Surge -- each with specific clearance and track width rules.
+- The PCB uses multiple net classes with specific clearance and track width rules:
+
+| Net Class | Voltage Domain | Purpose | Notes |
+|-----------|---------------|---------|-------|
+| **Surge** | Raw mains + transients | PWR1 connector pins, GDT pads, fuse pads, Earth | Highest clearance requirements |
+| **HV** | Mains (post-protection) | L1/L2/L3_VOLTAGE, NEUTRAL, PS1 AC pins | 2.5mm clearance to LV nets |
+| **HV Divider** | Divider midpoints | Nets between HV resistors and sensing resistors (Net-(R10-Pad2) through Net-(R33-Pad2)) | 1.0mm clearance to HV, 2.5mm to LV -- bridges HV/LV through rated components |
+| **Power** | 5V/3.3V DC | +5V, +3.3V, GND, VCC | |
+| **Low Power** | Analog/signal | VREF, AVCC, op-amp nets | |
+| **CT** | Low voltage | Current transformer signals | |
+| **ANT** | RF | SMA connector to RFM69 module (~8mm trace) | 50-ohm target, short enough that impedance matching is not critical |
+| **Gnd** | Analog ground | AGND | |
+| **Default** | Low voltage | General signals | |
+
+- HV clearance rules are defined in `mainboard/3phaseDiverter.kicad_dru` and are based on IPC-2221 for 230V RMS / 325V peak on uncoated FR4. The board is designed for use inside a Schneider Electric Thalassa enclosure.
+- The `3-phase/` directory is obsolete and should be ignored.
 
 ## Git Conventions
 
