@@ -6850,7 +6850,7 @@
 			(uuid "92d91df5-d885-472a-9c39-81af1c13ba59")
 		)
 		(embedded_fonts no)
-		(model "D:/Git/IoT/PVRouter-KiCad/KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0004_1x04_P2.54mm_Vertical.stp"
+		(model "../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0004_1x04_P2.54mm_Vertical.stp"
 			(offset
 				(xyz 3.75 0 12)
 			)

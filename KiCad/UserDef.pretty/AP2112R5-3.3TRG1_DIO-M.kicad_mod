@@ -588,7 +588,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "24ad2ac6-0071-47f1-aedb-5941e5266ff3")
 	)
-	(model "D:/Git/IoT/PVRouter-KiCad/KiCad/3dmodels/AP2112R5-3_3TRG1_DIO.step"
+	(model "../3dmodels/AP2112R5-3_3TRG1_DIO.step"
 		(offset
 			(xyz 0 0 0)
 		)

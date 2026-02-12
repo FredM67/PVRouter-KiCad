@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 7.0,
-          "width": 7.0
+          "height": 0.5,
+          "width": 0.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -548,23 +548,6 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.5,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "HV Divider",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "via_diameter": 0.7,
-        "via_drill": 0.35,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
         "clearance": 0.8,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -582,13 +565,13 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.225,
+        "clearance": 0.5,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Low Power",
+        "name": "HV Divider",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -605,9 +588,26 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Power",
+        "name": "Low Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.7,
+        "via_drill": 0.35,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.225,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
         "via_diameter": 0.8,
@@ -624,7 +624,7 @@
         "microvia_drill": 0.1,
         "name": "Surge",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,
         "via_diameter": 0.8,
@@ -712,27 +712,11 @@
       },
       {
         "netclass": "HV Divider",
-        "pattern": "Net-(R12-Pad2)"
-      },
-      {
-        "netclass": "HV Divider",
-        "pattern": "Net-(R20-Pad2)"
-      },
-      {
-        "netclass": "HV Divider",
-        "pattern": "Net-(R22-Pad2)"
-      },
-      {
-        "netclass": "HV Divider",
-        "pattern": "Net-(R30-Pad2)"
-      },
-      {
-        "netclass": "HV Divider",
-        "pattern": "Net-(R32-Pad2)"
-      },
-      {
-        "netclass": "HV Divider",
         "pattern": "Net-(R11-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "Net-(R12-Pad2)"
       },
       {
         "netclass": "HV Divider",
@@ -740,7 +724,23 @@
       },
       {
         "netclass": "HV Divider",
+        "pattern": "Net-(R14-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "Net-(R15-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "Net-(R20-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
         "pattern": "Net-(R21-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "Net-(R22-Pad2)"
       },
       {
         "netclass": "HV Divider",
@@ -748,11 +748,35 @@
       },
       {
         "netclass": "HV Divider",
+        "pattern": "Net-(R24-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "Net-(R25-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "Net-(R30-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
         "pattern": "Net-(R31-Pad2)"
       },
       {
         "netclass": "HV Divider",
+        "pattern": "Net-(R32-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
         "pattern": "Net-(R33-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "Net-(R34-Pad2)"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "Net-(R35-Pad2)"
       },
       {
         "netclass": "HV",
@@ -829,6 +853,22 @@
       {
         "netclass": "Low Power",
         "pattern": "AREF_B"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "L1_SENSING"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "L2_SENSING"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "L3_SENSING"
+      },
+      {
+        "netclass": "HV Divider",
+        "pattern": "N_SENSING"
       }
     ]
   },

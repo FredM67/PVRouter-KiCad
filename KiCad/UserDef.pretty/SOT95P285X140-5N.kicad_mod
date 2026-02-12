@@ -344,7 +344,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "08bf1a2a-7958-43a9-8278-ddc35fb8b0a6")
 	)
-	(model "D:/Git/IoT/PVRouter-KiCad/KiCad/3dmodels/AP2112K-3.3TRG1.step"
+	(model "../3dmodels/AP2112K-3.3TRG1.step"
 		(offset
 			(xyz 0 0 0)
 		)
