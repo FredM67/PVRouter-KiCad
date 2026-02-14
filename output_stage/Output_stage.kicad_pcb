@@ -1331,10 +1331,10 @@
       (net 4 "Net-(J2-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp d981b3de-9f18-459b-b8c5-55b8b91ecb2c))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.74 1.74) (drill 1.09) (layers "*.Cu" "*.Mask")
       (net 5 "Net-(J2-Pin_2)") (pinfunction "Pin_2") (pintype "passive") (tstamp 55ea92cf-d525-4149-a4be-fa59ab39a5a1))
-    (model "../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.wrl"
+    (model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
       (offset (xyz 1.25 0.15 12))
-      (scale (xyz 0.4 0.4 0.4))
-      (rotate (xyz 0 0 180))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -180))
     )
   )
 
@@ -1984,10 +1984,10 @@
       (net 4 "Net-(J2-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 765722cc-d8c2-49ee-8cef-0c0a3d92cf6f))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.74 1.74) (drill 1.09) (layers "*.Cu" "*.Mask")
       (net 5 "Net-(J2-Pin_2)") (pinfunction "Pin_2") (pintype "passive") (tstamp cab42636-e27c-4bdc-9764-85dbcb787fef))
-    (model "../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.wrl"
+    (model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
       (offset (xyz 1.25 0.15 12))
-      (scale (xyz 0.4 0.4 0.4))
-      (rotate (xyz 0 0 180))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -180))
     )
   )
 

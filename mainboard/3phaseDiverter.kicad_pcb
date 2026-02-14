@@ -1412,15 +1412,15 @@
 			(uuid "883cf1bc-3424-4bf3-9e60-a5460e3a1e8b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -2771,7 +2771,7 @@
 			(uuid "2fe9cb62-3da0-4f9d-9687-9ef652e3899f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse_395Series.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/FUS_MULTICOMP_MCMSF_MTC.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5139,15 +5139,15 @@
 			(uuid "c07e12b0-0028-4024-9fe9-a031c4e3435b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0006_1x06_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0006_1x06_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 6.3 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -8030,15 +8030,15 @@
 			(uuid "a436be40-499a-4612-9919-7b48652caf05")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -8550,15 +8550,15 @@
 			(uuid "aa82b850-d334-4d72-a1f9-4cb88690571c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -9070,15 +9070,15 @@
 			(uuid "a828120f-eb0c-4541-b0d2-0f9c093fef45")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -11057,7 +11057,7 @@
 			(uuid "9f807dfc-d5c5-4a4c-a947-d03522c4a7ec")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse_395Series.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/FUS_MULTICOMP_MCMSF_MTC.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12207,7 +12207,7 @@
 			(uuid "1ef421de-b07e-445b-a30c-40a942a26ab8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse_395Series.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/FUS_MULTICOMP_MCMSF_MTC.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12739,15 +12739,15 @@
 			(uuid "b7b8458b-1691-4426-8f5d-49abc8beffb6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -13832,15 +13832,15 @@
 			(uuid "d56a20b8-9981-417c-b7ba-8c4efcb0cb61")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -16897,15 +16897,15 @@
 			(uuid "61523971-e198-40a4-a1ec-84d3aa99e25d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -24223,15 +24223,15 @@
 			(uuid "477c69ab-5175-41c8-8e30-fecd00235736")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -25723,15 +25723,15 @@
 			(uuid "d4dba894-5a14-4a4e-9fa9-f020e33be63d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -27406,15 +27406,15 @@
 			(uuid "08b55f4d-27b6-4af7-b785-5f3beb5ac09e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -28989,15 +28989,15 @@
 			(uuid "cace0137-629f-49eb-a91b-4e0a7b159f5c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -31810,15 +31810,15 @@
 			(uuid "716b1c74-27d7-4784-8b89-86aa88d0c9cd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -34229,15 +34229,15 @@
 			(uuid "6ad2c33b-a469-4cb9-b7bb-9cfaa0f0cb9a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -38096,15 +38096,15 @@
 			(uuid "12aacf99-b7ac-4e4b-b5ad-466d746239ef")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -38372,7 +38372,7 @@
 			(uuid "df712424-3716-47c2-a520-8828192240cb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuse_Littelfuse_395Series.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/FUS_MULTICOMP_MCMSF_MTC.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41678,15 +41678,15 @@
 			(uuid "67a4a0cb-a338-480f-982c-cb20225b15e7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -43213,15 +43213,15 @@
 			(uuid "093507b4-79c3-4e78-b36f-733dd55ee27d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0004_1x04_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0004_1x04_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 3.75 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -43733,15 +43733,15 @@
 			(uuid "3980e672-bbfd-44ef-90cd-104597cf9577")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -44851,15 +44851,15 @@
 			(uuid "c0e11ee0-13b2-4dc6-8ebb-091d6ba8c7a8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -46431,15 +46431,15 @@
 			(uuid "4dfeb5dd-fc88-490b-ab1a-71896b61a7ad")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -48017,15 +48017,15 @@
 			(uuid "6048affd-a958-4658-847e-7f722a272790")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -48537,15 +48537,15 @@
 			(uuid "de6a723b-2052-4e87-a5a7-0bc8ecefa2da")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -49999,15 +49999,15 @@
 			(uuid "bd854732-7a1f-4c33-990a-bf742f141cce")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -51342,15 +51342,15 @@
 			(uuid "eade1a89-0759-4408-b236-355ca3156af0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -52173,15 +52173,15 @@
 			(uuid "3cda66c5-d6fa-4f36-8fae-2fad27794d34")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -52860,15 +52860,15 @@
 			(uuid "e3f4f68c-32f5-4040-aeb0-042c2283ec6a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -55177,15 +55177,15 @@
 			(uuid "9c37c26b-2d24-47bb-b98e-ab86b8a90ac6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -56595,15 +56595,15 @@
 			(uuid "41e617e9-55be-4887-b497-fbf9a1af6f3b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -57127,15 +57127,15 @@
 			(uuid "c7dbf4a9-328e-406a-94c6-11ef5eacff57")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -58487,15 +58487,15 @@
 			(uuid "7a2f2337-7dc3-4ac1-a178-ba308e557cd5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0003_1x03_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -59280,15 +59280,15 @@
 			(uuid "559f7279-f089-47cb-9f7f-5fbcd9ef1fea")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -61390,15 +61390,15 @@
 			(uuid "884f76f3-99b7-4011-bfe6-316dad7f866c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0.15 12)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)

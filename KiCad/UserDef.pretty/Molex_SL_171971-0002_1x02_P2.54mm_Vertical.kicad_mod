@@ -95,9 +95,9 @@
     (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp f8dab807-45f1-4e70-813c-577e7376bb6d))
   (pad "1" thru_hole roundrect (at 0 0) (size 1.74 1.74) (drill 1.09) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.143678) (tstamp 7ce87ff8-087f-4305-9fec-6f7007ad804f))
   (pad "2" thru_hole circle (at 2.54 0) (size 1.74 1.74) (drill 1.09) (layers "*.Cu" "*.Mask") (tstamp 1d63b792-c019-4e92-90dd-9bc4b32b959f))
-  (model "../../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.wrl"
+  (model "../../KiCad/3dmodels/Connector_Molex.3dshapes/Molex_SL_171971-0002_1x02_P2.54mm_Vertical.stp"
     (offset (xyz 1.25 0.15 12))
-    (scale (xyz 0.4 0.4 0.4))
-    (rotate (xyz 0 0 180))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -180))
   )
 )
