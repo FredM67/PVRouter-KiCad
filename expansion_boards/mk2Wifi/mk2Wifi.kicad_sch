@@ -3567,10 +3567,6 @@
 		(uuid "ac359084-c83d-4cf3-b496-95db177a058f")
 	)
 	(no_connect
-		(at 33.02 35.56)
-		(uuid "bf78e436-c6ce-48db-a8c8-addc215f7c7c")
-	)
-	(no_connect
 		(at 220.98 67.31)
 		(uuid "cbedb97a-e384-4507-aa44-92b0a5da0c5f")
 	)
@@ -3904,7 +3900,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 27.94) (xy 64.77 27.94)
+			(xy 74.93 27.94) (xy 72.39 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4372,11 +4368,11 @@
 		)
 		(uuid "0f36b200-74c6-45af-ba8e-48de445e79d8")
 	)
-	(label "RFM_MOSI{slash}D11"
+	(label "D9"
 		(at 72.39 38.1 180)
 		(effects
 			(font
-				(size 1.2446 1.2446)
+				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
@@ -4422,7 +4418,7 @@
 		)
 		(uuid "9bf7e992-4470-40e3-8624-2d9106199589")
 	)
-	(label "RFM_MISO{slash}D12"
+	(label "D5"
 		(at 149.86 39.37 0)
 		(effects
 			(font
@@ -4432,21 +4428,77 @@
 		)
 		(uuid "a1234567-89ab-4cde-f012-3456789abcd0")
 	)
-	(label "DS18B20"
-		(at 72.39 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
+	(symbol
+		(lib_id "power:GND")
+		(at 72.39 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a3ff995b-68cb-4c95-85e5-46f68a7d99f9")
+		(property "Reference" "#PWR030"
+			(at 66.04 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 25.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3ff995b-68cb-4c95-85e5-46f68a7d9900")
+		)
+		(instances
+			(project "mk2Wifi"
+				(path "/8f85e568-8005-4933-a5bc-4fca9da3c7b3"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(label "RFM_MISO{slash}D12"
+	(label "D5"
 		(at 72.39 35.56 180)
 		(effects
 			(font
-				(size 1.2446 1.2446)
+				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
@@ -4462,7 +4514,7 @@
 		)
 		(uuid "a98e922b-bc99-42bc-8e26-f4c09338f571")
 	)
-	(label "RFM_MOSI{slash}D11"
+	(label "D9"
 		(at 143.51 41.91 0)
 		(effects
 			(font
@@ -4492,7 +4544,7 @@
 		)
 		(uuid "bffb43b5-f255-42fa-bf24-4934d00e70b7")
 	)
-	(label "RFM_SCK{slash}D13"
+	(label "D6"
 		(at 242.57 64.77 180)
 		(effects
 			(font
@@ -4532,7 +4584,7 @@
 		)
 		(uuid "ccff65f7-4389-4c39-8bbd-6256e4826555")
 	)
-	(label "RFM_SEL{slash}D10"
+	(label "D7"
 		(at 242.57 80.01 180)
 		(effects
 			(font
@@ -4542,21 +4594,21 @@
 		)
 		(uuid "d1234567-89ab-4cde-f012-3456789abcd3")
 	)
-	(label "RFM_SCK{slash}D13"
+	(label "D6"
 		(at 72.39 33.02 180)
 		(effects
 			(font
-				(size 1.2446 1.2446)
+				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
 		(uuid "ed52fce5-ea1d-455f-88ae-3d3dfe4509cf")
 	)
-	(label "RFM_SEL{slash}D10"
+	(label "D7"
 		(at 72.39 30.48 180)
 		(effects
 			(font
-				(size 1.2446 1.2446)
+				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
@@ -6399,7 +6451,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82b4cadb-ac5c-446e-a9e8-488583df2605")
-		(property "Reference" "SPI_EXT0"
+		(property "Reference" "TRIG_EXT0"
 			(at 82.55 30.4799 0)
 			(effects
 				(font
@@ -6408,7 +6460,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SPI_EXT"
+		(property "Value" "TRIG_EXT"
 			(at 82.55 33.0199 0)
 			(effects
 				(font
@@ -6473,78 +6525,21 @@
 		(instances
 			(project "ESP32"
 				(path "/8f85e568-8005-4933-a5bc-4fca9da3c7b3"
-					(reference "SPI_EXT0")
+					(reference "TRIG_EXT0")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 64.77 27.94 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
+	(label "D8"
+		(at 72.39 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
 		(uuid "8bfdf5a6-9c4d-4f77-8d2d-f5e7c57b629f")
-		(property "Reference" "#PWR013"
-			(at 58.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 27.9399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7100d5df-fb25-43ce-ad96-6350763d49ab")
-		)
-		(instances
-			(project "ESP32"
-				(path "/8f85e568-8005-4933-a5bc-4fca9da3c7b3"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8179,6 +8174,26 @@
 				)
 			)
 		)
+	)
+	(wire
+		(pts
+			(xy 30.48 35.56) (xy 33.02 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf78e436-c6ce-48db-a8c8-addc215f7c7c")
+	)
+	(label "DS18B20"
+		(at 30.48 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bf78e436-c6ce-48db-a8c8-addc215f7c00")
 	)
 	(sheet_instances
 		(path "/"
