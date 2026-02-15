@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "mk2Wifi")(type "KiCad")(uri "${KIPRJMOD}/mk2Wifi.kicad_sym")(options "")(descr "mk2Wifi local symbols"))
+)
