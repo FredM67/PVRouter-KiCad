@@ -12,7 +12,7 @@ Inspired by [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), this project
 
 | Directory | Description | Status |
 |-----------|-------------|--------|
-| [`mainboard/`](mainboard/) | Universal mainboard (3phaseDiverter) — rev. 4.1 | Active design |
+| [`mainboard/`](mainboard/) | Universal mainboard (3phaseDiverter) — rev. 6.0 | Active design |
 | [`output_stage/`](output_stage/) | Output power stage (separate PCB) | Active design |
 | [`expansion_boards/mk2Wifi/`](expansion_boards/mk2Wifi/) | WiFi/BLE expansion module (ESP32-C3) | Active design |
 | [`1-phase/`](1-phase/) | Single-phase variant (schematic only, no PCB) | Obsolete — still sold |

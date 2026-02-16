@@ -12,7 +12,7 @@ Inspiré par [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), ce projet f
 
 | Répertoire | Description | État |
 |------------|-------------|------|
-| [`mainboard/`](mainboard/) | Carte principale universelle (3phaseDiverter) — rév. 4.1 | Conception active |
+| [`mainboard/`](mainboard/) | Carte principale universelle (3phaseDiverter) — rév. 6.0 | Conception active |
 | [`output_stage/`](output_stage/) | Étage de puissance de sortie (carte séparée) | Conception active |
 | [`expansion_boards/mk2Wifi/`](expansion_boards/mk2Wifi/) | Module d’extension WiFi/BLE (ESP32-C3) | Conception active |
 | [`1-phase/`](1-phase/) | Variante monophasée (schéma uniquement, pas de PCB) | Obsolète — encore en vente |
