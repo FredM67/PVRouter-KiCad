@@ -15,9 +15,8 @@ Inspiré par [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), ce projet f
 | [`mainboard/`](mainboard/) | Carte principale universelle (3phaseDiverter) — rév. 4.1 | Conception active |
 | [`output_stage/`](output_stage/) | Étage de puissance de sortie (carte séparée) | Conception active |
 | [`expansion_boards/mk2Wifi/`](expansion_boards/mk2Wifi/) | Module d’extension WiFi/BLE (ESP32-C3) | Conception active |
-| [`expansion_boards/ESP32/`](expansion_boards/ESP32/) | Module d’extension ESP32 | En développement |
-| [`1-phase/`](1-phase/) | Variante monophasée (schéma uniquement, pas de PCB) | Archive |
-| [`3-phase/`](3-phase/) | Variante triphasée (ancienne version) | Obsolète |
+| [`1-phase/`](1-phase/) | Variante monophasée (schéma uniquement, pas de PCB) | Obsolète — encore en vente |
+| [`3-phase/`](3-phase/) | Variante triphasée (ancienne version) | Obsolète — encore en vente |
 | [`KiCad/`](KiCad/) | Bibliothèques partagées (symboles, empreintes, modèles 3D) | — |
 
 ## Carte principale
@@ -36,8 +35,7 @@ La carte est conçue pour être montée dans un boîtier Schneider Electric Thal
 
 ## Modules d’extension
 
-- **[mk2Wifi](expansion_boards/mk2Wifi/)** — Module WiFi/BLE basé sur l’ESP32-C3-MINI-1, avec connecteur USB-C, écran OLED optionnel et capteur de température DS18B20
-- **[ESP32](expansion_boards/ESP32/)** — Module d’extension ESP32
+- **[mk2Wifi](expansion_boards/mk2Wifi/)** — Module WiFi/BLE basé sur l'ESP32-C3-MINI-1, avec connecteur USB-C, écran OLED optionnel et capteur de température DS18B20
 
 ## Étage de puissance
 
