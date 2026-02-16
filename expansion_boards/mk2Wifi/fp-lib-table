@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "valcon-usb")(type "KiCad")(uri "${KIPRJMOD}/footprints/valcon-usb.pretty")(options "")(descr "USB-C connector footprint"))
   (lib (name "PCM_Espressif")(type "KiCad")(uri "${KIPRJMOD}/footprints/PCM_Espressif.pretty")(options "")(descr "ESP32-C3-MINI-1 footprint"))
+  (lib (name "UserDef")(type "KiCad")(uri "/home/fredm67/git/PVRouter-KiCad/KiCad/UserDef.pretty")(options "")(descr ""))
 )
