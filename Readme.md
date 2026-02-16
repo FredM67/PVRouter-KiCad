@@ -2,7 +2,7 @@ Français | **[English](Readme.en.md)**
 
 # PVRouter-KiCad
 
-Fichiers de conception KiCad pour le **Mk2 PV Router** — un système open-source de routage solaire photovoltaïque triphasé.
+Fichiers de conception KiCad pour le **Mk2 PV Router** — un système open-source de routage solaire photovoltaïque universel (monophasé, triphasé avec ou sans neutre, biphasé).
 
 Inspiré par [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), ce projet fournit les schémas et circuits imprimés nécessaires pour construire un routeur PV capable de dévier l’excédent de production solaire vers des charges résistives (chauffe-eau, radiateurs, etc.).
 
@@ -21,11 +21,11 @@ Inspiré par [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), ce projet f
 
 ## Carte principale
 
-La carte principale est le cœur du projet. Elle intègre :
+La carte principale est le cœur du projet. Universelle, elle prend en charge les configurations monophasée, triphasée (avec ou sans neutre) et biphasée (split-phase). Selon la configuration, jusqu’à 3 transformateurs de courant (CT) sont nécessaires. Elle intègre :
 
 - Microcontrôleur ATmega328P
-- Trois capteurs de courant (transformateurs de courant)
-- Trois capteurs de tension (ZMPT101B)
+- Jusqu’à 3 capteurs de courant (transformateurs de courant)
+- Jusqu’à 3 capteurs de tension (ZMPT101B)
 - Module radio RFM69 (433 MHz)
 - Alimentation intégrée à partir du secteur
 - Protection contre les surtensions (GDT + fusibles)

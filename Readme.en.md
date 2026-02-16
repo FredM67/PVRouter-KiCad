@@ -2,7 +2,7 @@
 
 # PVRouter-KiCad
 
-KiCad design files for the **Mk2 PV Router** — an open-source 3-phase solar PV diverter system.
+KiCad design files for the **Mk2 PV Router** — an open-source universal solar PV diverter system (single-phase, 3-phase with or without neutral, split-phase).
 
 Inspired by [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), this project provides the schematics and PCB layouts needed to build a PV router capable of diverting surplus solar generation to resistive loads (water heaters, radiators, etc.).
 
@@ -21,11 +21,11 @@ Inspired by [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), this project
 
 ## Mainboard
 
-The mainboard is the core of the project. It includes:
+The mainboard is the core of the project. It is a universal design supporting single-phase, 3-phase (with or without neutral), and split-phase configurations. Depending on the configuration, up to 3 current transformers (CTs) are needed. It includes:
 
 - ATmega328P microcontroller
-- Three current sensors (current transformers)
-- Three voltage sensors (ZMPT101B)
+- Up to 3 current sensors (current transformers)
+- Up to 3 voltage sensors (ZMPT101B)
 - RFM69 radio module (433 MHz)
 - On-board power supply from mains
 - Surge protection (GDT + fuses)
