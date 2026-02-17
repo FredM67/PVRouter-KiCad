@@ -6,7 +6,7 @@ Fichiers de conception KiCad pour le **Mk2 PV Router** — un système open-sour
 
 Inspiré par [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), ce projet fournit les schémas et circuits imprimés nécessaires pour construire un routeur PV capable de dévier l’excédent de production solaire vers des charges résistives (chauffe-eau, radiateurs, etc.).
 
-![Carte principale](mainboard/3phaseDiverter.png)
+![Carte principale](mainboard/assets/3phaseDiverter-front.png)
 
 ## Structure du dépôt
 

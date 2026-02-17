@@ -6,7 +6,7 @@ KiCad design files for the **Mk2 PV Router** — an open-source universal solar 
 
 Inspired by [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), this project provides the schematics and PCB layouts needed to build a PV router capable of diverting surplus solar generation to resistive loads (water heaters, radiators, etc.).
 
-![Mainboard](mainboard/3phaseDiverter.png)
+![Mainboard](mainboard/assets/3phaseDiverter-front.png)
 
 ## Repository structure
 

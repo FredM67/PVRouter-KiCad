@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "3 phase PV diverter - Main board")
-		(date "2025-03-03")
-		(rev "4.1")
+		(date "2026-02-16")
+		(rev "6.0")
 		(company "Inspired by www.mk2pvrouter.co.uk")
 	)
 	(lib_symbols
@@ -24288,7 +24288,6 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4b4b97c8-8b03-421b-928f-a1a5e3bbb1ac")
 		(property "Reference" "JP0"
 			(at 83.82 231.14 0)
@@ -24298,7 +24297,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
+		(property "Value" "V sel."
 			(at 85.0899 224.79 90)
 			(effects
 				(font
