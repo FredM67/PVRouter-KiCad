@@ -49,7 +49,7 @@ Key features:
 | Ref | Value | Package | Description |
 |-----|-------|---------|-------------|
 | IC1 | ATmega328P | DIP-28 | Microcontroller (16 MHz) |
-| IC2 | LMV321A | SOT-23-5 | Single op-amp (1.1V AREF buffer) |
+| U2 | LMV321A | SOT-23-5 | Single op-amp (1.1V AREF buffer) |
 | U1 | AP2112K-3.3 | SOT-23-5 | 3.3V LDO regulator (600mA) |
 | PS1 | RAC05E-05SKT | HS-40005 | AC-DC power supply module (5V, 3W, Mornsun) |
 | RF1 | RFM69CW | Custom | ISM band radio module (433/868 MHz) |
@@ -103,8 +103,9 @@ Each phase (L1/L2/L3) has an identical set of components. Numbering follows the 
 | R18 / R28 / R38 | 22R typ. | 0603 | Current CT burden resistor (value depends on CT rating and range) |
 | R19 / R29 / R39 | 1K | 0603 | Series protection |
 | R101--R104 / R201--R204 / R301--R304 | 10K | 0603 | 50/50 dividers for VREF/2 bias (1 pair per V and I channel) |
-| C12 / C22 / C32 | 10uF | 0603 | Filter capacitor across bottom resistor of VREF/2 divider (fc ~ 1.6Hz) |
-| C10, C11 / C20, C21 / C30, C31 | 10uF | 0603 | Per-phase decoupling |
+| C10 / C20 / C30 | 10uF | 0603 | Inline AC coupling, voltage channel (series between ZMPT101K burden and V bias junction — blocks DC, passes AC signal) |
+| C12 / C22 / C32 | 10uF | 0603 | Inline AC coupling, current channel (series between CT and I bias junction — blocks DC, passes AC signal) |
+| C11, C13 / C21, C23 / C31, C33 | 100nF | 0603 | Bypass capacitors, bias junction to AGND (C11/C21/C31 voltage, C13/C23/C33 current) |
 | D11, D12 / D21, D22 / D31, D32 | DF2B7AE | SOD-523 | TVS diodes (voltage ADC input protection, 2x per phase) |
 | D13 / D23 / D33 | CDSOD323-T03C | SOD-323 | Bidirectional TVS diode (ADC protection if current-output CT used without burden R18/R28/R38, 1x per phase) |
 
@@ -114,14 +115,13 @@ Each phase (L1/L2/L3) has an identical set of components. Numbering follows the 
 |-----|-------|---------|-------------|
 | C1 | 1uF 310VAC | Film | Mains filter capacitor (X2 class) |
 | C3 | 120uF | Electrolytic | Power supply filtering |
-| C2, C41 | 1uF | 0603 | Filtering |
+| C2, C40, C41 | 1uF | 0603 | Filtering |
 | C4, C5, C6, C9, C42, C43 | 100nF | 0603 | IC bypass |
 | C7, C8 | 22pF | 0603 | Crystal load capacitors |
 | X1 | 16 MHz | HC-49 | Crystal oscillator |
 | R3 | 1M | 0603 | RESET pull-up |
 | R4 | 47K | 0603 | Pull-up |
 | R6 | 4.7K | 0603 | DS18B20 pull-up |
-| R9, R99 | 4.7K | 0603 | I2C pull-up |
 | R39--R42 | 22R | 0603 | Series termination (SPI) |
 | FB1 | Ferrite | 0603 | Ferrite bead (power filtering) |
 
@@ -328,7 +328,7 @@ Two 10K resistors in series between VREF (1.1V) and GND:
 - I = 1.1V / 20K = 55uA
 - **P per 10K = 30uW** -- negligible
 
-The 10K value (Thevenin impedance 5K) meets the ATmega328P datasheet recommendation of ≤10K source impedance for the ADC 14pF S/H capacitor. A 10uF capacitor across the bottom resistor filters high-frequency noise (fc ~ 1.6Hz).
+The 10K value (Thevenin impedance 5K) meets the ATmega328P datasheet recommendation of ≤10K source impedance for the ADC 14pF S/H capacitor. A 100nF bypass capacitor (C11/C13 per phase) from the bias junction to AGND filters high-frequency noise without attenuating the 50Hz signal.
 
 ### Other resistors
 
@@ -337,7 +337,6 @@ The 10K value (Thevenin impedance 5K) meets the ATmega328P datasheet recommendat
 | R3 | 1M | 3.3V | 3.3uA | 0.011mW |
 | R4 | 47K | 3.3V | 70uA | 0.23mW |
 | R6 | 4.7K | 3.3V | 0.70mA | 2.3mW |
-| R9, R99 | 4.7K | 3.3V | 0.70mA | 2.3mW |
 | R17 / R27 / R37 | 1K | < 2V | < 2mA | < 4mW |
 | R19 / R29 / R39 | 1K | < 1V | < 1mA | < 1mW |
 | R40--R42 | 22R | 3.3V | signal | < 5mW |

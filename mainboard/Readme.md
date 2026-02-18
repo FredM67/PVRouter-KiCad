@@ -49,7 +49,7 @@ Caractéristiques principales :
 | Réf | Valeur | Boîtier | Description |
 |-----|--------|---------|-------------|
 | IC1 | ATmega328P | DIP-28 | Microcontrôleur (16 MHz) |
-| IC2 | LM358 | SOIC-8 | Amplificateur opérationnel double (buffer AREF 1,1 V) |
+| U2 | LMV321A | SOT-23-5 | Amplificateur opérationnel simple (buffer AREF 1,1 V) |
 | U1 | AP2112K-3.3 | SOT-23-5 | Régulateur LDO 3,3 V (600 mA) |
 | PS1 | RAC05E-05SKT | HS-40005 | Module d'alimentation AC-DC (5 V, 3 W, Mornsun) |
 | RF1 | RFM69CW | Custom | Module radio ISM (433/868 MHz) |
@@ -103,8 +103,9 @@ Chaque phase (L1/L2/L3) possède un ensemble identique de composants. La numéro
 | R18 / R28 / R38 | 22R typ. | 0603 | Résistance de charge CT courant (valeur selon le calibre du CT) |
 | R19 / R29 / R39 | 1K | 0603 | Protection série |
 | R101–R104 / R201–R204 / R301–R304 | 10K | 0603 | Diviseurs 50/50 pour polarisation à VREF/2 (1 paire par voie V et I) |
-| C12 / C22 / C32 | 10 µF | 0603 | Condensateur de filtrage en parallèle sur la résistance basse du diviseur VREF/2 (fc ≈ 1,6 Hz) |
-| C10, C11 / C20, C21 / C30, C31 | 10 µF | 0603 | Découplage par phase |
+| C10 / C20 / C30 | 10 µF | 0603 | Couplage AC série, voie tension (entre charge ZMPT101K et point de polarisation V — bloque le continu, passe le signal alternatif) |
+| C12 / C22 / C32 | 10 µF | 0603 | Couplage AC série, voie courant (entre CT et point de polarisation I — bloque le continu, passe le signal alternatif) |
+| C11, C13 / C21, C23 / C31, C33 | 100 nF | 0603 | Condensateurs de découplage, point de polarisation vers AGND (C11/C21/C31 tension, C13/C23/C33 courant) |
 | D11, D12 / D21, D22 / D31, D32 | DF2B7AE | SOD-523 | Diodes TVS (protection entrée ADC tension, 2× par phase) |
 | D13 / D23 / D33 | CDSOD323-T03C | SOD-323 | Diode TVS bidirectionnelle (protection ADC si CT courant sans résistance de charge R18/R28/R38, 1× par phase) |
 
@@ -114,14 +115,13 @@ Chaque phase (L1/L2/L3) possède un ensemble identique de composants. La numéro
 |-----|--------|---------|-------------|
 | C1 | 1 µF 310 VAC | Film | Condensateur de filtrage secteur (classe X2) |
 | C3 | 120 µF | Électrolytique | Filtrage alimentation |
-| C2, C41 | 1 µF | 0603 | Filtrage |
+| C2, C40, C41 | 1 µF | 0603 | Filtrage |
 | C4, C5, C6, C9, C42, C43 | 100 nF | 0603 | Découplage CI |
 | C7, C8 | 22 pF | 0603 | Condensateurs de charge quartz |
 | X1 | 16 MHz | HC-49 | Quartz |
 | R3 | 1M | 0603 | Pull-up RESET |
 | R4 | 47K | 0603 | Pull-up |
 | R6 | 4,7K | 0603 | Pull-up DS18B20 |
-| R9, R99 | 4,7K | 0603 | Pull-up I2C |
 | R39–R42 | 22R | 0603 | Terminaison série (SPI) |
 | FB1 | Ferrite | 0603 | Perle de ferrite (filtrage alimentation) |
 
@@ -328,7 +328,7 @@ Deux résistances de 10K en série entre VREF (1,1 V) et GND :
 - I = 1,1 V / 20K = 55 µA
 - **P par 10K = 30 µW** — négligeable
 
-La valeur de 10K (impédance Thévenin 5K) respecte la recommandation du datasheet ATmega328P (≤ 10K d’impédance source pour le condensateur S/H de 14 pF de l’ADC). Un condensateur de 10 µF en parallèle sur la résistance basse filtre le bruit haute fréquence (fc ≈ 1,6 Hz).
+La valeur de 10K (impédance Thévenin 5K) respecte la recommandation du datasheet ATmega328P (≤ 10K d’impédance source pour le condensateur S/H de 14 pF de l’ADC). Un condensateur de découplage de 100 nF (C11/C13 par phase) entre le point de polarisation et AGND filtre le bruit haute fréquence sans atténuer le signal à 50 Hz.
 
 ### Autres résistances
 
@@ -337,7 +337,6 @@ La valeur de 10K (impédance Thévenin 5K) respecte la recommandation du datashe
 | R3 | 1M | 3,3 V | 3,3 µA | 0,011 mW |
 | R4 | 47K | 3,3 V | 70 µA | 0,23 mW |
 | R6 | 4,7K | 3,3 V | 0,70 mA | 2,3 mW |
-| R9, R99 | 4,7K | 3,3 V | 0,70 mA | 2,3 mW |
 | R17 / R27 / R37 | 1K | < 2 V | < 2 mA | < 4 mW |
 | R19 / R29 / R39 | 1K | < 1 V | < 1 mA | < 1 mW |
 | R40–R42 | 22R | 3,3 V | signal | < 5 mW |
