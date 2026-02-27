@@ -18696,6 +18696,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23345"
+			(at 232.41 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e5973fd9-fc31-4143-addf-7123cf8f82e9")
 		)
@@ -18794,6 +18803,15 @@
 		)
 		(property "Triphasé" ""
 			(at 134.62 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19170830"
+			(at 127.762 174.752 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19756,6 +19774,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C19702"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5448f073-c1ef-4e8e-93c8-e8462070a75b")
 		)
@@ -19843,6 +19870,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 392.43 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25819"
+			(at 396.24 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19938,6 +19974,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 80.01 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 80.01 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20226,6 +20271,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 168.91 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 169.164 163.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20732,6 +20786,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C95204"
+			(at 157.48 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "178dfa3a-5dcd-432f-bd3b-f9e581c3346a")
 		)
@@ -21209,6 +21272,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 80.01 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 80.01 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22554,6 +22626,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C15849"
+			(at 45.72 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f8a35f28-f247-43df-8431-a54accadfdab")
 		)
@@ -22744,6 +22825,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C95204"
+			(at 157.48 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d08cfda2-3d5b-4b6f-8c1f-c2f241edc6b6")
 		)
@@ -22896,6 +22986,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 86.36 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C95204"
+			(at 88.9 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23287,6 +23386,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 387.35 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22935"
+			(at 387.35 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23869,6 +23977,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 102.87 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b288f438-6aad-4ea1-839a-70cca1ae828f")
 		)
@@ -24064,6 +24181,15 @@
 		)
 		(property "Triphasé" ""
 			(at 134.62 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19170830"
+			(at 127.762 116.332 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25312,6 +25438,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C224024"
+			(at 120.65 201.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "788db528-b188-4727-aff3-e10668b62062")
 		)
@@ -25399,6 +25534,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 294.64 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1653"
+			(at 294.64 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26342,6 +26486,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C95204"
+			(at 88.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7ba04ff3-0897-4bac-8614-0a55f6cd2903")
 		)
@@ -26429,6 +26582,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 148.59 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 148.59 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27631,6 +27793,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1002"
+			(at 279.4 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b6e7e23b-a7f1-45f0-a548-7f58d450cd30")
 		)
@@ -27819,6 +27990,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 148.59 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 148.59 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29390,6 +29570,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C95204"
+			(at 88.9 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "303b9e6b-ce75-485a-91f9-5e0ea2b10026")
 		)
@@ -29484,6 +29673,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C95204"
+			(at 90.17 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b719ac88-066b-41be-8178-349bf92e66da")
 		)
@@ -29571,6 +29769,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 86.36 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C95204"
+			(at 88.9 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30004,6 +30211,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 154.94 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C95204"
+			(at 157.48 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31067,6 +31283,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C95204"
+			(at 90.17 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c74051a7-115d-4d48-bfa6-1f207b970a69")
 		)
@@ -31480,6 +31705,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 154.94 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C95204"
+			(at 157.48 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32004,6 +32238,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C19170830"
+			(at 127.762 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dda312ea-337b-44b0-9fa0-e76ade55bac7")
 		)
@@ -32171,6 +32414,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 148.59 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 148.59 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32397,6 +32649,15 @@
 		)
 		(property "Triphasé" ""
 			(at 240.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 240.03 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32763,6 +33024,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23345"
+			(at 232.41 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "59fd1c59-0700-4e5b-8f3b-2ed5bd2bb1f2")
 		)
@@ -32918,6 +33188,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 69.85 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 74.93 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33453,6 +33732,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C95204"
+			(at 157.48 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "51fc913d-1afc-4edf-82b4-f544c693ee0e")
 		)
@@ -33637,6 +33925,15 @@
 		)
 		(property "Triphasé" ""
 			(at 232.41 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 232.41 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34038,6 +34335,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 154.94 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C95204"
+			(at 157.48 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36558,6 +36864,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1653"
+			(at 294.64 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "43863865-1278-4a42-859b-d8792c4ed19f")
 		)
@@ -37502,6 +37817,15 @@
 		)
 		(property "Description" "Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOT-23-5/SC-70-5"
 			(at 59.69 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7972"
+			(at 50.8 257.556 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38824,6 +39148,15 @@
 		)
 		(property "Triphasé" "X"
 			(at 91.44 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 87.63 201.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
