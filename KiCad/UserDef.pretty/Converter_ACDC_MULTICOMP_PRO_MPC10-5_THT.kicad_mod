@@ -1,0 +1,184 @@
+(footprint "Converter_ACDC_MULTICOMP_PRO_MPC10-5_THT"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "ACDC-Converter, MULTICOMP PRO, MPC10-5, 10W, Rev. April 10. 2025, https://www.farnell.com/datasheets/4538682.pdf")
+	(tags "ACDC-Converter MULTICOMP PRO MPC10-5 THT 10W")
+	(property "Reference" "REF**"
+		(at 16.5 -4.85 0)
+		(layer "F.SilkS")
+		(uuid "faf3e72f-aee0-44c7-967b-80f087b04542")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Converter_ACDC_MULTICOMP_PRO_MPC10-5_THT"
+		(at 16.5 25.25 0)
+		(layer "F.Fab")
+		(uuid "5f2b0562-efb9-4cd7-88a5-bb85a0727c7b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c15eef45-3e1b-4a2d-b7a5-eb77b76100d3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2072aa46-7c6c-4567-a1cf-0ffd9fdb12b3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3.502 -3.2)
+		(end -0.298 -3.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b7a8631b-56c2-44c6-b0b0-3f83c3905eb6")
+	)
+	(fp_line
+		(start -3.5 22.2)
+		(end -3.5 -3.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b4d1ba8-de2e-4ba7-bd94-06cc2879e6d3")
+	)
+	(fp_line
+		(start 0.296 -3.2)
+		(end 36.5 -3.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e07d7b4f-6319-45eb-ba6d-dd606bdfcb4f")
+	)
+	(fp_line
+		(start 36.5 -3.2)
+		(end 36.5 22.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b4b66fd6-2bed-4cda-ae64-252c734c5064")
+	)
+	(fp_line
+		(start 36.5 22.2)
+		(end -3.5 22.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "00271fd0-b97e-48fb-af68-f3dde9199fbc")
+	)
+	(fp_poly
+		(pts
+			(xy 0 -3.1) (xy -0.44 -3.71) (xy 0.44 -3.71)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "3404f56e-1ccb-42cd-96a6-ec7e73df0030")
+	)
+	(fp_rect
+		(start -3.6 -3.3)
+		(end 36.6 22.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "558854d0-c353-4ad4-b343-3b8a3aed3105")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 16.5 10.2 0)
+		(layer "F.Fab")
+		(uuid "0545efdb-d0d3-41f2-ad29-1293af690c9a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 19)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.1)
+		(uuid "8db38078-9288-48e5-bbfe-f60363fa0309")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "91f653a3-0239-4315-ad6f-e0aa664ab71b")
+	)
+	(pad "3" thru_hole circle
+		(at 33 0)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fb911be9-d2d7-403c-8722-22c8e66eed93")
+	)
+	(pad "4" thru_hole circle
+		(at 33 12.7)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c12509d3-6015-48fe-93d7-077394cf70b6")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Converter_ACDC.3dshapes/Converter_ACDC_TRACO_TMF_051xx_THT.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
