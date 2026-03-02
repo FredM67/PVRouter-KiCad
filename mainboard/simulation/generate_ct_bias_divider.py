@@ -920,8 +920,10 @@ def build():
     p(wire(CTVS_CT_x, SIG_y, CTVS_CT_x, CTVS_CT_y - 3.81))  # down to C_TVS_CT1 pin1
     p(gnd_symbol(CTVS_CT_x, CTVS_CT_y + 3.81, "#PWR05"))  # GND below C_TVS_CT1
 
-    # Label SIG on the AC source output (at junction below C12)
-    p(label("SIG", C12_x + 1.27, SIG_y, 0))
+    # Label SIG on the AC source output (stub wire from junction below C12)
+    SIG_label_x = C12_x + 5.08
+    p(wire(C12_x, SIG_y, SIG_label_x, SIG_y))
+    p(label("SIG", SIG_label_x, SIG_y, 0))
 
     # ── Right side: R19 → ADC_PIN → C_TVS_ADC, then SW1 → C_SH ──
 
@@ -1052,7 +1054,9 @@ def build():
     p(wire(CTVS_CT2_x, SIG_NF_y, CTVS_CT2_x, CTVS_CT2_y - 3.81))
     p(gnd_symbol(CTVS_CT2_x, CTVS_CT2_y + 3.81, "#PWR013"))
 
-    p(label("SIG_NF", C22_x + 1.27, SIG_NF_y, 0))
+    SIG_NF_label_x = C22_x + 5.08
+    p(wire(C22_x, SIG_NF_y, SIG_NF_label_x, SIG_NF_y))
+    p(label("SIG_NF", SIG_NF_label_x, SIG_NF_y, 0))
 
     # R29 (1K protection)
     R29_x = R19_x
