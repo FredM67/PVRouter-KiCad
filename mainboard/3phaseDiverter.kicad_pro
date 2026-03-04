@@ -496,6 +496,20 @@
         "wire_width": 6
       },
       {
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "ADC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.6
+      },
+      {
         "bus_width": 12,
         "clearance": 0.325,
         "diff_pair_gap": 0.25,
@@ -505,7 +519,7 @@
         "microvia_drill": 0.1,
         "name": "ANT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
         "via_diameter": 0.8,
@@ -520,7 +534,7 @@
         "microvia_drill": 0.1,
         "name": "Earth",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.3,
         "via_diameter": 0.8,
@@ -536,7 +550,7 @@
         "microvia_drill": 0.1,
         "name": "Gnd",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "via_diameter": 0.5524,
@@ -553,7 +567,7 @@
         "microvia_drill": 0.1,
         "name": "HV",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.3,
         "via_diameter": 0.8,
@@ -570,7 +584,7 @@
         "microvia_drill": 0.1,
         "name": "HV Divider",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.7,
@@ -587,7 +601,7 @@
         "microvia_drill": 0.1,
         "name": "Low Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.7,
@@ -604,7 +618,7 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
         "via_diameter": 0.8,
@@ -621,7 +635,7 @@
         "microvia_drill": 0.1,
         "name": "Surge",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,
         "via_diameter": 0.8,
@@ -784,15 +798,15 @@
         "pattern": "Net-(PS1-AC(N))"
       },
       {
-        "netclass": "Default",
+        "netclass": "ADC",
         "pattern": "Net-(CT1-Pin_1)"
       },
       {
-        "netclass": "Default",
+        "netclass": "ADC",
         "pattern": "Net-(CT2-Pin_1)"
       },
       {
-        "netclass": "Default",
+        "netclass": "ADC",
         "pattern": "Net-(CT3-Pin_1)"
       },
       {
@@ -878,6 +892,18 @@
       {
         "netclass": "Power",
         "pattern": "Net-(JP0-B)"
+      },
+      {
+        "netclass": "ADC",
+        "pattern": "Net-(C10-Pad2)"
+      },
+      {
+        "netclass": "ADC",
+        "pattern": "Net-(C20-Pad2)"
+      },
+      {
+        "netclass": "ADC",
+        "pattern": "Net-(C30-Pad2)"
       }
     ]
   },
