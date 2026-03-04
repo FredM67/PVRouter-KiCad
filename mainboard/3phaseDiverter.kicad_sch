@@ -17519,7 +17519,7 @@
 		)
 		(uuid "90c4c72f-583b-4f3f-9010-af0e05aa12cf")
 	)
-	(label "AGND"
+	(label "GNDA"
 		(at 307.34 83.82 0)
 		(effects
 			(font
@@ -18982,9 +18982,9 @@
 		(at 134.62 166.37 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "019b1fc1-5b96-48a2-a226-74fc92fc4fa3")
 		(property "Reference" "D33"
 			(at 132.588 172.974 90)
@@ -19022,7 +19022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SOD-323 Bidirectional TVS Diode, 3.3V, 350W, Alternate KiCAD Library"
+		(property "Description" "150 1/2W 0.1%"
 			(at 134.62 166.37 0)
 			(effects
 				(font
@@ -20991,7 +20991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 300.99 27.94 90)
 			(effects
 				(font
@@ -21486,7 +21486,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 178.054 115.57 0)
 			(effects
 				(font
@@ -24953,9 +24953,9 @@
 		(at 134.62 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "449c3db0-43ed-4ffd-b3cd-d428240803da")
 		(property "Reference" "D13"
 			(at 132.588 114.554 90)
@@ -24993,7 +24993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SOD-323 Bidirectional TVS Diode, 3.3V, 350W, Alternate KiCAD Library"
+		(property "Description" "150 1/2W 0.1%"
 			(at 134.62 107.95 0)
 			(effects
 				(font
@@ -25475,7 +25475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 346.71 248.92 0)
 			(effects
 				(font
@@ -29346,7 +29346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 281.94 69.85 0)
 			(effects
 				(font
@@ -29412,7 +29412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 107.95 148.59 0)
 			(effects
 				(font
@@ -30165,7 +30165,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 107.95 177.8 0)
 			(effects
 				(font
@@ -34040,9 +34040,9 @@
 		(at 134.62 137.16 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "983816e7-fb89-4266-ad58-7b788bb6b4b0")
 		(property "Reference" "D23"
 			(at 132.588 143.764 90)
@@ -34080,7 +34080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SOD-323 Bidirectional TVS Diode, 3.3V, 350W, Alternate KiCAD Library"
+		(property "Description" "150 1/2W 0.1%"
 			(at 134.62 137.16 0)
 			(effects
 				(font
@@ -38645,7 +38645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 72.644 265.43 90)
 			(effects
 				(font
@@ -39271,7 +39271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 57.15 280.67 0)
 			(effects
 				(font
@@ -40842,7 +40842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 178.562 174.244 0)
 			(effects
 				(font
@@ -41491,7 +41491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 178.308 145.034 0)
 			(effects
 				(font
@@ -41672,7 +41672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 297.18 83.82 90)
 			(effects
 				(font
@@ -41844,7 +41844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 107.95 119.38 0)
 			(effects
 				(font
@@ -41910,7 +41910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AGND"
+		(property "Value" "GNDA"
 			(at 285.75 115.5699 90)
 			(effects
 				(font
