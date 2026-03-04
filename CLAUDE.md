@@ -48,19 +48,33 @@ Notable custom symbols: ZMPT101B (AC voltage sensor), GDT28H-300-B (gas discharg
 - When modifying schematic or PCB files, maintain consistency between them (net names, component references).
 - The PCB uses multiple net classes with specific clearance and track width rules:
 
-| Net Class | Voltage Domain | Purpose | Notes |
-|-----------|---------------|---------|-------|
-| **Surge** | Raw mains + transients | PWR1 connector pins, GDT pads, fuse pads, Earth | Highest clearance requirements |
-| **HV** | Mains (post-protection) | L1/L2/L3_VOLTAGE, NEUTRAL, PS1 AC pins | 2.5mm clearance to LV nets |
-| **HV Divider** | Divider midpoints | Nets between HV resistors and sensing resistors (Net-(R10-Pad2) through Net-(R33-Pad2)) | 1.0mm clearance to HV, 2.5mm to LV -- bridges HV/LV through rated components |
-| **Power** | 5V/3.3V DC | +5V, +3.3V, GND, VCC | |
-| **Low Power** | Analog/signal | VREF, AVCC, op-amp nets | |
-| **CT** | Low voltage | Current transformer signals | |
-| **ANT** | RF | SMA connector to RFM69 module (~8mm trace) | 50-ohm target, short enough that impedance matching is not critical |
-| **Gnd** | Analog ground | AGND | |
-| **Default** | Low voltage | General signals | |
+| Net Class | Track Width | Voltage Domain | Purpose | Notes |
+|-----------|------------|---------------|---------|-------|
+| **Surge** | 2.0mm | Raw mains + transients | PWR1 connector pins, GDT pads, fuse pads | Highest clearance requirements |
+| **Earth** | 1.3mm | Protective earth | PE conductor | 1.5mm clearance to HV/LV nets |
+| **HV** | 1.3mm | Mains (post-protection) | L1/L2/L3_VOLTAGE, NEUTRAL, PS1 AC pins | 1.5mm to LV, 2.0mm inter-phase |
+| **HV Divider** | 0.5mm | Divider midpoints | Nets between HV resistors and sensing resistors | 0.8mm to HV, 1.5mm to LV |
+| **Power** | 1.0mm | 5V/3.3V DC | +5V, +3.3V, VCC | |
+| **ADC** | 0.5mm | Low voltage analog | CT sensing and ZMPT secondary nets | Sensitive analog signals to ADC |
+| **Low Power** | 0.5mm | Analog/signal | VREF, AVCC, op-amp nets | |
+| **ANT** | 1.0mm | RF | SMA connector to RFM69 module (~8mm trace) | 50-ohm target, short enough that impedance matching is not critical |
+| **Gnd** | 0.5mm | Ground | GND, AGND | |
+| **Default** | 0.25mm | Low voltage | General signals | |
 
-- HV clearance rules are defined in `mainboard/3phaseDiverter.kicad_dru` and are based on IPC-2221 for 230V RMS / 325V peak on uncoated FR4. The board is designed for use inside a Schneider Electric Thalassa enclosure.
+- HV clearance rules are defined in `mainboard/3phaseDiverter.kicad_dru` and are based on IPC-2221 for solder-mask-coated FR4 (relaxed from B2 uncoated toward B3 coated). Key clearances:
+
+| Pair | Voltage | Clearance |
+|------|---------|-----------|
+| HV/Surge inter-phase (L1↔L2↔L3) | 565V peak | 2.0mm |
+| HV/Surge phase-to-neutral | 325V peak | 1.5mm |
+| HV/Surge to LV | 325V peak | 1.5mm |
+| Earth to HV/Surge/LV | 325V peak | 1.5mm |
+| HV to Surge (same domain) | -- | 1.2mm |
+| HV to HV Divider | ~150V peak | 0.8mm |
+| HV Divider/Surge to LV | 325V peak | 1.5mm |
+
+  All HV clearance rules exclude pad-to-pad (component pin spacing is manufacturer-rated).
+- The board is designed for use inside a Schneider Electric Thalassa enclosure.
 - The `3-phase/` directory is obsolete and should be ignored.
 
 ## Git Conventions
