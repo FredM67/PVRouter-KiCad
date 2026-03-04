@@ -150,47 +150,98 @@
 #------------------------------------------------------------------------
 # Section 2: High-voltage clearance rules
 #------------------------------------------------------------------------
-# IPC-2221 based clearances for 230V RMS mains (325V peak) on uncoated FR4.
+# IPC-2221 based clearances on FR4 with solder mask (polymer-coated traces).
+# Values relaxed from B2 (uncoated) toward B3 (coated) since tracks are under
+# solder mask. Pad-to-pad excluded (component-rated spacing).
+#
+# Voltage levels:
+#   Line-to-neutral / Line-to-earth: 230V RMS = 325V peak  => 1.5 mm
+#   Line-to-line (inter-phase):      400V RMS = 565V peak  => 2.0 mm
 #
 # Net classes:
 #   HV         -- Mains (post-protection): L1/L2/L3_VOLTAGE, NEUTRAL, PS1 AC pins
-#   Surge      -- Raw mains + transients: PWR1 connector, GDT pads, fuse pads, Earth
+#   Surge      -- Raw mains + transients: PWR1 connector, GDT pads, fuse pads
+#   Earth      -- Protective earth (PE)
 #   HV Divider -- Voltage divider midpoints between HV resistors and sensing resistors
 #
 # All other net classes (Default, Power, Low Power, CT, ANT, Gnd) are low-voltage.
+#
+# Pad-to-pad clearances are excluded: component pin spacing is set by the
+# manufacturer and the component is rated for the voltage. These rules only
+# check routed copper (traces, vias, zones) against other copper.
 
-# HV nets to low-voltage nets: 2.5 mm clearance (IPC-2221 basic insulation, 301-500V peak)
+# HV nets to low-voltage nets: 1.5 mm (325V peak, line-to-neutral)
 (rule "HV to LV clearance"
-	(condition "A.NetClass == 'HV' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider'")
-	(constraint clearance (min 2.5mm))
-)
-
-# Surge nets to low-voltage nets: 2.5 mm clearance (same mains voltage + transient margin)
-(rule "Surge to LV clearance"
-	(condition "A.NetClass == 'Surge' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider'")
-	(constraint clearance (min 2.5mm))
-)
-
-# HV to Surge: 1.5 mm clearance (same voltage domain, inter-phase margin)
-(rule "HV to Surge clearance"
-	(condition "A.NetClass == 'HV' && B.NetClass == 'Surge'")
+	(condition "A.NetClass == 'HV' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider' && B.NetClass != 'Earth' && !(A.Type == 'pad' && B.Type == 'pad')")
 	(constraint clearance (min 1.5mm))
 )
 
-# HV to HV Divider: 1.0 mm clearance (divider midpoints bridge HV/LV through rated components)
+# Surge nets to low-voltage nets: 1.5 mm (325V peak)
+(rule "Surge to LV clearance"
+	(condition "A.NetClass == 'Surge' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider' && B.NetClass != 'Earth' && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 1.5mm))
+)
+
+# HV to Surge: 1.2 mm (same voltage domain, post- vs pre-protection)
+(rule "HV to Surge clearance"
+	(condition "A.NetClass == 'HV' && B.NetClass == 'Surge' && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 1.2mm))
+)
+
+# HV to HV Divider: 0.8 mm (divider midpoints bridge HV/LV through rated resistors)
 (rule "HV to HV Divider clearance"
-	(condition "A.NetClass == 'HV' && B.NetClass == 'HV Divider'")
-	(constraint clearance (min 1.0mm))
+	(condition "A.NetClass == 'HV' && B.NetClass == 'HV Divider' && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 0.8mm))
 )
 
-# Surge to HV Divider: 2.5 mm clearance (same as Surge to LV)
+# Surge to HV Divider: 1.5 mm (325V peak)
 (rule "Surge to HV Divider clearance"
-	(condition "A.NetClass == 'Surge' && B.NetClass == 'HV Divider'")
-	(constraint clearance (min 2.5mm))
+	(condition "A.NetClass == 'Surge' && B.NetClass == 'HV Divider' && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 1.5mm))
 )
 
-# HV Divider to LV nets: 2.5 mm clearance (divider midpoints still carry significant voltage)
+# HV Divider to LV nets: 1.5 mm (divider midpoints carry significant voltage)
 (rule "HV Divider to LV clearance"
-	(condition "A.NetClass == 'HV Divider' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider'")
-	(constraint clearance (min 2.5mm))
+	(condition "A.NetClass == 'HV Divider' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider' && B.NetClass != 'Earth' && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 1.5mm))
+)
+
+# Earth to mains-voltage nets: 1.5 mm (325V peak, line-to-earth)
+(rule "Earth to HV clearance"
+	(condition "A.NetClass == 'Earth' && (B.NetClass == 'HV' || B.NetClass == 'Surge' || B.NetClass == 'HV Divider') && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 1.5mm))
+)
+
+# Earth to LV nets: 1.5 mm (earth may carry fault current)
+(rule "Earth to LV clearance"
+	(condition "A.NetClass == 'Earth' && B.NetClass != 'HV' && B.NetClass != 'Surge' && B.NetClass != 'HV Divider' && B.NetClass != 'Earth' && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 1.5mm))
+)
+
+# HV phase-to-neutral: 1.5 mm (230V RMS / 325V peak)
+# Neutral nets in HV class: NEUTRAL, Net-(PS1-AC(N))
+(rule "HV phase-to-neutral clearance"
+	(condition "A.NetClass == 'HV' && B.NetClass == 'HV' && A.Net != B.Net && (A.NetName == 'NEUTRAL' || A.NetName == 'Net-(PS1-AC(N))' || B.NetName == 'NEUTRAL' || B.NetName == 'Net-(PS1-AC(N))') && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 1.5mm))
+)
+
+# HV inter-phase clearance: 2.0 mm (400V RMS / 565V peak, line-to-line)
+# Excludes neutral nets — those are handled by the phase-to-neutral rule above
+(rule "HV inter-phase clearance"
+	(condition "A.NetClass == 'HV' && B.NetClass == 'HV' && A.Net != B.Net && A.NetName != 'NEUTRAL' && A.NetName != 'Net-(PS1-AC(N))' && B.NetName != 'NEUTRAL' && B.NetName != 'Net-(PS1-AC(N))' && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 2.0mm))
+)
+
+# Surge phase-to-neutral: 1.5 mm (325V peak)
+# Neutral net in Surge class: Net-(PWR1-N)
+(rule "Surge phase-to-neutral clearance"
+	(condition "A.NetClass == 'Surge' && B.NetClass == 'Surge' && A.Net != B.Net && (A.NetName == 'Net-(PWR1-N)' || B.NetName == 'Net-(PWR1-N)') && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 1.5mm))
+)
+
+# Surge inter-phase clearance: 2.0 mm (400V RMS / 565V peak at the connector)
+# Excludes neutral — handled by the phase-to-neutral rule above
+(rule "Surge inter-phase clearance"
+	(condition "A.NetClass == 'Surge' && B.NetClass == 'Surge' && A.Net != B.Net && A.NetName != 'Net-(PWR1-N)' && B.NetName != 'Net-(PWR1-N)' && !(A.Type == 'pad' && B.Type == 'pad')")
+	(constraint clearance (min 2.0mm))
 )
