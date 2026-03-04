@@ -19096,7 +19096,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.61 144.018 90)
 			(effects
 				(font
@@ -19114,7 +19114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 54.61 142.24 0)
 			(effects
 				(font
@@ -19150,7 +19150,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 54.61 142.24 0)
 			(effects
 				(font
@@ -20471,7 +20471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.61 104.648 90)
 			(effects
 				(font
@@ -20489,7 +20489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 54.61 102.87 0)
 			(effects
 				(font
@@ -20525,7 +20525,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 54.61 102.87 0)
 			(effects
 				(font
@@ -23657,7 +23657,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 45.72 133.858 90)
 			(effects
 				(font
@@ -23675,7 +23675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 45.72 132.08 0)
 			(effects
 				(font
@@ -23711,7 +23711,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 45.72 132.08 0)
 			(effects
 				(font
@@ -24892,7 +24892,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 45.72 104.648 90)
 			(effects
 				(font
@@ -24910,7 +24910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 45.72 102.87 0)
 			(effects
 				(font
@@ -24946,7 +24946,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 45.72 102.87 0)
 			(effects
 				(font
@@ -26173,7 +26173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.61 133.858 90)
 			(effects
 				(font
@@ -26191,7 +26191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 54.61 132.08 0)
 			(effects
 				(font
@@ -26227,7 +26227,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 54.61 132.08 0)
 			(effects
 				(font
@@ -26285,7 +26285,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 36.83 173.228 90)
 			(effects
 				(font
@@ -26303,7 +26303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 36.83 171.45 0)
 			(effects
 				(font
@@ -26339,7 +26339,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 36.83 171.45 0)
 			(effects
 				(font
@@ -27401,7 +27401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 36.83 104.648 90)
 			(effects
 				(font
@@ -27419,7 +27419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 36.83 102.87 0)
 			(effects
 				(font
@@ -27455,7 +27455,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 36.83 102.87 0)
 			(effects
 				(font
@@ -27513,7 +27513,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.61 173.228 90)
 			(effects
 				(font
@@ -27531,7 +27531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 54.61 171.45 0)
 			(effects
 				(font
@@ -27567,7 +27567,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 54.61 171.45 0)
 			(effects
 				(font
@@ -29085,7 +29085,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 36.83 163.068 90)
 			(effects
 				(font
@@ -29103,7 +29103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 36.83 161.29 0)
 			(effects
 				(font
@@ -29139,7 +29139,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 36.83 161.29 0)
 			(effects
 				(font
@@ -29197,7 +29197,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 36.83 144.018 90)
 			(effects
 				(font
@@ -29215,7 +29215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 36.83 142.24 0)
 			(effects
 				(font
@@ -29251,7 +29251,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 36.83 142.24 0)
 			(effects
 				(font
@@ -29374,7 +29374,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 45.72 114.808 90)
 			(effects
 				(font
@@ -29392,7 +29392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 45.72 113.03 0)
 			(effects
 				(font
@@ -29428,7 +29428,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 45.72 113.03 0)
 			(effects
 				(font
@@ -33892,7 +33892,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.61 114.808 90)
 			(effects
 				(font
@@ -33910,7 +33910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 54.61 113.03 0)
 			(effects
 				(font
@@ -33946,7 +33946,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 54.61 113.03 0)
 			(effects
 				(font
@@ -34477,7 +34477,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 45.72 173.228 90)
 			(effects
 				(font
@@ -34495,7 +34495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 45.72 171.45 0)
 			(effects
 				(font
@@ -34531,7 +34531,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 45.72 171.45 0)
 			(effects
 				(font
@@ -34656,7 +34656,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 45.72 163.068 90)
 			(effects
 				(font
@@ -34674,7 +34674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 45.72 161.29 0)
 			(effects
 				(font
@@ -34710,7 +34710,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 45.72 161.29 0)
 			(effects
 				(font
@@ -35278,7 +35278,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 45.72 144.018 90)
 			(effects
 				(font
@@ -35296,7 +35296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 45.72 142.24 0)
 			(effects
 				(font
@@ -35332,7 +35332,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 45.72 142.24 0)
 			(effects
 				(font
@@ -35714,7 +35714,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 36.83 133.858 90)
 			(effects
 				(font
@@ -35732,7 +35732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 36.83 132.08 0)
 			(effects
 				(font
@@ -35768,7 +35768,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 36.83 132.08 0)
 			(effects
 				(font
@@ -36920,7 +36920,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.61 163.068 90)
 			(effects
 				(font
@@ -36938,7 +36938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 54.61 161.29 0)
 			(effects
 				(font
@@ -36974,7 +36974,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 54.61 161.29 0)
 			(effects
 				(font
@@ -40600,7 +40600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 36.83 114.808 90)
 			(effects
 				(font
@@ -40618,7 +40618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "20K 1/2W 0.1% 25PPM/C 0805"
+		(property "Description" "20K 1/4W 0.1% 25PPM/C 1206"
 			(at 36.83 113.03 0)
 			(effects
 				(font
@@ -40654,7 +40654,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469660"
+		(property "LCSC" "C706407"
 			(at 36.83 113.03 0)
 			(effects
 				(font
