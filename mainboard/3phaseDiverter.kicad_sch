@@ -1803,7 +1803,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Gas Discharge Tube with 2 Pins"
+			(property "Description" "Gas Discharge Tube, 300V, 2 Pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4184,7 +4184,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "DO-15 Bidirectional TVS Diode, 5.8V, 400W, Alternate KiCAD Library"
+			(property "Description" "Bidirectional TVS Diode, 5.8V, SOD-523"
 				(at 0 0 0)
 				(effects
 					(font
@@ -19022,7 +19022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150 1/2W 0.1%"
+		(property "Description" "Bidirectional TVS Diode, 3.3V clamping, SOD-323"
 			(at 134.62 166.37 0)
 			(effects
 				(font
@@ -24392,7 +24392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/2093_datasheet.pdf"
 			(at 41.91 25.4 90)
 			(effects
 				(font
@@ -24401,7 +24401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
+		(property "Description" "Gas Discharge Tube, 300V, 2 Pins"
 			(at 41.91 25.4 0)
 			(effects
 				(font
@@ -24879,7 +24879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DO-15 Bidirectional TVS Diode, 5.8V, 400W, Alternate KiCAD Library"
+		(property "Description" "Bidirectional TVS Diode, 5.8V, SOD-523"
 			(at 173.99 107.95 0)
 			(effects
 				(font
@@ -24993,7 +24993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150 1/2W 0.1%"
+		(property "Description" "Bidirectional TVS Diode, 3.3V clamping, SOD-323"
 			(at 134.62 107.95 0)
 			(effects
 				(font
@@ -25978,7 +25978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/40/1/isomov.pdf"
 			(at 66.04 46.99 0)
 			(effects
 				(font
@@ -26775,7 +26775,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/40/1/mov14d.pdf"
 			(at 69.85 36.83 0)
 			(effects
 				(font
@@ -27191,7 +27191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/40/1/isomov.pdf"
 			(at 121.92 67.31 0)
 			(effects
 				(font
@@ -29561,7 +29561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/2093_datasheet.pdf"
 			(at 69.85 25.4 90)
 			(effects
 				(font
@@ -29570,7 +29570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
+		(property "Description" "Gas Discharge Tube, 300V, 2 Pins"
 			(at 69.85 25.4 0)
 			(effects
 				(font
@@ -30354,7 +30354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/40/1/mov14d.pdf"
 			(at 125.73 36.83 0)
 			(effects
 				(font
@@ -31324,7 +31324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DO-15 Bidirectional TVS Diode, 5.8V, 400W, Alternate KiCAD Library"
+		(property "Description" "Bidirectional TVS Diode, 5.8V, SOD-523"
 			(at 107.95 137.16 0)
 			(effects
 				(font
@@ -32354,7 +32354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/40/1/mov14d.pdf"
 			(at 41.91 36.83 0)
 			(effects
 				(font
@@ -34080,7 +34080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150 1/2W 0.1%"
+		(property "Description" "Bidirectional TVS Diode, 3.3V clamping, SOD-323"
 			(at 134.62 137.16 0)
 			(effects
 				(font
@@ -34195,7 +34195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/2093_datasheet.pdf"
 			(at 97.79 25.4 90)
 			(effects
 				(font
@@ -34204,7 +34204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
+		(property "Description" "Gas Discharge Tube, 300V, 2 Pins"
 			(at 97.79 25.4 0)
 			(effects
 				(font
@@ -34903,7 +34903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DO-15 Bidirectional TVS Diode, 5.8V, 400W, Alternate KiCAD Library"
+		(property "Description" "Bidirectional TVS Diode, 5.8V, SOD-523"
 			(at 107.95 107.95 0)
 			(effects
 				(font
@@ -35949,7 +35949,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DO-15 Bidirectional TVS Diode, 5.8V, 400W, Alternate KiCAD Library"
+		(property "Description" "Bidirectional TVS Diode, 5.8V, SOD-523"
 			(at 107.95 166.37 0)
 			(effects
 				(font
@@ -39355,7 +39355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/40/1/isomov.pdf"
 			(at 93.98 57.15 0)
 			(effects
 				(font
@@ -39580,7 +39580,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DO-15 Bidirectional TVS Diode, 5.8V, 400W, Alternate KiCAD Library"
+		(property "Description" "Bidirectional TVS Diode, 5.8V, SOD-523"
 			(at 173.99 137.16 0)
 			(effects
 				(font
@@ -39891,7 +39891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.fr/datasheet/3/40/1/mov14d.pdf"
 			(at 97.79 36.83 0)
 			(effects
 				(font
@@ -40773,7 +40773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/2093_datasheet.pdf"
 			(at 125.73 25.4 90)
 			(effects
 				(font
@@ -40782,7 +40782,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
+		(property "Description" "Gas Discharge Tube, 300V, 2 Pins"
 			(at 125.73 25.4 0)
 			(effects
 				(font
@@ -41001,7 +41001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DO-15 Bidirectional TVS Diode, 5.8V, 400W, Alternate KiCAD Library"
+		(property "Description" "Bidirectional TVS Diode, 5.8V, SOD-523"
 			(at 173.99 166.37 0)
 			(effects
 				(font
@@ -41993,7 +41993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.tracopower.com/products/tmf05.pdf"
+		(property "Datasheet" "http://www.farnell.com/datasheets/4538682.pdf"
 			(at 72.39 207.01 0)
 			(effects
 				(font
@@ -42002,7 +42002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5W AC/DC medical power supply, 5V fixed output voltage, 1A output, 4.0kVAC isolation"
+		(property "Description" "10W AC/DC converter module, 5V fixed output voltage, 2A output"
 			(at 72.39 209.296 0)
 			(effects
 				(font
