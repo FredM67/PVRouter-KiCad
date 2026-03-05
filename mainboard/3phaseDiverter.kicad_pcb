@@ -13543,7 +13543,7 @@
 		(descr "Fuse, TE5, Littelfuse/Wickmann, No. 460, No560,")
 		(tags "Fuse TE5 Littelfuse/Wickmann No. 460 No560 ")
 		(property "Reference" "FS2"
-			(at 6.1488 0 180)
+			(at -2.5908 0 180)
 			(layer "F.SilkS")
 			(uuid "01cd942e-7b4f-4134-bba3-482190f0ef81")
 			(effects
@@ -36800,7 +36800,7 @@
 		(descr "ACDC-Converter, MULTICOMP PRO, MPC10-5, 10W, Rev. April 10. 2025, https://www.farnell.com/datasheets/4538682.pdf")
 		(tags "ACDC-Converter MULTICOMP PRO MPC10-5 THT 10W")
 		(property "Reference" "PS1"
-			(at 16.5 -4.85 90)
+			(at 12.96 23 270)
 			(layer "F.SilkS")
 			(uuid "451f2072-ff8f-41cb-af08-245edb5d79ca")
 			(effects
