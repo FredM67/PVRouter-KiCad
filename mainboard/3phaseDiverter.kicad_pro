@@ -922,7 +922,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 39,
+    "annotate_start_num": 19,
     "bom_export_filename": "Mk2PVRouter_BOM",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
