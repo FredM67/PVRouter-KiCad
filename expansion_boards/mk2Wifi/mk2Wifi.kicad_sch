@@ -7450,7 +7450,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 26.67 102.87 180)
+		(at 26.67 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7458,7 +7458,7 @@
 		(dnp no)
 		(uuid "a1b2c3d4-0001-4000-8000-000000000001")
 		(property "Reference" "#FLG01"
-			(at 26.67 104.775 0)
+			(at 24.765 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7467,7 +7467,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 26.67 106.68 0)
+			(at 22.86 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
