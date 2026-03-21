@@ -20,11 +20,11 @@ Caractéristiques principales :
 
 | Face avant (assemblée) | Face arrière |
 |:-:|:-:|
-| ![Avant](assets/mk2Wifi-front.png) | ![Arrière](assets/mk2Wifi-back.png) |
+| ![Avant](assets/mk2Wifi-C6-front.png) | ![Arrière](assets/mk2Wifi-C6-back.png) |
 
 | Composants CMS uniquement | Circuit imprimé nu |
 |:-:|:-:|
-| ![CMS](assets/mk2Wifi-smd.png) | ![Nu](assets/mk2Wifi-bare.png) |
+| ![CMS](assets/mk2Wifi-C6-smd.png) | ![Nu](assets/mk2Wifi-C6-bare.png) |
 
 ## Fichiers de conception
 

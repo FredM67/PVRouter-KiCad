@@ -20,11 +20,11 @@ Key features:
 
 | Front (fully assembled) | Back |
 |:-:|:-:|
-| ![Front](assets/mk2Wifi-front.png) | ![Back](assets/mk2Wifi-back.png) |
+| ![Front](assets/mk2Wifi-C6-front.png) | ![Back](assets/mk2Wifi-C6-back.png) |
 
 | SMD components only | Bare board layout |
 |:-:|:-:|
-| ![SMD](assets/mk2Wifi-smd.png) | ![Bare](assets/mk2Wifi-bare.png) |
+| ![SMD](assets/mk2Wifi-C6-smd.png) | ![Bare](assets/mk2Wifi-C6-bare.png) |
 
 ## Design files
 
