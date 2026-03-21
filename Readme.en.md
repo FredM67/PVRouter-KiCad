@@ -14,7 +14,8 @@ Inspired by [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), this project
 |-----------|-------------|--------|
 | [`mainboard/`](mainboard/) | Universal mainboard (3phaseDiverter) — rev. 6.0 | Active design |
 | [`output_stage/`](output_stage/) | Output power stage (separate PCB) | Active design |
-| [`expansion_boards/mk2Wifi/`](expansion_boards/mk2Wifi/) | WiFi/BLE expansion module (ESP32-C3) | Active design |
+| [`expansion_boards/mk2Wifi-C3/`](expansion_boards/mk2Wifi-C3/) | WiFi/BLE expansion module (ESP32-C3) | Active design |
+| [`expansion_boards/mk2Wifi-C6/`](expansion_boards/mk2Wifi-C6/) | WiFi 6/BLE/Zigbee/Thread expansion module (ESP32-C6) | Active design |
 | [`1-phase/`](1-phase/) | Single-phase variant (schematic only, no PCB) | Obsolete — still sold |
 | [`3-phase/`](3-phase/) | 3-phase variant (older version) | Obsolete — still sold |
 | [`KiCad/`](KiCad/) | Shared custom libraries (symbols, footprints, 3D models) | — |
@@ -35,7 +36,8 @@ The board is designed to be mounted in a Schneider Electric Thalassa enclosure.
 
 ## Expansion modules
 
-- **[mk2Wifi](expansion_boards/mk2Wifi/)** — WiFi/BLE module based on ESP32-C3-MINI-1, with USB-C connector, optional OLED display and DS18B20 temperature sensor
+- **[mk2Wifi-C3](expansion_boards/mk2Wifi-C3/)** — WiFi/BLE module based on ESP32-C3-MINI-1, with USB-C connector, optional OLED display and DS18B20 temperature sensor
+- **[mk2Wifi-C6](expansion_boards/mk2Wifi-C6/)** — WiFi 6/BLE/Zigbee/Thread module based on ESP32-C6-MINI-1, with USB-C connector, optional OLED display and DS18B20 temperature sensor
 
 ## Output power stage
 

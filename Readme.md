@@ -14,7 +14,8 @@ Inspiré par [www.mk2pvrouter.co.uk](https://www.mk2pvrouter.co.uk), ce projet f
 |------------|-------------|------|
 | [`mainboard/`](mainboard/) | Carte principale universelle (3phaseDiverter) — rév. 6.0 | Conception active |
 | [`output_stage/`](output_stage/) | Étage de puissance de sortie (carte séparée) | Conception active |
-| [`expansion_boards/mk2Wifi/`](expansion_boards/mk2Wifi/) | Module d’extension WiFi/BLE (ESP32-C3) | Conception active |
+| [`expansion_boards/mk2Wifi-C3/`](expansion_boards/mk2Wifi-C3/) | Module d’extension WiFi/BLE (ESP32-C3) | Conception active |
+| [`expansion_boards/mk2Wifi-C6/`](expansion_boards/mk2Wifi-C6/) | Module d’extension WiFi 6/BLE/Zigbee/Thread (ESP32-C6) | Conception active |
 | [`1-phase/`](1-phase/) | Variante monophasée (schéma uniquement, pas de PCB) | Obsolète — encore en vente |
 | [`3-phase/`](3-phase/) | Variante triphasée (ancienne version) | Obsolète — encore en vente |
 | [`KiCad/`](KiCad/) | Bibliothèques partagées (symboles, empreintes, modèles 3D) | — |
@@ -35,7 +36,8 @@ La carte est conçue pour être montée dans un boîtier Schneider Electric Thal
 
 ## Modules d’extension
 
-- **[mk2Wifi](expansion_boards/mk2Wifi/)** — Module WiFi/BLE basé sur l'ESP32-C3-MINI-1, avec connecteur USB-C, écran OLED optionnel et capteur de température DS18B20
+- **[mk2Wifi-C3](expansion_boards/mk2Wifi-C3/)** — Module WiFi/BLE basé sur l'ESP32-C3-MINI-1, avec connecteur USB-C, écran OLED optionnel et capteur de température DS18B20
+- **[mk2Wifi-C6](expansion_boards/mk2Wifi-C6/)** — Module WiFi 6/BLE/Zigbee/Thread basé sur l'ESP32-C6-MINI-1, avec connecteur USB-C, écran OLED optionnel et capteur de température DS18B20
 
 ## Étage de puissance
 
