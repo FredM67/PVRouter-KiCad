@@ -28,7 +28,7 @@ Key features:
 
 ## Schematic
 
-![mk2Wifi-C3 schematic](assets/mk2Wifi-C3-schematic.svg)
+[![mk2Wifi-C3 schematic](assets/mk2Wifi-C3-schematic.svg)](assets/mk2Wifi-C3-schematic.pdf)
 
 ## Design files
 

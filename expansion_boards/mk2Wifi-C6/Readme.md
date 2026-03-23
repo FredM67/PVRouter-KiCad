@@ -29,7 +29,7 @@ Caractéristiques principales :
 
 ## Schéma
 
-![Schéma mk2Wifi-C6](assets/mk2Wifi-C6-schematic.svg)
+[![Schéma mk2Wifi-C6](assets/mk2Wifi-C6-schematic.svg)](assets/mk2Wifi-C6-schematic.pdf)
 
 ## Fichiers de conception
 

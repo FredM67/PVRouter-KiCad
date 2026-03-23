@@ -28,7 +28,7 @@ Caractéristiques principales :
 
 ## Schéma
 
-![Schéma mk2Wifi-C3](assets/mk2Wifi-C3-schematic.svg)
+[![Schéma mk2Wifi-C3](assets/mk2Wifi-C3-schematic.svg)](assets/mk2Wifi-C3-schematic.pdf)
 
 ## Fichiers de conception
 
