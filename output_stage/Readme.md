@@ -59,4 +59,4 @@ Caractéristiques principales :
 
 ## Intégration avec la carte principale
 
-Chaque sortie de déclenchement (D5–D9) de la carte principale peut piloter un étage de sortie via les connecteurs J2/J3. Le signal de commande est un niveau logique (3,3 V ou 5 V) qui active la LED interne de l'optocoupleur.
+Toute broche numérique disponible de la carte principale peut piloter un étage de sortie via les connecteurs J2/J3. Les broches effectivement utilisables dépendent de la configuration (module radio RFM69CW, module mk2Wifi, écran OLED, etc.). Le signal de commande est un niveau logique (3,3 V ou 5 V) qui active la LED interne de l'optocoupleur.

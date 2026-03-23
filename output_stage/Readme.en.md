@@ -59,4 +59,4 @@ Key features:
 
 ## Mainboard integration
 
-Each trigger output (D5--D9) from the mainboard can drive an output stage via the J2/J3 connectors. The control signal is a logic level (3.3V or 5V) that activates the opto-triac's internal LED.
+Any available digital pin from the mainboard can drive an output stage via the J2/J3 connectors. Which pins are actually usable depends on the configuration (RFM69CW radio module, mk2Wifi module, OLED display, etc.). The control signal is a logic level (3.3V or 5V) that activates the opto-triac's internal LED.
