@@ -6,11 +6,11 @@ Triac power output board for the Mk2 PV Router. Each board drives a mains load (
 
 ## Overview
 
-The output stage provides galvanic isolation between the router's low-voltage logic and the mains load. It uses a **MOC3041M** zero-crossing opto-triac to drive a **BTA41-600B** power triac (41A / 600V).
+The output stage provides galvanic isolation between the router's low-voltage logic and the mains load. It uses a **MOC3043M** zero-crossing opto-triac to drive a **BTA41-600B** power triac (41A / 600V).
 
 Key features:
 - Zero-crossing switching (reduced EMI)
-- Galvanic isolation via opto-triac (MOC3041M, DIP-6)
+- Galvanic isolation via opto-triac (MOC3043M, DIP-6)
 - 41A / 600V power triac (BTA41-600B, TO-218)
 - Control input compatible with 3.3V and 5V (adjust R1)
 - Phoenix Contact load connector (5.08mm pitch)
@@ -31,7 +31,7 @@ Key features:
 
 | Ref | Value | Package | Description |
 |-----|-------|---------|-------------|
-| U1 | MOC3041M | DIP-6 | Zero-crossing opto-triac (400V) |
+| U1 | MOC3043M | DIP-6 | Zero-crossing opto-triac (400V) |
 | Q1 | BTA41-600B | TO-218 | Power triac (41A, 600V) |
 | R1 | 120R | Axial | LED current limiting resistor (3.3V); use 180R for 5V |
 | R2 | 330R | Axial | Triac gate resistor |
@@ -42,9 +42,9 @@ Key features:
 
 ## Design notes
 
-1. **3.3V supply (default)**: R1 = 120 ohm. LED current is approximately 10mA, sufficient to trigger the MOC3041M (Ift = 15mA max).
+1. **3.3V supply (default)**: R1 = 120 ohm. LED current is approximately 10mA, sufficient to trigger the MOC3043M (Ift = 5mA max).
 2. **5V supply**: replace R1 with 180 ohm to limit LED current.
-3. **MOC3061M (600V)**: if a MOC3061M is used instead of the MOC3041M, replace R2 with 360 ohm.
+3. **MOC3061M (600V)**: if a MOC3061M is used instead of the MOC3043M, replace R2 with 360 ohm.
 4. The power terminals on connector J1 are interchangeable (the triac is bidirectional).
 
 ## Mainboard integration

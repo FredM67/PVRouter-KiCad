@@ -10,7 +10,7 @@
     (rev "2.0")
     (company "Mk2PVRouter.com")
     (comment 1 "Triac power output stage for Mk2 PV Router")
-    (comment 2 "MOC3041M opto-triac — BTA41-600B power triac (41A / 600V)")
+    (comment 2 "MOC3043M opto-triac — BTA41-600B power triac (41A / 600V)")
     (comment 3 "Zero-crossing switching — Mains-isolated control input")
     (comment 4 "License: CERN-OHL-S v2")
   )
@@ -345,11 +345,11 @@
         )
       )
     )
-    (symbol "Relay_SolidState:MOC3041M" (in_bom yes) (on_board yes)
+    (symbol "Relay_SolidState:MOC3043M" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -5.08 5.08 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "MOC3041M" (at 0 5.08 0)
+      (property "Value" "MOC3043M" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "" (at -5.08 -5.08 0)
@@ -367,7 +367,7 @@
       (property "ki_fp_filters" "DIP*W7.62mm* SMDIP*W9.53mm* DIP*W10.16mm*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "MOC3041M_0_0"
+      (symbol "MOC3043M_0_0"
         (rectangle (start -0.381 -2.032) (end 1.397 -3.048)
           (stroke (width 0) (type default))
           (fill (type none))
@@ -393,7 +393,7 @@
           (effects (font (size 0.508 0.508)))
         )
       )
-      (symbol "MOC3041M_0_1"
+      (symbol "MOC3043M_0_1"
         (rectangle (start -5.08 3.81) (end 5.08 -3.81)
           (stroke (width 0.254) (type default))
           (fill (type background))
@@ -520,7 +520,7 @@
           (fill (type none))
         )
       )
-      (symbol "MOC3041M_1_1"
+      (symbol "MOC3043M_1_1"
         (pin passive line (at -7.62 2.54 0) (length 2.54)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -958,13 +958,13 @@
     )
   )
 
-  (symbol (lib_id "Relay_SolidState:MOC3041M") (at 105.41 73.66 0) (unit 1)
+  (symbol (lib_id "Relay_SolidState:MOC3043M") (at 105.41 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dc80d19f-66a4-4a7e-9f09-5e4677fdccc1)
     (property "Reference" "U1" (at 105.41 66.04 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "MOC3041M" (at 105.41 68.58 0)
+    (property "Value" "MOC3043M" (at 105.41 68.58 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "PCM_Package_DIP_AKL:DIP-6_W7.62mm_Socket_LongPads" (at 100.33 78.74 0)
