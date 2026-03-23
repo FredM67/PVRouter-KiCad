@@ -29,3 +29,24 @@ fp-info-cache
 *.csv
 mainboard/3phaseDiverter-backups/
 mainboard/3phaseDiverter-rounded-backups/
+
+# DRC/ERC reports and violation files
+drc_report.txt
+*_drc_violations.json
+*.round-tracks-config
+drc_layout.json
+
+# BOM review files
+bom_review.json
+
+# KiCad lock files
+*.lck
+
+# Simulation temporary files
+__pycache__/
+*.rpt
+mainboard/simulation/AC_plot
+mainboard/simulation/V_ADC_PIN+V_ADN_NF
+
+# Production backups
+mainboard/production/backups/
