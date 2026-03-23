@@ -15,6 +15,16 @@ Key features:
 - Control input compatible with 3.3V and 5V (adjust R1)
 - Phoenix Contact load connector (5.08mm pitch)
 
+## Board images
+
+| Front (fully assembled) | Back |
+|:-:|:-:|
+| ![Front](assets/Output_stage-front.png) | ![Back](assets/Output_stage-back.png) |
+
+| Bare board layout |
+|:-:|
+| ![Bare](assets/Output_stage-bare.png) |
+
 ## Schematic
 
 [![Output Stage schematic](assets/Output_stage-schematic.svg)](assets/Output_stage-schematic.pdf)
@@ -33,7 +43,7 @@ Key features:
 |-----|-------|---------|-------------|
 | U1 | MOC3043M | DIP-6 | Zero-crossing opto-triac (400V) |
 | Q1 | BTA41-600B | TO-218 | Power triac (41A, 600V) |
-| R1 | 120R | Axial | LED current limiting resistor (3.3V); use 180R for 5V |
+| R1 | 220R | Axial | LED current limiting resistor (3.3V); use 390R for 5V |
 | R2 | 330R | Axial | Triac gate resistor |
 | R3 | 360R | Axial | Opto-triac output series resistor |
 | J1 | Conn_01x03 | Phoenix Contact MSTBVA 2.5 (5.08mm) | Mains load connector |
@@ -42,9 +52,9 @@ Key features:
 
 ## Design notes
 
-1. **3.3V supply (default)**: R1 = 120 ohm. LED current is approximately 10mA, sufficient to trigger the MOC3043M (Ift = 5mA max).
-2. **5V supply**: replace R1 with 180 ohm to limit LED current.
-3. **MOC3061M (600V)**: if a MOC3061M is used instead of the MOC3043M, replace R2 with 360 ohm.
+1. **3.3V supply (default)**: R1 = 220 ohm -> IF ~ 10mA, good margin above Ift = 5mA max.
+2. **5V supply**: replace R1 with 390 ohm -> IF ~ 10mA.
+3. **MOC3063M (600V)**: if a MOC3063M is used instead of the MOC3043M (VDRM 600V instead of 400V, same Ift = 5mA), replace R2 with 360 ohm.
 4. The power terminals on connector J1 are interchangeable (the triac is bidirectional).
 
 ## Mainboard integration

@@ -15,6 +15,16 @@ Caractéristiques principales :
 - Entrée de commande compatible 3,3 V et 5 V (ajuster R1)
 - Connecteur de charge Phoenix Contact (5,08 mm)
 
+## Images de la carte
+
+| Face avant (assemblée) | Face arrière |
+|:-:|:-:|
+| ![Avant](assets/Output_stage-front.png) | ![Arrière](assets/Output_stage-back.png) |
+
+| Circuit imprimé nu |
+|:-:|
+| ![Nu](assets/Output_stage-bare.png) |
+
 ## Schéma
 
 [![Schéma Output Stage](assets/Output_stage-schematic.svg)](assets/Output_stage-schematic.pdf)
@@ -33,7 +43,7 @@ Caractéristiques principales :
 |-----|--------|---------|-------------|
 | U1 | MOC3043M | DIP-6 | Optocoupleur triac à passage par zéro (400 V) |
 | Q1 | BTA41-600B | TO-218 | Triac de puissance (41 A, 600 V) |
-| R1 | 120R | Axial | Résistance de limitation LED (3,3 V) ; 180R pour 5 V |
+| R1 | 220R | Axial | Résistance de limitation LED (3,3 V) ; 390R pour 5 V |
 | R2 | 330R | Axial | Résistance de gate triac |
 | R3 | 360R | Axial | Résistance série sortie optocoupleur |
 | J1 | Conn_01x03 | Phoenix Contact MSTBVA 2,5 (5,08 mm) | Connecteur charge secteur |
@@ -42,9 +52,9 @@ Caractéristiques principales :
 
 ## Notes de conception
 
-1. **Alimentation 3,3 V (défaut)** : R1 = 120 Ω. Le courant LED est d'environ 10 mA, suffisant pour déclencher le MOC3043M (Ift = 5 mA max).
-2. **Alimentation 5 V** : remplacer R1 par 180 Ω pour limiter le courant LED.
-3. **MOC3061M (600 V)** : si un MOC3061M est utilisé à la place du MOC3043M, remplacer R2 par 360 Ω.
+1. **Alimentation 3,3 V (défaut)** : R1 = 220 Ω → IF ≈ 10 mA, bonne marge au-dessus de Ift = 5 mA max.
+2. **Alimentation 5 V** : remplacer R1 par 390 Ω → IF ≈ 10 mA.
+3. **MOC3063M (600 V)** : si un MOC3063M est utilisé à la place du MOC3043M (VDRM 600 V au lieu de 400 V, même Ift = 5 mA), remplacer R2 par 360 Ω.
 4. Les bornes de puissance du connecteur J1 sont interchangeables (le triac est bidirectionnel).
 
 ## Intégration avec la carte principale
