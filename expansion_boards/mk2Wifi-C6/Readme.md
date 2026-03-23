@@ -27,6 +27,10 @@ Caractéristiques principales :
 |:-:|:-:|
 | ![CMS](assets/mk2Wifi-C6-smd.png) | ![Nu](assets/mk2Wifi-C6-bare.png) |
 
+## Schéma
+
+![Schéma mk2Wifi-C6](assets/mk2Wifi-C6-schematic.svg)
+
 ## Fichiers de conception
 
 | Fichier | Description |

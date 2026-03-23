@@ -26,6 +26,10 @@ Key features:
 |:-:|:-:|
 | ![SMD](assets/mk2Wifi-smd.png) | ![Bare](assets/mk2Wifi-bare.png) |
 
+## Schematic
+
+![mk2Wifi-C3 schematic](assets/mk2Wifi-C3-schematic.svg)
+
 ## Design files
 
 | File | Description |
