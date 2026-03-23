@@ -30,6 +30,10 @@ Caractéristiques principales :
 |:-:|:-:|
 | ![CMS](assets/3phaseDiverter-smd.png) | ![Nu](assets/3phaseDiverter-bare.png) |
 
+## Schéma
+
+[![Schéma 3phaseDiverter](assets/3phaseDiverter-schematic.svg)](assets/3phaseDiverter-schematic.pdf)
+
 ## Fichiers de conception
 
 | Fichier | Description |

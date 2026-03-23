@@ -9636,8 +9636,20 @@
 		)
 	)
 	(rectangle
+		(start 222.25 186.69)
+		(end 295.91 262.89)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 04f49732-74a6-4819-811e-ab92c5797942)
+	)
+	(rectangle
 		(start 13.97 250.19)
-		(end 124.46 281.94)
+		(end 132.08 281.94)
 		(stroke
 			(width 0)
 			(type default)
@@ -9745,7 +9757,7 @@
 	)
 	(rectangle
 		(start 13.97 214.63)
-		(end 124.46 248.92)
+		(end 132.08 248.92)
 		(stroke
 			(width 0)
 			(type default)
@@ -9909,7 +9921,7 @@
 	)
 	(text "RF module"
 		(exclude_from_sim no)
-		(at 272.796 175.26 0)
+		(at 222.758 191.262 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -19499,7 +19511,7 @@
 			(uuid "970392e7-ed6f-43fb-bc29-a7ce41a3375c")
 		)
 		(instances
-			(project ""
+			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U1")
 					(unit 1)
@@ -25063,7 +25075,7 @@
 			(uuid "17eca315-ba88-487a-870c-f73de10d28ba")
 		)
 		(instances
-			(project ""
+			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "D13")
 					(unit 1)
@@ -26270,7 +26282,7 @@
 			(uuid "bdd2a88a-4229-45a6-b6cd-8d755aa10c61")
 		)
 		(instances
-			(project ""
+			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "JP0")
 					(unit 1)
@@ -29033,7 +29045,7 @@
 			(uuid "eb5b4d8c-fa59-4489-b8dd-6873a2023d22")
 		)
 		(instances
-			(project ""
+			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "FB1")
 					(unit 1)
@@ -30696,7 +30708,7 @@
 			(uuid "6cd0f047-894b-447b-aac7-73b8207bd571")
 		)
 		(instances
-			(project ""
+			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "JP1")
 					(unit 1)
@@ -37107,7 +37119,7 @@
 			(uuid "dc22a76b-50ee-461b-befb-e75b99aaed04")
 		)
 		(instances
-			(project ""
+			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "GND_LINK1")
 					(unit 1)
@@ -40261,7 +40273,7 @@
 			(uuid "b64b1215-3e55-4f4e-aea6-31489c72a714")
 		)
 		(instances
-			(project ""
+			(project "3phaseDiverter"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U2")
 					(unit 1)

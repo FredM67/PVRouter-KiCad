@@ -30,6 +30,10 @@ Key features:
 |:-:|:-:|
 | ![SMD](assets/3phaseDiverter-smd.png) | ![Bare](assets/3phaseDiverter-bare.png) |
 
+## Schematic
+
+[![3phaseDiverter schematic](assets/3phaseDiverter-schematic.svg)](assets/3phaseDiverter-schematic.pdf)
+
 ## Design files
 
 | File | Description |
