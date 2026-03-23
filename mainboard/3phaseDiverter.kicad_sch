@@ -21488,6 +21488,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "20f0ff95-36ce-421e-aea2-6daba9f4c043")
 		(property "Reference" "#PWR033"
 			(at 173.99 120.65 0)
@@ -21499,11 +21500,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 178.054 115.57 0)
+			(at 176.53 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -29425,11 +29427,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 107.95 148.59 0)
+			(at 110.49 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -30178,11 +30181,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 107.95 177.8 0)
+			(at 110.49 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -40844,6 +40848,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "f03c08b7-9d87-43b2-b657-f1c0ef364956")
 		(property "Reference" "#PWR015"
 			(at 173.99 179.07 0)
@@ -40855,11 +40860,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 178.562 174.244 0)
+			(at 176.53 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -41493,6 +41499,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "f992bbe1-7bdb-4b3c-8712-f638ade4c076")
 		(property "Reference" "#PWR0134"
 			(at 173.99 149.86 0)
@@ -41504,11 +41511,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 178.308 145.034 0)
+			(at 176.53 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -41857,11 +41865,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 107.95 119.38 0)
+			(at 110.49 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
