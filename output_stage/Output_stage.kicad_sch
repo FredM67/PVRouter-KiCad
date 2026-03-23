@@ -8,6 +8,11 @@
     (title "Output stage for Mk2PVRouter")
     (date "2023-09-16")
     (rev "2.0")
+    (company "Mk2PVRouter.com")
+    (comment 1 "Triac power output stage for Mk2 PV Router")
+    (comment 2 "MOC3041M opto-triac — BTA41-600B power triac (41A / 600V)")
+    (comment 3 "Zero-crossing switching — Mains-isolated control input")
+    (comment 4 "License: CERN-OHL-S v2")
   )
 
   (lib_symbols
