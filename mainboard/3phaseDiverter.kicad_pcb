@@ -14459,7 +14459,7 @@
 		(sheetname "/")
 		(sheetfile "3phaseDiverter.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges allow_missing_courtyard)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -2.5 -0.75)
 			(end 2.5 0.75)
@@ -17580,7 +17580,7 @@
 		(sheetname "/")
 		(sheetfile "3phaseDiverter.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges allow_missing_courtyard)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.8 -0.75)
 			(end 0.8 0.75)
@@ -21034,7 +21034,7 @@
 		(sheetname "/")
 		(sheetfile "3phaseDiverter.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges allow_missing_courtyard)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -1.225 -0.75)
 			(end 1.225 0.75)
@@ -25634,7 +25634,7 @@
 		(sheetname "/")
 		(sheetfile "3phaseDiverter.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges allow_missing_courtyard)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.8 -0.75)
 			(end 0.8 0.75)
@@ -26271,7 +26271,7 @@
 			(roundrect_rratio 0.25)
 			(net 53 "Net-(C30-Pad2)")
 			(pintype "passive")
-			(uuid "32fac43c-e2cc-4330-9202-555956470b24")
+			(uuid "18e44813-92d5-4c5a-98f0-d0746673dfd1")
 		)
 		(pad "2" smd roundrect
 			(at 0.8625 0)
@@ -26290,7 +26290,7 @@
 			(remove_unused_layers no)
 			(net 60 "GNDA")
 			(pintype "passive")
-			(uuid "75793c4a-b797-41cf-8fe1-575b04289f32")
+			(uuid "a4580532-82e6-4183-b485-1b15d73cdfb8")
 		)
 		(embedded_fonts no)
 	)
@@ -39934,7 +39934,7 @@
 			(net 60 "GNDA")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "094223ae-e9bb-4170-9f43-77a8b9da009a")
+			(uuid "7e593ff5-25a2-4dda-8994-c41a9b9e67c1")
 		)
 		(pad "2" smd roundrect
 			(at 7.45 0 90)
@@ -39966,7 +39966,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "ab4ca816-28d2-4b06-9b07-78736df8cbda")
+			(uuid "009158ac-ff71-4718-879f-52d82ae5f1c3")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal.wrl"
@@ -50601,7 +50601,7 @@
 		(sheetname "/")
 		(sheetfile "3phaseDiverter.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges allow_missing_courtyard)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.8 -0.75)
 			(end 0.8 0.75)
@@ -52870,7 +52870,7 @@
 			(net 60 "GNDA")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "2b73b207-acd4-437a-8ea5-e46ca0a5b939")
+			(uuid "cb125e6d-99ce-4e0e-b253-fd343da4fbc3")
 		)
 		(pad "2" smd roundrect
 			(at 7.45 0 90)
@@ -52902,7 +52902,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "0ad2ef34-ba7a-4bf9-9456-c78731661486")
+			(uuid "852600e7-de08-420b-9bd5-170566650600")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal.wrl"
@@ -57683,7 +57683,7 @@
 			(roundrect_rratio 0.25)
 			(net 48 "Net-(C10-Pad2)")
 			(pintype "passive")
-			(uuid "7323ac03-e8c2-41be-acce-d72d4ef6b935")
+			(uuid "cd486c5c-3253-47db-90c3-69e9d86c54c4")
 		)
 		(pad "2" smd roundrect
 			(at 0.8625 0)
@@ -57702,7 +57702,7 @@
 			(remove_unused_layers no)
 			(net 60 "GNDA")
 			(pintype "passive")
-			(uuid "81ac06d4-11e5-440b-8f17-7396d8b1c4ac")
+			(uuid "6dae1f16-2731-45fd-86ab-3e799c3becad")
 		)
 		(embedded_fonts no)
 	)
@@ -62071,7 +62071,7 @@
 		(sheetname "/")
 		(sheetfile "3phaseDiverter.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges allow_missing_courtyard)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -1.225 -0.75)
 			(end 1.225 0.75)
@@ -64530,7 +64530,7 @@
 			(net 60 "GNDA")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "3257f6e4-1b3e-4881-a505-53d9df0c5037")
+			(uuid "14397288-397c-4da0-834b-a75e640ecb62")
 		)
 		(pad "2" smd roundrect
 			(at 7.45 0 90)
@@ -64562,7 +64562,7 @@
 				(allow_two_segments yes)
 				(prefer_zone_connections yes)
 			)
-			(uuid "dfabd5f5-7b74-471c-ad91-0b735ceb642e")
+			(uuid "9d4c34c6-80bf-46dc-a9fd-ca3b8e68b396")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal.wrl"
@@ -69225,7 +69225,7 @@
 			(roundrect_rratio 0.25)
 			(net 51 "Net-(C20-Pad2)")
 			(pintype "passive")
-			(uuid "d5022ef2-fe02-4469-b00d-05f86a007819")
+			(uuid "aa78df0a-e4e1-408f-aeea-cc738c10f9ac")
 		)
 		(pad "2" smd roundrect
 			(at 0.8625 0)
@@ -69244,7 +69244,7 @@
 			(remove_unused_layers no)
 			(net 60 "GNDA")
 			(pintype "passive")
-			(uuid "f440d093-eb6c-4d9c-831e-4e6c5761f8f5")
+			(uuid "f1c0ea6d-7eae-4ce3-b1f8-7405516ebac4")
 		)
 		(embedded_fonts no)
 	)
@@ -70978,7 +70978,7 @@
 		(sheetname "/")
 		(sheetfile "3phaseDiverter.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges allow_missing_courtyard)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -1.225 0.75)
 			(end 1.225 -0.75)
@@ -88965,7 +88965,7 @@
 		(uuid "015e9722-951a-0268-2f85-39e52c27aa5f")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30002)
+		(priority 30080)
 		(attr
 			(teardrop
 				(type padvia)
@@ -88994,11 +88994,17 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 48.9248 64.05448) (xy 48.761589 64.034936) (xy 48.653998 64.006837) (xy 48.541875 63.967064)
-				(xy 48.432101 63.917249) (xy 48.326875 63.857191) (xy 48.241961 63.796589) (xy 48.166866 63.72883)
-				(xy 48.113108 63.666044) (xy 48.070322 63.598546) (xy 48.041456 63.530171) (xy 46.8988 64.17948)
-				(xy 48.041456 64.828789) (xy 48.097958 64.714277) (xy 48.196554 64.60125) (xy 48.342179 64.492136)
-				(xy 48.533336 64.395367) (xy 48.748832 64.326817) (xy 48.9248 64.30448)
+				(xy 48.045966 63.541064) (xy 48.046573 63.542293) (xy 48.070323 63.598548) (xy 48.113108 63.666045)
+				(xy 48.166849 63.728811) (xy 48.166856 63.728819) (xy 48.166866 63.72883) (xy 48.241961 63.796589)
+				(xy 48.241964 63.796591) (xy 48.241965 63.796592) (xy 48.326873 63.85719) (xy 48.326885 63.857197)
+				(xy 48.397025 63.897229) (xy 48.432101 63.917249) (xy 48.541875 63.967064) (xy 48.653998 64.006837)
+				(xy 48.761589 64.034936) (xy 48.761587 64.034936) (xy 48.80918 64.040634) (xy 48.914492 64.053245)
+				(xy 48.922298 64.057631) (xy 48.9248 64.064862) (xy 48.9248 64.294171) (xy 48.921373 64.302444)
+				(xy 48.914573 64.305778) (xy 48.748831 64.326817) (xy 48.748825 64.326818) (xy 48.533346 64.395363)
+				(xy 48.533332 64.395368) (xy 48.34218 64.492135) (xy 48.196555 64.601248) (xy 48.097957 64.714277)
+				(xy 48.097955 64.71428) (xy 48.046944 64.817666) (xy 48.04021 64.823569) (xy 48.031275 64.822981)
+				(xy 48.030672 64.822661) (xy 47.641032 64.60125) (xy 46.916699 64.189651) (xy 46.9112 64.182586)
+				(xy 46.912308 64.1737) (xy 46.916699 64.169308) (xy 48.030015 63.536671) (xy 48.0389 63.535564)
 			)
 		)
 	)
@@ -89009,7 +89015,7 @@
 		(uuid "01e1d07e-2683-0c82-2049-d1ff2c17e162")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30120)
+		(priority 30121)
 		(attr
 			(teardrop
 				(type padvia)
@@ -89059,7 +89065,7 @@
 		(uuid "0336b571-d580-05f7-0cac-9a26b1d6eba4")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30197)
+		(priority 30199)
 		(attr
 			(teardrop
 				(type padvia)
@@ -89149,7 +89155,7 @@
 		(uuid "03d2f7e2-e121-0400-0a73-ae53c3472edb")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30066)
+		(priority 30064)
 		(attr
 			(teardrop
 				(type padvia)
@@ -89201,7 +89207,7 @@
 		(uuid "055882cc-a57b-0355-1439-bca858d299e0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30005)
+		(priority 30007)
 		(attr
 			(teardrop
 				(type padvia)
@@ -89344,7 +89350,7 @@
 		(uuid "05caae6b-72e1-0c71-01ab-0f5ffa42b384")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30218)
+		(priority 30220)
 		(attr
 			(teardrop
 				(type padvia)
@@ -89585,7 +89591,7 @@
 		(uuid "0bbb7837-f6fe-084b-38a6-a1554d10aaaf")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30201)
+		(priority 30202)
 		(attr
 			(teardrop
 				(type padvia)
@@ -89812,7 +89818,7 @@
 		(uuid "0ec0b439-7d2a-09ef-2987-6523830696b6")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30113)
+		(priority 30114)
 		(attr
 			(teardrop
 				(type padvia)
@@ -89913,7 +89919,7 @@
 		(uuid "0fb13cc5-97b5-0913-157c-c3742a2e2e7e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30238)
+		(priority 30237)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90010,7 +90016,7 @@
 		(uuid "1177e168-1963-0057-1358-a9fae7236bae")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30196)
+		(priority 30201)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90104,7 +90110,7 @@
 		(uuid "16f7616e-4d86-0e00-3220-6ab6453880cb")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30052)
+		(priority 30053)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90148,7 +90154,7 @@
 		(uuid "1737de0e-abde-0b72-16d1-4578bffde172")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30125)
+		(priority 30127)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90198,7 +90204,7 @@
 		(uuid "17a5e74c-01d5-06b9-3441-539f3f355a34")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30246)
+		(priority 30248)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90244,7 +90250,7 @@
 		(uuid "17e2fe96-75fe-0be9-292e-c8fb76d6b457")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30057)
+		(priority 30059)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90294,7 +90300,7 @@
 		(uuid "184d8705-cb39-081b-1659-c7c89bcffe7e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30110)
+		(priority 30111)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90388,7 +90394,7 @@
 		(uuid "187d564e-e27b-097c-0331-d5c62ebcd96e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30175)
+		(priority 30174)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90430,7 +90436,7 @@
 		(uuid "1a823302-373e-03b0-3f6c-8ee5b32e11ea")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30235)
+		(priority 30231)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90572,7 +90578,7 @@
 		(uuid "1c0a3277-b552-07e7-3feb-52cb0816a9a1")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30111)
+		(priority 30110)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90669,7 +90675,7 @@
 		(uuid "1c8c88f2-18f8-03a1-3fef-009a7f3ff74d")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30174)
+		(priority 30178)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90763,7 +90769,7 @@
 		(uuid "204706e0-cd13-00d7-1707-018c519904b3")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30296)
+		(priority 30295)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90919,7 +90925,7 @@
 		(uuid "22d6f69a-41c7-0b0d-3fed-bad0d382a2ce")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30004)
+		(priority 30005)
 		(attr
 			(teardrop
 				(type padvia)
@@ -90966,7 +90972,7 @@
 		(uuid "25ca446d-3f26-0386-1c17-2f10370c6360")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30251)
+		(priority 30252)
 		(attr
 			(teardrop
 				(type padvia)
@@ -91067,7 +91073,7 @@
 		(uuid "287289cb-a075-05fa-3b42-8b10336e14a6")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30114)
+		(priority 30113)
 		(attr
 			(teardrop
 				(type padvia)
@@ -91118,7 +91124,7 @@
 		(uuid "28b33263-7650-0766-1b5e-f49d34f46e16")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30248)
+		(priority 30246)
 		(attr
 			(teardrop
 				(type padvia)
@@ -91214,7 +91220,7 @@
 		(uuid "2a340e0a-f7ad-0e84-1bfc-c12644a2d88e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30321)
+		(priority 30323)
 		(attr
 			(teardrop
 				(type padvia)
@@ -91497,59 +91503,6 @@
 		)
 	)
 	(zone
-		(net 40)
-		(net_name "Net-(CT2-Pin_1)")
-		(layer "F.Cu")
-		(uuid "2e819e85-10c4-0a10-16e0-cf97b27a93cd")
-		(name "$teardrop_padvia$")
-		(hatch none 0.1)
-		(priority 30072)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 92.75 77.774628) (xy 92.754823 77.634726) (xy 92.768585 77.513864) (xy 92.789826 77.410742)
-				(xy 92.817685 77.320578) (xy 92.894651 77.1589) (xy 92.992637 77.009797) (xy 93.073984 76.888807)
-				(xy 93.153444 76.747748) (xy 93.225498 76.571782) (xy 93.284628 76.346072) (xy 92.5 76.189) (xy 91.715372 76.346072)
-				(xy 91.74722 76.481876) (xy 91.784052 76.599395) (xy 91.873729 76.800187) (xy 92.007363 77.009798)
-				(xy 92.099375 77.148842) (xy 92.17677 77.305761) (xy 92.207041 77.398846) (xy 92.230121 77.505907)
-				(xy 92.244834 77.630111) (xy 92.25 77.774628)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 93.272463 76.343636) (xy 93.279901 76.34862) (xy 93.281637 76.357405) (xy 93.281483 76.358073)
-				(xy 93.225694 76.571032) (xy 93.225203 76.572501) (xy 93.15372 76.747073) (xy 93.153087 76.748381)
-				(xy 93.074208 76.888408) (xy 93.073723 76.889194) (xy 92.99267 77.009745) (xy 92.992671 77.009746)
-				(xy 92.992637 77.009797) (xy 92.992568 77.009902) (xy 92.894647 77.158906) (xy 92.817685 77.320576)
-				(xy 92.789827 77.410739) (xy 92.789823 77.410754) (xy 92.768588 77.513849) (xy 92.768584 77.513871)
-				(xy 92.754822 77.634727) (xy 92.750389 77.763331) (xy 92.746679 77.771481) (xy 92.738696 77.774628)
-				(xy 92.26129 77.774628) (xy 92.253017 77.771201) (xy 92.249597 77.763346) (xy 92.248417 77.730354)
-				(xy 92.244834 77.630111) (xy 92.230121 77.505907) (xy 92.207041 77.398846) (xy 92.17677 77.305761)
-				(xy 92.174826 77.301819) (xy 92.09938 77.14885) (xy 92.099378 77.148847) (xy 92.007432 77.009902)
-				(xy 92.007323 77.009735) (xy 91.874191 76.800912) (xy 91.873374 76.799393) (xy 91.850591 76.748381)
-				(xy 91.78433 76.600018) (xy 91.783849 76.598748) (xy 91.775623 76.572501) (xy 91.747343 76.482271)
-				(xy 91.74712 76.481451) (xy 91.718132 76.357841) (xy 91.719579 76.349004) (xy 91.726852 76.343779)
-				(xy 91.727165 76.343711) (xy 92.497707 76.189459) (xy 92.502293 76.189459)
-			)
-		)
-	)
-	(zone
 		(net 10)
 		(net_name "TX")
 		(layer "F.Cu")
@@ -91606,7 +91559,7 @@
 		(uuid "2fb3829f-d035-013c-14ff-8bc4358291fd")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30228)
+		(priority 30229)
 		(attr
 			(teardrop
 				(type padvia)
@@ -91752,7 +91705,7 @@
 		(uuid "325a54e9-2401-001a-2976-856faf5b0c56")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30179)
+		(priority 30175)
 		(attr
 			(teardrop
 				(type padvia)
@@ -91890,7 +91843,7 @@
 		(uuid "34107a41-d06e-0866-2cd9-a988dad39319")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30192)
+		(priority 30188)
 		(attr
 			(teardrop
 				(type padvia)
@@ -91934,7 +91887,7 @@
 		(uuid "34165007-0ced-0cbc-0741-0a08ac1ea56b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30322)
+		(priority 30321)
 		(attr
 			(teardrop
 				(type padvia)
@@ -91978,7 +91931,7 @@
 		(uuid "35247ea3-8466-05a8-268b-37db204e15d1")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30102)
+		(priority 30101)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92031,7 +91984,7 @@
 		(uuid "35ab59c9-8d50-0370-32cc-4809d529e784")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30264)
+		(priority 30262)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92079,7 +92032,7 @@
 		(uuid "367e767f-356b-0c4c-092e-f289bfccb3df")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30220)
+		(priority 30223)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92174,7 +92127,7 @@
 		(uuid "372a98da-7665-03c9-04e8-07e5c1313825")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30031)
+		(priority 30036)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92224,7 +92177,7 @@
 		(uuid "377bac42-8054-0633-19fd-0b0a9b07e721")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30216)
+		(priority 30214)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92272,7 +92225,7 @@
 		(uuid "377bbb89-5fc7-0d75-06c3-b0229b8b07fe")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30048)
+		(priority 30045)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92465,7 +92418,7 @@
 		(uuid "38ac0f11-41a2-0157-02c2-71cf7156cd97")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30239)
+		(priority 30240)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92614,7 +92567,7 @@
 		(uuid "3b21e3e8-d5b1-0553-11e5-b0d6e404b9bf")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30203)
+		(priority 30200)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92702,7 +92655,7 @@
 		(uuid "3cd19238-c519-0513-3e17-81851f187353")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30097)
+		(priority 30096)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92799,7 +92752,7 @@
 		(uuid "3cf0c160-87ca-02c3-2b4b-72297ccc7227")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30224)
+		(priority 30218)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92845,7 +92798,7 @@
 		(uuid "3e91525b-9eb0-0f94-09c6-86f123e6462c")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30199)
+		(priority 30204)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92888,7 +92841,7 @@
 		(uuid "3e9dcc1b-3afa-0e7a-3396-81b0637a4351")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30227)
+		(priority 30219)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92935,7 +92888,7 @@
 		(uuid "3ea52aa9-d379-04e4-1831-9920a290fa53")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30147)
+		(priority 30148)
 		(attr
 			(teardrop
 				(type padvia)
@@ -92985,7 +92938,7 @@
 		(uuid "4009db46-b5fe-02f1-1c57-6f87a6077ac2")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30005)
+		(priority 30129)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93014,11 +92967,17 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 27.325 65.378812) (xy 27.431985 65.259116) (xy 27.598145 65.133683) (xy 27.822088 65.01513)
-				(xy 27.951123 64.963835) (xy 28.086247 64.921056) (xy 28.222579 64.888528) (xy 28.360859 64.866406)
-				(xy 28.547326 64.855) (xy 28.24 64.179) (xy 26.92686 64.663372) (xy 26.979882 64.684346) (xy 27.025126 64.71241)
-				(xy 27.095848 64.789045) (xy 27.142077 64.894455) (xy 27.161087 65.030429) (xy 27.14688 65.18937)
-				(xy 27.126058 65.269671) (xy 27.098841 65.337701) (xy 27.075 65.378812)
+				(xy 28.238747 64.183114) (xy 28.244499 64.188897) (xy 28.540287 64.839518) (xy 28.540591 64.848467)
+				(xy 28.534478 64.855011) (xy 28.53035 64.856038) (xy 28.360864 64.866405) (xy 28.222583 64.888527)
+				(xy 28.222579 64.888528) (xy 28.086247 64.921056) (xy 28.086239 64.921058) (xy 28.086221 64.921063)
+				(xy 27.951132 64.963831) (xy 27.951117 64.963836) (xy 27.822085 65.01513) (xy 27.822083 65.015131)
+				(xy 27.598147 65.13368) (xy 27.598144 65.133683) (xy 27.431985 65.259116) (xy 27.431982 65.259118)
+				(xy 27.328489 65.374909) (xy 27.320421 65.378794) (xy 27.319766 65.378812) (xy 27.09531 65.378812)
+				(xy 27.087037 65.375385) (xy 27.08361 65.367112) (xy 27.085189 65.361242) (xy 27.098841 65.337701)
+				(xy 27.126058 65.269671) (xy 27.14688 65.18937) (xy 27.161087 65.030429) (xy 27.142077 64.894455)
+				(xy 27.095848 64.789045) (xy 27.025126 64.71241) (xy 26.979882 64.684346) (xy 26.979879 64.684344)
+				(xy 26.955329 64.674633) (xy 26.948897 64.668403) (xy 26.948753 64.659449) (xy 26.954983 64.653017)
+				(xy 26.955561 64.652784) (xy 28.2298 64.182762)
 			)
 		)
 	)
@@ -93076,7 +93035,7 @@
 		(uuid "421dfdc5-67aa-0040-205c-9975c0b669b9")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30041)
+		(priority 30039)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93126,7 +93085,7 @@
 		(uuid "4290a8c4-b5f8-0fee-0a45-df762d9087de")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30157)
+		(priority 30156)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93173,7 +93132,7 @@
 		(uuid "42d38980-e678-0188-21cf-84b74b3cb0d8")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30188)
+		(priority 30192)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93321,7 +93280,7 @@
 		(uuid "455a2bef-18bc-06a5-1274-6af090232878")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30310)
+		(priority 30309)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93421,7 +93380,7 @@
 		(uuid "46e43a42-654b-0206-1166-15aa38b35aa9")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30094)
+		(priority 30095)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93472,7 +93431,7 @@
 		(uuid "476f8164-7da8-0bfb-0dfd-9f7d7e0a61e1")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30029)
+		(priority 30031)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93522,7 +93481,7 @@
 		(uuid "4909efb6-0974-064c-3b10-59d103ae54b3")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30176)
+		(priority 30179)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93710,7 +93669,7 @@
 		(uuid "4c573208-9d94-0445-2e94-d9b7f19ea852")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30045)
+		(priority 30046)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93760,7 +93719,7 @@
 		(uuid "4c6d4aae-cf32-0561-06ff-f5084e76773f")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30226)
+		(priority 30224)
 		(attr
 			(teardrop
 				(type padvia)
@@ -93904,7 +93863,7 @@
 		(uuid "5136af51-984e-093f-070d-ac6258577e9e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30150)
+		(priority 30151)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94093,7 +94052,7 @@
 		(uuid "5451d812-189d-0b30-00ad-d08d99aeb87a")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30315)
+		(priority 30316)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94138,7 +94097,7 @@
 		(uuid "56dfdaaa-28f2-08f5-13a2-5a3cc4e65630")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30325)
+		(priority 30324)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94184,7 +94143,7 @@
 		(uuid "573c4c8e-02e4-08a1-0d3f-05360a2cdd3f")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30294)
+		(priority 30293)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94235,7 +94194,7 @@
 		(uuid "57fe0819-4324-0923-3d7c-7f53a63f609f")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30100)
+		(priority 30092)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94383,7 +94342,7 @@
 		(uuid "5a5aaacf-8c0d-0e51-38d1-db197a3cb7dc")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30223)
+		(priority 30227)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94429,7 +94388,7 @@
 		(uuid "5ae40298-a353-0935-34a9-ee6dd20408d3")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30044)
+		(priority 30042)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94527,7 +94486,7 @@
 		(uuid "5c43c3de-93f0-077e-3726-02950de0013c")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30249)
+		(priority 30247)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94573,7 +94532,7 @@
 		(uuid "5c485eb5-407e-0182-28d5-c2f450ab5a90")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30095)
+		(priority 30098)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94717,7 +94676,7 @@
 		(uuid "5e3a5180-65ea-0eb7-2134-3d98461deebb")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30001)
+		(priority 30076)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94746,11 +94705,16 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 23.7552 54.44) (xy 23.884532 54.445645) (xy 24.039829 54.465159) (xy 24.171533 54.493191) (xy 24.301751 54.534421)
-				(xy 24.394294 54.575508) (xy 24.47802 54.626082) (xy 24.536536 54.674119) (xy 24.585384 54.729249)
-				(xy 24.638544 54.831869) (xy 25.7812 54.18256) (xy 24.638544 53.533251) (xy 24.585422 53.638495)
-				(xy 24.496046 53.731173) (xy 24.365131 53.812326) (xy 24.187442 53.879027) (xy 23.966795 53.924642)
-				(xy 23.7552 53.94)
+				(xy 24.648722 53.53905) (xy 24.649221 53.539318) (xy 25.327313 53.924641) (xy 25.763299 54.172388)
+				(xy 25.768799 54.179454) (xy 25.767691 54.18834) (xy 25.763299 54.192732) (xy 24.649118 54.825859)
+				(xy 24.640232 54.826967) (xy 24.633166 54.821467) (xy 24.632949 54.821069) (xy 24.585382 54.729246)
+				(xy 24.536538 54.67412) (xy 24.478021 54.626083) (xy 24.478022 54.626083) (xy 24.47802 54.626082)
+				(xy 24.478012 54.626077) (xy 24.394301 54.575511) (xy 24.394294 54.575508) (xy 24.301747 54.534419)
+				(xy 24.171538 54.493192) (xy 24.171532 54.49319) (xy 24.101944 54.478379) (xy 24.039829 54.465159)
+				(xy 23.884532 54.445645) (xy 23.830468 54.443285) (xy 23.76639 54.440488) (xy 23.758274 54.436703)
+				(xy 23.7552 54.428799) (xy 23.7552 53.950881) (xy 23.758627 53.942608) (xy 23.766052 53.939212)
+				(xy 23.966795 53.924642) (xy 24.187442 53.879027) (xy 24.365131 53.812326) (xy 24.496046 53.731173)
+				(xy 24.585422 53.638495) (xy 24.633006 53.544221) (xy 24.639792 53.538381)
 			)
 		)
 	)
@@ -94802,66 +94766,13 @@
 		)
 	)
 	(zone
-		(net 41)
-		(net_name "Net-(CT3-Pin_1)")
-		(layer "F.Cu")
-		(uuid "5eb8a63d-8975-08d1-12d0-6a2fda0cdea0")
-		(name "$teardrop_padvia$")
-		(hatch none 0.1)
-		(priority 30070)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 121.69 77.774628) (xy 121.694823 77.634726) (xy 121.708585 77.513864) (xy 121.729826 77.410742)
-				(xy 121.757685 77.320578) (xy 121.834651 77.1589) (xy 121.932637 77.009797) (xy 122.013984 76.888807)
-				(xy 122.093444 76.747748) (xy 122.165498 76.571782) (xy 122.224628 76.346072) (xy 121.44 76.189)
-				(xy 120.655372 76.346072) (xy 120.68722 76.481876) (xy 120.724052 76.599395) (xy 120.813729 76.800187)
-				(xy 120.947363 77.009798) (xy 121.039375 77.148842) (xy 121.11677 77.305761) (xy 121.147041 77.398846)
-				(xy 121.170121 77.505907) (xy 121.184834 77.630111) (xy 121.19 77.774628)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 122.212463 76.343636) (xy 122.219901 76.34862) (xy 122.221637 76.357405) (xy 122.221483 76.358073)
-				(xy 122.165694 76.571032) (xy 122.165203 76.572501) (xy 122.09372 76.747073) (xy 122.093087 76.748381)
-				(xy 122.014208 76.888408) (xy 122.013723 76.889194) (xy 121.93267 77.009745) (xy 121.932671 77.009746)
-				(xy 121.932637 77.009797) (xy 121.932568 77.009902) (xy 121.834647 77.158906) (xy 121.757685 77.320576)
-				(xy 121.729827 77.410739) (xy 121.729823 77.410754) (xy 121.708588 77.513849) (xy 121.708584 77.513871)
-				(xy 121.694822 77.634727) (xy 121.690389 77.763331) (xy 121.686679 77.771481) (xy 121.678696 77.774628)
-				(xy 121.20129 77.774628) (xy 121.193017 77.771201) (xy 121.189597 77.763346) (xy 121.188417 77.730354)
-				(xy 121.184834 77.630111) (xy 121.170121 77.505907) (xy 121.147041 77.398846) (xy 121.11677 77.305761)
-				(xy 121.114826 77.301819) (xy 121.03938 77.14885) (xy 121.039378 77.148847) (xy 120.947432 77.009902)
-				(xy 120.947323 77.009735) (xy 120.814191 76.800912) (xy 120.813374 76.799393) (xy 120.790591 76.748381)
-				(xy 120.72433 76.600018) (xy 120.723849 76.598748) (xy 120.715623 76.572501) (xy 120.687343 76.482271)
-				(xy 120.68712 76.481451) (xy 120.658132 76.357841) (xy 120.659579 76.349004) (xy 120.666852 76.343779)
-				(xy 120.667165 76.343711) (xy 121.437707 76.189459) (xy 121.442293 76.189459)
-			)
-		)
-	)
-	(zone
 		(net 103)
 		(net_name "Net-(J10-Pin_3)")
 		(layer "F.Cu")
 		(uuid "5f2f0e67-4526-0787-0f00-51a497477c01")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30043)
+		(priority 30041)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94963,7 +94874,7 @@
 		(uuid "60bb3636-abca-0dd9-3558-4f6c8779f964")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30004)
+		(priority 30082)
 		(attr
 			(teardrop
 				(type padvia)
@@ -94992,11 +94903,17 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 23.7552 60.3045) (xy 23.91841 60.324044) (xy 24.026001 60.352143) (xy 24.138124 60.391916) (xy 24.247899 60.441731)
-				(xy 24.353125 60.501789) (xy 24.438038 60.562391) (xy 24.513134 60.63015) (xy 24.566892 60.692936)
-				(xy 24.609678 60.760434) (xy 24.638544 60.828809) (xy 25.7812 60.1795) (xy 24.638544 59.530191)
-				(xy 24.582042 59.644703) (xy 24.483447 59.75773) (xy 24.337822 59.866844) (xy 24.146665 59.963613)
-				(xy 23.931169 60.032163) (xy 23.7552 60.0545)
+				(xy 24.648724 59.535998) (xy 24.649316 59.536312) (xy 24.840061 59.644702) (xy 25.763299 60.169328)
+				(xy 25.768799 60.176394) (xy 25.767691 60.18528) (xy 25.763299 60.189672) (xy 24.649985 60.822307)
+				(xy 24.641099 60.823415) (xy 24.634033 60.817915) (xy 24.633426 60.816686) (xy 24.609678 60.760434)
+				(xy 24.566892 60.692936) (xy 24.566891 60.692934) (xy 24.51315 60.630168) (xy 24.513143 60.630161)
+				(xy 24.513134 60.63015) (xy 24.438038 60.562391) (xy 24.438035 60.562389) (xy 24.438033 60.562387)
+				(xy 24.353126 60.501789) (xy 24.353114 60.501782) (xy 24.247903 60.441733) (xy 24.247898 60.44173)
+				(xy 24.13812 60.391914) (xy 24.076893 60.370196) (xy 24.026001 60.352143) (xy 24.025995 60.352141)
+				(xy 24.025994 60.352141) (xy 23.918408 60.324043) (xy 23.918411 60.324043) (xy 23.765509 60.305734)
+				(xy 23.757702 60.301348) (xy 23.7552 60.294117) (xy 23.7552 60.064808) (xy 23.758627 60.056535)
+				(xy 23.765424 60.053202) (xy 23.931169 60.032163) (xy 24.146665 59.963613) (xy 24.337822 59.866844)
+				(xy 24.483447 59.75773) (xy 24.582042 59.644703) (xy 24.633057 59.541311) (xy 24.639788 59.53541)
 			)
 		)
 	)
@@ -95007,7 +94924,7 @@
 		(uuid "60daa0a5-5ebf-05ca-0720-1f14075dbe44")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30323)
+		(priority 30320)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95100,7 +95017,7 @@
 		(uuid "617b7874-0cd5-09c4-0e67-5997c69286ba")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30185)
+		(priority 30181)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95144,7 +95061,7 @@
 		(uuid "6193c342-9748-0c76-229b-82086b04710e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30217)
+		(priority 30216)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95239,7 +95156,7 @@
 		(uuid "62e08d9d-2ffc-0ec0-382a-1070ea5563f8")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30231)
+		(priority 30236)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95286,7 +95203,7 @@
 		(uuid "639f2630-e2fa-04ce-00fd-9202a90191c0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30233)
+		(priority 30235)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95333,7 +95250,7 @@
 		(uuid "6470ec0f-4995-0f90-1be1-5d4916fb4bc0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30140)
+		(priority 30145)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95428,7 +95345,7 @@
 		(uuid "6a094fba-bc05-0dca-201c-a5c6df8e79ad")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30046)
+		(priority 30044)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95478,7 +95395,7 @@
 		(uuid "6a8bb2e5-25d8-0d81-06fb-c00d92d71aed")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30098)
+		(priority 30094)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95529,7 +95446,7 @@
 		(uuid "6b2e593f-4109-068a-3457-5be0a18d6a1a")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30143)
+		(priority 30141)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95630,7 +95547,7 @@
 		(uuid "6da53824-d109-0958-3451-a3ee2cd32501")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30051)
+		(priority 30052)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95725,7 +95642,7 @@
 		(uuid "6ea2f24e-603d-02fc-1d3d-1b1733d1829d")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30169)
+		(priority 30171)
 		(attr
 			(teardrop
 				(type padvia)
@@ -95819,7 +95736,7 @@
 		(uuid "6f804f0d-fa63-0075-3579-3bec53df76fd")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30265)
+		(priority 30264)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96009,7 +95926,7 @@
 		(uuid "743b72d1-964f-05a4-0e44-fd03deb87948")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30210)
+		(priority 30217)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96055,7 +95972,7 @@
 		(uuid "7497529a-722f-0799-39ca-024e86e99e45")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30171)
+		(priority 30170)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96150,7 +96067,7 @@
 		(uuid "75c6ddc7-afc8-03ec-0e44-c9a602dc8342")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30035)
+		(priority 30033)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96395,7 +96312,7 @@
 		(uuid "77a53bd2-012f-0c03-34a2-932aa44dc7dc")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30215)
+		(priority 30213)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96441,7 +96358,7 @@
 		(uuid "77b47f93-c06b-0f83-078c-190f4889f277")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30071)
+		(priority 30073)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96494,7 +96411,7 @@
 		(uuid "79c40c35-386a-078c-23e6-8f109b477756")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30240)
+		(priority 30238)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96541,7 +96458,7 @@
 		(uuid "7ada8e80-1258-0807-15f4-527e91885e6b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30036)
+		(priority 30030)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96640,7 +96557,7 @@
 		(uuid "7c06b8e0-f205-05e6-19ad-63e0cb96c173")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30189)
+		(priority 30191)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96682,7 +96599,7 @@
 		(uuid "7c849b8f-95c0-0e00-22ba-2dbec6737d83")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30230)
+		(priority 30225)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96728,7 +96645,7 @@
 		(uuid "7d66beba-382f-0d0e-3436-00bb1f5ec1ef")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30190)
+		(priority 30189)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96771,7 +96688,7 @@
 		(uuid "7f0876d9-ca07-05f7-13fe-5588bffc0786")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30170)
+		(priority 30169)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96818,7 +96735,7 @@
 		(uuid "7fabd321-b8eb-0224-1d9f-760da0ce0a1c")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30214)
+		(priority 30211)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96912,7 +96829,7 @@
 		(uuid "80935ef2-7377-0196-376e-56ae337a94b2")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30181)
+		(priority 30184)
 		(attr
 			(teardrop
 				(type padvia)
@@ -96942,6 +96859,59 @@
 				(xy 74.621 46.43) (xy 74.541964 46.822314) (xy 74.371931 46.782047) (xy 74.250927 46.744727) (xy 74.078685 46.697955)
 				(xy 73.971338 46.684744) (xy 73.827686 46.68) (xy 73.827686 46.18) (xy 73.97254 46.175165) (xy 74.080533 46.161712)
 				(xy 74.250925 46.115273) (xy 74.295428 46.100887) (xy 74.541964 46.037686)
+			)
+		)
+	)
+	(zone
+		(net 39)
+		(net_name "Net-(CT1-Pin_1)")
+		(layer "F.Cu")
+		(uuid "80f8fcc7-ac86-0c95-39f4-cdaf16cc426e")
+		(name "$teardrop_padvia$")
+		(hatch none 0.1)
+		(priority 30070)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 63.94 77.774628) (xy 63.944823 77.634726) (xy 63.958585 77.513864) (xy 63.979826 77.410742)
+				(xy 64.007685 77.320578) (xy 64.084651 77.1589) (xy 64.182637 77.009797) (xy 64.263984 76.888807)
+				(xy 64.343444 76.747748) (xy 64.415498 76.571782) (xy 64.474628 76.346072) (xy 63.69 76.189) (xy 62.905372 76.346072)
+				(xy 62.93722 76.481876) (xy 62.974052 76.599395) (xy 63.063729 76.800187) (xy 63.197363 77.009798)
+				(xy 63.289375 77.148842) (xy 63.36677 77.305761) (xy 63.397041 77.398846) (xy 63.420121 77.505907)
+				(xy 63.434834 77.630111) (xy 63.44 77.774628)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 64.462463 76.343636) (xy 64.469901 76.34862) (xy 64.471637 76.357405) (xy 64.471483 76.358073)
+				(xy 64.415694 76.571032) (xy 64.415203 76.572501) (xy 64.34372 76.747073) (xy 64.343087 76.748381)
+				(xy 64.264208 76.888408) (xy 64.263723 76.889194) (xy 64.18267 77.009745) (xy 64.182671 77.009746)
+				(xy 64.182637 77.009797) (xy 64.182568 77.009902) (xy 64.084647 77.158906) (xy 64.007685 77.320576)
+				(xy 63.979827 77.410739) (xy 63.979823 77.410754) (xy 63.958588 77.513849) (xy 63.958584 77.513871)
+				(xy 63.944822 77.634727) (xy 63.940389 77.763331) (xy 63.936679 77.771481) (xy 63.928696 77.774628)
+				(xy 63.45129 77.774628) (xy 63.443017 77.771201) (xy 63.439597 77.763346) (xy 63.438417 77.730354)
+				(xy 63.434834 77.630111) (xy 63.420121 77.505907) (xy 63.397041 77.398846) (xy 63.36677 77.305761)
+				(xy 63.364826 77.301819) (xy 63.28938 77.14885) (xy 63.289378 77.148847) (xy 63.197432 77.009902)
+				(xy 63.197323 77.009735) (xy 63.064191 76.800912) (xy 63.063374 76.799393) (xy 63.040591 76.748381)
+				(xy 62.97433 76.600018) (xy 62.973849 76.598748) (xy 62.965623 76.572501) (xy 62.937343 76.482271)
+				(xy 62.93712 76.481451) (xy 62.908132 76.357841) (xy 62.909579 76.349004) (xy 62.916852 76.343779)
+				(xy 62.917165 76.343711) (xy 63.687707 76.189459) (xy 63.692293 76.189459)
 			)
 		)
 	)
@@ -97005,7 +96975,7 @@
 		(uuid "82a8d3fd-1ca0-0c86-1d6a-53ce5aec7115")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30178)
+		(priority 30176)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97093,7 +97063,7 @@
 		(uuid "83cd45b5-9ba5-0182-1aa4-7e7e66250909")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30222)
+		(priority 30228)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97180,7 +97150,7 @@
 		(uuid "84dee521-eab8-0f07-2131-8bd928328540")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30221)
+		(priority 30222)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97323,7 +97293,7 @@
 		(uuid "86fabee4-a042-029c-0708-ebece18a6e9a")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30030)
+		(priority 30029)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97421,7 +97391,7 @@
 		(uuid "89d5da84-98e0-046f-3b0d-de75a99ffceb")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30000)
+		(priority 30067)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97450,11 +97420,17 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 23.562756 52.283809) (xy 23.698063 52.323787) (xy 23.867265 52.356808) (xy 24.070451 52.396807)
-				(xy 24.257985 52.450697) (xy 24.33564 52.486213) (xy 24.39709 52.529235) (xy 24.43824 52.581108)
-				(xy 24.454991 52.643176) (xy 25.781066 52.181539) (xy 25.834415 51.50604) (xy 25.584121 51.594298)
-				(xy 25.327832 51.64476) (xy 25.063892 51.658599) (xy 24.790772 51.63592) (xy 24.50743 51.576228)
-				(xy 24.213643 51.479452) (xy 24.062746 51.417779)
+				(xy 24.072197 51.421641) (xy 24.213643 51.479452) (xy 24.50743 51.576228) (xy 24.790772 51.63592)
+				(xy 25.063892 51.658599) (xy 25.063894 51.658598) (xy 25.063895 51.658599) (xy 25.095475 51.656942)
+				(xy 25.327832 51.64476) (xy 25.584121 51.594298) (xy 25.817444 51.512024) (xy 25.826385 51.512504)
+				(xy 25.832368 51.519167) (xy 25.832998 51.523979) (xy 25.781667 52.173921) (xy 25.777599 52.181899)
+				(xy 25.77385 52.18405) (xy 24.466859 52.639044) (xy 24.457919 52.638527) (xy 24.451962 52.631841)
+				(xy 24.451716 52.631042) (xy 24.43824 52.581108) (xy 24.438239 52.581107) (xy 24.397092 52.529237)
+				(xy 24.397087 52.529232) (xy 24.335646 52.486216) (xy 24.335636 52.48621) (xy 24.25799 52.450699)
+				(xy 24.257988 52.450698) (xy 24.070459 52.396809) (xy 24.070455 52.396808) (xy 24.070451 52.396807)
+				(xy 23.867265 52.356808) (xy 23.867255 52.356806) (xy 23.867255 52.356805) (xy 23.698604 52.323892)
+				(xy 23.69753 52.323629) (xy 23.576999 52.288017) (xy 23.570036 52.282387) (xy 23.569094 52.273482)
+				(xy 23.570179 52.270951) (xy 24.057641 51.426621) (xy 24.064745 51.421171)
 			)
 		)
 	)
@@ -97465,7 +97441,7 @@
 		(uuid "8c8a47c8-5af1-0f5b-2463-1140b6094f34")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30148)
+		(priority 30147)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97515,7 +97491,7 @@
 		(uuid "8cc72cb8-cad0-0f66-1745-4d41c9cb61e9")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30314)
+		(priority 30318)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97560,7 +97536,7 @@
 		(uuid "8dc87265-a29d-0373-0c29-40306432a66b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30042)
+		(priority 30040)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97610,7 +97586,7 @@
 		(uuid "8f029765-a27a-0c0e-0192-b60f17a589fb")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30198)
+		(priority 30197)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97702,7 +97678,7 @@
 		(uuid "9035025b-24ad-0d17-14ad-a6664b01b2b0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30047)
+		(priority 30038)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97752,7 +97728,7 @@
 		(uuid "90542c78-47a2-0e5e-0cd8-076a0132363d")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30142)
+		(priority 30144)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97799,7 +97775,7 @@
 		(uuid "9088a56e-44ff-043b-148c-2fc4049cfee9")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30234)
+		(priority 30233)
 		(attr
 			(teardrop
 				(type padvia)
@@ -97846,7 +97822,7 @@
 		(uuid "921f7285-81f3-0e3f-0e9e-499b3073c094")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30186)
+		(priority 30182)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98035,7 +98011,7 @@
 		(uuid "95ed2fd9-f677-02e5-1987-72555de1528b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30316)
+		(priority 30317)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98131,7 +98107,7 @@
 		(uuid "9708f0eb-99ff-0d91-2c37-6ebeeec469bf")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30059)
+		(priority 30058)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98181,7 +98157,7 @@
 		(uuid "9880c051-cd81-0bcf-3ba1-916aed179c6c")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30250)
+		(priority 30257)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98228,7 +98204,7 @@
 		(uuid "98dbf246-476c-0400-1d65-56a4776f314a")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30309)
+		(priority 30310)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98275,7 +98251,7 @@
 		(uuid "99651292-dafc-0b54-344d-e8fee01da6f1")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30313)
+		(priority 30314)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98367,7 +98343,7 @@
 		(uuid "9ed76186-6715-0e43-142c-b16c03fa3d54")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30003)
+		(priority 30081)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98396,11 +98372,17 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 23.7552 62.30348) (xy 23.91841 62.323024) (xy 24.026001 62.351123) (xy 24.138124 62.390896)
-				(xy 24.247899 62.440711) (xy 24.353125 62.500769) (xy 24.438038 62.561371) (xy 24.513134 62.62913)
-				(xy 24.566892 62.691916) (xy 24.609678 62.759414) (xy 24.638544 62.827789) (xy 25.7812 62.17848)
-				(xy 24.638544 61.529171) (xy 24.582042 61.643683) (xy 24.483447 61.75671) (xy 24.337822 61.865824)
-				(xy 24.146665 61.962593) (xy 23.931169 62.031143) (xy 23.7552 62.05348)
+				(xy 24.648724 61.534978) (xy 24.649316 61.535292) (xy 24.840061 61.643682) (xy 25.763299 62.168308)
+				(xy 25.768799 62.175374) (xy 25.767691 62.18426) (xy 25.763299 62.188652) (xy 24.649985 62.821287)
+				(xy 24.641099 62.822395) (xy 24.634033 62.816895) (xy 24.633426 62.815666) (xy 24.609678 62.759414)
+				(xy 24.566892 62.691916) (xy 24.566891 62.691914) (xy 24.51315 62.629148) (xy 24.513143 62.629141)
+				(xy 24.513134 62.62913) (xy 24.438038 62.561371) (xy 24.438035 62.561369) (xy 24.438033 62.561367)
+				(xy 24.353126 62.500769) (xy 24.353114 62.500762) (xy 24.247903 62.440713) (xy 24.247898 62.44071)
+				(xy 24.13812 62.390894) (xy 24.076893 62.369176) (xy 24.026001 62.351123) (xy 24.025995 62.351121)
+				(xy 24.025994 62.351121) (xy 23.918408 62.323023) (xy 23.918411 62.323023) (xy 23.765509 62.304714)
+				(xy 23.757702 62.300328) (xy 23.7552 62.293097) (xy 23.7552 62.063788) (xy 23.758627 62.055515)
+				(xy 23.765424 62.052182) (xy 23.931169 62.031143) (xy 24.146665 61.962593) (xy 24.337822 61.865824)
+				(xy 24.483447 61.75671) (xy 24.582042 61.643683) (xy 24.633057 61.540291) (xy 24.639788 61.53439)
 			)
 		)
 	)
@@ -98411,7 +98393,7 @@
 		(uuid "9ee012ba-fcc1-0a59-168f-ec05bb9bfbb6")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30101)
+		(priority 30102)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98464,7 +98446,7 @@
 		(uuid "9fac1470-f518-088a-1f80-7e5dd37feff7")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30191)
+		(priority 30190)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98510,7 +98492,7 @@
 		(uuid "9fb871ee-8ff4-0c37-3014-8fb0985d979b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30225)
+		(priority 30226)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98556,7 +98538,7 @@
 		(uuid "9fd6c582-3462-0fc9-386f-7875d89532a4")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30183)
+		(priority 30186)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98690,7 +98672,7 @@
 		(uuid "9ff0ccef-270d-09f0-1096-9f717281fe04")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30259)
+		(priority 30258)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98781,7 +98763,7 @@
 		(uuid "a1048b88-230c-0f51-1b33-a589523634b6")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30007)
+		(priority 30006)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98828,7 +98810,7 @@
 		(uuid "a15a54f6-ea52-0c88-14b7-b264c3203f7b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30295)
+		(priority 30294)
 		(attr
 			(teardrop
 				(type padvia)
@@ -98869,6 +98851,59 @@
 				(xy 63.060578 58.919688) (xy 63.1301 58.873682) (xy 63.164558 58.85003) (xy 63.165454 58.849475)
 				(xy 63.291765 58.779246) (xy 63.293425 58.778487) (xy 63.368122 58.751173) (xy 63.369272 58.75082)
 				(xy 63.450079 58.730652)
+			)
+		)
+	)
+	(zone
+		(net 40)
+		(net_name "Net-(CT2-Pin_1)")
+		(layer "F.Cu")
+		(uuid "a1757156-74b6-03e2-1963-1f15e579814b")
+		(name "$teardrop_padvia$")
+		(hatch none 0.1)
+		(priority 30071)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 92.75 77.774628) (xy 92.754823 77.634726) (xy 92.768585 77.513864) (xy 92.789826 77.410742)
+				(xy 92.817685 77.320578) (xy 92.894651 77.1589) (xy 92.992637 77.009797) (xy 93.073984 76.888807)
+				(xy 93.153444 76.747748) (xy 93.225498 76.571782) (xy 93.284628 76.346072) (xy 92.5 76.189) (xy 91.715372 76.346072)
+				(xy 91.74722 76.481876) (xy 91.784052 76.599395) (xy 91.873729 76.800187) (xy 92.007363 77.009798)
+				(xy 92.099375 77.148842) (xy 92.17677 77.305761) (xy 92.207041 77.398846) (xy 92.230121 77.505907)
+				(xy 92.244834 77.630111) (xy 92.25 77.774628)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 93.272463 76.343636) (xy 93.279901 76.34862) (xy 93.281637 76.357405) (xy 93.281483 76.358073)
+				(xy 93.225694 76.571032) (xy 93.225203 76.572501) (xy 93.15372 76.747073) (xy 93.153087 76.748381)
+				(xy 93.074208 76.888408) (xy 93.073723 76.889194) (xy 92.99267 77.009745) (xy 92.992671 77.009746)
+				(xy 92.992637 77.009797) (xy 92.992568 77.009902) (xy 92.894647 77.158906) (xy 92.817685 77.320576)
+				(xy 92.789827 77.410739) (xy 92.789823 77.410754) (xy 92.768588 77.513849) (xy 92.768584 77.513871)
+				(xy 92.754822 77.634727) (xy 92.750389 77.763331) (xy 92.746679 77.771481) (xy 92.738696 77.774628)
+				(xy 92.26129 77.774628) (xy 92.253017 77.771201) (xy 92.249597 77.763346) (xy 92.248417 77.730354)
+				(xy 92.244834 77.630111) (xy 92.230121 77.505907) (xy 92.207041 77.398846) (xy 92.17677 77.305761)
+				(xy 92.174826 77.301819) (xy 92.09938 77.14885) (xy 92.099378 77.148847) (xy 92.007432 77.009902)
+				(xy 92.007323 77.009735) (xy 91.874191 76.800912) (xy 91.873374 76.799393) (xy 91.850591 76.748381)
+				(xy 91.78433 76.600018) (xy 91.783849 76.598748) (xy 91.775623 76.572501) (xy 91.747343 76.482271)
+				(xy 91.74712 76.481451) (xy 91.718132 76.357841) (xy 91.719579 76.349004) (xy 91.726852 76.343779)
+				(xy 91.727165 76.343711) (xy 92.497707 76.189459) (xy 92.502293 76.189459)
 			)
 		)
 	)
@@ -99074,7 +99109,7 @@
 		(uuid "a5b7ad65-fcfe-0bee-3dfa-5893e31d9141")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30261)
+		(priority 30265)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99170,7 +99205,7 @@
 		(uuid "a6f94d91-3ae8-0edf-0b0b-66dc1cbd5cc2")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30049)
+		(priority 30050)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99220,7 +99255,7 @@
 		(uuid "a83f4caa-cb83-0bf9-10ea-7d37cc9d99ed")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30040)
+		(priority 30048)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99270,7 +99305,7 @@
 		(uuid "a86c00db-1024-0d58-2cdc-ef6236f54570")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30324)
+		(priority 30325)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99367,7 +99402,7 @@
 		(uuid "a9394e4d-b5e1-09c8-3b52-2131bbe6e97a")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30213)
+		(priority 30215)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99607,7 +99642,7 @@
 		(uuid "ab6dcab6-7109-05fe-2190-5fec5eefb8eb")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30270)
+		(priority 30271)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99653,7 +99688,7 @@
 		(uuid "abee0140-b613-0e26-30a2-45a8dac01232")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30121)
+		(priority 30120)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99849,7 +99884,7 @@
 		(uuid "b0e19593-6241-0b34-1d2b-2483c3472f6a")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30141)
+		(priority 30143)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99896,7 +99931,7 @@
 		(uuid "b15bc82c-7650-00e3-28c3-8437e1ee5669")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30317)
+		(priority 30315)
 		(attr
 			(teardrop
 				(type padvia)
@@ -99981,7 +100016,7 @@
 		(uuid "b67c4958-efa8-0768-2081-ee3eef1eac9f")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30156)
+		(priority 30158)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100028,7 +100063,7 @@
 		(uuid "b6acc8d3-3d8f-0122-0dfb-9697d43269ed")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30202)
+		(priority 30196)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100169,7 +100204,7 @@
 		(uuid "b8b1d266-0682-0720-116c-6ebad21897e9")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30091)
+		(priority 30099)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100267,7 +100302,7 @@
 		(uuid "ba09606a-debb-08e4-155e-6be5988f38df")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30027)
+		(priority 30037)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100317,7 +100352,7 @@
 		(uuid "ba14ce74-6cb6-0b5f-1f3c-4aba5f104444")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30262)
+		(priority 30261)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100365,7 +100400,7 @@
 		(uuid "bad43d4e-665d-0ff7-03ca-5c1088cc64ba")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30229)
+		(priority 30221)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100462,7 +100497,7 @@
 		(uuid "bc481258-6e90-0f32-2b52-45f58cd1d3ee")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30184)
+		(priority 30183)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100506,7 +100541,7 @@
 		(uuid "bd4e62a5-825b-02bf-12da-18c27a1189d5")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30099)
+		(priority 30093)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100556,7 +100591,7 @@
 		(uuid "bddac492-dfcb-003f-3adf-9d7aed6d7d30")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30065)
+		(priority 30066)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100699,7 +100734,7 @@
 		(uuid "bec472bc-51ea-0d7d-32a7-b9a668c864af")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30247)
+		(priority 30249)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100788,7 +100823,7 @@
 		(uuid "bfeae2b7-64c4-0231-2fe1-07ce5455ab14")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30195)
+		(priority 30198)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100885,7 +100920,7 @@
 		(uuid "c1d27884-5ffe-0cb0-0257-ed7a6af81981")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30127)
+		(priority 30122)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100935,7 +100970,7 @@
 		(uuid "c210cc0f-a7fb-0d41-1d98-5c416d92f5f3")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30039)
+		(priority 30043)
 		(attr
 			(teardrop
 				(type padvia)
@@ -100975,59 +101010,6 @@
 				(xy 66.86391 20.487844) (xy 66.518168 20.57296) (xy 66.509315 20.57161) (xy 66.50401 20.564396)
 				(xy 66.503898 20.563894) (xy 66.488682 20.487844) (xy 66.336027 19.724894) (xy 66.336027 19.720305)
 				(xy 66.43561 19.2226) (xy 66.503945 18.88107) (xy 66.508929 18.87363) (xy 66.517713 18.871893)
-			)
-		)
-	)
-	(zone
-		(net 39)
-		(net_name "Net-(CT1-Pin_1)")
-		(layer "F.Cu")
-		(uuid "c21f1df4-574d-0d55-3d98-0ce7c44f95d6")
-		(name "$teardrop_padvia$")
-		(hatch none 0.1)
-		(priority 30073)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 63.94 77.774628) (xy 63.944823 77.634726) (xy 63.958585 77.513864) (xy 63.979826 77.410742)
-				(xy 64.007685 77.320578) (xy 64.084651 77.1589) (xy 64.182637 77.009797) (xy 64.263984 76.888807)
-				(xy 64.343444 76.747748) (xy 64.415498 76.571782) (xy 64.474628 76.346072) (xy 63.69 76.189) (xy 62.905372 76.346072)
-				(xy 62.93722 76.481876) (xy 62.974052 76.599395) (xy 63.063729 76.800187) (xy 63.197363 77.009798)
-				(xy 63.289375 77.148842) (xy 63.36677 77.305761) (xy 63.397041 77.398846) (xy 63.420121 77.505907)
-				(xy 63.434834 77.630111) (xy 63.44 77.774628)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 64.462463 76.343636) (xy 64.469901 76.34862) (xy 64.471637 76.357405) (xy 64.471483 76.358073)
-				(xy 64.415694 76.571032) (xy 64.415203 76.572501) (xy 64.34372 76.747073) (xy 64.343087 76.748381)
-				(xy 64.264208 76.888408) (xy 64.263723 76.889194) (xy 64.18267 77.009745) (xy 64.182671 77.009746)
-				(xy 64.182637 77.009797) (xy 64.182568 77.009902) (xy 64.084647 77.158906) (xy 64.007685 77.320576)
-				(xy 63.979827 77.410739) (xy 63.979823 77.410754) (xy 63.958588 77.513849) (xy 63.958584 77.513871)
-				(xy 63.944822 77.634727) (xy 63.940389 77.763331) (xy 63.936679 77.771481) (xy 63.928696 77.774628)
-				(xy 63.45129 77.774628) (xy 63.443017 77.771201) (xy 63.439597 77.763346) (xy 63.438417 77.730354)
-				(xy 63.434834 77.630111) (xy 63.420121 77.505907) (xy 63.397041 77.398846) (xy 63.36677 77.305761)
-				(xy 63.364826 77.301819) (xy 63.28938 77.14885) (xy 63.289378 77.148847) (xy 63.197432 77.009902)
-				(xy 63.197323 77.009735) (xy 63.064191 76.800912) (xy 63.063374 76.799393) (xy 63.040591 76.748381)
-				(xy 62.97433 76.600018) (xy 62.973849 76.598748) (xy 62.965623 76.572501) (xy 62.937343 76.482271)
-				(xy 62.93712 76.481451) (xy 62.908132 76.357841) (xy 62.909579 76.349004) (xy 62.916852 76.343779)
-				(xy 62.917165 76.343711) (xy 63.687707 76.189459) (xy 63.692293 76.189459)
 			)
 		)
 	)
@@ -101336,7 +101318,7 @@
 		(uuid "c7aaf8a4-09c4-0594-2e78-3cc1f0bbbaeb")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30122)
+		(priority 30126)
 		(attr
 			(teardrop
 				(type padvia)
@@ -101386,7 +101368,7 @@
 		(uuid "c7c5ace6-2e89-0e12-06ef-14a9fee225ae")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30257)
+		(priority 30251)
 		(attr
 			(teardrop
 				(type padvia)
@@ -101528,7 +101510,7 @@
 		(uuid "c97271c3-74cb-0fa0-04a9-386f763879f4")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30182)
+		(priority 30185)
 		(attr
 			(teardrop
 				(type padvia)
@@ -101623,7 +101605,7 @@
 		(uuid "cab080b6-cddc-0bb2-3f85-612a26889db0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30092)
+		(priority 30097)
 		(attr
 			(teardrop
 				(type padvia)
@@ -101674,7 +101656,7 @@
 		(uuid "cad3529a-289f-03ba-1eb0-cff734040c47")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30144)
+		(priority 30140)
 		(attr
 			(teardrop
 				(type padvia)
@@ -101855,7 +101837,7 @@
 		(uuid "cec5536b-afe6-03f5-2ed5-357ac481dd18")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30219)
+		(priority 30230)
 		(attr
 			(teardrop
 				(type padvia)
@@ -101901,7 +101883,7 @@
 		(uuid "cf320fab-f383-01ec-2454-57b619a6d40f")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30298)
+		(priority 30299)
 		(attr
 			(teardrop
 				(type padvia)
@@ -101948,7 +101930,7 @@
 		(uuid "d0766927-d20b-0e26-1a64-bf2c6937acb2")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30050)
+		(priority 30049)
 		(attr
 			(teardrop
 				(type padvia)
@@ -101998,7 +101980,7 @@
 		(uuid "d0b36b50-ed1d-0b4f-29d6-e33f9a09eac1")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30211)
+		(priority 30210)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102094,7 +102076,7 @@
 		(uuid "d45ef3fd-e927-0b08-09f3-cc3b9f64d0a0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30053)
+		(priority 30051)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102186,7 +102168,7 @@
 		(uuid "d62df00f-0f23-0863-1eaf-d977b2b1fba0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30244)
+		(priority 30245)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102233,7 +102215,7 @@
 		(uuid "d6ebea92-541a-05f8-3046-960029dca5a8")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30006)
+		(priority 30004)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102280,7 +102262,7 @@
 		(uuid "d7fe62ba-b0ae-0206-2709-7f5c4877a692")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30320)
+		(priority 30322)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102466,7 +102448,7 @@
 		(uuid "d9d54408-afb8-054a-3eb1-20d498eae39d")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30237)
+		(priority 30239)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102710,7 +102692,7 @@
 		(uuid "dc584670-73d9-0013-04b7-58458a88ad68")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30293)
+		(priority 30296)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102761,7 +102743,7 @@
 		(uuid "dca95268-d2e4-0473-060f-add53894e5d0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30236)
+		(priority 30234)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102906,7 +102888,7 @@
 		(uuid "e20a80b9-dae5-0354-27a8-e7a0b145c146")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30037)
+		(priority 30028)
 		(attr
 			(teardrop
 				(type padvia)
@@ -102956,7 +102938,7 @@
 		(uuid "e3592532-3f46-0be8-05ac-c50211acc96b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30245)
+		(priority 30244)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103103,7 +103085,7 @@
 		(uuid "e652011c-95be-0df6-2c76-b789c126b3d4")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30200)
+		(priority 30203)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103149,7 +103131,7 @@
 		(uuid "e6a79635-3cfc-09b4-1081-f800dc2c0597")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30064)
+		(priority 30065)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103201,7 +103183,7 @@
 		(uuid "e7f3708e-f3d1-0029-0870-aef909a0f4d4")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30158)
+		(priority 30157)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103248,7 +103230,7 @@
 		(uuid "e811e958-742b-0cc5-2024-28c8da849937")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30033)
+		(priority 30035)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103440,7 +103422,7 @@
 		(uuid "ed8aaa19-feb6-0bfd-1b3b-f3c731355a12")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30126)
+		(priority 30125)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103590,7 +103572,7 @@
 		(uuid "eed1a82e-95b7-01fb-1e48-8b264ecc365f")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30151)
+		(priority 30150)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103638,7 +103620,7 @@
 		(uuid "efa340db-c2c0-049c-0b84-bb26cde397ce")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30145)
+		(priority 30142)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103685,7 +103667,7 @@
 		(uuid "f005266a-8018-06ba-19b2-fd0ddd546126")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30299)
+		(priority 30298)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103732,7 +103714,7 @@
 		(uuid "f01015f7-0fa1-067c-3a90-9bc08ffbc34e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30204)
+		(priority 30195)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103776,7 +103758,7 @@
 		(uuid "f04c3bf4-bc59-0a57-23bc-185018ba130b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30038)
+		(priority 30047)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103826,7 +103808,7 @@
 		(uuid "f0be36d9-d693-0ebe-2a6f-4791d799c681")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30028)
+		(priority 30032)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103876,7 +103858,7 @@
 		(uuid "f34ecb3f-d719-01bd-3a77-a1e2323c725b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30058)
+		(priority 30057)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103926,7 +103908,7 @@
 		(uuid "f3fd8f69-45e2-0c8a-3f83-cdd729433849")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30256)
+		(priority 30250)
 		(attr
 			(teardrop
 				(type padvia)
@@ -103968,13 +103950,66 @@
 		)
 	)
 	(zone
+		(net 41)
+		(net_name "Net-(CT3-Pin_1)")
+		(layer "F.Cu")
+		(uuid "f5655687-5ed6-04cf-0e48-40849d11e4b9")
+		(name "$teardrop_padvia$")
+		(hatch none 0.1)
+		(priority 30072)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 121.69 77.774628) (xy 121.694823 77.634726) (xy 121.708585 77.513864) (xy 121.729826 77.410742)
+				(xy 121.757685 77.320578) (xy 121.834651 77.1589) (xy 121.932637 77.009797) (xy 122.013984 76.888807)
+				(xy 122.093444 76.747748) (xy 122.165498 76.571782) (xy 122.224628 76.346072) (xy 121.44 76.189)
+				(xy 120.655372 76.346072) (xy 120.68722 76.481876) (xy 120.724052 76.599395) (xy 120.813729 76.800187)
+				(xy 120.947363 77.009798) (xy 121.039375 77.148842) (xy 121.11677 77.305761) (xy 121.147041 77.398846)
+				(xy 121.170121 77.505907) (xy 121.184834 77.630111) (xy 121.19 77.774628)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 122.212463 76.343636) (xy 122.219901 76.34862) (xy 122.221637 76.357405) (xy 122.221483 76.358073)
+				(xy 122.165694 76.571032) (xy 122.165203 76.572501) (xy 122.09372 76.747073) (xy 122.093087 76.748381)
+				(xy 122.014208 76.888408) (xy 122.013723 76.889194) (xy 121.93267 77.009745) (xy 121.932671 77.009746)
+				(xy 121.932637 77.009797) (xy 121.932568 77.009902) (xy 121.834647 77.158906) (xy 121.757685 77.320576)
+				(xy 121.729827 77.410739) (xy 121.729823 77.410754) (xy 121.708588 77.513849) (xy 121.708584 77.513871)
+				(xy 121.694822 77.634727) (xy 121.690389 77.763331) (xy 121.686679 77.771481) (xy 121.678696 77.774628)
+				(xy 121.20129 77.774628) (xy 121.193017 77.771201) (xy 121.189597 77.763346) (xy 121.188417 77.730354)
+				(xy 121.184834 77.630111) (xy 121.170121 77.505907) (xy 121.147041 77.398846) (xy 121.11677 77.305761)
+				(xy 121.114826 77.301819) (xy 121.03938 77.14885) (xy 121.039378 77.148847) (xy 120.947432 77.009902)
+				(xy 120.947323 77.009735) (xy 120.814191 76.800912) (xy 120.813374 76.799393) (xy 120.790591 76.748381)
+				(xy 120.72433 76.600018) (xy 120.723849 76.598748) (xy 120.715623 76.572501) (xy 120.687343 76.482271)
+				(xy 120.68712 76.481451) (xy 120.658132 76.357841) (xy 120.659579 76.349004) (xy 120.666852 76.343779)
+				(xy 120.667165 76.343711) (xy 121.437707 76.189459) (xy 121.442293 76.189459)
+			)
+		)
+	)
+	(zone
 		(net 31)
 		(net_name "+5V")
 		(layer "F.Cu")
 		(uuid "f5b7131e-fce1-046b-3ea8-d649417d3684")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30032)
+		(priority 30027)
 		(attr
 			(teardrop
 				(type padvia)
@@ -104024,7 +104059,7 @@
 		(uuid "f7724da6-3a2c-01c8-3d0c-6c3109d7bd29")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30269)
+		(priority 30270)
 		(attr
 			(teardrop
 				(type padvia)
@@ -104070,7 +104105,7 @@
 		(uuid "f7c833f6-80a1-01f2-0540-af7c4440ddbb")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30252)
+		(priority 30256)
 		(attr
 			(teardrop
 				(type padvia)
@@ -104117,7 +104152,7 @@
 		(uuid "f81764ec-626c-0cc0-3f02-6228337c2385")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30318)
+		(priority 30313)
 		(attr
 			(teardrop
 				(type padvia)
@@ -104350,7 +104385,7 @@
 		(uuid "fd1afe4b-41b7-0e97-2805-f9b4e4103542")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30093)
+		(priority 30091)
 		(attr
 			(teardrop
 				(type padvia)
@@ -104401,7 +104436,7 @@
 		(uuid "fdf8774a-cfde-0239-1923-6b5820987371")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30096)
+		(priority 30100)
 		(attr
 			(teardrop
 				(type padvia)
@@ -104452,7 +104487,7 @@
 		(uuid "fe4a8587-5eec-04bc-149d-88bb00c9df3c")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30258)
+		(priority 30259)
 		(attr
 			(teardrop
 				(type padvia)
@@ -104550,7 +104585,7 @@
 		(uuid "fe8a4435-f213-0c23-2526-f6916ee9ce3f")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30271)
+		(priority 30269)
 		(attr
 			(teardrop
 				(type padvia)
@@ -116291,7 +116326,7 @@
 		(uuid "03c02edc-bb0e-08e7-0bce-5b342cbaa92e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30064)
+		(priority 30063)
 		(attr
 			(teardrop
 				(type padvia)
@@ -116689,57 +116724,6 @@
 		)
 	)
 	(zone
-		(net 41)
-		(net_name "Net-(CT3-Pin_1)")
-		(layer "B.Cu")
-		(uuid "0a0845cd-8d65-0c90-3599-d1ad7729bd60")
-		(name "$teardrop_padvia$")
-		(hatch none 0.1)
-		(priority 30036)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 122.15745 77.373896) (xy 122.091366 77.300866) (xy 122.04351 77.23267) (xy 122.014321 77.174088)
-				(xy 121.997208 77.117744) (xy 121.993553 77.009446) (xy 122.026802 76.884752) (xy 122.083487 76.751995)
-				(xy 122.160403 76.56982) (xy 122.19565 76.464066) (xy 122.224628 76.346072) (xy 121.439293 76.189293)
-				(xy 120.774824 76.634456) (xy 120.919943 76.842859) (xy 121.041984 77.000021) (xy 121.235042 77.205066)
-				(xy 121.389619 77.343164) (xy 121.569641 77.503071) (xy 121.803896 77.72745)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 121.444048 76.190242) (xy 122.20037 76.341229) (xy 122.212641 76.343679) (xy 122.220083 76.34866)
-				(xy 122.221824 76.357444) (xy 122.221712 76.357944) (xy 122.195764 76.463599) (xy 122.195502 76.464507)
-				(xy 122.160548 76.569384) (xy 122.160227 76.570236) (xy 122.083487 76.751995) (xy 122.083468 76.752038)
-				(xy 122.026804 76.884747) (xy 122.0268 76.884756) (xy 121.993553 77.009444) (xy 121.993553 77.009448)
-				(xy 121.997207 77.117739) (xy 121.997207 77.117742) (xy 121.997208 77.117744) (xy 122.004512 77.141793)
-				(xy 122.01432 77.174087) (xy 122.043509 77.232668) (xy 122.091367 77.300867) (xy 122.09137 77.300871)
-				(xy 122.149981 77.365643) (xy 122.152991 77.374077) (xy 122.149579 77.381766) (xy 121.811992 77.719353)
-				(xy 121.803719 77.72278) (xy 121.795626 77.719529) (xy 121.795442 77.719353) (xy 121.569641 77.503071)
-				(xy 121.389619 77.343164) (xy 121.235405 77.205391) (xy 121.2347 77.204702) (xy 121.042368 77.000428)
-				(xy 121.041646 76.999586) (xy 120.920134 76.843105) (xy 120.919773 76.842615) (xy 120.781631 76.644231)
-				(xy 120.779716 76.635483) (xy 120.784547 76.627943) (xy 120.784663 76.627864) (xy 121.435255 76.191997)
-				(xy 121.444035 76.19024)
-			)
-		)
-	)
-	(zone
 		(net 4)
 		(net_name "VREF")
 		(layer "B.Cu")
@@ -116792,7 +116776,7 @@
 		(uuid "0b551540-31ae-0850-343c-c000a400b2d0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30049)
+		(priority 30052)
 		(attr
 			(teardrop
 				(type padvia)
@@ -116841,7 +116825,7 @@
 		(uuid "0d0ac2b2-5107-0282-3c04-688dfaa18bbd")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30065)
+		(priority 30064)
 		(attr
 			(teardrop
 				(type padvia)
@@ -117082,6 +117066,57 @@
 		)
 	)
 	(zone
+		(net 40)
+		(net_name "Net-(CT2-Pin_1)")
+		(layer "B.Cu")
+		(uuid "28759355-bead-0c96-0f76-d2bc79b2f24a")
+		(name "$teardrop_padvia$")
+		(hatch none 0.1)
+		(priority 30035)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 93.231592 77.368039) (xy 93.164796 77.294293) (xy 93.116341 77.225473) (xy 93.086711 77.16643)
+				(xy 93.069187 77.109626) (xy 93.064744 77.000302) (xy 93.097068 76.873854) (xy 93.150899 76.742593)
+				(xy 93.22333 76.564231) (xy 93.284628 76.346072) (xy 92.499293 76.189293) (xy 91.834824 76.634456)
+				(xy 91.972331 76.831515) (xy 92.089678 76.981991) (xy 92.279021 77.181681) (xy 92.443374 77.324882)
+				(xy 92.63197 77.487998) (xy 92.878039 77.721592)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 92.504048 76.190242) (xy 93.272236 76.343598) (xy 93.279678 76.348579) (xy 93.281419 76.357363)
+				(xy 93.281209 76.358237) (xy 93.223505 76.563604) (xy 93.223081 76.564841) (xy 93.150914 76.742556)
+				(xy 93.150899 76.742593) (xy 93.097067 76.873854) (xy 93.097064 76.873865) (xy 93.064744 77.000298)
+				(xy 93.064743 77.000302) (xy 93.069186 77.109621) (xy 93.069186 77.109623) (xy 93.069187 77.109626)
+				(xy 93.082933 77.154184) (xy 93.086709 77.166424) (xy 93.086713 77.166435) (xy 93.116127 77.225047)
+				(xy 93.116341 77.225473) (xy 93.164796 77.294293) (xy 93.164799 77.294296) (xy 93.224116 77.359786)
+				(xy 93.22713 77.368218) (xy 93.223717 77.375913) (xy 92.886099 77.713531) (xy 92.877826 77.716958)
+				(xy 92.869771 77.713743) (xy 92.631988 77.488014) (xy 92.631968 77.487996) (xy 92.443374 77.324882)
+				(xy 92.443342 77.324854) (xy 92.27944 77.182046) (xy 92.278636 77.181275) (xy 92.26456 77.16643)
+				(xy 92.09006 76.982393) (xy 92.089338 76.981556) (xy 91.97252 76.831758) (xy 91.972153 76.83126)
+				(xy 91.841647 76.644234) (xy 91.839723 76.635489) (xy 91.844547 76.627944) (xy 91.844696 76.627842)
+				(xy 92.495255 76.191997) (xy 92.504035 76.19024)
+			)
+		)
+	)
+	(zone
 		(net 20)
 		(net_name "/D11")
 		(layer "B.Cu")
@@ -117188,7 +117223,7 @@
 		(uuid "2de800c5-9589-05b3-3ad0-6d39a71f6610")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30000)
+		(priority 30038)
 		(attr
 			(teardrop
 				(type padvia)
@@ -117217,11 +117252,17 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 48.9248 62.05296) (xy 48.761589 62.033416) (xy 48.653998 62.005317) (xy 48.541875 61.965544)
-				(xy 48.432101 61.915729) (xy 48.326875 61.855671) (xy 48.241961 61.795069) (xy 48.166866 61.72731)
-				(xy 48.113108 61.664524) (xy 48.070322 61.597026) (xy 48.041456 61.528651) (xy 46.8988 62.17796)
-				(xy 48.041456 62.827269) (xy 48.097958 62.712757) (xy 48.196554 62.59973) (xy 48.342179 62.490616)
-				(xy 48.533336 62.393847) (xy 48.748832 62.325297) (xy 48.9248 62.30296)
+				(xy 48.045966 61.539544) (xy 48.046573 61.540773) (xy 48.070323 61.597028) (xy 48.113108 61.664525)
+				(xy 48.166849 61.727291) (xy 48.166856 61.727299) (xy 48.166866 61.72731) (xy 48.241961 61.795069)
+				(xy 48.241964 61.795071) (xy 48.241965 61.795072) (xy 48.326873 61.85567) (xy 48.326885 61.855677)
+				(xy 48.397025 61.895709) (xy 48.432101 61.915729) (xy 48.541875 61.965544) (xy 48.653998 62.005317)
+				(xy 48.761589 62.033416) (xy 48.761587 62.033416) (xy 48.80918 62.039114) (xy 48.914492 62.051725)
+				(xy 48.922298 62.056111) (xy 48.9248 62.063342) (xy 48.9248 62.292651) (xy 48.921373 62.300924)
+				(xy 48.914573 62.304258) (xy 48.748831 62.325297) (xy 48.748825 62.325298) (xy 48.533346 62.393843)
+				(xy 48.533332 62.393848) (xy 48.34218 62.490615) (xy 48.196555 62.599728) (xy 48.097957 62.712757)
+				(xy 48.097955 62.71276) (xy 48.046944 62.816146) (xy 48.04021 62.822049) (xy 48.031275 62.821461)
+				(xy 48.030672 62.821141) (xy 47.641032 62.59973) (xy 46.916699 62.188131) (xy 46.9112 62.181066)
+				(xy 46.912308 62.17218) (xy 46.916699 62.167788) (xy 48.030015 61.535151) (xy 48.0389 61.534044)
 			)
 		)
 	)
@@ -117330,6 +117371,57 @@
 		)
 	)
 	(zone
+		(net 39)
+		(net_name "Net-(CT1-Pin_1)")
+		(layer "B.Cu")
+		(uuid "382fe1b9-d417-02bc-2cf7-1c170cb164be")
+		(name "$teardrop_padvia$")
+		(hatch none 0.1)
+		(priority 30034)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 64.375023 77.39147) (xy 64.310189 77.319695) (xy 64.263381 77.25259) (xy 64.234974 77.194828)
+				(xy 64.218603 77.139317) (xy 64.216416 77.033007) (xy 64.25141 76.911997) (xy 64.315732 76.77369)
+				(xy 64.403434 76.582724) (xy 64.443003 76.471186) (xy 64.474628 76.346072) (xy 63.689293 76.189293)
+				(xy 63.024824 76.634456) (xy 63.198361 76.885078) (xy 63.337463 77.065589) (xy 63.543557 77.286939)
+				(xy 63.675476 77.411828) (xy 64.02147 77.745023)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 63.694048 76.190242) (xy 64.46256 76.343662) (xy 64.470001 76.348643) (xy 64.471742 76.357427)
+				(xy 64.471611 76.358003) (xy 64.443138 76.470649) (xy 64.442822 76.471694) (xy 64.403606 76.582236)
+				(xy 64.403211 76.583207) (xy 64.315755 76.773639) (xy 64.315732 76.77369) (xy 64.25141 76.911994)
+				(xy 64.251409 76.911998) (xy 64.216416 77.033005) (xy 64.216416 77.033006) (xy 64.216416 77.033007)
+				(xy 64.218603 77.139317) (xy 64.218603 77.13932) (xy 64.218604 77.139321) (xy 64.234974 77.194828)
+				(xy 64.234974 77.194829) (xy 64.263376 77.252582) (xy 64.263383 77.252593) (xy 64.31019 77.319697)
+				(xy 64.367568 77.383217) (xy 64.370571 77.391654) (xy 64.367159 77.399333) (xy 64.029589 77.736903)
+				(xy 64.021316 77.74033) (xy 64.0132 77.737058) (xy 63.817234 77.548342) (xy 63.675476 77.411828)
+				(xy 63.67544 77.411793) (xy 63.543827 77.287194) (xy 63.543308 77.286671) (xy 63.337837 77.065991)
+				(xy 63.337132 77.06516) (xy 63.312355 77.033007) (xy 63.198528 76.885295) (xy 63.198195 76.884839)
+				(xy 63.031586 76.644222) (xy 63.029695 76.635471) (xy 63.034545 76.627944) (xy 63.034622 76.627891)
+				(xy 63.685255 76.191997) (xy 63.694035 76.19024)
+			)
+		)
+	)
+	(zone
 		(net 18)
 		(net_name "/D9")
 		(layer "B.Cu")
@@ -117387,7 +117479,7 @@
 		(uuid "41a70559-71b0-0975-2c34-2f5185d5c4c4")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30050)
+		(priority 30053)
 		(attr
 			(teardrop
 				(type padvia)
@@ -117436,7 +117528,7 @@
 		(uuid "4a5c2f6a-85bf-0fce-3c01-b6d0c856ec40")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30051)
+		(priority 30050)
 		(attr
 			(teardrop
 				(type padvia)
@@ -117485,7 +117577,7 @@
 		(uuid "4c0844ea-f9e8-0f6a-2e19-2610ca9dcfcd")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30072)
+		(priority 30071)
 		(attr
 			(teardrop
 				(type padvia)
@@ -117584,7 +117676,7 @@
 		(uuid "54e3ed19-f0ed-0fcb-220e-c70d4878a408")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30053)
+		(priority 30048)
 		(attr
 			(teardrop
 				(type padvia)
@@ -117633,7 +117725,7 @@
 		(uuid "562f739b-5eff-0f3b-07ca-0d3e57d0ad22")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30055)
+		(priority 30059)
 		(attr
 			(teardrop
 				(type padvia)
@@ -117781,7 +117873,7 @@
 		(uuid "5a24203a-1893-07a7-383d-8670b91f9fb9")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30073)
+		(priority 30072)
 		(attr
 			(teardrop
 				(type padvia)
@@ -117978,7 +118070,7 @@
 		(uuid "68aa7081-c22d-09c6-2fbc-589774ce132b")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30052)
+		(priority 30051)
 		(attr
 			(teardrop
 				(type padvia)
@@ -118128,7 +118220,7 @@
 		(uuid "70712b24-7aff-03dc-0360-84962a051aab")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30060)
+		(priority 30055)
 		(attr
 			(teardrop
 				(type padvia)
@@ -118267,57 +118359,6 @@
 				(xy 81.29971 29.439634) (xy 81.282021 29.403565) (xy 81.271588 29.382288) (xy 81.271577 29.38227)
 				(xy 81.224827 29.315242) (xy 81.224826 29.31524) (xy 81.167626 29.251902) (xy 81.164625 29.243466)
 				(xy 81.168036 29.235789) (xy 81.328584 29.075241) (xy 81.336856 29.071815)
-			)
-		)
-	)
-	(zone
-		(net 39)
-		(net_name "Net-(CT1-Pin_1)")
-		(layer "B.Cu")
-		(uuid "7ac8008a-2fdc-037c-289b-dd5fde32b306")
-		(name "$teardrop_padvia$")
-		(hatch none 0.1)
-		(priority 30034)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 64.375023 77.39147) (xy 64.310189 77.319695) (xy 64.263381 77.25259) (xy 64.234974 77.194828)
-				(xy 64.218603 77.139317) (xy 64.216416 77.033007) (xy 64.25141 76.911997) (xy 64.315732 76.77369)
-				(xy 64.403434 76.582724) (xy 64.443003 76.471186) (xy 64.474628 76.346072) (xy 63.689293 76.189293)
-				(xy 63.024824 76.634456) (xy 63.198361 76.885078) (xy 63.337463 77.065589) (xy 63.543557 77.286939)
-				(xy 63.675476 77.411828) (xy 64.02147 77.745023)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 63.694048 76.190242) (xy 64.46256 76.343662) (xy 64.470001 76.348643) (xy 64.471742 76.357427)
-				(xy 64.471611 76.358003) (xy 64.443138 76.470649) (xy 64.442822 76.471694) (xy 64.403606 76.582236)
-				(xy 64.403211 76.583207) (xy 64.315755 76.773639) (xy 64.315732 76.77369) (xy 64.25141 76.911994)
-				(xy 64.251409 76.911998) (xy 64.216416 77.033005) (xy 64.216416 77.033006) (xy 64.216416 77.033007)
-				(xy 64.218603 77.139317) (xy 64.218603 77.13932) (xy 64.218604 77.139321) (xy 64.234974 77.194828)
-				(xy 64.234974 77.194829) (xy 64.263376 77.252582) (xy 64.263383 77.252593) (xy 64.31019 77.319697)
-				(xy 64.367568 77.383217) (xy 64.370571 77.391654) (xy 64.367159 77.399333) (xy 64.029589 77.736903)
-				(xy 64.021316 77.74033) (xy 64.0132 77.737058) (xy 63.817234 77.548342) (xy 63.675476 77.411828)
-				(xy 63.67544 77.411793) (xy 63.543827 77.287194) (xy 63.543308 77.286671) (xy 63.337837 77.065991)
-				(xy 63.337132 77.06516) (xy 63.312355 77.033007) (xy 63.198528 76.885295) (xy 63.198195 76.884839)
-				(xy 63.031586 76.644222) (xy 63.029695 76.635471) (xy 63.034545 76.627944) (xy 63.034622 76.627891)
-				(xy 63.685255 76.191997) (xy 63.694035 76.19024)
 			)
 		)
 	)
@@ -118819,13 +118860,64 @@
 		)
 	)
 	(zone
+		(net 41)
+		(net_name "Net-(CT3-Pin_1)")
+		(layer "B.Cu")
+		(uuid "a1d5b577-5ac6-008e-2901-fb0630348779")
+		(name "$teardrop_padvia$")
+		(hatch none 0.1)
+		(priority 30036)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 122.15745 77.373896) (xy 122.091366 77.300866) (xy 122.04351 77.23267) (xy 122.014321 77.174088)
+				(xy 121.997208 77.117744) (xy 121.993553 77.009446) (xy 122.026802 76.884752) (xy 122.083487 76.751995)
+				(xy 122.160403 76.56982) (xy 122.19565 76.464066) (xy 122.224628 76.346072) (xy 121.439293 76.189293)
+				(xy 120.774824 76.634456) (xy 120.919943 76.842859) (xy 121.041984 77.000021) (xy 121.235042 77.205066)
+				(xy 121.389619 77.343164) (xy 121.569641 77.503071) (xy 121.803896 77.72745)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 121.444048 76.190242) (xy 122.20037 76.341229) (xy 122.212641 76.343679) (xy 122.220083 76.34866)
+				(xy 122.221824 76.357444) (xy 122.221712 76.357944) (xy 122.195764 76.463599) (xy 122.195502 76.464507)
+				(xy 122.160548 76.569384) (xy 122.160227 76.570236) (xy 122.083487 76.751995) (xy 122.083468 76.752038)
+				(xy 122.026804 76.884747) (xy 122.0268 76.884756) (xy 121.993553 77.009444) (xy 121.993553 77.009448)
+				(xy 121.997207 77.117739) (xy 121.997207 77.117742) (xy 121.997208 77.117744) (xy 122.004512 77.141793)
+				(xy 122.01432 77.174087) (xy 122.043509 77.232668) (xy 122.091367 77.300867) (xy 122.09137 77.300871)
+				(xy 122.149981 77.365643) (xy 122.152991 77.374077) (xy 122.149579 77.381766) (xy 121.811992 77.719353)
+				(xy 121.803719 77.72278) (xy 121.795626 77.719529) (xy 121.795442 77.719353) (xy 121.569641 77.503071)
+				(xy 121.389619 77.343164) (xy 121.235405 77.205391) (xy 121.2347 77.204702) (xy 121.042368 77.000428)
+				(xy 121.041646 76.999586) (xy 120.920134 76.843105) (xy 120.919773 76.842615) (xy 120.781631 76.644231)
+				(xy 120.779716 76.635483) (xy 120.784547 76.627943) (xy 120.784663 76.627864) (xy 121.435255 76.191997)
+				(xy 121.444035 76.19024)
+			)
+		)
+	)
+	(zone
 		(net 4)
 		(net_name "VREF")
 		(layer "B.Cu")
 		(uuid "a4f37356-4c7e-06f6-060c-21eb66be0562")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30056)
+		(priority 30058)
 		(attr
 			(teardrop
 				(type padvia)
@@ -118861,57 +118953,6 @@
 				(xy 110.388994 73.609622) (xy 110.450943 73.607554) (xy 110.522527 73.605166) (xy 110.522536 73.605165)
 				(xy 110.52254 73.605165) (xy 110.630533 73.591712) (xy 110.800925 73.545273) (xy 110.845107 73.53099)
 				(xy 110.845752 73.530803) (xy 111.080023 73.470747)
-			)
-		)
-	)
-	(zone
-		(net 40)
-		(net_name "Net-(CT2-Pin_1)")
-		(layer "B.Cu")
-		(uuid "a7817c86-dadf-0564-00f5-023e2eb1e0cc")
-		(name "$teardrop_padvia$")
-		(hatch none 0.1)
-		(priority 30035)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 93.231592 77.368039) (xy 93.164796 77.294293) (xy 93.116341 77.225473) (xy 93.086711 77.16643)
-				(xy 93.069187 77.109626) (xy 93.064744 77.000302) (xy 93.097068 76.873854) (xy 93.150899 76.742593)
-				(xy 93.22333 76.564231) (xy 93.284628 76.346072) (xy 92.499293 76.189293) (xy 91.834824 76.634456)
-				(xy 91.972331 76.831515) (xy 92.089678 76.981991) (xy 92.279021 77.181681) (xy 92.443374 77.324882)
-				(xy 92.63197 77.487998) (xy 92.878039 77.721592)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 92.504048 76.190242) (xy 93.272236 76.343598) (xy 93.279678 76.348579) (xy 93.281419 76.357363)
-				(xy 93.281209 76.358237) (xy 93.223505 76.563604) (xy 93.223081 76.564841) (xy 93.150914 76.742556)
-				(xy 93.150899 76.742593) (xy 93.097067 76.873854) (xy 93.097064 76.873865) (xy 93.064744 77.000298)
-				(xy 93.064743 77.000302) (xy 93.069186 77.109621) (xy 93.069186 77.109623) (xy 93.069187 77.109626)
-				(xy 93.082933 77.154184) (xy 93.086709 77.166424) (xy 93.086713 77.166435) (xy 93.116127 77.225047)
-				(xy 93.116341 77.225473) (xy 93.164796 77.294293) (xy 93.164799 77.294296) (xy 93.224116 77.359786)
-				(xy 93.22713 77.368218) (xy 93.223717 77.375913) (xy 92.886099 77.713531) (xy 92.877826 77.716958)
-				(xy 92.869771 77.713743) (xy 92.631988 77.488014) (xy 92.631968 77.487996) (xy 92.443374 77.324882)
-				(xy 92.443342 77.324854) (xy 92.27944 77.182046) (xy 92.278636 77.181275) (xy 92.26456 77.16643)
-				(xy 92.09006 76.982393) (xy 92.089338 76.981556) (xy 91.97252 76.831758) (xy 91.972153 76.83126)
-				(xy 91.841647 76.644234) (xy 91.839723 76.635489) (xy 91.844547 76.627944) (xy 91.844696 76.627842)
-				(xy 92.495255 76.191997) (xy 92.504035 76.19024)
 			)
 		)
 	)
@@ -119072,7 +119113,7 @@
 		(uuid "b131c224-df70-0860-38ea-10384505f677")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30082)
+		(priority 30083)
 		(attr
 			(teardrop
 				(type padvia)
@@ -119214,7 +119255,7 @@
 		(uuid "c012aae8-5781-0733-17d9-16bf98aec7d5")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30063)
+		(priority 30062)
 		(attr
 			(teardrop
 				(type padvia)
@@ -119408,7 +119449,7 @@
 		(uuid "cd43e2c1-f0ed-0d7e-1a63-7daec26fc9b0")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30083)
+		(priority 30082)
 		(attr
 			(teardrop
 				(type padvia)
@@ -119503,7 +119544,7 @@
 		(uuid "d3c8ff2f-b06f-0a83-0ab2-a5439e8995d3")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30059)
+		(priority 30060)
 		(attr
 			(teardrop
 				(type padvia)
@@ -119753,7 +119794,7 @@
 		(uuid "df370744-ec6f-070c-0c5a-b907927a7710")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30058)
+		(priority 30056)
 		(attr
 			(teardrop
 				(type padvia)
@@ -119799,7 +119840,7 @@
 		(uuid "dffc06b3-9d9f-0362-039a-b4ac94a163b8")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30071)
+		(priority 30073)
 		(attr
 			(teardrop
 				(type padvia)
@@ -119848,7 +119889,7 @@
 		(uuid "e0c41ad7-3fe9-099e-139a-47f8a70c277e")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30062)
+		(priority 30065)
 		(attr
 			(teardrop
 				(type padvia)
@@ -120096,7 +120137,7 @@
 		(uuid "e824c815-7f62-0fd8-222d-a1873687ded1")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
-		(priority 30048)
+		(priority 30049)
 		(attr
 			(teardrop
 				(type padvia)
