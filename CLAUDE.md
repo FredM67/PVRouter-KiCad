@@ -35,6 +35,17 @@ The **mainboard** is the primary active design:
 - `mainboard/UserDef.kicad_sym` -- board-local custom symbols
 - `mainboard/production/` -- fabrication-ready output files
 
+## Key Components (Mainboard)
+
+- **IC1**: ATmega328P (3.3V, 16 MHz) -- microcontroller
+- **PS1**: Multicomp Pro MPC10-5 -- AC-DC power supply (10W, 5V/2A)
+- **U1**: AP7361C-33E -- 3.3V LDO regulator (1A, SOT-223)
+- **U2**: LMV321A -- op-amp, 1.1V AREF buffer (SOT-23-5)
+- **RF1**: RFM69CW -- ISM radio module (433/868 MHz)
+- **VT1--VT3**: ZMPT101K -- AC voltage transformers
+- **CT1--CT3**: Current transformer connectors (YHDC 100A/50mA)
+- **GDT1**: 2093-300-SM-RPLF -- gas discharge tube (surge protection)
+
 ## Custom Libraries
 
 Libraries are referenced via `${KIPRJMOD}/../KiCad/` in `fp-lib-table` and `sym-lib-table` files. Some boards also have local `UserDef.kicad_sym` files for board-specific symbols.
