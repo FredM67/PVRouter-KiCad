@@ -2,7 +2,7 @@
   (layer "F.Cu")
   (descr "Symbol, HighVoltage, Type2, Silk Screen, Big,")
   (tags "Symbol, HighVoltage, Type2, Silk Screen, Big,")
-  (attr exclude_from_pos_files exclude_from_bom)
+  (attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
   (fp_text reference "REF**" (at 0 -17.78) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 77e4b9a1-c8fd-4dbf-850f-5777c3ab72b9)

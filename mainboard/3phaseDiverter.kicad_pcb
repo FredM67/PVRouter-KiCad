@@ -10051,7 +10051,7 @@
 		(path "/27d62ffc-4bb6-4627-aee3-cb0a952d3c39")
 		(sheetname "/")
 		(sheetfile "3phaseDiverter.kicad_sch")
-		(attr through_hole allow_missing_courtyard)
+		(attr smd through_hole allow_missing_courtyard)
 		(fp_line
 			(start 7.49808 -6.9977)
 			(end -7.49808 -6.9977)
