@@ -88,6 +88,24 @@ Notable custom symbols: ZMPT101B (AC voltage sensor), GDT28H-300-B (gas discharg
 - The board is designed for use inside a Schneider Electric Thalassa enclosure.
 - The `3-phase/` directory is obsolete and should be ignored.
 
+## Mainboard PCB Layout
+
+The board is organized in four horizontal zones (Y increases downward):
+
+| Zone | Y range | Contents |
+|------|---------|----------|
+| **Top edge** | < 35mm | Output connectors (J2–J5, J10–J13), RESET header |
+| **Upper (LV)** | 35–65mm | CN1 (SMA), RF1 (RFM69CW), U1 (LDO), IC1 (ATmega328P), U2 (op-amp), ADC TVS diodes |
+| **Middle (Analog)** | 65–95mm | CT1–CT3 connectors, bias dividers, coupling caps, voltage sensing |
+| **Lower (HV)** | > 95mm | PS1 (MPC10-5, left), fuses, MOVs, CM choke, GDTs, PWR1 (mains connector, right) |
+
+Key layout characteristics:
+- HV/LV separation: ~83mm between mains connector and MCU
+- IC1 decoupling: dedicated 100nF bypass cap within 3mm of each power pin (VCC, AVCC, AREF)
+- Ground stitching: 142 GND + 79 GNDA vias, dense near IC1 (within 2mm of ground pins)
+- RF antenna trace: ~8mm from CN1 (SMA) to RF1, well under λ/10 at 868MHz
+- Analog channels: CH1/CH2 compact (16–20mm span), CH3 longer (~44mm) due to CT3 position
+
 ## Git Conventions
 
 - Branch: `main`
