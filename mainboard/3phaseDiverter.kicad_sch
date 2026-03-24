@@ -6,9 +6,14 @@
 	(paper "A3")
 	(title_block
 		(title "3 phase PV diverter - Main board")
-		(date "2026-02-16")
+		(date "2026-03-24")
 		(rev "6.0")
-		(company "Inspired by www.mk2pvrouter.co.uk")
+		(company "Mk2PVRouter.com")
+		(comment 1 "Universal mainboard for Mk2 PV Router (1-phase / 3-phase / split-phase)")
+		(comment 2 "ATmega328P — ZMPT101K voltage sensing — CT current sensing — RFM69CW radio")
+		(comment 3 "AC-DC supply (Multicomp Pro MPC10-5, 10W)")
+		(comment 4 "Multi-layer surge protection (GDT/MOV/TVS)")
+		(comment 5 "License: CERN-OHL-S v2")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LMV321"
@@ -10880,16 +10885,16 @@
 		(uuid "d27780ab-2bf4-4353-a958-1555e4b68993")
 	)
 	(junction
+		(at 20.32 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d53c0261-05d3-4f4b-95af-8e0eddb76281")
+	)
+	(junction
 		(at 139.7 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5b214bd-ac9b-41d1-8e38-396f01fe2c99")
-	)
-	(junction
-		(at 20.32 19.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d905bb10-ce0b-4ca4-813f-875d8ac407ed")
 	)
 	(junction
 		(at 173.99 132.08)
@@ -12600,6 +12605,16 @@
 			(type default)
 		)
 		(uuid "41fa90f7-8031-4cfd-99eb-abcb2db388ed")
+	)
+	(wire
+		(pts
+			(xy 20.32 22.86) (xy 20.32 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "420ae568-979b-4189-a2be-78601e30e201")
 	)
 	(wire
 		(pts
@@ -15253,16 +15268,6 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 20.32) (xy 20.32 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aae21071-0fa3-49c1-a676-31b6fd346dbf")
-	)
-	(wire
-		(pts
 			(xy 330.2 199.39) (xy 330.2 208.28)
 		)
 		(stroke
@@ -16873,7 +16878,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 19.05) (xy 20.32 17.78)
+			(xy 20.32 21.59) (xy 19.05 21.59)
 		)
 		(stroke
 			(width 0)
@@ -17030,6 +17035,16 @@
 			(type default)
 		)
 		(uuid "f4ae6491-59d8-476d-a679-8ceb915f47ef")
+	)
+	(wire
+		(pts
+			(xy 20.32 19.05) (xy 20.32 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f565ff83-3d0c-4ba1-9155-16331e280599")
 	)
 	(wire
 		(pts
@@ -23092,7 +23107,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 20.32 20.32 0)
+		(at 20.32 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23101,7 +23116,7 @@
 		(fields_autoplaced yes)
 		(uuid "2fd23a3a-93e7-49d9-8bbb-08eb10a1a604")
 		(property "Reference" "#PWR018"
-			(at 20.32 26.67 0)
+			(at 20.32 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23110,7 +23125,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 20.32 24.13 0)
+			(at 20.32 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23119,7 +23134,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 20.32 20.32 0)
+			(at 20.32 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23128,7 +23143,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 20.32 20.32 0)
+			(at 20.32 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23137,7 +23152,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 20.32 20.32 0)
+			(at 20.32 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34453,7 +34468,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 20.32 17.78 0)
+		(at 19.05 21.59 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34462,7 +34477,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a62a492-4bb7-42dd-a874-6759f9f77ec8")
 		(property "Reference" "#FLG02"
-			(at 20.32 15.875 0)
+			(at 17.145 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34471,7 +34486,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 20.32 12.7 0)
+			(at 13.97 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34479,7 +34494,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 20.32 17.78 0)
+			(at 19.05 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34488,7 +34503,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 20.32 17.78 0)
+			(at 19.05 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34497,7 +34512,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 20.32 17.78 0)
+			(at 19.05 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)

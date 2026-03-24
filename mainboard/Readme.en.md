@@ -13,7 +13,7 @@ Key features:
 - Up to 3 voltage sensors (**ZMPT101K** transformers, 1000:1000 ratio)
 - Up to 3 current transformers (**CT1--CT3** connectors)
 - **RFM69CW** radio module (433/868 MHz ISM band) with SMA connector
-- On-board AC-DC power supply (**RAC05E-05SKT**, 5V/3W, Mornsun)
+- On-board AC-DC power supply (**Multicomp Pro MPC10-5**, 5V/10W)
 - **AP2112K-3.3** LDO regulator (5V to 3.3V, 600mA)
 - Multi-layer surge protection (GDT, fuses, MOV, common-mode choke)
 - 1.1V internal AREF buffered by **LMV321A** op-amp, per-channel DC bias to VREF/2
@@ -55,7 +55,7 @@ Key features:
 | IC1 | ATmega328P | DIP-28 | Microcontroller (16 MHz) |
 | U2 | LMV321A | SOT-23-5 | Single op-amp (1.1V AREF buffer) |
 | U1 | AP2112K-3.3 | SOT-23-5 | 3.3V LDO regulator (600mA) |
-| PS1 | RAC05E-05SKT | HS-40005 | AC-DC power supply module (5V, 3W, Mornsun) |
+| PS1 | MPC10-5 | Converter_ACDC_MULTICOMP_PRO | AC-DC power supply module (5V, 10W, Multicomp Pro) |
 | RF1 | RFM69CW | Custom | ISM band radio module (433/868 MHz) |
 
 ### Voltage sensors
@@ -262,7 +262,7 @@ Mains power enters through the **PWR1** connector and passes through a protectio
 ```
 Mains -> GDT (gas discharge tubes) -> Fuses (FS0-FS3) -> Varistors (RV0-RV3, GM1-GM3)
       -> Common-mode choke (FL1) -> Film capacitor (C1)
-      -> PS1 (RAC05E-05SKT): 230VAC -> 5VDC, 3W
+      -> PS1 (MPC10-5): 230VAC -> 5VDC, 10W
       -> D1 (SMBJ7.0A): TVS protection on 5V rail
       -> U1 (AP2112K-3.3): 5V -> 3.3V, 600mA
 ```

@@ -13,7 +13,7 @@ Caractéristiques principales :
 - Jusqu'à 3 capteurs de tension (transformateurs **ZMPT101K**, rapport 1000:1000)
 - Jusqu'à 3 transformateurs de courant (connecteurs **CT1–CT3**)
 - Module radio **RFM69CW** (bande ISM 433/868 MHz) avec connecteur SMA
-- Alimentation AC-DC intégrée (**RAC05E-05SKT**, 5 V / 3 W, Mornsun)
+- Alimentation AC-DC intégrée (**Multicomp Pro MPC10-5**, 5 V / 10 W)
 - Régulateur LDO **AP2112K-3.3** (5 V → 3,3 V, 600 mA)
 - Protection parafoudre multiniveau (éclateur GDT, fusibles, varistances MOV, selfs de mode commun)
 - Buffer de la référence interne 1,1 V (AREF) par amplificateur opérationnel **LMV321A**, polarisation des voies à VREF/2
@@ -55,7 +55,7 @@ Caractéristiques principales :
 | IC1 | ATmega328P | DIP-28 | Microcontrôleur (16 MHz) |
 | U2 | LMV321A | SOT-23-5 | Amplificateur opérationnel simple (buffer AREF 1,1 V) |
 | U1 | AP2112K-3.3 | SOT-23-5 | Régulateur LDO 3,3 V (600 mA) |
-| PS1 | RAC05E-05SKT | HS-40005 | Module d'alimentation AC-DC (5 V, 3 W, Mornsun) |
+| PS1 | MPC10-5 | Converter_ACDC_MULTICOMP_PRO | Module d'alimentation AC-DC (5 V, 10 W, Multicomp Pro) |
 | RF1 | RFM69CW | Custom | Module radio ISM (433/868 MHz) |
 
 ### Capteurs de tension
@@ -262,7 +262,7 @@ Le secteur entre par le connecteur **PWR1** et traverse une chaîne de protectio
 ```
 Secteur → GDT (éclateurs) → Fusibles (FS0–FS3) → Varistances (RV0–RV3, GM1–GM3)
        → Self de mode commun (FL1) → Condensateur film (C1)
-       → PS1 (RAC05E-05SKT) : 230 VAC → 5 VDC, 3 W
+       → PS1 (MPC10-5) : 230 VAC → 5 VDC, 10 W
        → D1 (SMBJ7.0A) : protection TVS côté 5 V
        → U1 (AP2112K-3.3) : 5 V → 3,3 V, 600 mA
 ```
