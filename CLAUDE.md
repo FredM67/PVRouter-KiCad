@@ -16,8 +16,9 @@ mainboard/           # Primary universal mainboard (3phaseDiverter) -- the main 
 1-phase/             # 1-phase variant (schematic only, no PCB)
 output_stage/        # Output power stage board (separate PCB)
 expansion_boards/
-  ESP32/             # ESP32 expansion module
-  mk2Wifi/           # WiFi expansion module
+  ESP32/             # ESP32 expansion module (obsolete)
+  mk2Wifi/           # WiFi expansion module (older, ESP32-based)
+  mk2Wifi-C6/        # WiFi/BLE expansion module (active, ESP32-C6)
 KiCad/               # Shared custom libraries
   symbols/           # Custom symbol libraries (.kicad_sym)
   UserDef.pretty/    # Custom footprints for this project
@@ -105,6 +106,36 @@ Key layout characteristics:
 - Ground stitching: 142 GND + 79 GNDA vias, dense near IC1 (within 2mm of ground pins)
 - RF antenna trace: ~8mm from CN1 (SMA) to RF1, well under λ/10 at 868MHz
 - Analog channels: CH1/CH2 compact (16–20mm span), CH3 longer (~44mm) due to CT3 position
+
+## mk2Wifi-C6 Expansion Board
+
+The **mk2Wifi-C6** is the active WiFi/BLE expansion module (`expansion_boards/mk2Wifi-C6/`):
+- `mk2Wifi-C6.kicad_pro` / `.kicad_sch` / `.kicad_pcb` -- project files
+- Rev v1.0, 2-layer, 51.1 × 26.4 mm, all SMD (except J3 UART header)
+
+### Key Components
+
+- **U1**: ESP32-C6-MINI-1/U -- WiFi 6 / BLE 5 / Zigbee / Thread
+- **U2**: AP2112K-3.3 -- 3.3V LDO (600mA, SOT-23-5)
+- **J2**: USB-C 16P receptacle (USB 2.0)
+- **J3**: UART_EXT 1×6 pin socket (mainboard connection, B.Cu)
+- **J4**: OLED Molex 1×4 (I2C display)
+- **JP1--JP5**: Solder jumpers for GPIO D5--D9 configuration
+
+### PCB Layout
+
+Three horizontal zones (Y increases downward):
+
+| Zone | Y range | Contents |
+|------|---------|----------|
+| **Top** | 42–48mm | Solder jumpers (JP1–JP5), GPIO series resistors (R5–R9) |
+| **Middle** | 48–58mm | U1 (ESP32-C6), decoupling caps (C1, C4), pull resistors |
+| **Bottom** | 58–68mm | U2 (LDO), USB-C (J2), OLED (J4), USB CC resistors, LED, button, UART header |
+
+Key layout characteristics:
+- Decoupling: all caps within 1.7mm of target pins (C1→U1 1.5mm, C2→U2 out 1.7mm, C5→U2 in 1.7mm)
+- Ground stitching: 57 GND vias on 51×26mm board, 9 GND sub-pads under U1 exposed pad
+- Powered from mainboard +5V via UART_EXT header
 
 ## Git Conventions
 
