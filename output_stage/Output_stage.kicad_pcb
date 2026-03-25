@@ -995,7 +995,7 @@
 				)
 			)
 		)
-		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_poly
 			(pts
 				(xy 3.4798 0.192088) (xy 3.463925 0.0762) (xy 3.413125 -0.023813) (xy 3.324225 -0.09525) (xy 3.190875 -0.122238)
@@ -3282,7 +3282,7 @@
 				)
 			)
 		)
-		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_poly
 			(pts
 				(xy 4.295775 -0.053975) (xy 4.2799 -0.169863) (xy 4.2291 -0.269875) (xy 4.1402 -0.341313) (xy 4.00685 -0.3683)
@@ -4097,7 +4097,7 @@
 				)
 			)
 		)
-		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_line
 			(start -4.699 2.794)
 			(end 0 -4.191)
@@ -4934,7 +4934,7 @@
 				)
 			)
 		)
-		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_line
 			(start 4.699 -2.794)
 			(end -4.699 -2.794)
