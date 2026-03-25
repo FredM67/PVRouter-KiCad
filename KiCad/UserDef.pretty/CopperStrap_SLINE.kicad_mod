@@ -1,43 +1,123 @@
 (footprint "CopperStrap_SLINE"
-  (version 20240108)
-  (generator "custom")
-  (generator_version "1.0")
-  (layer "F.Cu")
-  (descr "1.5mm² copper strap for S/LINE net, J1 pin 3 → REF3 → REF1 → Q1 pad 1")
-  (attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
-  (fp_text reference "REF**"
-    (at 0 0)
-    (layer "F.SilkS")
-    (hide yes)
-    (effects
-      (font
-        (size 1 1)
-        (thickness 0.15)
-      )
-    )
-    (uuid "b1b2c3d4-1111-1111-1111-111111111111")
-  )
-  (fp_text value "CopperStrap_SLINE"
-    (at 0 0)
-    (layer "F.Fab")
-    (hide yes)
-    (effects
-      (font
-        (size 1 1)
-        (thickness 0.15)
-      )
-    )
-    (uuid "b1b2c3d4-2222-2222-2222-222222222222")
-  )
-  (model "${KIPRJMOD}/../KiCad/3dmodels/CopperStrap_SLINE.step"
-    (offset
-      (xyz 0 0 0)
-    )
-    (scale
-      (xyz 1 1 1)
-    )
-    (rotate
-      (xyz 0 0 0)
-    )
-  )
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "1.5mm2 copper strap, S/LINE net, J1p3-pad1-pad2-Q1p1")
+	(property "Reference" "REF**"
+		(at 1.0795 -3.3655 0)
+		(layer "F.SilkS")
+		(uuid "9c458e67-ed56-4e66-971d-20e971ca9ffe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CopperStrap_SLINE"
+		(at 1.0795 -1.8655 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2dd4ef76-5964-4aa6-9d56-424c7789e8f5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a9974be2-51c6-4514-b636-615faddc1e73")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ba09a4d-3a4e-4caf-bfc2-e27f1bc35433")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole allow_missing_courtyard)
+	(fp_line
+		(start 1.65 -5.09)
+		(end 0.51 -1.63)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "770fb7c2-eb61-44c1-ba84-37341bad31ca")
+	)
+	(fp_line
+		(start -0.5372 5.3569)
+		(end 0 0)
+		(stroke
+			(width 0.5)
+			(type dash)
+		)
+		(layer "B.Fab")
+		(uuid "5d7c7165-81a8-4125-9005-b06b40307b24")
+	)
+	(fp_line
+		(start 2.159 -6.731)
+		(end 3.1197 -9.8396)
+		(stroke
+			(width 0.5)
+			(type dash)
+		)
+		(layer "B.Fab")
+		(uuid "01f2fa0c-3c83-499d-82b2-e4d6db239e08")
+	)
+	(fp_line
+		(start 0 0)
+		(end 2.159 -6.731)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dcb1c589-f7bd-44ac-bece-a6ee9491742e")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f1a7fe32-959f-4df4-a194-b323f6e2198b")
+	)
+	(pad "2" thru_hole circle
+		(at 2.159 -6.731)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a9280cda-cd45-4cae-a3b2-a3424ed8f4c7")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../KiCad/3dmodels/CopperStrap_SLINE.step"
+		(offset
+			(xyz 0 0 -1.75)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
