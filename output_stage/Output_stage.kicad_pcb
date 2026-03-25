@@ -4308,6 +4308,140 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "UserDef:CopperStrap_LINE"
+		(layer "F.Cu")
+		(uuid "cc111111-1111-1111-1111-111111111111")
+		(at 82.285225 39.368075)
+		(descr "1.5mm² copper strap for LINE net")
+		(property "Reference" "G_LINE"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "cc111111-2222-2222-2222-222222222222")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "CopperStrap_LINE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc111111-3333-3333-3333-333333333333")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "690e3d38-57b5-42c1-aaaa-8843395384a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cf79ed1-73d3-485a-90a0-d6474293e746")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/../KiCad/3dmodels/CopperStrap_LINE.step"
+			(offset
+				(xyz 0 0 -1.75)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "UserDef:CopperStrap_SLINE"
+		(layer "F.Cu")
+		(uuid "cc222222-1111-1111-1111-111111111111")
+		(at 82.285225 39.368075)
+		(descr "1.5mm² copper strap for S/LINE net")
+		(property "Reference" "G_SLINE"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "cc222222-2222-2222-2222-222222222222")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "CopperStrap_SLINE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc222222-3333-3333-3333-333333333333")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4b55124-f0f3-4840-9c7b-b369bafad36a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2153cca-1bd5-41b8-9854-3dc12b24a551")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/../KiCad/3dmodels/CopperStrap_SLINE.step"
+			(offset
+				(xyz 0 0 -1.75)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_3-G-5,08_1x03_P5.08mm_Vertical"
 		(layer "F.Cu")
 		(uuid "dfc6c69a-2cbd-4658-b64b-75a25af147ec")
@@ -6533,12 +6667,7 @@
 	)
 	(group ""
 		(uuid "0e1ea284-e8b1-45ef-8dd2-a1990fe6dc09")
-		(members "16cb0a7b-5fea-4076-9bf0-48e4004753c5" "239a6d10-6794-4df0-9b10-e9041655458f"
-			"679e3237-7688-4bcf-a1c1-bff8bb1d3c0d" "9844d608-e51d-433b-9200-d108d913eb21"
-			"9b2e0c26-f93d-4a48-84a1-e7b2d725e332" "a9d12b21-bc01-4bee-9d36-d2c9e5442e5c"
-			"d599bc64-a24e-403e-80ce-3a6d5d16232e" "de8476e6-dbd2-4ca2-bf91-2888436c8027"
-			"f8ddf2a0-7f7d-4757-8d02-9c6ef70becfd" "fb7f242f-958a-40f2-a35e-943180f70576"
-		)
+		(members "16cb0a7b-5fea-4076-9bf0-48e4004753c5" "a9d12b21-bc01-4bee-9d36-d2c9e5442e5c")
 	)
 	(group ""
 		(uuid "3cfad8fa-6f0a-443c-9201-aa6de44abe9e")
@@ -6549,10 +6678,7 @@
 	(group ""
 		(uuid "62996957-9ff0-4f90-a2a9-b4fc8265b37b")
 		(members "1051a3e7-3320-4661-b3eb-1f5c36a13d8b" "18593530-90a6-4c5b-bc3a-22d7379a7b24"
-			"43a89f31-4873-404a-b8fc-53c722f6611b" "48b8c307-c78f-404f-a4d8-e78ce59abcfc"
 			"4f3e17a5-5a49-483c-951e-6b19ce4081b5" "8d84c98c-b127-4445-93f5-586064a21888"
-			"91f61ad2-d6a0-4338-a740-29825e5ac796" "dc3c2453-e9df-4be7-9941-91bf9437bc34"
-			"e24caffc-d03c-4889-9e74-07f064892c14" "eb910776-dd11-4ae9-8775-948cde81ffb6"
 		)
 	)
 	(group ""
