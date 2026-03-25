@@ -137,6 +137,30 @@ Key layout characteristics:
 - Ground stitching: 57 GND vias on 51×26mm board, 9 GND sub-pads under U1 exposed pad
 - Powered from mainboard +5V via UART_EXT header
 
+## Output Stage Board
+
+The **output stage** is the triac power switching board (`output_stage/`):
+- `Output_stage.kicad_pro` / `.kicad_sch` / `.kicad_pcb` -- project files
+- Rev 2.0, 2-layer (routing on B.Cu only), 63.1 × 28.1 mm, all THT
+
+### Key Components
+
+- **Q1**: BTA41-600B -- 41A/600V power triac (TO-218-3, requires external heatsink)
+- **U1**: MOC3043M -- zero-crossing opto-triac isolator (DIP-6 socket, 7.5kV isolation)
+- **J1**: Phoenix 3-pin -- mains connector (LINE/S_LINE/LOAD)
+- **J2, J3**: Molex 2-pin -- control/LED inputs from mainboard
+- **R1**: 220Ω -- opto LED current limiter (LV side)
+- **R2**: 330Ω -- triac gate resistor (HV side)
+- **R3**: 360Ω -- snubber/gate resistor (HV side)
+
+### PCB Layout
+
+- HV side (left): Q1 triac, J1 mains connector, R2, R3
+- LV side (right): J2/J3 control connectors, R1
+- U1 (MOC3043M) at center-right: galvanic isolation boundary (7.62mm HV/LV pin spacing)
+- Copper zones on B.Cu carry main current for LINE and S/LINE nets
+- No vias, no SMD -- simple single-layer routing with copper pour
+
 ## Git Conventions
 
 - Branch: `main`
