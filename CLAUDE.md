@@ -158,8 +158,9 @@ The **output stage** is the triac power switching board (`output_stage/`):
 - HV side (left): Q1 triac, J1 mains connector, R2, R3
 - LV side (right): J2/J3 control connectors, R1
 - U1 (MOC3043M) at center-right: galvanic isolation boundary (7.62mm HV/LV pin spacing)
-- Copper zones on B.Cu carry main current for LINE and S/LINE nets
-- No vias, no SMD -- simple single-layer routing with copper pour
+- Two 1.5mm² copper straps soldered between Phoenix connector and triac carry the bulk mains current
+- Copper zones on B.Cu for LINE and S/LINE supplement the straps
+- No vias, no SMD -- simple single-layer routing
 
 ## Git Conventions
 
