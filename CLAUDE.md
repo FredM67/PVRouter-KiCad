@@ -111,16 +111,34 @@ Key layout characteristics:
 
 The **mk2Wifi-C6** is the active WiFi/BLE expansion module (`expansion_boards/mk2Wifi-C6/`):
 - `mk2Wifi-C6.kicad_pro` / `.kicad_sch` / `.kicad_pcb` -- project files
-- Rev v1.0, 2-layer, 51.1 × 26.4 mm, all SMD (except J3 UART header)
+- Rev v1.0, 2-layer, 51.1 × 26.4 mm, all SMD (except UART_EXT/TRIG_EXT/MISC headers)
 
 ### Key Components
 
 - **U1**: ESP32-C6-MINI-1/U -- WiFi 6 / BLE 5 / Zigbee / Thread
 - **U2**: AP2112K-3.3 -- 3.3V LDO (600mA, SOT-23-5)
+- **J0**: UART_EXT 1×6 pin socket (mainboard UART + DS18B20 + power, B.Cu)
+- **J1**: TRIG_EXT 1×6 pin socket (trigger/GPIO D5--D9, B.Cu)
 - **J2**: USB-C 16P receptacle (USB 2.0)
-- **J3**: UART_EXT 1×6 pin socket (mainboard connection, B.Cu)
-- **J4**: OLED Molex 1×4 (I2C display)
+- **J3**: OLED Molex 1×4 (I2C display)
+- **J4**: MISC 1×5 pin header (GPIO19--GPIO22 + GND)
 - **JP1--JP5**: Solder jumpers for GPIO D5--D9 configuration
+- **SW1**: Boot mode button (GPIO9 to GND)
+
+### Strapping Pins
+
+The ESP32-C6 has 5 strapping pins sampled at reset:
+- **GPIO8** (pin 22): R3 (10K) pull-up -- normal SPI boot
+- **GPIO9** (pin 23): SW1 button to GND -- hold for download mode
+- **GPIO15** (pin 20): unconnected -- ignored with default eFuses
+- **MTMS/GPIO4** (pin 9): R7 (1K) to D7/TRIG_EXT -- SDIO not used
+- **MTDI/GPIO5** (pin 10): R6 (1K) to D6/TRIG_EXT -- SDIO not used
+
+### UART Mapping
+
+Signal names are from the **mainboard's** perspective:
+- GPIO16/U0TXD (pin 31) → net UART_RX → UART_EXT pin 4 (mainboard receives from ESP)
+- GPIO17/U0RXD (pin 30) → net UART_TX → UART_EXT pin 5 (mainboard transmits to ESP)
 
 ### PCB Layout
 
@@ -130,7 +148,7 @@ Three horizontal zones (Y increases downward):
 |------|---------|----------|
 | **Top** | 42–48mm | Solder jumpers (JP1–JP5), GPIO series resistors (R5–R9) |
 | **Middle** | 48–58mm | U1 (ESP32-C6), decoupling caps (C1, C4), pull resistors |
-| **Bottom** | 58–68mm | U2 (LDO), USB-C (J2), OLED (J4), USB CC resistors, LED, button, UART header |
+| **Bottom** | 58–68mm | U2 (LDO), USB-C (J2), OLED (J3), USB CC resistors, LED, SW1, UART header |
 
 Key layout characteristics:
 - Decoupling: all caps within 1.7mm of target pins (C1→U1 1.5mm, C2→U2 out 1.7mm, C5→U2 in 1.7mm)
