@@ -14,6 +14,7 @@ Key features:
 - USB-C connector for initial firmware upload (subsequent updates via OTA)
 - Optional OLED display via I2C (Molex SL connector)
 - Five GPIO trigger/control outputs (D5--D9) to the mainboard
+- Four additional GPIOs (GPIO19--GPIO22) on a 5-pin MISC header
 - DS18B20 1-Wire temperature sensor passthrough
 - UART serial link to the mainboard
 
@@ -49,12 +50,13 @@ Key features:
 |-----|-------|---------|-------------|
 | U1 | ESP32-C6-MINI-1 | ESP32-C6-MINI-1 | MCU module with WiFi 6/BLE/Zigbee/Thread |
 | U2 | AP2112K-3.3 | SOT-23-5 | 3.3V LDO regulator (600mA) |
+| UART_EXT | UART_EXT | PinSocket 1x06 2.54mm | UART + DS18B20 header |
 | TRIG_EXT | TRIG_EXT | PinSocket 1x06 2.54mm | Trigger/GPIO header |
 | USB-C | USB_C_Receptacle | CSP-USC16-TR | USB Type-C receptacle |
-| UART_EXT | UART_EXT | PinSocket 1x06 2.54mm | UART + DS18B20 header |
 | OLED | OLED | Molex SL 1x04 2.54mm | OLED display connector |
+| MISC | MISC | PinHeader 1x05 2.54mm | Additional GPIO header (GPIO19--22) |
 | D1 | LED | 0603 | Power indicator |
-| SW1 | SW_Push | CK PTS636S | Boot/reset button |
+| SW1 | SW_Push | CK PTS636S | Boot mode button (GPIO9) |
 | R1 | 10K | 0402 | EN pull-up |
 | R2 | 1K | 0402 | LED current limiter |
 | R3 | 10K | 0402 | GPIO8 pull-up (strapping) |
@@ -72,17 +74,6 @@ Key features:
 
 ## Connector pinouts
 
-### TRIG_EXT (1x6 pin socket)
-
-| Pin | Signal |
-|-----|--------|
-| 1 | GND |
-| 2 | D8 |
-| 3 | D7 |
-| 4 | D6 |
-| 5 | D5 |
-| 6 | D9 |
-
 ### UART_EXT (1x6 pin socket)
 
 | Pin | Signal |
@@ -94,7 +85,18 @@ Key features:
 | 5 | UART_TX |
 | 6 | NC |
 
-Signal names (UART_TX, UART_RX) are from the **mainboard's** perspective: UART_TX carries data transmitted by the mainboard, received by the ESP32-C6 on GPIO21/U0RXD.
+Signal names (UART_TX, UART_RX) are from the **mainboard's** perspective: UART_TX carries data transmitted by the mainboard, received by the ESP32-C6 on U0RXD.
+
+### TRIG_EXT (1x6 pin socket)
+
+| Pin | Signal |
+|-----|--------|
+| 1 | GND |
+| 2 | D8 |
+| 3 | D7 |
+| 4 | D6 |
+| 5 | D5 |
+| 6 | D9 |
 
 ### OLED (1x4 Molex SL)
 
@@ -104,6 +106,18 @@ Signal names (UART_TX, UART_RX) are from the **mainboard's** perspective: UART_T
 | 2 | VCC (+3.3V) |
 | 3 | SCL |
 | 4 | SDA |
+
+### MISC (1x5 pin header)
+
+| Pin | Signal |
+|-----|--------|
+| 1 | GND |
+| 2 | GPIO19 |
+| 3 | GPIO20 |
+| 4 | GPIO21 |
+| 5 | GPIO22 |
+
+These 4 GPIOs are directly connected to the ESP32-C6 (pins 25--28) with no series resistors. They can be used for additional sensors, I/O, or communication interfaces.
 
 ## ESP32-C6 GPIO mapping
 
@@ -120,16 +134,31 @@ Signal names (UART_TX, UART_RX) are from the **mainboard's** perspective: UART_T
 | GPIO7 | 16 | SCL (I2C clock) | Direct to OLED pin 3 |
 | GPIO12 | 17 | USB D- | To USB-C |
 | GPIO13 | 18 | USB D+ | To USB-C |
-| GPIO21 | 31 | UART RX (U0RXD) | Receives mainboard TX via UART_EXT pin 5 |
-| GPIO22 | 30 | UART TX (U0TXD) | Transmits to mainboard RX via UART_EXT pin 4 |
+| GPIO16/U0TXD | 31 | UART serial | Net UART_RX — UART_EXT pin 4 (mainboard receives from ESP) |
+| GPIO17/U0RXD | 30 | UART serial | Net UART_TX — UART_EXT pin 5 (mainboard transmits to ESP) |
+| GPIO19 | 25 | General purpose I/O | Direct to MISC pin 2 |
+| GPIO20 | 26 | General purpose I/O | Direct to MISC pin 3 |
+| GPIO21 | 27 | General purpose I/O | Direct to MISC pin 4 |
+| GPIO22 | 28 | General purpose I/O | Direct to MISC pin 5 |
 | GPIO23 | 29 | DS18B20 (1-Wire) | Direct to UART_EXT pin 2 |
 
-### Internal GPIOs
+### Strapping pins
 
-| GPIO | Pin | Function | Notes |
-|------|-----|----------|-------|
-| GPIO8 | 22 | Strapping pin | 10K pull-up (R3); must be high for normal boot |
-| GPIO9 | 23 | Boot button | SW1 pulls to GND; hold low at power-up for download mode |
+The ESP32-C6 has 5 strapping pins sampled at reset to configure boot behavior:
+
+| GPIO | Pin | Function | Default | Board handling |
+|------|-----|----------|---------|----------------|
+| GPIO8 | 22 | Boot mode + ROM print | Floating | R3 (10K) pull-up to +3.3V |
+| GPIO9 | 23 | Boot mode | Weak pull-up (1) | SW1 pulls to GND for download mode |
+| GPIO15 | 20 | JTAG source | Floating | Unconnected (ignored with default eFuses) |
+| MTMS/GPIO4 | 9 | SDIO clock edge | Floating | R7 (1K) to D7/TRIG_EXT (SDIO not used) |
+| MTDI/GPIO5 | 10 | SDIO clock edge | Floating | R6 (1K) to D6/TRIG_EXT (SDIO not used) |
+
+**Boot mode** (GPIO8/GPIO9): GPIO9=1 (default) selects normal SPI flash boot. Hold SW1 during reset to pull GPIO9 low and enter download mode (USB-Serial-JTAG / UART / SDIO).
+
+**GPIO15**: Controls JTAG signal source, but only when `EFUSE_JTAG_SEL_ENABLE`=1. With default eFuse values (all 0), GPIO15 is ignored and JTAG defaults to USB Serial/JTAG controller. No external pull resistor needed.
+
+**MTMS/MTDI**: Control SDIO sampling/driving clock edge. Since SDIO is not used on this board, the floating default through 1K series resistors has no effect on operation.
 
 ## Power supply
 
