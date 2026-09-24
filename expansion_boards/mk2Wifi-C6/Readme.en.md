@@ -98,6 +98,20 @@ Signal names (UART_TX, UART_RX) are from the **mainboard's** perspective: UART_T
 | 5 | D5 |
 | 6 | D9 |
 
+### Solder jumpers (D5--D9)
+
+Each of the five trigger signals goes through a solder jumper. The jumpers are **open by default**: a signal only reaches the mainboard once its jumper is bridged with solder. Only bridge the jumpers of the outputs you use, so that the other mainboard pins stay free (the TRIAC outputs, for instance, use D5--D7 by default in the three-phase firmware).
+
+| Jumper | Signal | ESP32-C6 | TRIG_EXT pin |
+|--------|--------|----------|--------------|
+| JP4 | D5 | GPIO0 | 5 |
+| JP3 | D6 | GPIO5 | 4 |
+| JP2 | D7 | GPIO4 | 3 |
+| JP1 | D8 | GPIO3 | 2 |
+| JP5 | D9 | GPIO1 | 6 |
+
+Note that the jumper numbers do not follow the signal order.
+
 ### OLED (1x4 Molex SL)
 
 | Pin | Signal |

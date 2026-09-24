@@ -98,6 +98,20 @@ Les noms des signaux (UART_TX, UART_RX) sont du point de vue de la **carte princ
 | 5 | D5 |
 | 6 | D9 |
 
+### Ponts de soudure (D5--D9)
+
+Chacun des cinq signaux de déclenchement passe par un pont de soudure. Les ponts sont **ouverts par défaut** : un signal n'atteint la carte principale qu'une fois son pont fermé par une goutte de soudure. Ne fermez que les ponts des sorties utilisées, afin de laisser libres les autres broches de la carte principale (les sorties TRIAC, par exemple, utilisent D5--D7 par défaut dans le firmware triphasé).
+
+| Pont | Signal | ESP32-C6 | Broche TRIG_EXT |
+|------|--------|----------|-----------------|
+| JP4 | D5 | GPIO0 | 5 |
+| JP3 | D6 | GPIO5 | 4 |
+| JP2 | D7 | GPIO4 | 3 |
+| JP1 | D8 | GPIO3 | 2 |
+| JP5 | D9 | GPIO1 | 6 |
+
+À noter : la numérotation des ponts ne suit pas l'ordre des signaux.
+
 ### OLED (Molex SL 1x4)
 
 | Broche | Signal |
