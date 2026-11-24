@@ -2,7 +2,7 @@
 
 # 3phaseDiverter — Universal mainboard for the Mk2 PV Router
 
-Universal mainboard for the Mk2 PV Router (rev. 6.0). Supports single-phase, 3-phase (with or without neutral), and split-phase configurations.
+Universal mainboard for the Mk2 PV Router (rev. 6.0). Supports single-phase and 3-phase (with or without neutral) configurations.
 
 ## Overview
 
@@ -14,8 +14,8 @@ Key features:
 - Up to 3 current transformers (**CT1--CT3** connectors)
 - **RFM69CW** radio module (433/868 MHz ISM band) with SMA connector
 - On-board AC-DC power supply (**Multicomp Pro MPC10-5**, 5V/10W)
-- **AP2112K-3.3** LDO regulator (5V to 3.3V, 600mA)
-- Multi-layer surge protection (GDT, fuses, MOV, common-mode choke)
+- **AP7361C-33E** LDO regulator (5V to 3.3V, 1A)
+- Surge protection: fuses, phase-to-neutral IsoMOV varistors, common-mode choke; optional varistor + GDT pairs to earth
 - 1.1V internal AREF buffered by **LMV321A** op-amp, per-channel DC bias to VREF/2
 - Expansion connectors: **TRIG_EXT**, **UART_EXT**, **FTDI**, **OLED**
 - IPC-2221 compliant design for 230V RMS / 325V peak on uncoated FR4
@@ -54,7 +54,7 @@ Key features:
 |-----|-------|---------|-------------|
 | IC1 | ATmega328P | DIP-28 | Microcontroller (16 MHz) |
 | U2 | LMV321A | SOT-23-5 | Single op-amp (1.1V AREF buffer) |
-| U1 | AP2112K-3.3 | SOT-23-5 | 3.3V LDO regulator (600mA) |
+| U1 | AP7361C-33E | SOT-223 | 3.3V LDO regulator (1A) |
 | PS1 | MPC10-5 | Converter_ACDC_MULTICOMP_PRO | AC-DC power supply module (5V, 10W, Multicomp Pro) |
 | RF1 | RFM69CW | Custom | ISM band radio module (433/868 MHz) |
 
@@ -70,30 +70,33 @@ Key features:
 
 | Ref | Value | Package | Description |
 |-----|-------|---------|-------------|
-| GDT0--GDT3 | 2093-300-SM-RPLF | SMD | Gas discharge tubes (4x, one per phase + neutral) |
-| GM1--GM3 | GMOV 320V | SMD | Combined GDT+MOV (3x, one per phase) |
-| RV0--RV3 | 300V | Radial | Varistors (4x, one per phase + neutral) |
-| D1 | SMBJ7.0A | SMB | TVS diode (5V supply protection) |
-| D11, D12 | DF2B7AE | SOD-523 | TVS diodes (L1 ADC protection) |
-| D21, D22 | DF2B7AE | SOD-523 | TVS diodes (L2 ADC protection) |
-| D31, D32 | DF2B7AE | SOD-523 | TVS diodes (L3 ADC protection) |
-| D13, D23, D33 | CDSOD323-T03C | SOD-323 | Bidirectional TVS diodes (ADC protection if current-output CT used without burden resistor, one per phase) |
-| FS0--FS3 | 1A x 250V | Axial | Fuses (4x, one per phase + neutral) |
-| FL1 | RN214-0.3-02-47M | Custom | Common-mode choke (Schaffner) |
+| FS0--FS3 | 1A x 250V | THT (Littelfuse 395 series footprint), soldered, no holder | Fuses (4x, one per phase + neutral) |
+| GM1--GM3 | 320V | THT (IsoM3300BL2) | Hybrid varistors (MOV + GDT in one package), phase to neutral (3x) |
+| RV0--RV3 | 300V | THT, radial (MOV14D471K) | Varistors, each in series with the GDT of the same number, conductor to earth (4x, **optional**) |
+| GDT0--GDT3 | 2093-300-SM-RPLF | SMD | Gas discharge tubes, in series with RV0--RV3 (4x, **optional**, soldered by the user) |
+| FL1 | RN214-0.3-02-47M | THT (Schaffner RNx14) | Common-mode choke in front of PS1 |
+| D1 | SMBJ7.0A | SMB | TVS diode across the 5V rail |
+| D11 / D21 / D31 | DF2B7AE | SOD-523 | TVS diodes on the voltage ADC inputs (A0, A2, A4') |
+| D12 / D22 / D32 | DF2B7AE | SOD-523 | TVS diodes on the current ADC inputs (A1, A3, A5') |
+| D13 / D23 / D33 | CDSOD323-T03C | SOD-323, footprint with two extra through-holes (P12.70mm) | Bidirectional TVS diodes across the CT inputs; the two through-holes take the axial burden resistor of a current-output CT |
+
+RVx and GDTx only work as a pair: the varistor and the GDT are in series between a conductor and earth.
 
 ### Connectors
 
-| Ref | Value | Package | Description |
-|-----|-------|---------|-------------|
-| PWR1 | Conn_01x05_PWR | Phoenix Contact MSTBV 2.5 | 3-phase mains input (1x5, 5.08mm pitch) |
-| TRIG_EXT | Conn_01x06 | PinHeader 1x06 2.54mm | Trigger/GPIO header |
-| UART_EXT | Conn_01x06 | PinHeader 1x06 2.54mm | UART + DS18B20 header |
-| FTDI | Conn_01x06 | Molex SL 1x06 2.54mm | Programming/debug connector |
-| OLED | Conn_01x04 | Molex SL 1x04 2.54mm | I2C display connector |
-| CN1 | BU-SMA-V | SMA vertical | 50 ohm RF antenna connector |
-| CT1 | Conn_01x02 | Molex SL 1x02 2.54mm | L1 current transformer input |
-| CT2 | Conn_01x02 | Molex SL 1x02 2.54mm | L2 current transformer input |
-| CT3 | Conn_01x02 | Molex SL 1x02 2.54mm | L3 current transformer input |
+| Ref (silkscreen) | Value | Package | Description |
+|------------------|-------|---------|-------------|
+| PWR1 | Conn_01x05_PWR | Phoenix Contact MSTBV 2.5 | Mains input (1x5, 5.08mm pitch) |
+| TRIG_EXT0 (TRIG_EXT) | Conn_01x06 | Pin header 1x06 2.54mm | Trigger/GPIO header (mk2Wifi) |
+| JP8 (UART_EXT) | Conn_01x06 | Pin header 1x06 2.54mm | UART + DS18B20 header (mk2Wifi) |
+| J0 (FTDI) | FTDI | Molex SL 1x06 2.54mm | Programming/debug connector |
+| J1 (RESET) | RESET | Molex SL 1x02 2.54mm | Reset push-button (GND, /DTR) |
+| J31 (OLED) | OLED | Molex SL 1x04 2.54mm | I2C display connector |
+| J32, J33 (DS18B20) | DS18B20 | Molex SL 1x03 2.54mm | Temperature sensors (GND, data, +5V) |
+| J2--J13 (D2--D13) | -- | Molex SL 1x03 2.54mm | Digital pins: GND, Dx, +5V (only when JP40 is closed) |
+| J16--J27 (D2--D13) | -- | Molex SL 1x02 2.54mm | Digital pins: GND, Dx |
+| CT1--CT3 | Conn_01x02 | Molex SL 1x02 2.54mm | Current transformer inputs (L1, L2, L3) |
+| CN1 | SMA | Amphenol 132291-12, vertical | 50 ohm RF antenna connector |
 
 ### Passives -- per-phase blocks (x3)
 
@@ -101,44 +104,70 @@ Each phase (L1/L2/L3) has an identical set of components. Numbering follows the 
 
 | Ref (L1 / L2 / L3) | Value | Package | Description |
 |----------------------|-------|---------|-------------|
-| R10--R15 / R20--R25 / R30--R35 | 20K | 0805 | ZMPT101K primary series resistors (6x in series per phase, converts mains voltage to ~2mA) |
-| R16 / R26 / R36 | 150R | 0603 | ZMPT101K burden resistor (converts 2mA output to voltage); dual footprint for parallel resistor on 110V supplies |
-| R17 / R27 / R37 | 1K | 0603 | Signal conditioning |
-| R18 / R28 / R38 | 22R typ. | 0603 | Current CT burden resistor (value depends on CT rating and range) |
-| R19 / R29 / R39 | 1K | 0603 | Series protection |
+| R10--R15 / R20--R25 / R30--R35 | 20K | 1206 | ZMPT101K primary series resistors (6x in series per phase, converts mains voltage to ~2mA) |
+| R16 / R26 / R36 | 150R | 0603 SMD or THT (R_PTH_SMD footprint) | ZMPT101K burden resistor (converts 2mA output to voltage); the mixed footprint takes a second resistor in parallel |
+| R17 / R27 / R37 | 1K | 0603 | Series resistor to the voltage ADC input (A0, A2, A4') |
+| R19 / R29 / R39 | 1K | 0603 | Series resistor to the current ADC input (A1, A3, A5') |
+| R18 / R28 / R38 (schematic only) | depends on the CT | Axial, in the two through-holes of the D13 / D23 / D33 footprint | Burden resistor of a current-output CT; not fitted, soldered by the user when needed |
 | R101--R104 / R201--R204 / R301--R304 | 10K | 0603 | 50/50 dividers for VREF/2 bias (1 pair per V and I channel) |
 | C10 / C20 / C30 | 10uF | 0603 | Inline AC coupling, voltage channel (series between ZMPT101K burden and V bias junction — blocks DC, passes AC signal) |
 | C12 / C22 / C32 | 10uF | 0603 | Inline AC coupling, current channel (series between CT and I bias junction — blocks DC, passes AC signal) |
 | C11, C13 / C21, C23 / C31, C33 | 100nF | 0603 | Bypass capacitors, bias junction to AGND (C11/C21/C31 voltage, C13/C23/C33 current) |
-| D11, D12 / D21, D22 / D31, D32 | DF2B7AE | SOD-523 | TVS diodes (voltage ADC input protection, 2x per phase) |
-| D13 / D23 / D33 | CDSOD323-T03C | SOD-323 | Bidirectional TVS diode (ADC protection if current-output CT used without burden R18/R28/R38, 1x per phase) |
+| D11, D12 / D21, D22 / D31, D32 | DF2B7AE | SOD-523 | TVS diodes on the ADC inputs (D11/D21/D31 voltage, D12/D22/D32 current) |
+| D13 / D23 / D33 | CDSOD323-T03C | SOD-323 + 2 through-holes | Bidirectional TVS diode across the CT input; the through-holes take the burden resistor |
 
 ### Passives -- common components
 
 | Ref | Value | Package | Description |
 |-----|-------|---------|-------------|
-| C1 | 1uF 310VAC | Film | Mains filter capacitor (X2 class) |
-| C3 | 120uF | Electrolytic | Power supply filtering |
-| C2, C40, C41 | 1uF | 0603 | Filtering |
-| C4, C5, C6, C9, C42, C43 | 100nF | 0603 | IC bypass |
+| C1 | 1uF 310VAC | Film, THT | X2 mains capacitor across L1 and neutral, in front of FL1 |
+| C3 | 220uF 16V | SMD electrolytic 6.3x7.7 | 5V output filtering |
+| C2, C40 | 1uF | 0603 | 5V filtering |
+| C41 | 4.7uF | 0603 | U1 output filtering |
+| C42 | 100nF | 0603 | U1 output bypass |
+| C44 | 10uF | 0603 | VCC (+3.3V net) filtering |
+| C4 | 100nF | 0603 | VCC bypass |
+| C6, C43 | 100nF | 0603 | AVCC bypass |
+| C5 | 100nF | 0603 | AREF bypass |
+| C45 | 100nF | 0603 | RFM69CW supply bypass (after FB2) |
+| C9 | 100nF | 0603 | /DTR to RESET coupling (auto-reset) |
 | C7, C8 | 22pF | 0603 | Crystal load capacitors |
-| X1 | 16 MHz | HC-49 | Crystal oscillator |
-| R3 | 1M | 0603 | RESET pull-up |
-| R4 | 47K | 0603 | Pull-up |
+| X1 | 16 MHz | HC-49/U, THT | Crystal |
+| R3 | 1M | 0603 | /DTR pull-up |
+| R4 | 47K | 0603 | RESET pull-up |
 | R6 | 4.7K | 0603 | DS18B20 pull-up |
-| R39--R42 | 22R | 0603 | Series termination (SPI) |
-| FB1 | Ferrite | 0603 | Ferrite bead (power filtering) |
+| R40--R42 | 22R | 0603 | SPI series resistors (to RFM69CW) |
+| R43 | 2K2 | 0603 | LED40 resistor |
+| R44 | 4K7 | 0603 | LED41 resistor |
+| R45 | 47K | 0603 | RFM69CW NSS pull-up |
+| FB1 | Ferrite | 0603 | VCC to AVCC filtering |
+| FB2 | Ferrite | 0603 | VCC to RFM69CW supply filtering |
+| LED40 | ON | 0603 | VCC present |
+| LED41 | +5V | 0603 | +5V present on pin 3 of J2--J13 (JP40 closed) |
 
 ### Configuration
 
-| Ref | Type | Description |
-|-----|------|-------------|
-| JP0 | SolderJumper 3-pole | ATmega328P supply: 3.3V (default) or 5V |
-| JP1 | SolderJumper 3-pole | A4 selection: L3 voltage sensing or I2C SDA |
-| JP2 | SolderJumper 3-pole | A5 selection: L3 current sensing or I2C SCL |
-| JP3 | SolderJumper 2-pole | Trigger configuration |
-| JP4 | SolderJumper 3-pole | DS18B20 handled by router (D3) or by mk2Wifi module (labelled "TEMP") |
-| GND_LINK | SolderJumper 2-pole | GND--AGND bridge (wire jumper) |
+| Ref (silkscreen) | Type | Description |
+|------------------|------|-------------|
+| JP0 (V sel.) | SolderJumper 3-pole | ATmega328P supply (VCC): 3.3V from U1 (factory) or 5V |
+| JP1 (SDA) | SolderJumper 3-pole | A4 selection: L3 voltage sensing or I2C SDA |
+| JP2 (SCL) | SolderJumper 3-pole | A5 selection: L3 current sensing or I2C SCL |
+| JP3 (IRQ) | SolderJumper 2-pole | Connects the RFM69CW interrupt to D2 (close when the RF module is used) |
+| JP4 (TEMP) | SolderJumper 3-pole | DS18B20 handled by the router (D3) or by the mk2Wifi module |
+| JP40 (+5V Rail) | SolderJumper 2-pole | Puts +5V on pin 3 of the digital connectors J2--J13 |
+| JP41 (NSS) | SolderJumper 2-pole | Connects the RFM69CW chip select to D10 (close when the RF module is used) |
+| GND_LINK1 (GND_LINK) | Wire jumper, 0.75mm2 | Links the low-voltage GND to protective earth (open by default) |
+| NT0 | Net tie | Permanent GND--AGND link |
+
+### Test points
+
+| Ref | Net |
+|-----|-----|
+| TP2 | VREF |
+| TP3 | VCC (+3.3V net, ATmega328P supply) |
+| TP41 | U1 output (3.3V) |
+| TP4 | +5V |
+| TP5, TP42 | GND |
 
 ### Mounting
 
@@ -202,7 +231,7 @@ Compatible with standard FTDI adapter pinout. TXO (adapter-to-MCU data) connects
 | Pin | Signal |
 |-----|--------|
 | 1 | GND |
-| 2 | VCC |
+| 2 | AVCC |
 | 3 | SCL |
 | 4 | SDA |
 
@@ -240,7 +269,7 @@ Vertical SMA female jack (Amphenol 132291-12) for a 50 ohm antenna. Connected to
 |-------------|------|----------|-------|
 | D0 | PD0 | UART RX | Serial receive (FTDI, UART_EXT) |
 | D1 | PD1 | UART TX | Serial transmit (FTDI, UART_EXT) |
-| D2 | PD2 | RFM69CW interrupt | INT0 |
+| D2 | PD2 | RFM69CW interrupt | INT0, through JP3 |
 | D3 | PD3 | DS18B20 (1-Wire) | Temperature sensor, when JP4 set to router |
 | D4 | PD4 | Digital input | General purpose |
 | D5 | PD5 | Trigger output | TRIG_EXT pin 5 |
@@ -248,7 +277,7 @@ Vertical SMA female jack (Amphenol 132291-12) for a 50 ohm antenna. Connected to
 | D7 | PD7 | Trigger output | TRIG_EXT pin 3 |
 | D8 | PB0 | Trigger output | TRIG_EXT pin 2 |
 | D9 | PB1 | Trigger output | TRIG_EXT pin 6 |
-| D10 | PB2 | SPI SS | RFM69CW chip select |
+| D10 | PB2 | SPI SS | RFM69CW chip select, through JP41 |
 | D11 | PB3 | SPI MOSI | Data to RFM69CW |
 | D12 | PB4 | SPI MISO | Data from RFM69CW |
 | D13 | PB5 | SPI SCK | SPI clock |
@@ -257,35 +286,44 @@ Vertical SMA female jack (Amphenol 132291-12) for a 50 ohm antenna. Connected to
 
 ### Power chain
 
-Mains power enters through the **PWR1** connector and passes through a protection chain before reaching the power supply module:
+Mains power enters through the **PWR1** connector:
 
 ```
-Mains -> GDT (gas discharge tubes) -> Fuses (FS0-FS3) -> Varistors (RV0-RV3, GM1-GM3)
-      -> Common-mode choke (FL1) -> Film capacitor (C1)
-      -> PS1 (MPC10-5): 230VAC -> 5VDC, 10W
-      -> D1 (SMBJ7.0A): TVS protection on 5V rail
-      -> U1 (AP2112K-3.3): 5V -> 3.3V, 600mA
+PWR1 -> Fuses (FS0-FS3), one per conductor
+     -> GM1-GM3 between each phase and neutral
+     -> optional RVx + GDTx pairs between each conductor and earth
+     -> C1 (X2) across L1 and neutral -> Common-mode choke (FL1)
+     -> PS1 (MPC10-5): 230VAC -> 5VDC, 10W
+     -> +5V rail (C2, C3, C40; D1 SMBJ7.0A TVS)
+     -> U1 (AP7361C-33E): 5V -> 3.3V
+     -> JP0 (V sel.): VCC = U1 output (factory) or +5V
 ```
+
+The voltage sensing branches (L1/L2/L3_SENSING) start after the fuses.
 
 ### Power rails
 
 | Rail | Voltage | Usage |
 |------|---------|-------|
-| +5V | 5V | UART_EXT and FTDI connectors |
-| +3.3V | 3.3V | ATmega328P, RFM69CW module |
-| AVCC | 3.3V (filtered) | ATmega328P analog reference, OLED connector |
-| VREF | -- | Analog voltage reference |
-| GND | 0V | Digital ground |
-| AGND | 0V | Analog ground (linked to GND via GND_LINK) |
+| +5V | 5V | PS1 output; UART_EXT pin 3 (mk2Wifi), DS18B20 connectors, pin 3 of J2--J13 through JP40, U1 input |
+| U1 output | 3.3V | Goes to VCC through JP0 (factory position); TP41 |
+| VCC (+3.3V net) | 3.3V (5V if JP0 is moved) | ATmega328P, RFM69CW (through FB2), pull-ups, LED40 |
+| AVCC | VCC filtered by FB1 | ATmega328P AVCC, LMV321A, OLED connector |
+| VREF | 1.1V | Internal reference (AREF) buffered by the LMV321A |
+| GND | 0V | Ground |
+| AGND | 0V | Analog ground, tied to GND by the net tie NT0 |
+| Earth | -- | Protective earth (PWR1 pin 1); linked to GND only if GND_LINK is closed |
 
 ### Decoupling
 
-- C1 (1uF 310VAC): mains-side filtering
-- C3 (120uF): 5V supply output filtering
-- C2, C41 (1uF): secondary filtering
-- C4, C5, C6, C9, C42, C43 (100nF): local IC bypass
+- C1 (1uF 310VAC, X2): mains-side filtering, across L1 and neutral
+- C3 (220uF), C2, C40 (1uF): 5V filtering
+- C41 (4.7uF), C42 (100nF): U1 output
+- C44 (10uF), C4 (100nF): VCC
+- C6, C43 (100nF): AVCC; C5 (100nF): AREF
+- C45 (100nF): RFM69CW supply
 - C7, C8 (22pF): crystal load capacitors for X1
-- FB1 (ferrite): power rail filtering
+- FB1, FB2 (ferrites): AVCC and RFM69CW supply filtering
 
 ## Resistor power dissipation
 
@@ -293,11 +331,11 @@ The ADC reference voltage is the ATmega328P internal 1.1V reference, buffered by
 
 ### ZMPT101K primary chain (per phase: 6 x 20K = 120K in series)
 
-| Mains voltage | Current (RMS) | Power per 20K resistor | Total (6 resistors) | 0805 utilisation (125mW rated) |
+| Mains voltage | Current (RMS) | Power per 20K resistor | Total (6 resistors) | 1206 utilisation (250mW typ.) |
 |---------------|---------------|------------------------|----------------------|-------------------------------|
-| 110V | 0.917mA | 16.8mW | 101mW | 13% |
-| 230V | 1.917mA | **73.5mW** | 441mW | **59%** |
-| 250V | 2.083mA | 86.8mW | 521mW | 69% |
+| 110V | 0.917mA | 16.8mW | 101mW | 7% |
+| 230V | 1.917mA | **73.5mW** | 441mW | **29%** |
+| 250V | 2.083mA | 86.8mW | 521mW | 35% |
 
 At 230V nominal, the three phases dissipate 3 x 441 = **1.32W** in the divider chains.
 
@@ -306,21 +344,21 @@ At 230V nominal, the three phases dissipate 3 x 441 = **1.32W** in the divider c
 Secondary current = primary current (1:1 ratio). At 230V: I = 1.917mA.
 - P = (1.917mA)^2 x 150 = **0.55mW** -- negligible
 
-### CT burden resistor (R18 / R28 / R38 -- 22R typ.)
+### CT burden resistor (R18 / R28 / R38 in the schematic -- 22R example)
 
 Power depends on the CT type and rating.
 
-**Voltage-output CT** (e.g. SCT-013-030, 30A/1V): the burden resistor is built into the CT. R18 is not populated. Dissipation: **negligible**.
+**Voltage-output CT** (e.g. SCT-013-030, 30A/1V): the burden resistor is built into the CT. No burden resistor is fitted. Dissipation: **negligible**.
 
-**Current-output CT** (e.g. SCT-013-000, 100A/50mA): the secondary current flows through R18. Dissipation depends on the measured primary current:
+**Current-output CT** (e.g. SCT-013-000, 100A/50mA): the secondary current flows through the burden resistor, an axial resistor soldered in the two through-holes of the D13 / D23 / D33 footprint. Dissipation depends on the measured primary current:
 
-| Primary current | I secondary (100A/50mA) | P in 22R | 0603 rating (100mW) |
+| Primary current | I secondary (100A/50mA) | P in 22R | 0.5W axial resistor (DIN0309 size of the footprint) |
 |-----------------|-------------------------|----------|---------------------|
-| 20A | 10mA | 2.2mW | 2% |
-| 60A | 30mA | 19.8mW | 20% |
-| 100A | 50mA | 55mW | 55% |
+| 20A | 10mA | 2.2mW | < 1% |
+| 60A | 30mA | 19.8mW | 4% |
+| 100A | 50mA | 55mW | 11% |
 
-**Warning:** With a current-output CT, R18 must be sized so the peak voltage does not exceed 0.55V (half the ADC range at VREF = 1.1V). Formula: **R = 0.55V / I_sec_peak**. With 22R, the max peak current is 25mA. The TVS diodes (DF2B7AE) protect the ADC but do not limit current through the burden resistor: if the CT delivers more than expected, the resistor may overheat.
+**Warning:** With a current-output CT, the burden resistor must be sized so the peak voltage does not exceed 0.55V (half the ADC range at VREF = 1.1V). Formula: **R = 0.55V / I_sec_peak**. With 22R, the max peak current is 25mA. The TVS diodes (DF2B7AE) protect the ADC but do not limit current through the burden resistor: if the CT delivers more than expected, the resistor may overheat.
 
 Within the ADC range:
 - I_sec_max = 0.55V / 22R = 25mA peak = 17.7mA RMS
@@ -345,7 +383,7 @@ The 10K value (Thevenin impedance 5K) meets the ATmega328P datasheet recommendat
 | R19 / R29 / R39 | 1K | < 1V | < 1mA | < 1mW |
 | R40--R42 | 22R | 3.3V | signal | < 5mW |
 
-All resistors outside the ZMPT101K primary chain dissipate less than 5mW. Only **R10--R15 / R20--R25 / R30--R35** have significant dissipation (73.5mW each at 230V, i.e. 59% of the 0805 125mW rating).
+All resistors outside the ZMPT101K primary chain dissipate less than 5mW. Only **R10--R15 / R20--R25 / R30--R35** have significant dissipation (73.5mW each at 230V, i.e. 29% of a 250mW 1206 resistor).
 
 ## Surge protection
 
@@ -353,12 +391,12 @@ The board implements multi-layer protection compliant with IPC-2221 for operatio
 
 ### Protection layers
 
-1. **Gas discharge tubes (GDT0--GDT3)**: first line of defence against transient surges. Part 2093-300-SM-RPLF, 300V spark-over voltage.
-2. **Fuses (FS0--FS3)**: 1A x 250V, one per phase and neutral. Limit fault current.
-3. **Varistors (RV0--RV3, GM1--GM3)**: clamp residual overvoltages. GM1--GM3 combine a GDT and MOV in a single package.
-4. **Common-mode choke (FL1)**: filters common-mode interference on mains lines.
+1. **Fuses (FS0--FS3)**: 1A x 250V, one per phase and neutral, soldered directly (no holder). They open on a short circuit on the board, for example a varistor at end of life or a failed PS1 or C1.
+2. **Hybrid varistors (GM1--GM3)**: IsoMOV (MOV + GDT in one package), 320V, between each phase and neutral, after the fuses.
+3. **Optional RVx + GDTx pairs (RV0--RV3, GDT0--GDT3)**: for full lightning protection. Each varistor is in series with the GDT of the same number, between a conductor and earth: RV0 + GDT0 on neutral, RV1 + GDT1 on L1, RV2 + GDT2 on L2, RV3 + GDT3 on L3. Not fitted by default; the user solders them, always as a pair.
+4. **X2 capacitor (C1) and common-mode choke (FL1)**: filter the supply of PS1.
 5. **TVS diode (D1, SMBJ7.0A)**: protects the 5V rail at the power supply output.
-6. **TVS diodes (D11/D12, D21/D22, D31/D32, DF2B7AE)**: protect the MCU ADC inputs, three per phase (2x DF2B7AE for voltage, 1x CDSOD323-T03C for current if CT used without burden resistor).
+6. **ADC input TVS diodes**: per phase, a DF2B7AE on the voltage input (D11/D21/D31) and on the current input (D12/D22/D32), and a CDSOD323-T03C across the CT input (D13/D23/D33).
 
 ### Voltage domains and net classes
 
@@ -382,18 +420,11 @@ HV clearance rules are defined in `3phaseDiverter.kicad_dru`. HV-to-LV clearance
 
 ### Solder jumpers
 
-| Jumper | Poles | Function |
-|--------|-------|----------|
-| JP0 | 3 | ATmega328P supply: 3.3V (default) or 5V |
-| JP1 | 3 | Pin A4: L3 voltage sensing (A4') or I2C SDA |
-| JP2 | 3 | Pin A5: L3 current sensing (A5') or I2C SCL |
-| JP3 | 2 | Trigger configuration |
-| JP4 | 3 | DS18B20 routing (labelled "TEMP") |
-| GND_LINK | 2 | GND-to-AGND bridge (0.75mm2 wire jumper) |
+See the [Configuration](#configuration) table of the BOM: JP0 (V sel.), JP1 (SDA), JP2 (SCL), JP3 (IRQ), JP4 (TEMP), JP40 (+5V Rail), JP41 (NSS) and the GND_LINK wire jumper (Earth to GND, 0.75mm2 wire).
 
 ### Single-phase vs 3-phase
 
-All SMD components are assembled in production regardless of configuration. Single-phase vs 3-phase selection is done via solder jumpers and connector choice.
+All SMD components are assembled in production regardless of configuration, except the optional gas discharge tubes GDT0--GDT3. Single-phase vs 3-phase selection is done via solder jumpers and connector choice.
 
 In **single-phase** mode, solder jumpers JP1 and JP2 are set to I2C position (SDA/SCL), enabling the OLED display: they come pre-connected to the L3 sensing lines used in 3-phase mode, so that link must be cut and the I2C side bridged. A 3-way PWR1 connector variant is provided (Earth, Neutral, L1). CT1 measures the grid current; CT2 can be connected as well, its input being fully assembled (the single-phase firmware uses it to measure the diverted energy).
 
@@ -408,13 +439,13 @@ The mainboard is designed to accept the **mk2Wifi** expansion module via the TRI
 - UART (TX/RX) provides serial communication with the expansion module
 - The DS18B20 signal passes through UART_EXT pin 2 for 1-Wire temperature sensing
 - GPIO signals D5--D9 provide trigger/control outputs via TRIG_EXT
-- The I2C bus (SCL/SDA) is **local to the mk2Wifi module only** -- it connects the ESP32-C3 to the OLED display and is not routed to the mainboard
+- The I2C bus (SCL/SDA) is **local to the mk2Wifi module only** -- it connects the ESP32-C6 to the OLED display and is not routed to the mainboard
 
 ## Programming
 
 The **FTDI** connector (Molex SL 1x6) allows firmware upload via a USB-to-serial FTDI or compatible adapter:
 
-1. **Connection**: plug the FTDI adapter into connector J0. The pinout is compatible with standard FTDI cables (GND on pin 1).
+1. **Connection**: plug the FTDI adapter into connector J0. The pinout is compatible with standard FTDI cables (GND on pin 1). Pin 3 (VCC) is not connected: the adapter does not power the board.
 2. **Auto-reset**: the DTR signal triggers an automatic ATmega328P reset through a coupling capacitor, allowing upload without manual intervention.
 3. **Environment**: Arduino-compatible (ATmega328P with bootloader). Use the "Arduino Uno" board or equivalent in the Arduino IDE.
 
