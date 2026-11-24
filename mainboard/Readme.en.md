@@ -215,7 +215,7 @@ The I2C bus is shared on ATmega328P pins A4 (SDA) and A5 (SCL). In 3-phase mode,
 | 1 | CT signal |
 | 2 | AGND |
 
-CT1 is used in both single-phase and 3-phase mode. CT2 and CT3 are used in 3-phase mode only.
+CT1 is used in both single-phase and 3-phase mode. In 3-phase mode, CT2 and CT3 measure L2 and L3. In single-phase mode, CT2 (A3) remains fully usable, for instance to measure the diverted current; CT3 is not available when JP2 routes A5 to I2C SCL.
 
 ### CN1 -- RF antenna (SMA)
 
@@ -395,7 +395,7 @@ HV clearance rules are defined in `3phaseDiverter.kicad_dru`. HV-to-LV clearance
 
 All SMD components are assembled in production regardless of configuration. Single-phase vs 3-phase selection is done via solder jumpers and connector choice.
 
-In **single-phase** mode, solder jumpers JP1 and JP2 are set to I2C position (SDA/SCL), enabling the OLED display. A 3-way PWR1 connector variant is provided (Earth, Neutral, L1). Only CT1 is connected.
+In **single-phase** mode, solder jumpers JP1 and JP2 are set to I2C position (SDA/SCL), enabling the OLED display: they come pre-connected to the L3 sensing lines used in 3-phase mode, so that link must be cut and the I2C side bridged. A 3-way PWR1 connector variant is provided (Earth, Neutral, L1). CT1 measures the grid current; CT2 can be connected as well, its input being fully assembled (the single-phase firmware uses it to measure the diverted energy).
 
 In **3-phase** mode, solder jumpers JP1 and JP2 are set to L3 sensing (A4'/A5' position), which disables the OLED display. The 5-way PWR1 connector is used and all three CTs are connected.
 

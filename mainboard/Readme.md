@@ -215,7 +215,7 @@ Le bus I2C est partagé sur les broches A4 (SDA) et A5 (SCL) de l'ATmega328P. En
 | 1 | Signal CT |
 | 2 | AGND |
 
-CT1 est utilisé en monophasé et en triphasé. CT2 et CT3 sont utilisés uniquement en triphasé.
+CT1 est utilisé en monophasé et en triphasé. En triphasé, CT2 et CT3 mesurent L2 et L3. En monophasé, CT2 (A3) reste entièrement utilisable, par exemple pour mesurer le courant routé ; CT3 n’est pas disponible quand JP2 relie A5 à I2C SCL.
 
 ### CN1 — Antenne RF (SMA)
 
@@ -395,7 +395,7 @@ Les règles d'isolement HV sont définies dans `3phaseDiverter.kicad_dru`. L'iso
 
 Tous les composants CMS sont assemblés en production, quelle que soit la configuration. La sélection monophasé/triphasé se fait par les cavaliers de soudure et le choix des connecteurs.
 
-En **monophasé**, les cavaliers JP1 et JP2 sont configurés en position I2C (SDA/SCL), ce qui permet l'utilisation de l'écran OLED. Un connecteur PWR1 3 voies est fourni (Terre, Neutre, L1). Seul CT1 est raccordé.
+En **monophasé**, les cavaliers JP1 et JP2 sont configurés en position I2C (SDA/SCL), ce qui permet l'utilisation de l'écran OLED : ils sont reliés d'usine aux lignes de mesure L3 du triphasé, il faut donc couper cette liaison et ponter le côté I2C. Un connecteur PWR1 3 voies est fourni (Terre, Neutre, L1). CT1 mesure le courant du réseau ; CT2 peut aussi être raccordé, son entrée étant entièrement câblée (le firmware monophasé s'en sert pour mesurer l'énergie routée).
 
 En **triphasé**, les cavaliers JP1 et JP2 sont configurés pour les mesures L3 (position A4'/A5'), ce qui désactive l'afficheur OLED. Le connecteur PWR1 5 voies est utilisé et les trois CT sont raccordés.
 
