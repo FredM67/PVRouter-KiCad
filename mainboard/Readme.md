@@ -2,7 +2,7 @@ Français | **[English](Readme.en.md)**
 
 # 3phaseDiverter — Carte principale universelle du Mk2 PV Router
 
-Carte principale universelle pour le Mk2 PV Router (rév. 6.0). Elle prend en charge les configurations monophasé, triphasé (avec ou sans neutre) et split-phase.
+Carte principale universelle pour le Mk2 PV Router (rév. 6.0). Elle prend en charge les configurations monophasé et triphasé (avec ou sans neutre).
 
 ## Présentation
 
@@ -14,8 +14,8 @@ Caractéristiques principales :
 - Jusqu'à 3 transformateurs de courant (connecteurs **CT1–CT3**)
 - Module radio **RFM69CW** (bande ISM 433/868 MHz) avec connecteur SMA
 - Alimentation AC-DC intégrée (**Multicomp Pro MPC10-5**, 5 V / 10 W)
-- Régulateur LDO **AP2112K-3.3** (5 V → 3,3 V, 600 mA)
-- Protection parafoudre multiniveau (éclateur GDT, fusibles, varistances MOV, selfs de mode commun)
+- Régulateur LDO **AP7361C-33E** (5 V → 3,3 V, 1 A)
+- Protection contre les surtensions : fusibles, varistances hybrides IsoMOV entre phase et neutre, self de mode commun ; en option, paires varistance + éclateur GDT vers la terre
 - Buffer de la référence interne 1,1 V (AREF) par amplificateur opérationnel **LMV321A**, polarisation des voies à VREF/2
 - Connecteurs d'extension : **TRIG_EXT**, **UART_EXT**, **FTDI**, **OLED**
 - Conception conforme IPC-2221 pour 230 V RMS / 325 V crête sur FR4 non revêtu
@@ -54,7 +54,7 @@ Caractéristiques principales :
 |-----|--------|---------|-------------|
 | IC1 | ATmega328P | DIP-28 | Microcontrôleur (16 MHz) |
 | U2 | LMV321A | SOT-23-5 | Amplificateur opérationnel simple (buffer AREF 1,1 V) |
-| U1 | AP2112K-3.3 | SOT-23-5 | Régulateur LDO 3,3 V (600 mA) |
+| U1 | AP7361C-33E | SOT-223 | Régulateur LDO 3,3 V (1 A) |
 | PS1 | MPC10-5 | Converter_ACDC_MULTICOMP_PRO | Module d'alimentation AC-DC (5 V, 10 W, Multicomp Pro) |
 | RF1 | RFM69CW | Custom | Module radio ISM (433/868 MHz) |
 
@@ -70,30 +70,33 @@ Caractéristiques principales :
 
 | Réf | Valeur | Boîtier | Description |
 |-----|--------|---------|-------------|
-| GDT0–GDT3 | 2093-300-SM-RPLF | SMD | Éclateurs à gaz (4×, un par phase + neutre) |
-| GM1–GM3 | GMOV 320 V | SMD | Varistances combinées GDT+MOV (3×, une par phase) |
-| RV0–RV3 | 300 V | Radial | Varistances (4×, une par phase + neutre) |
-| D1 | SMBJ7.0A | SMB | Diode TVS (protection alimentation 5 V) |
-| D11, D12 | DF2B7AE | SOD-523 | Diodes TVS (protection ADC phase L1) |
-| D21, D22 | DF2B7AE | SOD-523 | Diodes TVS (protection ADC phase L2) |
-| D31, D32 | DF2B7AE | SOD-523 | Diodes TVS (protection ADC phase L3) |
-| D13, D23, D33 | CDSOD323-T03C | SOD-323 | Diodes TVS bidirectionnelles (protection ADC en cas de CT courant sans résistance de charge, une par phase) |
-| FS0–FS3 | 1 A × 250 V | Axial | Fusibles (4×, un par phase + neutre) |
-| FL1 | RN214-0.3-02-47M | Custom | Self de mode commun (Schaffner) |
+| FS0–FS3 | 1 A × 250 V | Traversant (empreinte Littelfuse série 395), soudé, sans porte-fusible | Fusibles (4×, un par phase + neutre) |
+| GM1–GM3 | 320 V | Traversant (IsoM3300BL2) | Varistances hybrides (MOV + GDT dans un même boîtier), entre phase et neutre (3×) |
+| RV0–RV3 | 300 V | Traversant, radial (MOV14D471K) | Varistances, chacune en série avec l’éclateur de même numéro, entre un conducteur et la terre (4×, **optionnelles**) |
+| GDT0–GDT3 | 2093-300-SM-RPLF | CMS | Éclateurs à gaz, en série avec RV0–RV3 (4×, **optionnels**, soudés par l’utilisateur) |
+| FL1 | RN214-0.3-02-47M | Traversant (Schaffner RNx14) | Self de mode commun en amont de PS1 |
+| D1 | SMBJ7.0A | SMB | Diode TVS sur le rail 5 V |
+| D11 / D21 / D31 | DF2B7AE | SOD-523 | Diodes TVS sur les entrées ADC tension (A0, A2, A4') |
+| D12 / D22 / D32 | DF2B7AE | SOD-523 | Diodes TVS sur les entrées ADC courant (A1, A3, A5') |
+| D13 / D23 / D33 | CDSOD323-T03C | SOD-323, empreinte avec deux trous traversants (pas de 12,70 mm) | Diodes TVS bidirectionnelles aux bornes des entrées CT ; les deux trous reçoivent la résistance de charge axiale d’un CT à sortie courant |
+
+Les RVx et GDTx ne fonctionnent que par paire : la varistance et l’éclateur sont en série entre un conducteur et la terre.
 
 ### Connecteurs
 
-| Réf | Valeur | Boîtier | Description |
-|-----|--------|---------|-------------|
-| PWR1 | Conn_01x05_PWR | Phoenix Contact MSTBV 2,5 | Entrée secteur triphasé (1×5, pas 5,08 mm) |
-| TRIG_EXT | Conn_01x06 | PinHeader 1×06 2,54 mm | Connecteur déclenchement/GPIO |
-| UART_EXT | Conn_01x06 | PinHeader 1×06 2,54 mm | Connecteur UART + DS18B20 |
-| FTDI | Conn_01x06 | Molex SL 1×06 2,54 mm | Connecteur programmation/débogage |
-| OLED | Conn_01x04 | Molex SL 1×04 2,54 mm | Connecteur écran I2C |
-| CN1 | BU-SMA-V | SMA vertical | Connecteur antenne RF 50 Ω |
-| CT1 | Conn_01x02 | Molex SL 1×02 2,54 mm | Entrée transformateur de courant L1 |
-| CT2 | Conn_01x02 | Molex SL 1×02 2,54 mm | Entrée transformateur de courant L2 |
-| CT3 | Conn_01x02 | Molex SL 1×02 2,54 mm | Entrée transformateur de courant L3 |
+| Réf (sérigraphie) | Valeur | Boîtier | Description |
+|-------------------|--------|---------|-------------|
+| PWR1 | Conn_01x05_PWR | Phoenix Contact MSTBV 2,5 | Entrée secteur (1×5, pas 5,08 mm) |
+| TRIG_EXT0 (TRIG_EXT) | Conn_01x06 | Barrette mâle 1×06 2,54 mm | Connecteur déclenchement/GPIO (mk2Wifi) |
+| JP8 (UART_EXT) | Conn_01x06 | Barrette mâle 1×06 2,54 mm | Connecteur UART + DS18B20 (mk2Wifi) |
+| J0 (FTDI) | FTDI | Molex SL 1×06 2,54 mm | Connecteur programmation/débogage |
+| J1 (RESET) | RESET | Molex SL 1×02 2,54 mm | Bouton de réinitialisation (GND, /DTR) |
+| J31 (OLED) | OLED | Molex SL 1×04 2,54 mm | Connecteur écran I2C |
+| J32, J33 (DS18B20) | DS18B20 | Molex SL 1×03 2,54 mm | Sondes de température (GND, données, +5 V) |
+| J2–J13 (D2–D13) | – | Molex SL 1×03 2,54 mm | Broches numériques : GND, Dx, +5 V (seulement si JP40 est fermé) |
+| J16–J27 (D2–D13) | – | Molex SL 1×02 2,54 mm | Broches numériques : GND, Dx |
+| CT1–CT3 | Conn_01x02 | Molex SL 1×02 2,54 mm | Entrées transformateurs de courant (L1, L2, L3) |
+| CN1 | SMA | Amphenol 132291-12, vertical | Connecteur antenne RF 50 Ω |
 
 ### Passifs — blocs par phase (×3)
 
@@ -101,44 +104,70 @@ Chaque phase (L1/L2/L3) possède un ensemble identique de composants. La numéro
 
 | Réf (L1 / L2 / L3) | Valeur | Boîtier | Description |
 |----------------------|--------|---------|-------------|
-| R10–R15 / R20–R25 / R30–R35 | 20K | 0805 | Résistances série primaire ZMPT101K (6× en série par phase, conversion tension secteur → ~2 mA) |
-| R16 / R26 / R36 | 150R | 0603 | Résistance de charge ZMPT101K (conversion courant 2 mA → tension) ; empreinte double pour ajout en parallèle (réseaux 110 V) |
-| R17 / R27 / R37 | 1K | 0603 | Conditionnement de signal |
-| R18 / R28 / R38 | 22R typ. | 0603 | Résistance de charge CT courant (valeur selon le calibre du CT) |
-| R19 / R29 / R39 | 1K | 0603 | Protection série |
+| R10–R15 / R20–R25 / R30–R35 | 20K | 1206 | Résistances série primaire ZMPT101K (6× en série par phase, conversion tension secteur → ~2 mA) |
+| R16 / R26 / R36 | 150R | CMS 0603 ou traversant (empreinte R_PTH_SMD) | Résistance de charge ZMPT101K (conversion courant 2 mA → tension) ; l’empreinte mixte accepte une seconde résistance en parallèle |
+| R17 / R27 / R37 | 1K | 0603 | Résistance série vers l’entrée ADC tension (A0, A2, A4') |
+| R19 / R29 / R39 | 1K | 0603 | Résistance série vers l’entrée ADC courant (A1, A3, A5') |
+| R18 / R28 / R38 (schéma seulement) | selon le CT | Axiale, dans les deux trous traversants de l’empreinte de D13 / D23 / D33 | Résistance de charge d’un CT à sortie courant ; non montée, soudée par l’utilisateur si besoin |
 | R101–R104 / R201–R204 / R301–R304 | 10K | 0603 | Diviseurs 50/50 pour polarisation à VREF/2 (1 paire par voie V et I) |
-| C10 / C20 / C30 | 10 µF | 0603 | Couplage AC série, voie tension (entre charge ZMPT101K et point de polarisation V — bloque le continu, passe le signal alternatif) |
-| C12 / C22 / C32 | 10 µF | 0603 | Couplage AC série, voie courant (entre CT et point de polarisation I — bloque le continu, passe le signal alternatif) |
-| C11, C13 / C21, C23 / C31, C33 | 100 nF | 0603 | Condensateurs de découplage, point de polarisation vers AGND (C11/C21/C31 tension, C13/C23/C33 courant) |
-| D11, D12 / D21, D22 / D31, D32 | DF2B7AE | SOD-523 | Diodes TVS (protection entrée ADC tension, 2× par phase) |
-| D13 / D23 / D33 | CDSOD323-T03C | SOD-323 | Diode TVS bidirectionnelle (protection ADC si CT courant sans résistance de charge R18/R28/R38, 1× par phase) |
+| C10 / C20 / C30 | 10 µF | 0603 | Couplage AC série, voie tension (entre charge ZMPT101K et point de polarisation V — bloque le continu, passe le signal alternatif) |
+| C12 / C22 / C32 | 10 µF | 0603 | Couplage AC série, voie courant (entre CT et point de polarisation I — bloque le continu, passe le signal alternatif) |
+| C11, C13 / C21, C23 / C31, C33 | 100 nF | 0603 | Condensateurs de découplage, point de polarisation vers AGND (C11/C21/C31 tension, C13/C23/C33 courant) |
+| D11, D12 / D21, D22 / D31, D32 | DF2B7AE | SOD-523 | Diodes TVS sur les entrées ADC (D11/D21/D31 tension, D12/D22/D32 courant) |
+| D13 / D23 / D33 | CDSOD323-T03C | SOD-323 + 2 trous traversants | Diode TVS bidirectionnelle aux bornes de l’entrée CT ; les trous reçoivent la résistance de charge |
 
 ### Passifs — composants communs
 
 | Réf | Valeur | Boîtier | Description |
 |-----|--------|---------|-------------|
-| C1 | 1 µF 310 VAC | Film | Condensateur de filtrage secteur (classe X2) |
-| C3 | 120 µF | Électrolytique | Filtrage alimentation |
-| C2, C40, C41 | 1 µF | 0603 | Filtrage |
-| C4, C5, C6, C9, C42, C43 | 100 nF | 0603 | Découplage CI |
+| C1 | 1 µF 310 VAC | Film, traversant | Condensateur X2 entre L1 et neutre, en amont de FL1 |
+| C3 | 220 µF 16 V | Électrolytique CMS 6,3×7,7 | Filtrage de la sortie 5 V |
+| C2, C40 | 1 µF | 0603 | Filtrage 5 V |
+| C41 | 4,7 µF | 0603 | Filtrage de la sortie de U1 |
+| C42 | 100 nF | 0603 | Découplage de la sortie de U1 |
+| C44 | 10 µF | 0603 | Filtrage de VCC (réseau +3.3V) |
+| C4 | 100 nF | 0603 | Découplage de VCC |
+| C6, C43 | 100 nF | 0603 | Découplage d’AVCC |
+| C5 | 100 nF | 0603 | Découplage d’AREF |
+| C45 | 100 nF | 0603 | Découplage de l’alimentation du RFM69CW (après FB2) |
+| C9 | 100 nF | 0603 | Couplage /DTR → RESET (réinitialisation automatique) |
 | C7, C8 | 22 pF | 0603 | Condensateurs de charge quartz |
-| X1 | 16 MHz | HC-49 | Quartz |
-| R3 | 1M | 0603 | Pull-up RESET |
-| R4 | 47K | 0603 | Pull-up |
+| X1 | 16 MHz | HC-49/U, traversant | Quartz |
+| R3 | 1M | 0603 | Pull-up /DTR |
+| R4 | 47K | 0603 | Pull-up RESET |
 | R6 | 4,7K | 0603 | Pull-up DS18B20 |
-| R39–R42 | 22R | 0603 | Terminaison série (SPI) |
-| FB1 | Ferrite | 0603 | Perle de ferrite (filtrage alimentation) |
+| R40–R42 | 22R | 0603 | Résistances série SPI (vers le RFM69CW) |
+| R43 | 2K2 | 0603 | Résistance de LED40 |
+| R44 | 4K7 | 0603 | Résistance de LED41 |
+| R45 | 47K | 0603 | Pull-up NSS du RFM69CW |
+| FB1 | Ferrite | 0603 | Filtrage VCC → AVCC |
+| FB2 | Ferrite | 0603 | Filtrage VCC → alimentation du RFM69CW |
+| LED40 | ON | 0603 | Présence de VCC |
+| LED41 | +5V | 0603 | Présence du +5 V sur la broche 3 de J2–J13 (JP40 fermé) |
 
 ### Configuration
 
-| Réf | Type | Description |
-|-----|------|-------------|
-| JP0 | SolderJumper 3 pôles | Alimentation ATmega328P : 3,3 V (défaut) ou 5 V |
-| JP1 | SolderJumper 3 pôles | Sélection A4 : mesure tension L3 ou I2C SDA |
-| JP2 | SolderJumper 3 pôles | Sélection A5 : mesure courant L3 ou I2C SCL |
-| JP3 | SolderJumper 2 pôles | Configuration déclenchement |
-| JP4 | SolderJumper 3 pôles | DS18B20 géré par le routeur (D3) ou par le module mk2Wifi (libellé « TEMP ») |
-| GND_LINK | SolderJumper 2 pôles | Pont GND–AGND (cavalier fil) |
+| Réf (sérigraphie) | Type | Description |
+|-------------------|------|-------------|
+| JP0 (V sel.) | SolderJumper 3 pôles | Alimentation de l’ATmega328P (VCC) : 3,3 V de U1 (usine) ou 5 V |
+| JP1 (SDA) | SolderJumper 3 pôles | Sélection A4 : mesure tension L3 ou I2C SDA |
+| JP2 (SCL) | SolderJumper 3 pôles | Sélection A5 : mesure courant L3 ou I2C SCL |
+| JP3 (IRQ) | SolderJumper 2 pôles | Relie l’interruption du RFM69CW à D2 (à fermer si le module RF est utilisé) |
+| JP4 (TEMP) | SolderJumper 3 pôles | DS18B20 géré par le routeur (D3) ou par le module mk2Wifi |
+| JP40 (+5V Rail) | SolderJumper 2 pôles | Amène le +5 V sur la broche 3 des connecteurs numériques J2–J13 |
+| JP41 (NSS) | SolderJumper 2 pôles | Relie la sélection du RFM69CW à D10 (à fermer si le module RF est utilisé) |
+| GND_LINK1 (GND_LINK) | Cavalier fil 0,75 mm² | Relie la masse basse tension (GND) à la terre de protection (ouvert par défaut) |
+| NT0 | Net tie | Liaison permanente GND–AGND |
+
+### Points de test
+
+| Réf | Réseau |
+|-----|--------|
+| TP2 | VREF |
+| TP3 | VCC (réseau +3.3V, alimentation de l’ATmega328P) |
+| TP41 | Sortie de U1 (3,3 V) |
+| TP4 | +5V |
+| TP5, TP42 | GND |
 
 ### Montage
 
@@ -202,7 +231,7 @@ Brochage compatible avec les adaptateurs FTDI standard. TXO (données de l'adapt
 | Broche | Signal |
 |--------|--------|
 | 1 | GND |
-| 2 | VCC |
+| 2 | AVCC |
 | 3 | SCL |
 | 4 | SDA |
 
@@ -215,7 +244,7 @@ Le bus I2C est partagé sur les broches A4 (SDA) et A5 (SCL) de l'ATmega328P. En
 | 1 | Signal CT |
 | 2 | AGND |
 
-CT1 est utilisé en monophasé et en triphasé. CT2 et CT3 sont utilisés uniquement en triphasé.
+CT1 est utilisé en monophasé et en triphasé. En triphasé, CT2 et CT3 mesurent L2 et L3. En monophasé, CT2 (A3) reste entièrement utilisable, par exemple pour mesurer le courant routé ; CT3 n’est pas disponible quand JP2 relie A5 à I2C SCL.
 
 ### CN1 — Antenne RF (SMA)
 
@@ -240,7 +269,7 @@ Connecteur SMA femelle vertical (Amphenol 132291-12) pour antenne 50 Ω. Relié 
 |----------------|------|----------|-------|
 | D0 | PD0 | UART RX | Réception série (FTDI, UART_EXT) |
 | D1 | PD1 | UART TX | Émission série (FTDI, UART_EXT) |
-| D2 | PD2 | Interruption RFM69CW | INT0 |
+| D2 | PD2 | Interruption RFM69CW | INT0, via JP3 |
 | D3 | PD3 | DS18B20 (1-Wire) | Capteur de température, si JP4 en position routeur |
 | D4 | PD4 | Entrée numérique | Usage général |
 | D5 | PD5 | Sortie déclenchement | TRIG_EXT broche 5 |
@@ -248,7 +277,7 @@ Connecteur SMA femelle vertical (Amphenol 132291-12) pour antenne 50 Ω. Relié 
 | D7 | PD7 | Sortie déclenchement | TRIG_EXT broche 3 |
 | D8 | PB0 | Sortie déclenchement | TRIG_EXT broche 2 |
 | D9 | PB1 | Sortie déclenchement | TRIG_EXT broche 6 |
-| D10 | PB2 | SPI SS | Sélection du RFM69CW |
+| D10 | PB2 | SPI SS | Sélection du RFM69CW, via JP41 |
 | D11 | PB3 | SPI MOSI | Données vers RFM69CW |
 | D12 | PB4 | SPI MISO | Données depuis RFM69CW |
 | D13 | PB5 | SPI SCK | Horloge SPI |
@@ -257,35 +286,44 @@ Connecteur SMA femelle vertical (Amphenol 132291-12) pour antenne 50 Ω. Relié 
 
 ### Chaîne d'alimentation
 
-Le secteur entre par le connecteur **PWR1** et traverse une chaîne de protection avant d'atteindre le module d'alimentation :
+Le secteur entre par le connecteur **PWR1** :
 
 ```
-Secteur → GDT (éclateurs) → Fusibles (FS0–FS3) → Varistances (RV0–RV3, GM1–GM3)
-       → Self de mode commun (FL1) → Condensateur film (C1)
-       → PS1 (MPC10-5) : 230 VAC → 5 VDC, 10 W
-       → D1 (SMBJ7.0A) : protection TVS côté 5 V
-       → U1 (AP2112K-3.3) : 5 V → 3,3 V, 600 mA
+PWR1 → Fusibles (FS0–FS3), un par conducteur
+     → GM1–GM3 entre chaque phase et le neutre
+     → en option, paires RVx + GDTx entre chaque conducteur et la terre
+     → C1 (X2) entre L1 et neutre → Self de mode commun (FL1)
+     → PS1 (MPC10-5) : 230 VAC → 5 VDC, 10 W
+     → rail +5 V (C2, C3, C40 ; diode TVS D1 SMBJ7.0A)
+     → U1 (AP7361C-33E) : 5 V → 3,3 V
+     → JP0 (V sel.) : VCC = sortie de U1 (usine) ou +5 V
 ```
+
+Les branches de mesure de tension (L1/L2/L3_SENSING) partent après les fusibles.
 
 ### Rails d'alimentation
 
 | Rail | Tension | Usage |
 |------|---------|-------|
-| +5 V | 5 V | Connecteurs UART_EXT et FTDI |
-| +3,3 V | 3,3 V | ATmega328P, module RFM69CW |
-| AVCC | 3,3 V (filtré) | Référence analogique ATmega328P, connecteur OLED |
-| VREF | — | Tension de référence analogique |
-| GND | 0 V | Masse numérique |
-| AGND | 0 V | Masse analogique (reliée à GND par GND_LINK) |
+| +5 V | 5 V | Sortie de PS1 ; UART_EXT broche 3 (mk2Wifi), connecteurs DS18B20, broche 3 de J2–J13 via JP40, entrée de U1 |
+| Sortie de U1 | 3,3 V | Alimente VCC via JP0 (position usine) ; TP41 |
+| VCC (réseau +3.3V) | 3,3 V (5 V si JP0 est déplacé) | ATmega328P, RFM69CW (via FB2), pull-ups, LED40 |
+| AVCC | VCC filtré par FB1 | AVCC de l’ATmega328P, LMV321A, connecteur OLED |
+| VREF | 1,1 V | Référence interne (AREF) bufferisée par le LMV321A |
+| GND | 0 V | Masse |
+| AGND | 0 V | Masse analogique, reliée à GND par le net tie NT0 |
+| Terre | – | Terre de protection (PWR1 broche 1) ; reliée à GND seulement si GND_LINK est fermé |
 
 ### Découplage
 
-- C1 (1 µF 310 VAC) : filtrage côté secteur
-- C3 (120 µF) : filtrage sortie alimentation 5 V
-- C2, C41 (1 µF) : filtrage secondaire
-- C4, C5, C6, C9, C42, C43 (100 nF) : découplage local des CI
-- C7, C8 (22 pF) : condensateurs de charge du quartz X1
-- FB1 (ferrite) : filtrage rail d'alimentation
+- C1 (1 µF 310 VAC, X2) : filtrage côté secteur, entre L1 et neutre
+- C3 (220 µF), C2, C40 (1 µF) : filtrage 5 V
+- C41 (4,7 µF), C42 (100 nF) : sortie de U1
+- C44 (10 µF), C4 (100 nF) : VCC
+- C6, C43 (100 nF) : AVCC ; C5 (100 nF) : AREF
+- C45 (100 nF) : alimentation du RFM69CW
+- C7, C8 (22 pF) : condensateurs de charge du quartz X1
+- FB1, FB2 (ferrites) : filtrage d’AVCC et de l’alimentation du RFM69CW
 
 ## Dissipation des résistances
 
@@ -293,11 +331,11 @@ La tension de référence ADC est la référence interne 1,1 V de l'ATmega328P,
 
 ### Chaîne primaire ZMPT101K (par phase : 6 × 20K = 120K en série)
 
-| Tension secteur | Courant (RMS) | Puissance par résistance 20K | Total (6 résistances) | Taux d’utilisation 0805 (125 mW) |
+| Tension secteur | Courant (RMS) | Puissance par résistance 20K | Total (6 résistances) | Taux d’utilisation 1206 (250 mW typ.) |
 |-----------------|---------------|------------------------------|-----------------------|------------------------------------------|
-| 110 V | 0,917 mA | 16,8 mW | 101 mW | 13 % |
-| 230 V | 1,917 mA | **73,5 mW** | 441 mW | **59 %** |
-| 250 V | 2,083 mA | 86,8 mW | 521 mW | 69 % |
+| 110 V | 0,917 mA | 16,8 mW | 101 mW | 7 % |
+| 230 V | 1,917 mA | **73,5 mW** | 441 mW | **29 %** |
+| 250 V | 2,083 mA | 86,8 mW | 521 mW | 35 % |
 
 À 230 V nominal, les trois phases dissipent 3 × 441 = **1,32 W** dans les chaînes de diviseurs.
 
@@ -306,21 +344,21 @@ La tension de référence ADC est la référence interne 1,1 V de l'ATmega328P,
 Courant secondaire = courant primaire (rapport 1 : 1). À 230 V : I = 1,917 mA.
 - P = (1,917 mA)² × 150 = **0,55 mW** — négligeable
 
-### Résistance de charge CT (R18 / R28 / R38 — 22 R typ.)
+### Résistance de charge CT (R18 / R28 / R38 au schéma — exemple 22 R)
 
 La puissance dépend du calibre du CT.
 
-**CT à sortie tension** (ex. : SCT-013-030, 30 A/1 V) : la résistance de charge est intégrée dans le CT. R18 n’est pas montée. Dissipation : **négligeable**.
+**CT à sortie tension** (ex. : SCT-013-030, 30 A/1 V) : la résistance de charge est intégrée dans le CT. Aucune résistance de charge n’est montée. Dissipation : **négligeable**.
 
-**CT à sortie courant** (ex. : SCT-013-000, 100 A/50 mA) : le courant secondaire traverse R18. La dissipation dépend du courant primaire mesuré :
+**CT à sortie courant** (ex. : SCT-013-000, 100 A/50 mA) : le courant secondaire traverse la résistance de charge, une résistance axiale soudée dans les deux trous traversants de l’empreinte de D13 / D23 / D33. La dissipation dépend du courant primaire mesuré :
 
-| Courant primaire | I secondaire (100 A/50 mA) | P dans 22 R | Tenue 0603 (100 mW) |
+| Courant primaire | I secondaire (100 A/50 mA) | P dans 22 R | Résistance axiale 0,5 W (taille DIN0309 de l’empreinte) |
 |------------------|---------------------------------|---------------|------------------------|
-| 20 A | 10 mA | 2,2 mW | 2 % |
-| 60 A | 30 mA | 19,8 mW | 20 % |
-| 100 A | 50 mA | 55 mW | 55 % |
+| 20 A | 10 mA | 2,2 mW | < 1 % |
+| 60 A | 30 mA | 19,8 mW | 4 % |
+| 100 A | 50 mA | 55 mW | 11 % |
 
-⚠️ **Avec un CT à sortie courant**, la valeur de R18 doit être choisie pour que la tension crête ne dépasse pas 0,55 V (demi-plage ADC à VREF = 1,1 V). Formule : **R = 0,55 V / I_sec_crête**. Avec 22 R, le courant crête max est de 25 mA. Les diodes TVS (DF2B7AE) protègent l’ADC mais ne limitent pas le courant dans la résistance de charge : si le CT délivre plus que prévu, la résistance peut surchauffer.
+⚠️ **Avec un CT à sortie courant**, la valeur de la résistance de charge doit être choisie pour que la tension crête ne dépasse pas 0,55 V (demi-plage ADC à VREF = 1,1 V). Formule : **R = 0,55 V / I_sec_crête**. Avec 22 R, le courant crête max est de 25 mA. Les diodes TVS (DF2B7AE) protègent l’ADC mais ne limitent pas le courant dans la résistance de charge : si le CT délivre plus que prévu, la résistance peut surchauffer.
 
 Dans les limites de la plage ADC :
 - I_sec_max = 0,55 V / 22 R = 25 mA crête ≈ 17,7 mA RMS
@@ -345,7 +383,7 @@ La valeur de 10K (impédance Thévenin 5K) respecte la recommandation du datashe
 | R19 / R29 / R39 | 1K | < 1 V | < 1 mA | < 1 mW |
 | R40–R42 | 22R | 3,3 V | signal | < 5 mW |
 
-Toutes les résistances hors chaîne primaire ZMPT101K dissipent moins de 5 mW. Seules les **R10–R15 / R20–R25 / R30–R35** présentent une dissipation significative (73,5 mW chacune à 230 V, soit 59 % de la puissance nominale 0805).
+Toutes les résistances hors chaîne primaire ZMPT101K dissipent moins de 5 mW. Seules les **R10–R15 / R20–R25 / R30–R35** présentent une dissipation significative (73,5 mW chacune à 230 V, soit 29 % d’une résistance 1206 de 250 mW).
 
 ## Protection parafoudre
 
@@ -353,12 +391,12 @@ La carte implémente une protection multiniveau conforme aux normes IPC-2221 pou
 
 ### Niveaux de protection
 
-1. **Éclateurs à gaz (GDT0–GDT3)** : première ligne de défense contre les surtensions transitoires. Modèle 2093-300-SM-RPLF, tension d'amorçage 300 V.
-2. **Fusibles (FS0–FS3)** : 1 A × 250 V, un par phase et neutre. Limitent le courant en cas de défaut.
-3. **Varistances (RV0–RV3, GM1–GM3)** : écrêtage des surtensions résiduelles. Les GM1–GM3 combinent un éclateur et une varistance dans un seul boîtier.
-4. **Self de mode commun (FL1)** : filtre les perturbations de mode commun sur les lignes secteur.
-5. **Diode TVS (D1, SMBJ7.0A)** : protection du rail 5 V en sortie du module d'alimentation.
-6. **Diodes TVS (D11/D12, D21/D22, D31/D32, DF2B7AE)** : protection des entrées ADC du microcontrôleur, trois par phase (2× DF2B7AE pour la tension, 1× CDSOD323-T03C pour le courant en cas de CT sans résistance de charge).
+1. **Fusibles (FS0–FS3)** : 1 A × 250 V, un par phase et neutre, soudés directement (sans porte-fusible). Ils coupent en cas de court-circuit sur la carte, par exemple une varistance en fin de vie ou un défaut de PS1 ou de C1.
+2. **Varistances hybrides (GM1–GM3)** : IsoMOV (MOV + GDT dans un même boîtier), 320 V, entre chaque phase et le neutre, après les fusibles.
+3. **Paires optionnelles RVx + GDTx (RV0–RV3, GDT0–GDT3)** : pour une protection complète contre la foudre. Chaque varistance est en série avec l’éclateur de même numéro, entre un conducteur et la terre : RV0 + GDT0 sur le neutre, RV1 + GDT1 sur L1, RV2 + GDT2 sur L2, RV3 + GDT3 sur L3. Non montées par défaut ; l’utilisateur les soude, toujours par paire.
+4. **Condensateur X2 (C1) et self de mode commun (FL1)** : filtrent l’alimentation de PS1.
+5. **Diode TVS (D1, SMBJ7.0A)** : protection du rail 5 V en sortie du module d’alimentation.
+6. **Diodes TVS des entrées ADC** : par phase, une DF2B7AE sur l’entrée tension (D11/D21/D31) et sur l’entrée courant (D12/D22/D32), et une CDSOD323-T03C aux bornes de l’entrée CT (D13/D23/D33).
 
 ### Domaines de tension et classes de réseau
 
@@ -382,20 +420,13 @@ Les règles d'isolement HV sont définies dans `3phaseDiverter.kicad_dru`. L'iso
 
 ### Cavaliers de soudure
 
-| Cavalier | Pôles | Fonction |
-|----------|-------|----------|
-| JP0 | 3 | Alimentation ATmega328P : 3,3 V (défaut) ou 5 V |
-| JP1 | 3 | Broche A4 : mesure tension L3 (A4') ou I2C SDA |
-| JP2 | 3 | Broche A5 : mesure courant L3 (A5') ou I2C SCL |
-| JP3 | 2 | Configuration de déclenchement |
-| JP4 | 3 | DS18B20 géré par le routeur (D3) ou par le module mk2Wifi (libellé « TEMP ») |
-| GND_LINK | 2 | Pont entre GND et AGND (cavalier fil 0,75 mm²) |
+Voir le tableau [Configuration](#configuration) de la nomenclature : JP0 (V sel.), JP1 (SDA), JP2 (SCL), JP3 (IRQ), JP4 (TEMP), JP40 (+5V Rail), JP41 (NSS) et le cavalier fil GND_LINK (terre ↔ GND, fil 0,75 mm²).
 
 ### Monophasé vs triphasé
 
-Tous les composants CMS sont assemblés en production, quelle que soit la configuration. La sélection monophasé/triphasé se fait par les cavaliers de soudure et le choix des connecteurs.
+Tous les composants CMS sont assemblés en production, quelle que soit la configuration, sauf les éclateurs à gaz optionnels GDT0–GDT3. La sélection monophasé/triphasé se fait par les cavaliers de soudure et le choix des connecteurs.
 
-En **monophasé**, les cavaliers JP1 et JP2 sont configurés en position I2C (SDA/SCL), ce qui permet l'utilisation de l'écran OLED. Un connecteur PWR1 3 voies est fourni (Terre, Neutre, L1). Seul CT1 est raccordé.
+En **monophasé**, les cavaliers JP1 et JP2 sont configurés en position I2C (SDA/SCL), ce qui permet l'utilisation de l'écran OLED : ils sont reliés d'usine aux lignes de mesure L3 du triphasé, il faut donc couper cette liaison et ponter le côté I2C. Un connecteur PWR1 3 voies est fourni (Terre, Neutre, L1). CT1 mesure le courant du réseau ; CT2 peut aussi être raccordé, son entrée étant entièrement câblée (le firmware monophasé s'en sert pour mesurer l'énergie routée).
 
 En **triphasé**, les cavaliers JP1 et JP2 sont configurés pour les mesures L3 (position A4'/A5'), ce qui désactive l'afficheur OLED. Le connecteur PWR1 5 voies est utilisé et les trois CT sont raccordés.
 
@@ -408,13 +439,13 @@ La carte principale est conçue pour accueillir le module d'extension **mk2Wifi*
 - L'UART (TX/RX) assure la communication série avec le module d'extension
 - Le signal DS18B20 est acheminé via UART_EXT broche 2 pour la mesure de température 1-Wire
 - Les signaux GPIO D5–D9 fournissent les sorties de déclenchement/commande via TRIG_EXT
-- Le bus I2C (SCL/SDA) est **local au module mk2Wifi uniquement** — il relie l'ESP32-C3 à l'écran OLED et n'est pas routé vers la carte principale
+- Le bus I2C (SCL/SDA) est **local au module mk2Wifi uniquement** — il relie l'ESP32-C6 à l'écran OLED et n'est pas routé vers la carte principale
 
 ## Programmation
 
 Le connecteur **FTDI** (Molex SL 1×6) permet le téléversement du firmware via un adaptateur USB-série FTDI ou compatible :
 
-1. **Connexion** : brancher l'adaptateur FTDI sur le connecteur J0. Le brochage est compatible avec les câbles FTDI standard (GND sur la broche 1).
+1. **Connexion** : brancher l'adaptateur FTDI sur le connecteur J0. Le brochage est compatible avec les câbles FTDI standard (GND sur la broche 1). La broche 3 (VCC) n’est pas connectée : l’adaptateur n’alimente pas la carte.
 2. **Auto-reset** : le signal DTR déclenche un reset automatique de l'ATmega328P via un condensateur de couplage, permettant le téléversement sans intervention manuelle.
 3. **Environnement** : compatible Arduino (ATmega328P avec bootloader). Utiliser la carte « Arduino Uno » ou équivalent dans l'IDE Arduino.
 
