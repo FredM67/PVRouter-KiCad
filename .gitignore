@@ -50,3 +50,6 @@ mainboard/simulation/V_ADC_PIN+V_ADN_NF
 
 # Production backups
 mainboard/production/backups/
+
+# KiCad local history (auto-snapshots, own nested git repo)
+.history/
