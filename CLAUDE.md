@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-PVRouter-KiCad is a KiCad 9.0 hardware design project for the **Mk2 PV Router** -- an open-source 3-phase solar PV diverter system (inspired by www.mk2pvrouter.co.uk). The mainboard is currently at **revision 6.0**.
+PVRouter-KiCad is a KiCad hardware design project for the **Mk2 PV Router** -- an open-source 3-phase solar PV diverter system (inspired by www.mk2pvrouter.co.uk). The mainboard is currently at **revision 6.0**.
+
+**KiCad versions:** the mainboard (`mainboard/`) is saved with **KiCad 10.0** and can no longer be opened in KiCad 9. The output stage and mk2Wifi-C6 schematic/PCB files are still in KiCad 9.0 format (the output stage `.kicad_pro` was already resaved by KiCad 10). Opening a board in KiCad 10 and saving converts it permanently.
 
 This is a pure KiCad project with no build system, CI/CD, or scripting. All design work is done in KiCad directly.
 
@@ -41,6 +43,8 @@ The **mainboard** is the primary active design:
 - **IC1**: ATmega328P (3.3V, 16 MHz) -- microcontroller
 - **PS1**: Multicomp Pro MPC10-5 -- AC-DC power supply (10W, 5V/2A)
 - **U1**: AP7361C-33E -- 3.3V LDO regulator (1A, SOT-223)
+- **JP0**: "V sel." 3-pad solder jumper (SolderJumper-3_P1.3mm_Bridged12) -- selects the source of the +3.3V rail. Pad 1 = LDO output (U1 pin 3), pad 2 (centre) = +3.3V rail, pad 3 = +5V. Bridged 1-2 by default (rail fed from the LDO); cut 1-2 and bridge 2-3 to feed it from +5V.
+- **LED40** ("ON", +3.3V via R43 2.2K) / **LED41** (+5V via R44 4.7K): red 0603, LCSC C2286 (KENTO KT-0603R). LED40 runs from 3.3V, so only low-Vf colours (red/yellow/yellow-green, Vf ~2V) are suitable; blue/white/emerald green (Vf ~3V) would be too dim.
 - **U2**: LMV321A -- op-amp, 1.1V AREF buffer (SOT-23-5)
 - **RF1**: RFM69CW -- ISM radio module (433/868 MHz)
 - **VT1--VT3**: ZMPT101K -- AC voltage transformers
